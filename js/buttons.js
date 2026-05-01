@@ -1,3 +1,5 @@
+import { BUTTONS, capitalized_substrings } from './story.js';
+
 function capitalize_substrings(text) {
   if (!text || !capitalized_substrings) return text;
   let result = text;

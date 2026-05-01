@@ -1,34 +1,6 @@
+import { capitalized_substrings } from './objectives.js';
+
 const BUTTONS = {};
-const capitalized_substrings = [
-  "HUMAN",
-  "BUTTON",
-  "PUSH",
-
-  "ICON",
-  "STAR",
-  "STORY", "STORIES",
-  "GAME",
-  "THREAD",
-  "END",
-
-  "OPTION",
-
-  "DRAW", "DREW ", "DROW",
-
-  "MINE", "YOUR",
-  "THEIR",
-
-  "LEFT",
-  "RIGHT",
-
-  "COLOR",
-  "WHITE",
-  "GREY",
-  "GREEN",
-  "BLUE",
-  "PURPLE",
-  "ORANGE",
-];
 
 BUTTONS["start"] = {
   "emoji": "⭐",
@@ -219,4 +191,4 @@ BUTTONS["title_aside2"] = {
 };
 
 
-window.BUTTONS = BUTTONS;
+export { BUTTONS, capitalized_substrings };
