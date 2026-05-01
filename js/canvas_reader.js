@@ -5,7 +5,7 @@ let buttonsCache = null;
 export async function loadButtonsFromCanvas() {
   if (buttonsCache) return buttonsCache;
 
-  const response = await fetch('./js/story.canvas');
+  const response = await fetch('./assets/story.canvas');
   const canvas = await response.json();
 
   buttonsCache = {};

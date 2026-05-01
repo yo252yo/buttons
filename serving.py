@@ -25,3 +25,8 @@ def css_static(filename):
 @buttons_bp.route("/js/<path:filename>")
 def js_static(filename):
     return send_from_directory(os.path.join(BASE_DIR, "js"), filename)
+
+
+@buttons_bp.route("/assets/<path:filename>")
+def assets_static(filename):
+    return send_from_directory(os.path.join(BASE_DIR, "assets"), filename)
