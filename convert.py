@@ -70,26 +70,57 @@ def parse_js(content):
     return buttons, links
 
 
-def determine_canvas_position(keys, links):
+def find_parent(key, links):
+    for parent, children in links.items():
+        if key in children:
+            return parent
+    return None
+
+
+def determine_canvas_position(keys, links, old_positions=None):
     positions = {}
 
-    def place(key, x, y, seen):
-        if key in seen:
-            return
-        seen.add(key)
-        for i, sib in enumerate(links.get(key, [])):
-            place(sib, x + i * 350, y + 300, seen)
-        positions[key] = (x, y)
+    if old_positions:
+        for key in keys:
+            if key in old_positions:
+                positions[key] = old_positions[key]
 
-    roots = get_roots(keys, links) or [keys[0]]
-    for y, root in enumerate(roots):
-        place(root, 0, y * 300, set())
+    def place_node(key):
+        if key in positions:
+            return
+
+        parent = find_parent(key, links)
+        if parent:
+            if parent not in positions:
+                place_node(parent)
+            else:
+                px, py = positions[parent]
+                siblings = links.get(parent, [])
+                sib_idx = siblings.index(key) if key in siblings else 0
+                positions[key] = (px + sib_idx * 350, py + 300)
+        else:
+            positions[key] = (-100, -100)
+
+    unplaced = [k for k in keys if k not in positions]
+    for i, key in enumerate(unplaced):
+        place_node(key)
 
     return positions
 
 
-def js_to_canvas(buttons, links):
-    positions = determine_canvas_position(list(buttons.keys()), links)
+def js_to_canvas(buttons, links, old_canvas=None):
+    old_positions = {}
+    old_edge_ids = {}
+    if old_canvas:
+        for node in old_canvas.get("nodes", []):
+            old_positions[node.get("id", "")] = (node.get("x", 0), node.get("y", 0))
+        for edge in old_canvas.get("edges", []):
+            from_node = edge.get("fromNode", "")
+            to_node = edge.get("toNode", "")
+            if from_node and to_node:
+                old_edge_ids[(from_node, to_node)] = edge.get("id", "")
+
+    positions = determine_canvas_position(list(buttons.keys()), links, old_positions)
     node_ids = {}
     used = set()
     nodes = []
@@ -130,12 +161,15 @@ def js_to_canvas(buttons, links):
         for target in targets:
             if target not in node_ids:
                 continue
+            from_id = node_ids[key]
+            to_id = node_ids[target]
+            edge_id = old_edge_ids.get((from_id, to_id), str(uuid.uuid4()))
             edges.append(
                 {
-                    "id": str(uuid.uuid4()),
-                    "fromNode": node_ids[key],
+                    "id": edge_id,
+                    "fromNode": from_id,
                     "fromSide": "bottom",
-                    "toNode": node_ids[target],
+                    "toNode": to_id,
                     "toSide": "top",
                 }
             )
@@ -163,7 +197,7 @@ def _parse_text_node(text):
     return emoji, title, content
 
 
-def canvas_to_js(data):
+def canvas_to_js(data, old_positions=None):
     buttons = {}
     links = {}
     key_map = {}
@@ -224,9 +258,15 @@ def convert(in_file, out_file, direction):
     out = Path(out_file)
 
     if direction == "js_to_canvas":
+        old_canvas = None
+        if out.exists():
+            try:
+                old_canvas = json.loads(out.read_text(encoding="utf-8"))
+            except:
+                pass
         content = path.read_text(encoding="utf-8")
         buttons, links = parse_js(content)
-        canvas = js_to_canvas(buttons, links)
+        canvas = js_to_canvas(buttons, links, old_canvas)
         out.write_text(json.dumps(canvas, indent=2), encoding="utf-8")
     else:
         canvas = json.loads(path.read_text(encoding="utf-8"))
