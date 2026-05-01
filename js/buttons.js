@@ -1,5 +1,5 @@
 import { capitalized_substrings } from './objectives.js';
-import { BUTTONS } from './story.js';
+import { BUTTONS, LINKS } from './story.js';
 
 function capitalize_substrings(text) {
   if (!text || !capitalized_substrings) return text;
@@ -76,11 +76,10 @@ function expand_button(button, btnData) {
     buttonsZone.appendChild(button);
   }
 
-  if (btnData && btnData.children) {
-    btnData.children.forEach(childId => {
-      create_button(childId, button);
-    });
-  }
+  const children = LINKS[button.dataset.id] || [];
+  children.forEach(childId => {
+    create_button(childId, button);
+  });
 
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
