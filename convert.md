@@ -89,3 +89,24 @@ These are the only allowed colors (strings):
 | blue    | "5"        |
 | purple  | "6"        |
 | orange  | "2"        |
+
+## Line Breaks
+
+### JS Format
+Uses `<br />` for line breaks in content, followed by `\n` for code readability:
+```js
+"content": `Line one.<br />
+Line two.<br />
+Line three.`
+```
+
+### Canvas Format
+Uses plain `\n` for line breaks in node text (cleaner, no HTML):
+```json
+"text": "emoji title\n---\nLine one.\nLine two.\nLine three."
+```
+
+### Conversion Behavior
+- **JS → Canvas**: Converts `<br />` to `\n` (removes HTML)
+- **Canvas → JS**: Converts `\n` back to `<br />` (adds HTML for readability)
+- Also handles escaped quotes: `\"` in JS ↔ `\\"` in canvas
