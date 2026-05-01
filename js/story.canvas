@@ -1,455 +1,63 @@
 {
-  "nodes": [
-    {
-      "id": "start",
-      "type": "text",
-      "text": "\u2b50 Start\n---\nThis game is about buttons.<br>  Buttons have two states: pushed and not pushed.<br>  When you FIRST click on them, they EXPAND and draw other buttons.",
-      "color": "4",
-      "x": 0,
-      "y": 0,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "tutorial",
-      "type": "text",
-      "text": "\u2753 What do I have to do?\n---\nYour GOAL is simple: find an ending flag \ud83c\udfc1.<br>  There's an ending \ud83c\udfc1 at the end of the green \ud83d\udfe2 line.<br>  There may be others.",
-      "color": "4",
-      "x": 350,
-      "y": 0,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "warning",
-      "type": "text",
-      "text": "\u26a0\ufe0f Content warning\n---\nThis games contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.<br>  It discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...<br>  No topic is ever approached without a suitable warning in the unpressed button text.<br>  Never forget who is pushing the buttons.<br>  Reader discretion is advised when pushing buttons.",
-      "color": "0",
-      "x": 350,
-      "y": 600,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "options",
-      "type": "text",
-      "text": "\u2699\ufe0f Options\n---\nWIP: Some buttons are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle.<br>  Include a jab about language \ud83c\uddec\ud83c\udde7 apologize for it being english only but the html structure is dead simple so translation tools should work. Add an aside to explain that websites used to have automated translation but that got out of fashion when google got monopoly over chrome.<br>  Make sure to include plenty of accessibility options for gamers.",
-      "color": "0",
-      "x": 350,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "tuto_emoji",
-      "type": "text",
-      "text": "\u2753 What's up with the EMOJIs?\n---\nSome buttons have icons.<br>  WIP: You can collect them in this menu \u263a\ufe0f. There might be other quests \ud83c\udfc6 (find names \ud83d\udc65, places \ud83d\udccd, times \u23f0, maybe rare collectibles \ud83d\udc1f)",
-      "color": "0",
-      "x": 700,
-      "y": 0,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "tuto_colors",
-      "type": "text",
-      "text": "\u2753 What's up with the colors?\n---\nWIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML \ud83c\udfa8",
-      "color": "0",
-      "x": 700,
-      "y": 200,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "tuto_star",
-      "type": "text",
-      "text": "\u2753 What does the star \u2b50 mean ?\n---\nStar \u2b50 is the icon for starter packs. They mark the beginning of a story.",
-      "color": "0",
-      "x": 700,
-      "y": 600,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "tuto_archive",
-      "type": "text",
-      "text": "\u2753 Help, my screen is full of stuff!\n---\nWIP: The thread \ud83e\uddf5 button helps navigate between open threads. The \ud83d\uddd1\ufe0f button will give you options to cleanup READ messages. \ud83d\udcbe there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe",
-      "color": "0",
-      "x": 700,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "tuto_apology",
-      "type": "text",
-      "text": "\u2753 This tutorial is too long!\n---\nI apologize, this is brand new game engine, a lot of things need to be explained.<br>  Feel free to skip everything you want, or look at the \u2699\ufe0f options to customize your experience.",
-      "color": "0",
-      "x": 700,
-      "y": 800,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "beginning",
-      "type": "text",
-      "text": "\u2b50 The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.",
-      "color": "4",
-      "x": 350,
-      "y": 200,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_grey",
-      "type": "text",
-      "text": "Some buttons were grey.\n---",
-      "color": "0",
-      "x": 700,
-      "y": 200,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_green",
-      "type": "text",
-      "text": "Some buttons were green.\n---",
-      "color": "4",
-      "x": 700,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_blue",
-      "type": "text",
-      "text": "Some buttons were blue.\n---",
-      "color": "5",
-      "x": 700,
-      "y": 600,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_purple",
-      "type": "text",
-      "text": "Some buttons were purple.\n---",
-      "color": "6",
-      "x": 700,
-      "y": 800,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_orange",
-      "type": "text",
-      "text": "Some buttons were orange.\n---",
-      "color": "2",
-      "x": 700,
-      "y": 1000,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_draw",
-      "type": "text",
-      "text": "Some buttons drew more buttons.\n---",
-      "color": "4",
-      "x": 1050,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_draw2",
-      "type": "text",
-      "text": "Some buttons did not draw more buttons.\n---",
-      "color": "0",
-      "x": 1050,
-      "y": 600,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_draw3",
-      "type": "text",
-      "text": "It was always a surprise to push buttons and wonder what would happen next.\n---",
-      "color": "4",
-      "x": 1400,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "intro_draw4",
-      "type": "text",
-      "text": "And so the human kept pushing buttons.\n---\nThe human pushed buttons by day,<br>  The human pushed buttons by night.<br>  So much so that the human's life was mostly pushing buttons.<br>  But the human had to keep pushing.<br>  How else would the human live?",
-      "color": "0",
-      "x": 1750,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "found_flag",
-      "type": "text",
-      "text": "One day, while pushing buttons, the human came accross an ending flag \ud83c\udfc1.\n---\nThis puzzled the human quite a bit. An ending flag \ud83c\udfc1 ? So soon?",
-      "color": "4",
-      "x": 2100,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "end_flag",
-      "type": "text",
-      "text": "\ud83c\udfc1 And so it came to be that the human stopped pushing buttons.\n---",
-      "color": "4",
-      "x": 2450,
-      "y": 600,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "more",
-      "type": "text",
-      "text": "Could there be MORE to this story?\n---\nCould there be hidden depths burried far below what meets the eye?",
-      "color": "0",
-      "x": 2450,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "more2",
-      "type": "text",
-      "text": "Could there be an orange button drowned in a sea of grey?\n---\nThat is when the human found a story.<br>  It laid there, shining green, in the middle of all the buttons.<br>  It was story left untold, almost forgotten.<br>  And its title was...",
-      "color": "2",
-      "x": 2800,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "title",
-      "type": "text",
-      "text": "\u2b50 The true story of the story of Robinson Crusoe\n---\nWIP Stay tuned for the rest, it will surprise you.",
-      "color": "4",
-      "x": 3150,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "title_aside",
-      "type": "text",
-      "text": "The story of a white man?\n---\nAlas, that is where we must start.<br>  Humans do love their stories to be character-centered.<br>  But fear not, you will see many characters if you press the right buttons.",
-      "color": "6",
-      "x": 3500,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    },
-    {
-      "id": "title_aside2",
-      "type": "text",
-      "text": "Though I guess a lot of them were white men.\n---\nSorry, its mostly their story.<br>  But it doesn't have to be about them.",
-      "color": "0",
-      "x": 3850,
-      "y": 400,
-      "width": 300,
-      "height": 200
-    }
-  ],
-  "edges": [
-    {
-      "id": "046ce59b-fd95-4ae4-91c2-5436f67ef2ce",
-      "fromNode": "start",
-      "fromSide": "right",
-      "toNode": "tutorial",
-      "toSide": "left"
-    },
-    {
-      "id": "5f9dae17-f7cb-438f-92ba-6b6fd70ae0c2",
-      "fromNode": "start",
-      "fromSide": "right",
-      "toNode": "beginning",
-      "toSide": "left"
-    },
-    {
-      "id": "27797e35-bc0e-4cf6-86d6-0c462f094a35",
-      "fromNode": "start",
-      "fromSide": "right",
-      "toNode": "options",
-      "toSide": "left"
-    },
-    {
-      "id": "7a2c3807-ade2-49bb-83b2-5967f8d1ce26",
-      "fromNode": "start",
-      "fromSide": "right",
-      "toNode": "warning",
-      "toSide": "left"
-    },
-    {
-      "id": "6d78e6b6-1d1c-461f-a3e4-63110aa37549",
-      "fromNode": "tutorial",
-      "fromSide": "right",
-      "toNode": "tuto_emoji",
-      "toSide": "left"
-    },
-    {
-      "id": "24033208-401a-4e0b-be5e-840bcf3510e9",
-      "fromNode": "tutorial",
-      "fromSide": "right",
-      "toNode": "tuto_colors",
-      "toSide": "left"
-    },
-    {
-      "id": "4ec22825-eb23-480d-89af-51d65ddc9ef8",
-      "fromNode": "tutorial",
-      "fromSide": "right",
-      "toNode": "tuto_archive",
-      "toSide": "left"
-    },
-    {
-      "id": "3a28f296-cbdd-4cc8-a274-e1715e173e1d",
-      "fromNode": "tutorial",
-      "fromSide": "right",
-      "toNode": "tuto_star",
-      "toSide": "left"
-    },
-    {
-      "id": "a001e99d-ba4d-4a47-995f-4794b84495dd",
-      "fromNode": "tutorial",
-      "fromSide": "right",
-      "toNode": "tuto_apology",
-      "toSide": "left"
-    },
-    {
-      "id": "02cb97ec-ba9f-4dad-8e72-233470ec47db",
-      "fromNode": "tuto_apology",
-      "fromSide": "right",
-      "toNode": "options",
-      "toSide": "left"
-    },
-    {
-      "id": "3c1ec2e2-4928-4786-8906-b3490a15fe99",
-      "fromNode": "beginning",
-      "fromSide": "right",
-      "toNode": "intro_grey",
-      "toSide": "left"
-    },
-    {
-      "id": "83060395-7b4e-4020-b0e2-a0dbbc050660",
-      "fromNode": "beginning",
-      "fromSide": "right",
-      "toNode": "intro_green",
-      "toSide": "left"
-    },
-    {
-      "id": "fa003383-87da-40e9-8741-01fd874e4628",
-      "fromNode": "beginning",
-      "fromSide": "right",
-      "toNode": "intro_blue",
-      "toSide": "left"
-    },
-    {
-      "id": "f4ce1a10-375d-4935-bfcd-4670d2fe26f9",
-      "fromNode": "beginning",
-      "fromSide": "right",
-      "toNode": "intro_purple",
-      "toSide": "left"
-    },
-    {
-      "id": "1f7ad225-1e68-4354-9a62-44b14b3c108a",
-      "fromNode": "beginning",
-      "fromSide": "right",
-      "toNode": "intro_orange",
-      "toSide": "left"
-    },
-    {
-      "id": "3c30776f-8206-4d36-829f-edc16f32baf5",
-      "fromNode": "intro_green",
-      "fromSide": "right",
-      "toNode": "intro_draw",
-      "toSide": "left"
-    },
-    {
-      "id": "1aff96e5-4667-4a64-ae70-da92321656bf",
-      "fromNode": "intro_green",
-      "fromSide": "right",
-      "toNode": "intro_draw2",
-      "toSide": "left"
-    },
-    {
-      "id": "c7b190b1-1d98-46f7-bc6f-f0a0ca6ef01f",
-      "fromNode": "intro_draw",
-      "fromSide": "right",
-      "toNode": "intro_draw3",
-      "toSide": "left"
-    },
-    {
-      "id": "38fb89fd-b62c-4367-8ae1-ddf1ddbc5a5b",
-      "fromNode": "intro_draw2",
-      "fromSide": "right",
-      "toNode": "intro_draw3",
-      "toSide": "left"
-    },
-    {
-      "id": "37cabe40-6a64-4297-ab06-1ccee25808d8",
-      "fromNode": "intro_draw3",
-      "fromSide": "right",
-      "toNode": "intro_draw4",
-      "toSide": "left"
-    },
-    {
-      "id": "893870ff-6c52-4af9-9ba7-1237253c7613",
-      "fromNode": "intro_draw4",
-      "fromSide": "right",
-      "toNode": "found_flag",
-      "toSide": "left"
-    },
-    {
-      "id": "98e0ac05-51db-405b-9184-6dca6d926b4f",
-      "fromNode": "found_flag",
-      "fromSide": "right",
-      "toNode": "more",
-      "toSide": "left"
-    },
-    {
-      "id": "545604e7-e001-4b58-9813-aaf0b89faa51",
-      "fromNode": "found_flag",
-      "fromSide": "right",
-      "toNode": "end_flag",
-      "toSide": "left"
-    },
-    {
-      "id": "87e34a59-5521-4419-b976-e3bec70e844c",
-      "fromNode": "more",
-      "fromSide": "right",
-      "toNode": "more2",
-      "toSide": "left"
-    },
-    {
-      "id": "0c38a543-5b84-49f0-94ed-aead9195fd7a",
-      "fromNode": "more2",
-      "fromSide": "right",
-      "toNode": "title",
-      "toSide": "left"
-    },
-    {
-      "id": "f17cb251-f433-49f2-acb6-3cbcb469e40a",
-      "fromNode": "title",
-      "fromSide": "right",
-      "toNode": "title_aside",
-      "toSide": "left"
-    },
-    {
-      "id": "20e65378-eb7d-40dd-975b-7b52625028ff",
-      "fromNode": "title_aside",
-      "fromSide": "right",
-      "toNode": "title_aside2",
-      "toSide": "left"
-    }
-  ]
+	"nodes":[
+		{"id":"start","type":"text","text":"⭐ Start\n---\nThis game is about buttons.<br>  Buttons have two states: pushed and not pushed.<br>  When you FIRST click on them, they EXPAND and draw other buttons.","color":"4","x":0,"y":0,"width":300,"height":200},
+		{"id":"tutorial","type":"text","text":"❓ What do I have to do?\n---\nYour GOAL is simple: find an ending flag 🏁.<br>  There's an ending 🏁 at the end of the green 🟢 line.<br>  There may be others.","color":"4","x":0,"y":300,"width":300,"height":200},
+		{"id":"warning","type":"text","text":"⚠️ Content warning\n---\nThis games contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.<br>  It discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...<br>  No topic is ever approached without a suitable warning in the unpressed button text.<br>  Never forget who is pushing the buttons.<br>  Reader discretion is advised when pushing buttons.","color":"0","x":1050,"y":300,"width":300,"height":200},
+		{"id":"options","type":"text","text":"⚙️ Options\n---\nWIP: Some buttons are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle.<br>  Include a jab about language 🇬🇧 apologize for it being english only but the html structure is dead simple so translation tools should work. Add an aside to explain that websites used to have automated translation but that got out of fashion when google got monopoly over chrome.<br>  Make sure to include plenty of accessibility options for gamers.","color":"0","x":1400,"y":900,"width":300,"height":200},
+		{"id":"tuto_emoji","type":"text","text":"❓ What's up with the EMOJIs?\n---\nSome buttons have icons.<br>  WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟)","color":"0","x":0,"y":600,"width":300,"height":200},
+		{"id":"tuto_colors","type":"text","text":"❓ What's up with the colors?\n---\nWIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨","color":"0","x":350,"y":600,"width":300,"height":200},
+		{"id":"tuto_star","type":"text","text":"❓ What does the star ⭐ mean ?\n---\nStar ⭐ is the icon for starter packs. They mark the beginning of a story.","color":"0","x":1050,"y":600,"width":300,"height":200},
+		{"id":"tuto_archive","type":"text","text":"❓ Help, my screen is full of stuff!\n---\nWIP: The thread 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe","color":"0","x":700,"y":600,"width":300,"height":200},
+		{"id":"tuto_apology","type":"text","text":"❓ This tutorial is too long!\n---\nI apologize, this is brand new game engine, a lot of things need to be explained.<br>  Feel free to skip everything you want, or look at the ⚙️ options to customize your experience.","color":"0","x":1400,"y":600,"width":300,"height":200},
+		{"id":"beginning","type":"text","text":"⭐ The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.","color":"4","x":350,"y":300,"width":300,"height":200},
+		{"id":"intro_grey","type":"text","text":"Some buttons were grey.\n---","color":"0","x":350,"y":600,"width":300,"height":200},
+		{"id":"intro_green","type":"text","text":"Some buttons were green.\n---","color":"4","x":700,"y":600,"width":300,"height":200},
+		{"id":"intro_blue","type":"text","text":"Some buttons were blue.\n---","color":"5","x":1050,"y":600,"width":300,"height":200},
+		{"id":"intro_purple","type":"text","text":"Some buttons were purple.\n---","color":"6","x":1400,"y":600,"width":300,"height":200},
+		{"id":"intro_orange","type":"text","text":"Some buttons were orange.\n---","color":"2","x":1750,"y":600,"width":300,"height":200},
+		{"id":"intro_draw","type":"text","text":"Some buttons drew more buttons.\n---","color":"4","x":700,"y":900,"width":300,"height":200},
+		{"id":"intro_draw2","type":"text","text":"Some buttons did not draw more buttons.\n---","color":"0","x":1050,"y":900,"width":300,"height":200},
+		{"id":"intro_draw3","type":"text","text":"It was always a surprise to push buttons and wonder what would happen next.\n---","color":"4","x":700,"y":1200,"width":300,"height":200},
+		{"id":"intro_draw4","type":"text","text":"And so the human kept pushing buttons.\n---\nThe human pushed buttons by day,<br>  The human pushed buttons by night.<br>  So much so that the human's life was mostly pushing buttons.<br>  But the human had to keep pushing.<br>  How else would the human live?","color":"0","x":700,"y":1500,"width":300,"height":200},
+		{"id":"found_flag","type":"text","text":"One day, while pushing buttons, the human came accross an ending flag 🏁.\n---\nThis puzzled the human quite a bit. An ending flag 🏁 ? So soon?","color":"4","x":700,"y":1800,"width":300,"height":200},
+		{"id":"end_flag","type":"text","text":"🏁 And so it came to be that the human stopped pushing buttons.\n---","color":"4","x":1050,"y":2100,"width":300,"height":200},
+		{"id":"more","type":"text","text":"Could there be MORE to this story?\n---\nCould there be hidden depths burried far below what meets the eye?","color":"0","x":700,"y":2100,"width":300,"height":200},
+		{"id":"more2","type":"text","text":"Could there be an orange button drowned in a sea of grey?\n---\nThat is when the human found a story.<br>  It laid there, shining green, in the middle of all the buttons.<br>  It was story left untold, almost forgotten.<br>  And its title was...","color":"2","x":700,"y":2400,"width":300,"height":200},
+		{"id":"title","type":"text","text":"⭐ The true story of the story of Robinson Crusoe\n---\nWIP Stay tuned for the rest, it will surprise you.","color":"4","x":700,"y":2700,"width":300,"height":200},
+		{"id":"title_aside","type":"text","text":"The story of a white man?\n---\nAlas, that is where we must start.<br>  Humans do love their stories to be character-centered.<br>  But fear not, you will see many characters if you press the right buttons.","color":"6","x":700,"y":3000,"width":300,"height":200},
+		{"id":"title_aside2","type":"text","text":"Though I guess a lot of them were white men.\n---\nSorry, its mostly their story.<br>  But it doesn't have to be about them.","color":"0","x":700,"y":3300,"width":300,"height":200}
+	],
+	"edges":[
+		{"id":"8faa2fd7-f98d-411e-9933-13b22e97f76a","fromNode":"start","fromSide":"bottom","toNode":"tutorial","toSide":"top"},
+		{"id":"bef057a6-d7d3-475f-a1eb-267bc8f6e806","fromNode":"start","fromSide":"bottom","toNode":"beginning","toSide":"top"},
+		{"id":"10aad07b-c1c8-4144-a9c3-8e94a35de7a1","fromNode":"start","fromSide":"bottom","toNode":"options","toSide":"top"},
+		{"id":"e972bda9-c1e5-4988-9a46-2806f1bc3482","fromNode":"start","fromSide":"bottom","toNode":"warning","toSide":"top"},
+		{"id":"ccfbbcb9-827e-4f6c-b2dc-328cd87c9b56","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_emoji","toSide":"top"},
+		{"id":"a9436748-b1a9-42d7-bec9-8c441147c343","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_colors","toSide":"top"},
+		{"id":"0cd4648c-fbeb-4c74-8e3b-e3fcd478a5dc","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_archive","toSide":"top"},
+		{"id":"c57bda66-2fa9-4151-a9b7-cfcf7690c142","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_star","toSide":"top"},
+		{"id":"5301970e-b639-4064-ba49-d23a3b2b06ad","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_apology","toSide":"top"},
+		{"id":"03c48f17-62ed-4a2c-9f15-98c144f158c4","fromNode":"tuto_apology","fromSide":"bottom","toNode":"options","toSide":"top"},
+		{"id":"ce7683a4-35a5-439f-93e3-52fb0192be2f","fromNode":"beginning","fromSide":"bottom","toNode":"intro_grey","toSide":"top"},
+		{"id":"25f92097-62f7-4c20-9e42-e79c07edd823","fromNode":"beginning","fromSide":"bottom","toNode":"intro_green","toSide":"top"},
+		{"id":"2c5964c4-54c9-47de-93e9-c02a73bec5b6","fromNode":"beginning","fromSide":"bottom","toNode":"intro_blue","toSide":"top"},
+		{"id":"c419d99a-891d-4d92-955c-aefe391d779f","fromNode":"beginning","fromSide":"bottom","toNode":"intro_purple","toSide":"top"},
+		{"id":"5a1dd688-1e80-42f8-8fea-81206bf750dd","fromNode":"beginning","fromSide":"bottom","toNode":"intro_orange","toSide":"top"},
+		{"id":"a32c5092-83d1-40d6-bb30-ec7467af9929","fromNode":"intro_green","fromSide":"bottom","toNode":"intro_draw","toSide":"top"},
+		{"id":"2e20ad52-3e40-4ce0-ad93-cf77933fb75c","fromNode":"intro_green","fromSide":"bottom","toNode":"intro_draw2","toSide":"top"},
+		{"id":"f3b903ab-4357-4d7c-95d2-378b83232573","fromNode":"intro_draw","fromSide":"bottom","toNode":"intro_draw3","toSide":"top"},
+		{"id":"16f9ff23-539f-4369-bf76-d7300e902e9e","fromNode":"intro_draw2","fromSide":"bottom","toNode":"intro_draw3","toSide":"top"},
+		{"id":"bf9f38d0-e72e-4fc3-a4ce-6522db106d0b","fromNode":"intro_draw3","fromSide":"bottom","toNode":"intro_draw4","toSide":"top"},
+		{"id":"aa41c2a7-8b05-4d02-8b3b-f68be2acd062","fromNode":"intro_draw4","fromSide":"bottom","toNode":"found_flag","toSide":"top"},
+		{"id":"a14933f4-f44c-4ba8-aa6b-350bb5d23f10","fromNode":"found_flag","fromSide":"bottom","toNode":"more","toSide":"top"},
+		{"id":"8245bc5e-7d44-4490-9b1e-de6dc15e8447","fromNode":"found_flag","fromSide":"bottom","toNode":"end_flag","toSide":"top"},
+		{"id":"892237e5-7b6f-4908-80cf-8e46b0e1dc4f","fromNode":"more","fromSide":"bottom","toNode":"more2","toSide":"top"},
+		{"id":"7b8a7746-bc18-44aa-a78b-7e5bfbe6c8b6","fromNode":"more2","fromSide":"bottom","toNode":"title","toSide":"top"},
+		{"id":"a460f868-3bd2-461f-b5d6-0305725250d3","fromNode":"title","fromSide":"bottom","toNode":"title_aside","toSide":"top"},
+		{"id":"8002d8d5-9ed9-4dc0-97b0-59d487e06d47","fromNode":"title_aside","fromSide":"bottom","toNode":"title_aside2","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
 }

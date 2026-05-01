@@ -84,6 +84,13 @@ def js_to_canvas(buttons: dict, links: dict) -> dict:
 
     keys = list(buttons.keys())
 
+    def find_parents(key):
+        parents = []
+        for pk, tk in links.items():
+            if key in tk:
+                parents.append(pk)
+        return parents[0] if parents else None
+
     for key in keys:
         if key not in used_ids:
             node_ids[key] = key
@@ -91,35 +98,32 @@ def js_to_canvas(buttons: dict, links: dict) -> dict:
             node_ids[key] = str(uuid.uuid4())
         used_ids.add(node_ids[key])
 
-    for i, key in enumerate(keys):
-        node_id = node_ids[key]
-        btn = buttons[key]
+    def assign_positions(key, x, y, visited=None):
+        if visited is None:
+            visited = set()
+        if key in visited:
+            return
+        visited.add(key)
 
-        target_keys = links.get(key, [])
-
-        x = 0
-        y = i * 250
-
-        if i > 0:
-            parent_key = None
-            for pk, tk in links.items():
-                if key in tk:
-                    parent_key = pk
-                    break
-
-            if parent_key and parent_key in key_positions:
-                px, py = key_positions[parent_key]
-                siblings = links.get(parent_key, [])
-                sib_index = siblings.index(key) if key in siblings else 0
-                x = px + 350
-                y = py + sib_index * 200
-            elif i > 0:
-                prev_key = keys[i - 1]
-                if prev_key in key_positions:
-                    x, y = key_positions[prev_key]
-                    y += 200
+        siblings = links.get(key, [])
+        for i, sib in enumerate(siblings):
+            assign_positions(sib, x + i * 350, y + 300, visited)
 
         key_positions[key] = (x, y)
+
+    root_keys = [k for k in keys if not find_parents(k)]
+    if not root_keys:
+        root_keys = [keys[0]]
+
+    y = 0
+    for root in root_keys:
+        assign_positions(root, 0, y, set())
+        y += 300
+
+    for key in keys:
+        node_id = node_ids[key]
+        btn = buttons[key]
+        x, y = key_positions[key]
 
         emoji = btn.get("emoji", "")
         title = btn.get("title", "")
@@ -149,9 +153,9 @@ def js_to_canvas(buttons: dict, links: dict) -> dict:
                         {
                             "id": str(uuid.uuid4()),
                             "fromNode": node_ids[key],
-                            "fromSide": "right",
+                            "fromSide": "bottom",
                             "toNode": node_ids[target_key],
-                            "toSide": "left",
+                            "toSide": "top",
                         }
                     )
 

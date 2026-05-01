@@ -47,8 +47,9 @@ export { BUTTONS, LINKS };
       "id": "uuid",
       "type": "text",
       "text": "emoji? title\n---\ncontent",
-      "color": "green",
-      "position": {"x": 0, "y": 0},
+      "color": "4",
+      "x": 0,
+      "y": 0,
       "width": 300,
       "height": 200
     }
@@ -56,10 +57,10 @@ export { BUTTONS, LINKS };
   "edges": [
     {
       "id": "uuid",
-      "fromNode": "source-uuid",
-      "fromSide": "right",
-      "toNode": "target-uuid",
-      "toSide": "left"
+      "fromNode": "source-id",
+      "fromSide": "bottom",
+      "toNode": "target-id",
+      "toSide": "top"
     }
   ]
 }
