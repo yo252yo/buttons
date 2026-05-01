@@ -1,4 +1,3 @@
-import { capitalized_substrings } from './objectives.js';
 
 const BUTTONS = {};
 
@@ -191,4 +190,4 @@ BUTTONS["title_aside2"] = {
 };
 
 
-export { BUTTONS, capitalized_substrings };
+export { BUTTONS };

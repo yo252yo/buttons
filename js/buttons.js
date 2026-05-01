@@ -1,4 +1,5 @@
-import { BUTTONS, capitalized_substrings } from './story.js';
+import { capitalized_substrings } from './objectives.js';
+import { BUTTONS } from './story.js';
 
 function capitalize_substrings(text) {
   if (!text || !capitalized_substrings) return text;
