@@ -1,0 +1,104 @@
+.buttons_zone {
+  position: relative;
+  top: 100px;
+  left: 50px;
+  padding-bottom: 50px;
+  width: calc(100vw - 100px);
+  z-index: 10;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  margin: 20px 0;
+  padding: 10px;
+  min-width: 200px;
+  max-width: calc(85vw - 100px);
+  border: 8px outset;
+  border-radius: 20px;
+}
+
+.button.pressed {
+  border-style: inset;
+
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.6);
+  filter: brightness(0.7);
+  opacity: 0.9;
+}
+
+.button-orange {
+  background: var(--orange);
+  border-color: var(--orange-border);
+  margin-left: 40px;
+}
+
+.button-purple {
+  background: var(--purple);
+  border-color: var(--purple-border);
+  margin-left: 30px;
+}
+
+.button-blue {
+  background: var(--blue);
+  border-color: var(--blue-border);
+  margin-left: 20px;
+}
+
+.button-green {
+  background: var(--green);
+  border-color: var(--green-border);
+  margin-left: 10px;
+}
+
+.button-grey {
+  background: var(--grey);
+  border-color: var(--grey-border);
+}
+
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    left: -120%;
+  }
+
+  60% {
+    left: 120%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+.unclicked_button {
+  position: relative;
+  overflow: hidden;
+  animation: wiggle 2s ease-in-out infinite;
+}
+
+/* sparkle sweep */
+.unclicked_button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent);
+  transform: skewX(-20deg);
+  animation: sparkle 5s infinite;
+}
