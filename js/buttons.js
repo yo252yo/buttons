@@ -26,9 +26,15 @@ function create_button(buttonName, parent) {
   btn.addEventListener('click', button_click_listener);
   btn.addEventListener('touchstart', button_click_listener);
 
-  parent.parentNode.insertBefore(btn, parent.nextSibling);
+  // parent.parentNode.insertBefore(btn, parent.nextSibling); // TODO: make this an option later
+  // btn.scrollIntoView({ behavior: 'smooth', block: 'end' });
 
-  btn.scrollIntoView({ behavior: 'smooth', block: 'end' });
+  const buttonsZone = document.getElementById('buttons_zone');
+  if (buttonsZone) {
+    buttonsZone.appendChild(btn);
+  }
+
+  window.scrollTo({ behavior: 'smooth', top: document.body.scrollHeight });
 }
 
 function button_click_listener() {

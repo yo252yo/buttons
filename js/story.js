@@ -5,9 +5,9 @@ BUTTONS["start"] = {
   "color": "green",
   "title": "STARt",
   "content": `This game is about BUTTONS.<br />
-  BUTTONS have two states: PRESSED and not PRESSED.<br />
+  BUTTONS have two states: PUSHED and not PUSHED.<br />
   When you FIRST click on them, they EXPAND and DRAW other BUTTONS.`,
-  "children": ["tutorial", "beginning", "options"]
+  "children": ["tutorial", "beginning", "options", "warning"]
 };
 
 BUTTONS["tutorial"] = {
@@ -19,6 +19,16 @@ BUTTONS["tutorial"] = {
   There may be others.
   `,
   "children": ["tuto_emoji", "tuto_colors", "tuto_archive", "tuto_star"]
+};
+
+BUTTONS["warning"] = {
+  "emoji": "⚠️",
+  "title": "Content warning",
+  "content": `This games contains a lot of BUTTON pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.<br />
+  It discusses sensitive topics such as HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...<br />
+  No topic is ever approached without a suitable warning in the unpressed BUTTON text.<br />
+  Reader discretion is advised when pushing BUTTONs.
+  `
 };
 
 BUTTONS["options"] = {
@@ -56,8 +66,8 @@ BUTTONS["tuto_archive"] = {
 BUTTONS["beginning"] = {
   "emoji": "⭐",
   "color": "green",
-  "title": "The Human Who Pressed BUTTONs",
-  "content": `There once was a Human, who pressed BUTTONs.`,
+  "title": "The Human Who Pushed BUTTONs",
+  "content": `There once was a Human, who pushed BUTTONs.`,
   "children": ["intro_grey", "intro_green", "intro_blue", "intro_purple", "intro_orange"]
 };
 
@@ -100,6 +110,28 @@ BUTTONS["intro_draw2"] = {
 
 BUTTONS["intro_draw3"] = {
   "title": "It was always a surprise to push BUTTONs and wonder what would happen next.",
+  "color": "green",
+  "children": ["found_flag"]
 };
+
+BUTTONS["found_flag"] = {
+  "title": "One day, while pushing BUTTONs, the human came accross an ENDING flag 🏁.",
+  "color": "green",
+  "content": `This puzzled the Human quite a bit. An ENDING flag 🏁 ? So soon?`,
+  "children": ["end_flag", "more"]
+};
+
+BUTTONS["end_flag"] = {
+  "emoji": "🏁",
+  "color": "green",
+  "title": "And so it came to be that the human stopped pushing BUTTONs.",
+};
+
+BUTTONS["more"] = {
+  "title": "Could there be MORE to this story?",
+};
+
+// human pressed button day and night to make the economy spin
+
 
 window.BUTTONS = BUTTONS;

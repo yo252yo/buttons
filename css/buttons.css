@@ -1,4 +1,5 @@
-.buttons_zone {
+.buttons_zone,
+#buttons_zone {
   position: relative;
   top: 100px;
   left: 50px;
