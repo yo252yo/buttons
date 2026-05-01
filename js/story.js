@@ -19,8 +19,7 @@ BUTTONS["tutorial"] = {
   "title": "What do I have to do?",
   "content": `Your GOAL is simple: find an ending flag 🏁.<br />
   There's an ending 🏁 at the end of the green 🟢 line.<br />
-  There may be others.
-  `
+  There may be others.`
 };
 LINKS["tutorial"] = ["tuto_emoji", "tuto_colors", "tuto_archive", "tuto_star", "tuto_apology"];
 
@@ -32,8 +31,7 @@ BUTTONS["warning"] = {
   It discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...<br />
   No topic is ever approached without a suitable warning in the unpressed button text.<br />
   Never forget who is pushing the buttons.<br />
-  Reader discretion is advised when pushing buttons.
-  `
+  Reader discretion is advised when pushing buttons.`
 };
 LINKS["warning"] = [];
 
@@ -43,8 +41,7 @@ BUTTONS["options"] = {
   "title": "Options",
   "content": `WIP: Some buttons are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle.<br />
   Include a jab about language 🇬🇧 apologize for it being english only but the html structure is dead simple so translation tools should work. Add an aside to explain that websites used to have automated translation but that got out of fashion when google got monopoly over chrome.<br />
-  Make sure to include plenty of accessibility options for gamers.
-  `
+  Make sure to include plenty of accessibility options for gamers.`
 };
 LINKS["options"] = [];
 
@@ -53,7 +50,7 @@ BUTTONS["tuto_emoji"] = {
   "color": "grey",
   "title": "What's up with the EMOJIs?",
   "content": `Some buttons have icons.<br />
-  WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟) `
+  WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟)`
 };
 LINKS["tuto_emoji"] = [];
 
@@ -90,7 +87,6 @@ BUTTONS["tuto_apology"] = {
 };
 LINKS["tuto_apology"] = ["options"];
 
-
 BUTTONS["beginning"] = {
   "emoji": "⭐",
   "color": "green",
@@ -103,7 +99,7 @@ BUTTONS["intro_grey"] = {
   "emoji": "",
   "color": "grey",
   "title": "Some buttons were grey.",
-  "content": ""
+  "content": ``
 };
 LINKS["intro_grey"] = [];
 
@@ -111,7 +107,7 @@ BUTTONS["intro_green"] = {
   "emoji": "",
   "color": "green",
   "title": "Some buttons were green.",
-  "content": ""
+  "content": ``
 };
 LINKS["intro_green"] = ["intro_draw", "intro_draw2"];
 
@@ -119,7 +115,7 @@ BUTTONS["intro_blue"] = {
   "emoji": "",
   "color": "blue",
   "title": "Some buttons were blue.",
-  "content": ""
+  "content": ``
 };
 LINKS["intro_blue"] = [];
 
@@ -127,7 +123,7 @@ BUTTONS["intro_purple"] = {
   "emoji": "",
   "color": "purple",
   "title": "Some buttons were purple.",
-  "content": ""
+  "content": ``
 };
 LINKS["intro_purple"] = [];
 
@@ -135,7 +131,7 @@ BUTTONS["intro_orange"] = {
   "emoji": "",
   "color": "orange",
   "title": "Some buttons were orange.",
-  "content": ""
+  "content": ``
 };
 LINKS["intro_orange"] = [];
 
@@ -143,7 +139,7 @@ BUTTONS["intro_draw"] = {
   "emoji": "",
   "color": "green",
   "title": "Some buttons drew more buttons.",
-  "content": ""
+  "content": ``
 };
 LINKS["intro_draw"] = ["intro_draw3"];
 
@@ -151,7 +147,7 @@ BUTTONS["intro_draw2"] = {
   "emoji": "",
   "color": "grey",
   "title": "Some buttons did not draw more buttons.",
-  "content": ""
+  "content": ``
 };
 LINKS["intro_draw2"] = ["intro_draw3"];
 
@@ -159,7 +155,7 @@ BUTTONS["intro_draw3"] = {
   "emoji": "",
   "color": "green",
   "title": "It was always a surprise to push buttons and wonder what would happen next.",
-  "content": ""
+  "content": ``
 };
 LINKS["intro_draw3"] = ["intro_draw4"];
 
@@ -187,7 +183,7 @@ BUTTONS["end_flag"] = {
   "emoji": "🏁",
   "color": "green",
   "title": "And so it came to be that the human stopped pushing buttons.",
-  "content": ""
+  "content": ``
 };
 LINKS["end_flag"] = [];
 
