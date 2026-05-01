@@ -9,6 +9,11 @@ body {
   color: black;
 }
 
+a {
+  font-weight: bold;
+  color: darkblue;
+}
+
 .interface {
   position: fixed;
   top: 0;
