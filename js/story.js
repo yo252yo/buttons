@@ -161,7 +161,7 @@ LINKS["intro_draw3"] = ["intro_draw4"];
 
 BUTTONS["intro_draw4"] = {
   "emoji": "",
-  "color": "grey",
+  "color": "green",
   "title": "And so the human kept pushing buttons.",
   "content": `The human pushed buttons by day,<br />
   The human pushed buttons by night.<br />
@@ -218,18 +218,15 @@ BUTTONS["title_aside"] = {
   "emoji": "",
   "color": "purple",
   "title": "The story of a white man?",
-  "content": `Alas, that is where we must start.<br />
-  Humans do love their stories to be character-centered.<br />
-  But fear not, you will see many characters if you press the right buttons.`
+  "content": `Alas, that is where we must start.<br />  Humans do love their stories to be character-centered.<br />  But fear not, you will see many characters if you press the right buttons.`
 };
-LINKS["title_aside"] = ["title_aside2"];
+LINKS["title_aside"] = ["title_aside2", "49209c0bf5486f14"];
 
 BUTTONS["title_aside2"] = {
   "emoji": "",
   "color": "grey",
   "title": "Though I guess a lot of them were white men.",
-  "content": `Sorry, its mostly their story.<br />
-  But it doesn't have to be about them.`
+  "content": `Sorry, its mostly their story.<br />  But it doesn't have to be about them.`
 };
 LINKS["title_aside2"] = [];
 
@@ -237,11 +234,9 @@ BUTTONS["d0c1f86e10f949da"] = {
   "emoji": "",
   "color": "green",
   "title": "Robinson Crusoe?",
-  "content": `Robinson Crusoe is an English adventure novel by Daniel Defoe, first published on 25 April 1719.
-Most people are familiar with its narrative of a sailor shipwrecked on a wild island.
-But few people even know the story of the story.`
+  "content": `Robinson Crusoe is an English adventure novel by Daniel Defoe, first published on 25 April 1719.<br />Most people are familiar with its narrative of a sailor shipwrecked on a wild island.<br />But few people even know the story of the story.`
 };
-LINKS["d0c1f86e10f949da"] = ["6a342d3d556dcaa3"];
+LINKS["d0c1f86e10f949da"] = ["6a342d3d556dcaa3", "f919133328a5e0d3", "d674c3e21ca88716", "e8a4775851bc5327"];
 
 BUTTONS["6a342d3d556dcaa3"] = {
   "emoji": "",
@@ -250,6 +245,102 @@ BUTTONS["6a342d3d556dcaa3"] = {
   "content": `I mean the story of how the book came to be, and the story of its author.`
 };
 LINKS["6a342d3d556dcaa3"] = [];
+
+BUTTONS["49209c0bf5486f14"] = {
+  "emoji": "",
+  "color": "orange",
+  "title": "I can't help but wonder if this psychological bias in stories reinforces a hyper-individualistic society.",
+  "content": ``
+};
+LINKS["49209c0bf5486f14"] = [];
+
+BUTTONS["d674c3e21ca88716"] = {
+  "emoji": "⭐",
+  "color": "grey",
+  "title": "The Life of Daniel Defoe",
+  "content": `In a very condensed format.`
+};
+LINKS["d674c3e21ca88716"] = ["d3b4516848b37f0d"];
+
+BUTTONS["e8a4775851bc5327"] = {
+  "emoji": "That's",
+  "color": "blue",
+  "title": "not the title of the book, though",
+  "content": `Its original title was:<br />\"The<br />LIFE<br />and<br />Strange Surprizing <br />ADVENTURES<br />of <br />Robinson Crusoe<br />of York, Mariner:<br /><br />Who lived Eight and Twenty Years, all alone in an un-inhabited Island on the Coast of America, near the Mouth of the Great River of Oroonoque;<br />Having been cast on Shore by Shipwreck, wherein all the Men perished but himself. <br /><br />WITH<br />An Account how he was at last as strangely deliver'd by Pyrates. <br />Written by Himself.\"<br /><br />You can see it for yourself on <a href=\"https://en.wikipedia.org/wiki/File:Robinson_Crusoe_1719_1st_edition.jpg\" target=\"_blank\">Wikimedia.<br /><br /><img src=\"https://upload.wikimedia.org/wikipedia/commons/1/1e/Robinson_Crusoe_1719_1st_edition.jpg\" /></a>`
+};
+LINKS["e8a4775851bc5327"] = ["e100bf5300059e3b", "bcc0cef568d3e4b0", "d59c4d2f4f4674df", "6fc3fd90e4ff2bf8", "72d5074d19b63713"];
+
+BUTTONS["d59c4d2f4f4674df"] = {
+  "emoji": "",
+  "color": "purple",
+  "title": "Strange surprizing adventures...",
+  "content": `Like the one you're living right now!`
+};
+LINKS["d59c4d2f4f4674df"] = [];
+
+BUTTONS["72d5074d19b63713"] = {
+  "emoji": "",
+  "color": "grey",
+  "title": "You forgot the part at the bottom...",
+  "content": ``
+};
+LINKS["72d5074d19b63713"] = ["ed26200129d229b8", "99677d0088771e0d"];
+
+BUTTONS["6fc3fd90e4ff2bf8"] = {
+  "emoji": "🏴‍☠️",
+  "color": "purple",
+  "title": "PYRATES?",
+  "content": ``
+};
+LINKS["6fc3fd90e4ff2bf8"] = [];
+
+BUTTONS["ed26200129d229b8"] = {
+  "emoji": "👥",
+  "color": "grey",
+  "title": "Printed for W. Taylor",
+  "content": ``
+};
+LINKS["ed26200129d229b8"] = [];
+
+BUTTONS["99677d0088771e0d"] = {
+  "emoji": "📍",
+  "color": "grey",
+  "title": "at the Shop in Pater-Noster-Row",
+  "content": ``
+};
+LINKS["99677d0088771e0d"] = [];
+
+BUTTONS["f919133328a5e0d3"] = {
+  "emoji": "",
+  "color": "grey",
+  "title": "It was a groundbreaking book",
+  "content": ``
+};
+LINKS["f919133328a5e0d3"] = [];
+
+BUTTONS["e100bf5300059e3b"] = {
+  "emoji": "That's",
+  "color": "grey",
+  "title": "a very long title...",
+  "content": ``
+};
+LINKS["e100bf5300059e3b"] = [];
+
+BUTTONS["bcc0cef568d3e4b0"] = {
+  "emoji": "Wait...",
+  "color": "grey",
+  "title": "written by himself?",
+  "content": ``
+};
+LINKS["bcc0cef568d3e4b0"] = [];
+
+BUTTONS["d3b4516848b37f0d"] = {
+  "emoji": "👥",
+  "color": "grey",
+  "title": "Daniel Defoe was born in 1660",
+  "content": ``
+};
+LINKS["d3b4516848b37f0d"] = [];
 
 
 export { BUTTONS, LINKS };
