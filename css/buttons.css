@@ -103,3 +103,8 @@
   transform: skewX(-20deg);
   animation: sparkle 5s infinite;
 }
+
+.button img {
+  max-width: 400px;
+  max-height: 400px;
+}
