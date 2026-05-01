@@ -1,10 +1,10 @@
-import { capitalized_substrings } from './objectives.js';
-import { BUTTONS, LINKS } from './story.js';
+import { getButton, getChildren, loadButtonsFromCanvas } from './canvas_reader.js';
+import { capitalized_substrings as CAPITALIZED_SUBSTRINGS } from './objectives.js';
 
 function capitalize_substrings(text) {
-  if (!text || !capitalized_substrings) return text;
+  if (!text || !CAPITALIZED_SUBSTRINGS) return text;
   let result = text;
-  for (const substr of capitalized_substrings) {
+  for (const substr of CAPITALIZED_SUBSTRINGS) {
     const regex = new RegExp(substr, 'gi');
     result = result.replace(regex, substr);
   }
@@ -14,7 +14,7 @@ function capitalize_substrings(text) {
 function button_html(btnData, expanded) {
   let html;
   if (expanded) {
-    html = `<b>${btnData.emoji || ''} ${btnData.title}</b><br/>${btnData.content || ''}`;
+    html = `<b>${btnData.emoji || ''} ${btnData.title}</b>${btnData.content || ''}`;
   } else {
     html = `<b>${btnData.emoji || ''} ${btnData.title}</b>`;
   }
@@ -22,7 +22,7 @@ function button_html(btnData, expanded) {
 }
 
 function create_button(buttonName, parent) {
-  const btnData = BUTTONS[buttonName];
+  const btnData = getButton(buttonName);
   if (!btnData) return;
 
   if (document.querySelector(`[data-id="${buttonName}"]`)) return;
@@ -56,7 +56,7 @@ function button_click_listener() {
   this.classList.toggle('pressed');
 
   const btnId = this.dataset.id;
-  const btnData = BUTTONS[btnId];
+  const btnData = getButton(btnId);
   if (!btnData) return;
 
   if (this.classList.contains('unclicked_button')) {
@@ -76,7 +76,7 @@ function expand_button(button, btnData) {
     buttonsZone.appendChild(button);
   }
 
-  const children = LINKS[button.dataset.id] || [];
+  const children = getChildren(button.dataset.id);
   children.forEach(childId => {
     create_button(childId, button);
   });
@@ -88,11 +88,13 @@ function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
 
-function initial_load() {
+async function initial_load() {
   document.querySelectorAll('.button').forEach(btn => {
     btn.addEventListener('click', button_click_listener);
     btn.addEventListener('touchstart', button_click_listener);
   });
+
+  await loadButtonsFromCanvas();
 
   const startId = get_query_param('start') || 'start';
   create_button(startId);

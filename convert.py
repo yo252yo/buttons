@@ -138,7 +138,7 @@ def js_to_canvas(buttons, links, old_canvas=None):
         x, y = positions[key]
         emoji = btn.get("emoji", "")
         title = btn.get("title", "")
-        content = btn.get("content", "").replace("\n", "<br>")
+        content = btn.get("content", "")
         color = JS_TO_CANVAS_COLORS.get(btn.get("color", "grey"), "0")
         text = f"{emoji} {title}\n---\n{content}".strip()
 
@@ -193,7 +193,8 @@ def _parse_text_node(text):
     else:
         emoji, title = "", title_line
 
-    content = content.replace("<br>", "<br />").replace("<br/>", "<br />")
+    content = content.replace("<br>", "<br />").replace("<br/>", "<br />").replace("\n", "<br />\n")
+    content = content.replace("\\\\", "\\").replace('\\"', '"')
     return emoji, title, content
 
 
@@ -243,7 +244,7 @@ def write_js(buttons, links):
         lines.append(f'  "color": "{btn.get("color", "grey")}",\n')
         lines.append(f'  "title": "{btn.get("title", "")}",\n')
         content = btn.get("content", "").replace("\\", "\\\\").replace('"', '\\"')
-        content = content.replace("<br />", "<br />\n").replace("\n\n", "\n")
+        content = content.replace("\n", "<br />\n")
         lines.append(f'  "content": `{content}`\n')
         lines.append("};\n")
         links_str = ", ".join(f'"{l}"' for l in links.get(key, []))

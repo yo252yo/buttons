@@ -30,7 +30,6 @@
 		{"id":"6a342d3d556dcaa3","type":"text","text":"What do you mean, the story of the story?\n---\nI mean the story of how the book came to be, and the story of its author.","x":950,"y":3200,"width":300,"height":200,"color":"0"},
 		{"id":"49209c0bf5486f14","type":"text","text":"I can't help but wonder if this psychological bias in stories reinforces a hyper-individualistic society.\n---","x":950,"y":3200,"width":300,"height":200,"color":"2"},
 		{"id":"d674c3e21ca88716","type":"text","text":"⭐ The Life of Daniel Defoe\n---\nIn a very condensed format.","x":1650,"y":3200,"width":300,"height":200,"color":"0"},
-		{"id":"e8a4775851bc5327","type":"text","text":"That's not the title of the book, though\n---\nIts original title was:\n\\\"The\nLIFE\nand\nStrange Surprizing \nADVENTURES\nof \nRobinson Crusoe\nof York, Mariner:\nWho lived Eight and Twenty Years, all alone in an un-inhabited Island on the Coast of America, near the Mouth of the Great River of Oroonoque;\nHaving been cast on Shore by Shipwreck, wherein all the Men perished but himself. \nWITH\nAn Account how he was at last as strangely deliver'd by Pyrates. \nWritten by Himself.\\\"\nYou can see it for yourself on <a href=\\\"https://en.wikipedia.org/wiki/File:Robinson_Crusoe_1719_1st_edition.jpg\\\" target=\\\"_blank\\\">Wikimedia.\n<img src=\\\"https://upload.wikimedia.org/wikipedia/commons/1/1e/Robinson_Crusoe_1719_1st_edition.jpg\\\" /></a>","x":2000,"y":3200,"width":300,"height":200,"color":"5"},
 		{"id":"d59c4d2f4f4674df","type":"text","text":"Strange surprizing adventures...\n---\nLike the one you're living right now!","x":1330,"y":3500,"width":300,"height":200,"color":"6"},
 		{"id":"72d5074d19b63713","type":"text","text":"You forgot the part at the bottom...\n---","x":1950,"y":3580,"width":300,"height":200,"color":"0"},
 		{"id":"6fc3fd90e4ff2bf8","type":"text","text":"🏴‍☠️ PYRATES?\n---","x":1965,"y":3500,"width":300,"height":200,"color":"6"},
@@ -39,7 +38,8 @@
 		{"id":"f919133328a5e0d3","type":"text","text":"It was a groundbreaking book\n---","x":900,"y":4360,"width":300,"height":200,"color":"1"},
 		{"id":"e100bf5300059e3b","type":"text","text":"That's a very long title...\n---","x":2400,"y":4720,"width":300,"height":200,"color":"1"},
 		{"id":"bcc0cef568d3e4b0","type":"text","text":"Wait... written by himself?\n---","x":2750,"y":4720,"width":300,"height":200,"color":"1"},
-		{"id":"d3b4516848b37f0d","type":"text","text":"👥 Daniel Defoe was born in 1660\n---","x":1480,"y":4600,"width":300,"height":200,"color":"1"}
+		{"id":"d3b4516848b37f0d","type":"text","text":"👥 Daniel Defoe was born in 1660\n---","x":1480,"y":4600,"width":300,"height":200,"color":"1"},
+		{"id":"e8a4775851bc5327","type":"text","text":"That's not the title of the book, though\n---\nIts original title was:\n\"The\nLIFE\nand\nStrange Surprizing \nADVENTURES\nof \nRobinson Crusoe\nof York, Mariner:\n\nWho lived Eight and Twenty Years, all alone in an un-inhabited Island on the Coast of America, near the Mouth of the Great River of Oroonoque;\nHaving been cast on Shore by Shipwreck, wherein all the Men perished but himself. \n\nWITH\nAn Account how he was at last as strangely deliver'd by Pyrates. \nWritten by Himself.\"\n\nYou can see it for yourself on <a href=\"https://en.wikipedia.org/wiki/File:Robinson_Crusoe_1719_1st_edition.jpg\" target=\"_blank\">Wikimedia.\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/1/1e/Robinson_Crusoe_1719_1st_edition.jpg\" /></a>","x":2040,"y":3140,"width":440,"height":460,"color":"5"}
 	],
 	"edges":[
 		{"id":"a1e1d7a3-bbd4-405e-b5b6-1beda28198a4","fromNode":"start","fromSide":"bottom","toNode":"tutorial","toSide":"top"},
@@ -75,14 +75,14 @@
 		{"id":"d64567f7-0f5c-4ab6-9baf-e8ff69d09b3c","fromNode":"d0c1f86e10f949da","fromSide":"bottom","toNode":"f919133328a5e0d3","toSide":"top"},
 		{"id":"8bd4bb08-3d4a-41f3-8242-cdb334466b18","fromNode":"d0c1f86e10f949da","fromSide":"bottom","toNode":"d674c3e21ca88716","toSide":"top"},
 		{"id":"9e0d1bf4-2845-4e75-83d0-6c146e8ee904","fromNode":"d0c1f86e10f949da","fromSide":"bottom","toNode":"e8a4775851bc5327","toSide":"top"},
+		{"id":"52cd36ea8d4ef506","fromNode":"d674c3e21ca88716","fromSide":"bottom","toNode":"d3b4516848b37f0d","toSide":"top"},
 		{"id":"f06bffbc-d1fe-46e1-a6de-df010c028da7","fromNode":"e8a4775851bc5327","fromSide":"bottom","toNode":"e100bf5300059e3b","toSide":"top"},
 		{"id":"aa5f385a-3d84-4748-8616-bec943d8aae7","fromNode":"e8a4775851bc5327","fromSide":"bottom","toNode":"bcc0cef568d3e4b0","toSide":"top"},
 		{"id":"7045d400115a7f8e","fromNode":"e8a4775851bc5327","fromSide":"bottom","toNode":"d59c4d2f4f4674df","toSide":"top"},
 		{"id":"12c103b1ee1807ae","fromNode":"e8a4775851bc5327","fromSide":"bottom","toNode":"6fc3fd90e4ff2bf8","toSide":"top"},
 		{"id":"62b7eb7bf325f983","fromNode":"e8a4775851bc5327","fromSide":"bottom","toNode":"72d5074d19b63713","toSide":"top"},
 		{"id":"8dd48722b8762bed","fromNode":"72d5074d19b63713","fromSide":"bottom","toNode":"ed26200129d229b8","toSide":"top"},
-		{"id":"679b79ddacbb271e","fromNode":"72d5074d19b63713","fromSide":"bottom","toNode":"99677d0088771e0d","toSide":"top"},
-		{"id":"52cd36ea8d4ef506","fromNode":"d674c3e21ca88716","fromSide":"bottom","toNode":"d3b4516848b37f0d","toSide":"top"}
+		{"id":"679b79ddacbb271e","fromNode":"72d5074d19b63713","fromSide":"bottom","toNode":"99677d0088771e0d","toSide":"top"}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
