@@ -55,7 +55,7 @@ BUTTONS["warning"] = {
   "emoji": "⚠️",
   "title": "Content warning",
   "content": `This games contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.<br />
-  It discusses sensitive topics such as HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...<br />
+  It discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...<br />
   No topic is ever approached without a suitable warning in the unpressed button text.<br />
   Reader discretion is advised when pushing buttons.
   `
