@@ -31,14 +31,14 @@ BUTTONS["options"] = {
 BUTTONS["tuto_emoji"] = {
   "emoji": "❓",
   "title": "What's up with the EMOJIs?",
-  "content": `Some buttons have ICONS.<br />
+  "content": `Some BUTTONs have ICONS.<br />
   WIP: You can COLLECT them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟) `
 };
 
 BUTTONS["tuto_colors"] = {
   "emoji": "❓",
   "title": "What's up with the COLORs?",
-  "content": `WIP: buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨`
+  "content": `WIP: BUTTONs have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨`
 };
 
 BUTTONS["tuto_star"] = {
@@ -50,15 +50,56 @@ BUTTONS["tuto_star"] = {
 BUTTONS["tuto_archive"] = {
   "emoji": "❓",
   "title": "Help, my screen is full of stuff!",
-  "content": `WIP: The THREAD 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe`
+  "content": `WIP: The THREAD 🧵 BUTTON helps navigate between open threads. The 🗑️ BUTTON will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe`
 };
 
 BUTTONS["beginning"] = {
   "emoji": "⭐",
   "color": "green",
-  "title": "The Human Who Pressed Button",
-  "content": `There once was a Human, who pressed BUTTONS.`,
-  "children": []
+  "title": "The Human Who Pressed BUTTONs",
+  "content": `There once was a Human, who pressed BUTTONs.`,
+  "children": ["intro_grey", "intro_green", "intro_blue", "intro_purple", "intro_orange"]
+};
+
+BUTTONS["intro_grey"] = {
+  "color": "grey",
+  "title": "Some BUTTONs were GREY.",
+};
+
+BUTTONS["intro_green"] = {
+  "color": "green",
+  "title": "Some BUTTONs were GREEN.",
+  "children": ["intro_draw", "intro_draw2"]
+};
+
+BUTTONS["intro_blue"] = {
+  "color": "blue",
+  "title": "Some BUTTONs were BLUE.",
+};
+
+BUTTONS["intro_purple"] = {
+  "color": "purple",
+  "title": "Some BUTTONs were PURPLE.",
+};
+
+BUTTONS["intro_orange"] = {
+  "color": "orange",
+  "title": "Some BUTTONs were ORANGE.",
+};
+
+BUTTONS["intro_draw"] = {
+  "color": "green",
+  "title": "Some BUTTONs DREW more BUTTONs.",
+  "children": ["intro_draw3"]
+};
+
+BUTTONS["intro_draw2"] = {
+  "title": "Some BUTTONs did not DRAW more buttons.",
+  "children": ["intro_draw3"]
+};
+
+BUTTONS["intro_draw3"] = {
+  "title": "It was always a surprise to push BUTTONs and wonder what would happen next.",
 };
 
 window.BUTTONS = BUTTONS;

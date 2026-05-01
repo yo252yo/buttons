@@ -1,6 +1,6 @@
 function button_html(btnData, expanded) {
   if (expanded) {
-    return `<b>${btnData.emoji || ''} - ${btnData.title}</b><br/>${btnData.content}`;
+    return `<b>${btnData.emoji || ''} - ${btnData.title}</b><br/>${btnData.content || ''}`;
   }
   return `<b>${btnData.emoji || ''} - ${btnData.title}</b>`;
 }
