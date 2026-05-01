@@ -1,8 +1,21 @@
-function button_html(btnData, expanded) {
-  if (expanded) {
-    return `<b>${btnData.emoji || ''} ${btnData.title}</b><br/>${btnData.content || ''}`;
+function capitalize_substrings(text) {
+  if (!text || !capitalized_substrings) return text;
+  let result = text;
+  for (const substr of capitalized_substrings) {
+    const regex = new RegExp(substr, 'gi');
+    result = result.replace(regex, substr);
   }
-  return `<b>${btnData.emoji || ''} ${btnData.title}</b>`;
+  return result;
+}
+
+function button_html(btnData, expanded) {
+  let html;
+  if (expanded) {
+    html = `<b>${btnData.emoji || ''} ${btnData.title}</b><br/>${btnData.content || ''}`;
+  } else {
+    html = `<b>${btnData.emoji || ''} ${btnData.title}</b>`;
+  }
+  return capitalize_substrings(html);
 }
 
 function create_button(buttonName, parent) {
