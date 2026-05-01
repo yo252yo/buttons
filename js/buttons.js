@@ -84,13 +84,18 @@ function expand_button(button, btnData) {
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
 
+function get_query_param(name) {
+  return new URLSearchParams(window.location.search).get(name);
+}
+
 function initial_load() {
   document.querySelectorAll('.button').forEach(btn => {
     btn.addEventListener('click', button_click_listener);
     btn.addEventListener('touchstart', button_click_listener);
   });
 
-  create_button("start");
+  const startId = get_query_param('start') || 'start';
+  create_button(startId);
 }
 
 document.addEventListener('DOMContentLoaded', initial_load);
