@@ -26,6 +26,7 @@ LINKS["tutorial"] = ["tuto_emoji", "tuto_colors", "tuto_archive", "tuto_star", "
 
 BUTTONS["warning"] = {
   "emoji": "⚠️",
+  "color": "grey",
   "title": "Content warning",
   "content": `This games contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.<br />
   It discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...<br />
@@ -38,6 +39,7 @@ LINKS["warning"] = [];
 
 BUTTONS["options"] = {
   "emoji": "⚙️",
+  "color": "grey",
   "title": "Options",
   "content": `WIP: Some buttons are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle.<br />
   Include a jab about language 🇬🇧 apologize for it being english only but the html structure is dead simple so translation tools should work. Add an aside to explain that websites used to have automated translation but that got out of fashion when google got monopoly over chrome.<br />
@@ -48,6 +50,7 @@ LINKS["options"] = [];
 
 BUTTONS["tuto_emoji"] = {
   "emoji": "❓",
+  "color": "grey",
   "title": "What's up with the EMOJIs?",
   "content": `Some buttons have icons.<br />
   WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟) `
@@ -56,6 +59,7 @@ LINKS["tuto_emoji"] = [];
 
 BUTTONS["tuto_colors"] = {
   "emoji": "❓",
+  "color": "grey",
   "title": "What's up with the colors?",
   "content": `WIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨`
 };
@@ -63,6 +67,7 @@ LINKS["tuto_colors"] = [];
 
 BUTTONS["tuto_star"] = {
   "emoji": "❓",
+  "color": "grey",
   "title": "What does the star ⭐ mean ?",
   "content": `Star ⭐ is the icon for starter packs. They mark the beginning of a story.`
 };
@@ -70,6 +75,7 @@ LINKS["tuto_star"] = [];
 
 BUTTONS["tuto_archive"] = {
   "emoji": "❓",
+  "color": "grey",
   "title": "Help, my screen is full of stuff!",
   "content": `WIP: The thread 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe`
 };
@@ -77,6 +83,7 @@ LINKS["tuto_archive"] = [];
 
 BUTTONS["tuto_apology"] = {
   "emoji": "❓",
+  "color": "grey",
   "title": "This tutorial is too long!",
   "content": `I apologize, this is brand new game engine, a lot of things need to be explained.<br />
   Feel free to skip everything you want, or look at the ⚙️ options to customize your experience.`
@@ -93,53 +100,72 @@ BUTTONS["beginning"] = {
 LINKS["beginning"] = ["intro_grey", "intro_green", "intro_blue", "intro_purple", "intro_orange"];
 
 BUTTONS["intro_grey"] = {
+  "emoji": "",
   "color": "grey",
-  "title": "Some buttons were grey."
+  "title": "Some buttons were grey.",
+  "content": ""
 };
 LINKS["intro_grey"] = [];
 
 BUTTONS["intro_green"] = {
+  "emoji": "",
   "color": "green",
-  "title": "Some buttons were green."
+  "title": "Some buttons were green.",
+  "content": ""
 };
 LINKS["intro_green"] = ["intro_draw", "intro_draw2"];
 
 BUTTONS["intro_blue"] = {
+  "emoji": "",
   "color": "blue",
-  "title": "Some buttons were blue."
+  "title": "Some buttons were blue.",
+  "content": ""
 };
 LINKS["intro_blue"] = [];
 
 BUTTONS["intro_purple"] = {
+  "emoji": "",
   "color": "purple",
-  "title": "Some buttons were purple."
+  "title": "Some buttons were purple.",
+  "content": ""
 };
 LINKS["intro_purple"] = [];
 
 BUTTONS["intro_orange"] = {
+  "emoji": "",
   "color": "orange",
-  "title": "Some buttons were orange."
+  "title": "Some buttons were orange.",
+  "content": ""
 };
 LINKS["intro_orange"] = [];
 
 BUTTONS["intro_draw"] = {
+  "emoji": "",
   "color": "green",
-  "title": "Some buttons drew more buttons."
+  "title": "Some buttons drew more buttons.",
+  "content": ""
 };
 LINKS["intro_draw"] = ["intro_draw3"];
 
 BUTTONS["intro_draw2"] = {
-  "title": "Some buttons did not draw more buttons."
+  "emoji": "",
+  "color": "grey",
+  "title": "Some buttons did not draw more buttons.",
+  "content": ""
 };
 LINKS["intro_draw2"] = ["intro_draw3"];
 
 BUTTONS["intro_draw3"] = {
+  "emoji": "",
+  "color": "green",
   "title": "It was always a surprise to push buttons and wonder what would happen next.",
-  "color": "green"
+  "content": ""
 };
 LINKS["intro_draw3"] = ["intro_draw4"];
 
 BUTTONS["intro_draw4"] = {
+  "emoji": "",
+  "color": "grey",
   "title": "And so the human kept pushing buttons.",
   "content": `The human pushed buttons by day,<br />
   The human pushed buttons by night.<br />
@@ -150,8 +176,9 @@ BUTTONS["intro_draw4"] = {
 LINKS["intro_draw4"] = ["found_flag"];
 
 BUTTONS["found_flag"] = {
-  "title": "One day, while pushing buttons, the human came accross an ending flag 🏁.",
+  "emoji": "",
   "color": "green",
+  "title": "One day, while pushing buttons, the human came accross an ending flag 🏁.",
   "content": `This puzzled the human quite a bit. An ending flag 🏁 ? So soon?`
 };
 LINKS["found_flag"] = ["more", "end_flag"];
@@ -159,17 +186,21 @@ LINKS["found_flag"] = ["more", "end_flag"];
 BUTTONS["end_flag"] = {
   "emoji": "🏁",
   "color": "green",
-  "title": "And so it came to be that the human stopped pushing buttons."
+  "title": "And so it came to be that the human stopped pushing buttons.",
+  "content": ""
 };
 LINKS["end_flag"] = [];
 
 BUTTONS["more"] = {
+  "emoji": "",
+  "color": "grey",
   "title": "Could there be MORE to this story?",
   "content": `Could there be hidden depths burried far below what meets the eye?`
 };
 LINKS["more"] = ["more2"];
 
 BUTTONS["more2"] = {
+  "emoji": "",
   "color": "orange",
   "title": "Could there be an orange button drowned in a sea of grey?",
   "content": `That is when the human found a story.<br />
@@ -188,6 +219,7 @@ BUTTONS["title"] = {
 LINKS["title"] = ["title_aside"];
 
 BUTTONS["title_aside"] = {
+  "emoji": "",
   "color": "purple",
   "title": "The story of a white man?",
   "content": `Alas, that is where we must start.<br />
@@ -197,6 +229,8 @@ BUTTONS["title_aside"] = {
 LINKS["title_aside"] = ["title_aside2"];
 
 BUTTONS["title_aside2"] = {
+  "emoji": "",
+  "color": "grey",
   "title": "Though I guess a lot of them were white men.",
   "content": `Sorry, its mostly their story.<br />
   But it doesn't have to be about them.`
