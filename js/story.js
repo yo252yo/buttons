@@ -15,7 +15,7 @@ const capitalized_substrings = [
 
   "DRAW", "DREW ", "DROW",
 
-  "MINE",
+  "MINE", "YOUR",
   "THEIR",
 
   "LEFT",
