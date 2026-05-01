@@ -1,8 +1,8 @@
 function button_html(btnData, expanded) {
   if (expanded) {
-    return `<b>${btnData.emoji || ''} - ${btnData.title}</b><br/>${btnData.content || ''}`;
+    return `<b>${btnData.emoji || ''} ${btnData.title}</b><br/>${btnData.content || ''}`;
   }
-  return `<b>${btnData.emoji || ''} - ${btnData.title}</b>`;
+  return `<b>${btnData.emoji || ''} ${btnData.title}</b>`;
 }
 
 function create_button(buttonName, parent) {
@@ -34,7 +34,6 @@ function create_button(buttonName, parent) {
     buttonsZone.appendChild(btn);
   }
 
-  window.scrollTo({ behavior: 'smooth', top: document.body.scrollHeight });
 }
 
 function button_click_listener() {
@@ -47,13 +46,24 @@ function button_click_listener() {
   if (this.classList.contains('unclicked_button')) {
     this.innerHTML = button_html(btnData, true);
     this.classList.remove('unclicked_button');
+
+    // Push the button at the bottom
+    const buttonsZone = document.getElementById('buttons_zone');
+    if (buttonsZone) {
+      if (this.parent) {
+        this.parent.remove(this);
+      }
+      buttonsZone.appendChild(this);
+    }
+
+    if (btnData && btnData.children) {
+      btnData.children.forEach(childId => {
+        create_button(childId, this);
+      });
+    }
   }
 
-  if (btnData && btnData.children) {
-    btnData.children.reverse().forEach(childId => {
-      create_button(childId, this);
-    });
-  }
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 }
 
 function initial_load() {

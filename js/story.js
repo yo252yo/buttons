@@ -34,7 +34,9 @@ BUTTONS["warning"] = {
 BUTTONS["options"] = {
   "emoji": "⚙️",
   "title": "Options",
-  "content": `WIP: Some BUTTONS are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle
+  "content": `WIP: Some BUTTONS are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle.<br />
+  Include a jab about language 🇬🇧 apologize for it being english only but the html structure is dead simple so translation tools should work. Add an aside to explain that websites used to have automated translation but that got out of fashion when google got monopoly over chrome.<br />
+  Make sure to include plenty of accessibility options for gamers.
   `
 };
 
@@ -66,8 +68,8 @@ BUTTONS["tuto_archive"] = {
 BUTTONS["beginning"] = {
   "emoji": "⭐",
   "color": "green",
-  "title": "The Human Who Pushed BUTTONs",
-  "content": `There once was a Human, who pushed BUTTONs.`,
+  "title": "The HUMAN Who Pushed BUTTONs",
+  "content": `There once was a HUMAN, who pushed BUTTONs.`,
   "children": ["intro_grey", "intro_green", "intro_blue", "intro_purple", "intro_orange"]
 };
 
@@ -115,23 +117,57 @@ BUTTONS["intro_draw3"] = {
 };
 
 BUTTONS["found_flag"] = {
-  "title": "One day, while pushing BUTTONs, the human came accross an ENDING flag 🏁.",
+  "title": "One day, while pushing BUTTONs, the HUMAN came accross an ENDING flag 🏁.",
   "color": "green",
-  "content": `This puzzled the Human quite a bit. An ENDING flag 🏁 ? So soon?`,
-  "children": ["end_flag", "more"]
+  "content": `This puzzled the HUMAN quite a bit. An ENDING flag 🏁 ? So soon?`,
+  "children": ["more", "end_flag"]
 };
 
 BUTTONS["end_flag"] = {
   "emoji": "🏁",
   "color": "green",
-  "title": "And so it came to be that the human stopped pushing BUTTONs.",
+  "title": "And so it came to be that the HUMAN stopped pushing BUTTONs.",
 };
 
 BUTTONS["more"] = {
   "title": "Could there be MORE to this story?",
+  "content": `Could there be hidden depths burried far below what meets the eye?`,
+  "children": ["more2"]
 };
 
-// human pressed button day and night to make the economy spin
+BUTTONS["more2"] = {
+  "color": "orange",
+  "title": "Could there be an ORANGE button DROWned in a sea of GREY?",
+  "content": `That is when the HUMAN found a STORY.<br />
+  It laid there, shining GREEN, in the middle of all the BUTTONs.<br />
+  It was STORY rarely told, almost forgotten.<br />
+  And its title was...`,
+  "children": ["title"]
+};
+
+BUTTONS["title"] = {
+  "emoji": "⭐",
+  "color": "green",
+  "title": "The STORY of Robinson Crusoe",
+  "content": `Stay tuned for the rest, it WILL surprise you.`,
+  "children": ["title_aside"]
+};
+
+BUTTONS["title_aside"] = {
+  "color": "purple",
+  "title": "The story of a WHITE MAN?",
+  "content": `Alas, that is where we must start.<br />
+  Humans do love their STORIES to be character-centered.<br />
+  But fear not, you will see many characters if you press the right BUTTONS.`,
+  "children": ["title_aside2"]
+};
+
+BUTTONS["title_aside2"] = {
+  "title": "Though I guess a lot of them were WHITE MEN.",
+  "content": `Sorry, its mostly THEIR STORY.`,
+};
+
+// HUMAN pressed button day and night to make the economy spin
 
 
 window.BUTTONS = BUTTONS;
