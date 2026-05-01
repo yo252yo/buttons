@@ -212,7 +212,7 @@ BUTTONS["title"] = {
   "title": "The true story of the story of Robinson Crusoe",
   "content": `WIP Stay tuned for the rest, it will surprise you.`
 };
-LINKS["title"] = ["title_aside"];
+LINKS["title"] = ["title_aside", "d0c1f86e10f949da"];
 
 BUTTONS["title_aside"] = {
   "emoji": "",
@@ -232,6 +232,24 @@ BUTTONS["title_aside2"] = {
   But it doesn't have to be about them.`
 };
 LINKS["title_aside2"] = [];
+
+BUTTONS["d0c1f86e10f949da"] = {
+  "emoji": "",
+  "color": "green",
+  "title": "Robinson Crusoe?",
+  "content": `Robinson Crusoe is an English adventure novel by Daniel Defoe, first published on 25 April 1719.
+Most people are familiar with its narrative of a sailor shipwrecked on a wild island.
+But few people even know the story of the story.`
+};
+LINKS["d0c1f86e10f949da"] = ["6a342d3d556dcaa3"];
+
+BUTTONS["6a342d3d556dcaa3"] = {
+  "emoji": "",
+  "color": "grey",
+  "title": "What do you mean, the story of the story?",
+  "content": `I mean the story of how the book came to be, and the story of its author.`
+};
+LINKS["6a342d3d556dcaa3"] = [];
 
 
 export { BUTTONS, LINKS };
