@@ -57,6 +57,7 @@ BUTTONS["warning"] = {
   "content": `This games contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.<br />
   It discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...<br />
   No topic is ever approached without a suitable warning in the unpressed button text.<br />
+  Never forget who is pushing the buttons.<br />
   Reader discretion is advised when pushing buttons.
   `
 };
@@ -197,7 +198,7 @@ BUTTONS["more2"] = {
 BUTTONS["title"] = {
   "emoji": "⭐",
   "color": "green",
-  "title": "The Story of Robinson Crusoe",
+  "title": "The true story of the story of Robinson Crusoe",
   "content": `WIP Stay tuned for the rest, it will surprise you.`,
   "children": ["title_aside"]
 };

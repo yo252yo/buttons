@@ -57,23 +57,26 @@ function button_click_listener() {
   if (!btnData) return;
 
   if (this.classList.contains('unclicked_button')) {
-    this.innerHTML = button_html(btnData, true);
-    this.classList.remove('unclicked_button');
+    expand_button(this, btnData);
+  }
+}
 
-    // Push the button at the bottom
-    const buttonsZone = document.getElementById('buttons_zone');
-    if (buttonsZone) {
-      if (this.parent) {
-        this.parent.remove(this);
-      }
-      buttonsZone.appendChild(this);
-    }
+function expand_button(button, btnData) {
+  button.innerHTML = button_html(btnData, true);
+  button.classList.remove('unclicked_button');
 
-    if (btnData && btnData.children) {
-      btnData.children.forEach(childId => {
-        create_button(childId, this);
-      });
+  const buttonsZone = document.getElementById('buttons_zone');
+  if (buttonsZone) {
+    if (button.parent) {
+      button.parent.remove(button);
     }
+    buttonsZone.appendChild(button);
+  }
+
+  if (btnData && btnData.children) {
+    btnData.children.forEach(childId => {
+      create_button(childId, button);
+    });
   }
 
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
