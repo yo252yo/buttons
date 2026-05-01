@@ -115,7 +115,7 @@ function button_click_listener() {
   }
 }
 
-function bind_buttons_to_click() {
+function initial_load() {
   document.querySelectorAll('.button').forEach(btn => {
     btn.addEventListener('click', button_click_listener);
     btn.addEventListener('touchstart', button_click_listener);
@@ -124,4 +124,4 @@ function bind_buttons_to_click() {
   create_button("start");
 }
 
-document.addEventListener('DOMContentLoaded', bind_buttons_to_click);
+document.addEventListener('DOMContentLoaded', initial_load);
