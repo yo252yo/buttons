@@ -878,7 +878,7 @@
 		{
 			"id":"a39a9c20ae56ea71",
 			"type":"text",
-			"text":"molyneux and co",
+			"text":"molyneux and  backstory",
 			"styleAttributes":{},
 			"x":9400,
 			"y":9810,
@@ -889,7 +889,7 @@
 		{
 			"id":"cd0283e8195b2140",
 			"type":"text",
-			"text":"⏸️ buttons",
+			"text":"# ⏸️ buttons",
 			"styleAttributes":{},
 			"x":-2320,
 			"y":10580,
@@ -1083,28 +1083,6 @@
 			"color":"1"
 		},
 		{
-			"id":"839a29e47b87d496",
-			"type":"text",
-			"text":"the internet and piracy",
-			"styleAttributes":{},
-			"x":-4080,
-			"y":9411,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"4abb0e0df2ecc5b6",
-			"type":"text",
-			"text":"centuries of exploitation",
-			"styleAttributes":{},
-			"x":-4100,
-			"y":9240,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"257e260d9008f8c8",
 			"type":"text",
 			"text":"🏁 a partisan debate on fuck capitalism jam?",
@@ -1276,14 +1254,47 @@
 		},
 		{"id":"6fc3fd90e4ff2bf8","type":"text","text":"🏴‍☠️ PYRATES?","x":2560,"y":9501,"width":490,"height":370,"color":"6"},
 		{
+			"id":"4abb0e0df2ecc5b6",
+			"type":"text",
+			"text":"centuries of exploitation",
+			"styleAttributes":{},
+			"x":-3950,
+			"y":9105,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"839a29e47b87d496",
+			"type":"text",
+			"text":"the internet and piracy",
+			"styleAttributes":{},
+			"x":-3760,
+			"y":9240,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
 			"id":"ef2813dd2fc1deef",
 			"type":"text",
 			"text":"minecraft dlc",
 			"styleAttributes":{},
-			"x":4115,
-			"y":11260,
+			"x":4480,
+			"y":11440,
 			"width":1950,
 			"height":1861,
+			"color":"1"
+		},
+		{
+			"id":"835d6f6466cb8676",
+			"type":"text",
+			"text":"The minecraft DLC gameplay DLC is probably an everlasting DLC (torch scanning)",
+			"styleAttributes":{},
+			"x":6380,
+			"y":13800,
+			"width":260,
+			"height":140,
 			"color":"1"
 		}
 	],
@@ -2761,6 +2772,15 @@
 			"fromNode":"839a29e47b87d496",
 			"fromSide":"bottom",
 			"toNode":"6fc3fd90e4ff2bf8",
+			"toSide":"top"
+		},
+		{
+			"id":"1a031d7a234f260a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ef2813dd2fc1deef",
+			"fromSide":"bottom",
+			"toNode":"835d6f6466cb8676",
 			"toSide":"top"
 		}
 	],
