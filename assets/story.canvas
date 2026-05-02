@@ -33,17 +33,6 @@
 		{"id":"tuto_star","type":"text","text":"❓ What does the star ⭐ mean ?\n---\nStar ⭐ is the icon for starter packs. They mark the beginning of a story.","x":2880,"y":480,"width":300,"height":160,"color":"0"},
 		{"id":"02b8cc538f2e9888","type":"text","text":"❓ This thing is new kind of game engine?\n---\nA new medium?\nA new way to see?\nA new way to LOOK.","x":3200,"y":480,"width":360,"height":180,"color":"2"},
 		{
-			"id":"7eadeadfedd6bad8",
-			"type":"text",
-			"text":"Future updates/DLCs\nfirst dlc is ",
-			"styleAttributes":{},
-			"x":4740,
-			"y":620,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"894d8e9bcd6407da",
 			"type":"text",
 			"text":"What the *** is a green?\n---\nYou know? The <a href=\"https://en.wikipedia.org/wiki/Village_green\" target=\"_blank\">greens</a>! From the inclosures!",
@@ -390,17 +379,6 @@
 		{"id":"6a342d3d556dcaa3","type":"text","text":"What do you mean, the story of the story?\n---\nI mean the story of how the book came to be, and the story of its author.","x":-320,"y":2960,"width":300,"height":200,"color":"0"},
 		{"id":"title","type":"text","text":"⭐ The true story of the story of Robinson Crusoe\n---","x":360,"y":2680,"width":300,"height":200,"color":"4"},
 		{
-			"id":"15e35a10feb5147c",
-			"type":"text",
-			"text":"true\ntheres a lot to unpack here\n\nclickbait etc rework with the notes",
-			"styleAttributes":{},
-			"x":800,
-			"y":4920,
-			"width":400,
-			"height":340,
-			"color":"1"
-		},
-		{
 			"id":"129c1ea38464bd60",
 			"type":"text",
 			"text":"I know...\n---\nIt's probably more than they deserve.\nIn fact this is precisely about getting more than one deserves.",
@@ -432,7 +410,7 @@
 			"y":6960,
 			"width":200,
 			"height":133,
-			"color":"1"
+			"color":"3"
 		},
 		{
 			"id":"bbebbd90befb593a",
@@ -464,7 +442,7 @@
 			"y":7580,
 			"width":200,
 			"height":133,
-			"color":"1"
+			"color":"3"
 		},
 		{
 			"id":"041706c4eac2b33b",
@@ -626,39 +604,6 @@
 			"color":"1"
 		},
 		{
-			"id":"839a29e47b87d496",
-			"type":"text",
-			"text":"the internet and piracy",
-			"styleAttributes":{},
-			"x":-3840,
-			"y":8991,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"257e260d9008f8c8",
-			"type":"text",
-			"text":"🏁 a partisan debate on fuck capitalism jam?",
-			"styleAttributes":{},
-			"x":-3820,
-			"y":9251,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"4abb0e0df2ecc5b6",
-			"type":"text",
-			"text":"centuries of exploitation",
-			"styleAttributes":{},
-			"x":-4040,
-			"y":8876,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"ff888cb0f93683c4",
 			"type":"text",
 			"text":"⭐ The story of copyright",
@@ -689,7 +634,7 @@
 			"y":7363,
 			"width":225,
 			"height":142,
-			"color":"1"
+			"color":"3"
 		},
 		{
 			"id":"53e72cec6b7fa897",
@@ -977,7 +922,7 @@
 		{
 			"id":"3e79f3c62aa144d0",
 			"type":"text",
-			"text":"🏁 false end",
+			"text":"🏁 false end digging",
 			"styleAttributes":{},
 			"x":7880,
 			"y":16680,
@@ -1005,17 +950,6 @@
 			"y":14400,
 			"width":1020,
 			"height":785,
-			"color":"1"
-		},
-		{
-			"id":"ef2813dd2fc1deef",
-			"type":"text",
-			"text":"minecraft dlc",
-			"styleAttributes":{},
-			"x":5045,
-			"y":9650,
-			"width":1950,
-			"height":1861,
 			"color":"1"
 		},
 		{
@@ -1106,18 +1040,6 @@
 			"height":60,
 			"color":"1"
 		},
-		{"id":"6fc3fd90e4ff2bf8","type":"text","text":"🏴‍☠️ PYRATES?","x":3120,"y":7462,"width":490,"height":370,"color":"6"},
-		{
-			"id":"88b541cdd8c55941",
-			"type":"text",
-			"text":"🚧 I'm sorry, believe it or not, the history of piracy is in another DLC.",
-			"styleAttributes":{},
-			"x":3265,
-			"y":7899,
-			"width":200,
-			"height":133,
-			"color":"1"
-		},
 		{
 			"id":"6d889bbbf0bab92e",
 			"type":"text",
@@ -1147,16 +1069,159 @@
 			"y":8821,
 			"width":260,
 			"height":115,
+			"color":"3"
+		},
+		{
+			"id":"b4b7ec5acc09de30",
+			"type":"text",
+			"text":"the statute of anne\n\nsuccession turmoil ??",
+			"styleAttributes":{},
+			"x":-4080,
+			"y":8840,
+			"width":260,
+			"height":140,
 			"color":"1"
 		},
-		{"id":"f919133328a5e0d3","type":"text","text":"It was a groundbreaking book\n---","x":-170,"y":5035,"width":800,"height":620,"color":"1"},
+		{
+			"id":"839a29e47b87d496",
+			"type":"text",
+			"text":"the internet and piracy",
+			"styleAttributes":{},
+			"x":-4080,
+			"y":9411,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"4abb0e0df2ecc5b6",
+			"type":"text",
+			"text":"centuries of exploitation",
+			"styleAttributes":{},
+			"x":-4100,
+			"y":9240,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"257e260d9008f8c8",
+			"type":"text",
+			"text":"🏁 a partisan debate on fuck capitalism jam?",
+			"styleAttributes":{},
+			"x":-2620,
+			"y":10161,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"1fe733323747f354",
+			"type":"text",
+			"text":"microsoft owns albyon",
+			"styleAttributes":{},
+			"x":-1280,
+			"y":9920,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"a5c013592cd9b7b8",
+			"type":"text",
+			"text":"🏁 end of the minecraft dlc",
+			"styleAttributes":{},
+			"x":8010,
+			"y":17060,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"42c71d35a9f25a25",
+			"type":"text",
+			"text":"a game you said? ",
+			"styleAttributes":{},
+			"x":4100,
+			"y":780,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"7eadeadfedd6bad8",
+			"type":"text",
+			"text":"Future updates/DLCs\nfirst dlc is ",
+			"styleAttributes":{},
+			"x":5210,
+			"y":630,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{"id":"e99e235b31d5b83e","type":"text","text":"different ways to browse/ gameplay features","x":4600,"y":1760,"width":500,"height":360,"color":"1"},
+		{
+			"id":"74f9179ad1f54688",
+			"type":"text",
+			"text":"yes but first you need to pick a class objectives",
+			"styleAttributes":{},
+			"x":4000,
+			"y":1780,
+			"width":460,
+			"height":340,
+			"color":"1"
+		},
+		{
+			"id":"ba3673cd6fa08f24",
+			"type":"text",
+			"text":"arcanes arg lore",
+			"styleAttributes":{},
+			"x":4120,
+			"y":2280,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"a43ae9a713759e4e",
+			"type":"text",
+			"text":"gamer accessibility features",
+			"styleAttributes":{},
+			"x":4720,
+			"y":2240,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"c565c4de39b22791",
+			"type":"text",
+			"text":"❓ How do I play the game?\n---\nExcellent question!\nWe cater to a wide variety of playstyles. \nTo play, you must first...",
+			"styleAttributes":{},
+			"x":3600,
+			"y":200,
+			"width":440,
+			"height":180,
+			"color":"4"
+		},
+		{
+			"id":"e1de172a4c0d12f4",
+			"type":"text",
+			"text":"exciting, where do you wanna start? \nmain campaign or minecraft dlc",
+			"styleAttributes":{},
+			"x":3920,
+			"y":2720,
+			"width":800,
+			"height":280,
+			"color":"1"
+		},
 		{
 			"id":"e1ef83e94426eeac",
 			"type":"text",
 			"text":"it is widely credited for inventing realism",
 			"styleAttributes":{},
-			"x":-30,
-			"y":5950,
+			"x":430,
+			"y":6188,
 			"width":260,
 			"height":150,
 			"color":"1"
@@ -1166,8 +1231,8 @@
 			"type":"text",
 			"text":"The history of PR is in another DLC",
 			"styleAttributes":{},
-			"x":500,
-			"y":6400,
+			"x":960,
+			"y":6638,
 			"width":260,
 			"height":105,
 			"color":"1"
@@ -1177,14 +1242,50 @@
 			"type":"text",
 			"text":"Authenticity",
 			"styleAttributes":{},
-			"x":400,
-			"y":6220,
+			"x":860,
+			"y":6458,
 			"width":260,
 			"height":60,
 			"color":"1"
 		},
-		{"id":"e100bf5300059e3b","type":"text","text":"That's a very long title...\n---","x":1240,"y":5240,"width":390,"height":305,"color":"1"},
-		{"id":"bcc0cef568d3e4b0","type":"text","text":"Wait... written by himself?\n---\n\nhistory of autobiographical fiction\nreview the notes","x":1680,"y":5345,"width":300,"height":355,"color":"1"}
+		{"id":"f919133328a5e0d3","type":"text","text":"It was a groundbreaking book\n---","x":290,"y":5273,"width":800,"height":620,"color":"1"},
+		{
+			"id":"15e35a10feb5147c",
+			"type":"text",
+			"text":"true\ntheres a lot to unpack here\n\nclickbait etc rework with the notes",
+			"styleAttributes":{},
+			"x":1260,
+			"y":5158,
+			"width":400,
+			"height":340,
+			"color":"1"
+		},
+		{"id":"e100bf5300059e3b","type":"text","text":"That's a very long title...\n---","x":1700,"y":5478,"width":390,"height":305,"color":"1"},
+		{"id":"bcc0cef568d3e4b0","type":"text","text":"Wait... written by himself?\n---\n\nhistory of autobiographical fiction\nreview the notes","x":2140,"y":5583,"width":300,"height":355,"color":"1"},
+		{"id":"748af27869d7f063","type":"file","file":"projects/ongoing/buttons/person_who_mined.md","x":8000,"y":15800,"width":400,"height":400,"color":"1"},
+		{
+			"id":"88b541cdd8c55941",
+			"type":"text",
+			"text":"🚧 I'm sorry, believe it or not, the history of piracy is in another DLC.",
+			"styleAttributes":{},
+			"x":2705,
+			"y":9960,
+			"width":200,
+			"height":133,
+			"color":"3"
+		},
+		{"id":"6fc3fd90e4ff2bf8","type":"text","text":"🏴‍☠️ PYRATES?","x":2560,"y":9501,"width":490,"height":370,"color":"6"},
+		{
+			"id":"ef2813dd2fc1deef",
+			"type":"text",
+			"text":"minecraft dlc",
+			"styleAttributes":{},
+			"x":4115,
+			"y":11260,
+			"width":1950,
+			"height":1861,
+			"color":"1"
+		}
 	],
 	"edges":[
 		{"id":"a1e1d7a3-bbd4-405e-b5b6-1beda28198a4","toFloating":false,"fromNode":"start","fromSide":"bottom","toNode":"tutorial","toSide":"top"},
@@ -1643,30 +1744,12 @@
 			"toSide":"top"
 		},
 		{
-			"id":"2a59221ef20bc082",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"ff888cb0f93683c4",
-			"fromSide":"bottom",
-			"toNode":"4abb0e0df2ecc5b6",
-			"toSide":"top"
-		},
-		{
 			"id":"9b75ea9b0a513dc2",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"4abb0e0df2ecc5b6",
 			"fromSide":"bottom",
 			"toNode":"839a29e47b87d496",
-			"toSide":"top"
-		},
-		{
-			"id":"6374323e7435c400",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"839a29e47b87d496",
-			"fromSide":"bottom",
-			"toNode":"257e260d9008f8c8",
 			"toSide":"top"
 		},
 		{
@@ -2479,6 +2562,205 @@
 			"fromNode":"15e35a10feb5147c",
 			"fromSide":"bottom",
 			"toNode":"732c607729abf65a",
+			"toSide":"top"
+		},
+		{
+			"id":"c4860754f17de7c2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ff888cb0f93683c4",
+			"fromSide":"bottom",
+			"toNode":"b4b7ec5acc09de30",
+			"toSide":"top"
+		},
+		{
+			"id":"71290de1e2ad7185",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"b4b7ec5acc09de30",
+			"fromSide":"bottom",
+			"toNode":"4abb0e0df2ecc5b6",
+			"toSide":"top"
+		},
+		{
+			"id":"7445cc27211b2317",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"839a29e47b87d496",
+			"fromSide":"bottom",
+			"toNode":"1fe733323747f354",
+			"toSide":"top"
+		},
+		{
+			"id":"c6d713ca67094605",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1fe733323747f354",
+			"fromSide":"bottom",
+			"toNode":"257e260d9008f8c8",
+			"toSide":"top"
+		},
+		{
+			"id":"86ce1fbd0323304c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"1fe733323747f354",
+			"fromSide":"bottom",
+			"toNode":"ef2813dd2fc1deef",
+			"toSide":"top"
+		},
+		{
+			"id":"e5cc95e7ec421ac0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3e79f3c62aa144d0",
+			"fromSide":"bottom",
+			"toNode":"a5c013592cd9b7b8",
+			"toSide":"top"
+		},
+		{
+			"id":"9b87f3c8a87f3b86",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"02b8cc538f2e9888",
+			"fromSide":"bottom",
+			"toNode":"42c71d35a9f25a25",
+			"toSide":"top"
+		},
+		{
+			"id":"0c09d9e49e2577ff",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"42c71d35a9f25a25",
+			"fromSide":"bottom",
+			"toNode":"74f9179ad1f54688",
+			"toSide":"top"
+		},
+		{
+			"id":"ad4958a61293eaf2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"tutorial",
+			"fromSide":"bottom",
+			"toNode":"c565c4de39b22791",
+			"toSide":"top"
+		},
+		{
+			"id":"947f5a56643413a1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c565c4de39b22791",
+			"fromSide":"bottom",
+			"toNode":"74f9179ad1f54688",
+			"toSide":"top"
+		},
+		{
+			"id":"12d532d2ac496070",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"options",
+			"fromSide":"bottom",
+			"toNode":"e99e235b31d5b83e",
+			"toSide":"top"
+		},
+		{
+			"id":"de9c2333b11824fc",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"74f9179ad1f54688",
+			"fromSide":"right",
+			"toNode":"e99e235b31d5b83e",
+			"toSide":"left",
+			"color":"1"
+		},
+		{
+			"id":"e8d449457b1eb800",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"74f9179ad1f54688",
+			"fromSide":"bottom",
+			"toNode":"ba3673cd6fa08f24",
+			"toSide":"top"
+		},
+		{
+			"id":"b90addcd91ad9002",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e99e235b31d5b83e",
+			"fromSide":"bottom",
+			"toNode":"a43ae9a713759e4e",
+			"toSide":"top"
+		},
+		{
+			"id":"4f74909fccfddf2b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"start",
+			"fromSide":"bottom",
+			"toNode":"c565c4de39b22791",
+			"toSide":"top"
+		},
+		{
+			"id":"e35a92111d7c7cf6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ba3673cd6fa08f24",
+			"fromSide":"bottom",
+			"toNode":"e1de172a4c0d12f4",
+			"toSide":"top"
+		},
+		{
+			"id":"ec0955695fa50114",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a43ae9a713759e4e",
+			"fromSide":"bottom",
+			"toNode":"e1de172a4c0d12f4",
+			"toSide":"top"
+		},
+		{
+			"id":"1013195552e0d28a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e1de172a4c0d12f4",
+			"fromSide":"bottom",
+			"toNode":"title",
+			"toSide":"top"
+		},
+		{
+			"id":"15b754860607e81b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e1de172a4c0d12f4",
+			"fromSide":"bottom",
+			"toNode":"ef2813dd2fc1deef",
+			"toSide":"top"
+		},
+		{
+			"id":"2b118846d2c16244",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"70d9d2a8ca7cc10b",
+			"fromSide":"right",
+			"toNode":"748af27869d7f063",
+			"toSide":"left"
+		},
+		{
+			"id":"f1f9ab38431203d0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"748af27869d7f063",
+			"fromSide":"right",
+			"toNode":"e081043fe61c10df",
+			"toSide":"left"
+		},
+		{
+			"id":"2a8963b361d52f03",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"839a29e47b87d496",
+			"fromSide":"bottom",
+			"toNode":"6fc3fd90e4ff2bf8",
 			"toSide":"top"
 		}
 	],
