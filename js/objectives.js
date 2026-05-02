@@ -9,7 +9,10 @@ export const capitalized_substrings = [
   "GAME",
   "THREAD",
 
+  "DIG", "DUG",
+  "CONTENT",
 
+  "OWN",
   "END",
   "GOOD",
 

@@ -3,10 +3,12 @@
 		{"id":"8766146d53644fc3","type":"group","x":-935,"y":2560,"width":2835,"height":4103,"color":"1","label":"Robinson Crusoe"},
 		{"id":"711dc3bbb688c332","type":"group","x":-6036,"y":212,"width":2580,"height":3056,"label":"Defoe's youth and education"},
 		{"id":"cec1d48054724399","type":"group","x":-7063,"y":4199,"width":2054,"height":3156,"label":"Defoe's political career"},
-		{"id":"8208ce67bac49771","type":"group","x":4460,"y":11420,"width":2200,"height":2540,"color":"1","label":"minecraft DLC"},
+		{"id":"8208ce67bac49771","type":"group","x":4640,"y":6868,"width":2200,"height":2540,"color":"1","label":"minecraft DLC"},
+		{"id":"5f24c33fd42114fb","type":"group","x":9080,"y":8768,"width":1070,"height":3080,"label":"The boy who owned all the drawings"},
 		{"id":"f7244ade739bb504","type":"group","x":-7540,"y":9240,"width":2243,"height":1362,"color":"1","label":"The Stationeers"},
 		{"id":"ea3446471cf211b1","type":"group","x":3900,"y":1740,"width":2380,"height":1280,"color":"1","label":"Gameplay features"},
 		{"id":"a706cb9b93c3c7e7","type":"group","x":1900,"y":100,"width":2260,"height":1340,"color":"1","label":"Tutorial"},
+		{"id":"f94ab37e7aefdeea","type":"group","x":8000,"y":7608,"width":710,"height":4220,"label":"the human who mined content"},
 		{"id":"bbee386f60e2b60c","type":"group","x":20,"y":100,"width":1750,"height":1580,"label":"The Human Who Pushed Buttons"},
 		{"id":"b8596f2a51ee65ce","type":"group","x":-4820,"y":8300,"width":1672,"height":1400,"color":"1","label":"The invention of copyright"},
 		{"id":"6d3549e4b28330a7","type":"group","x":-4803,"y":5619,"width":1460,"height":1470,"label":"True born englishman"},
@@ -203,28 +205,6 @@
 			"height":133,
 			"color":"3"
 		},
-		{
-			"id":"4c11af20a6c391c8",
-			"type":"text",
-			"text":"something cryptobro\ngo back to defoe",
-			"styleAttributes":{},
-			"x":8000,
-			"y":9770,
-			"width":260,
-			"height":280,
-			"color":"1"
-		},
-		{
-			"id":"a39a9c20ae56ea71",
-			"type":"text",
-			"text":"molyneux and  backstory",
-			"styleAttributes":{},
-			"x":9400,
-			"y":9810,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
 		{"id":"6fc3fd90e4ff2bf8","type":"text","text":"🏴‍☠️ PYRATES?","x":2560,"y":9501,"width":490,"height":370,"color":"6"},
 		{
 			"id":"ca4174e6a440c2b6",
@@ -282,39 +262,6 @@
 			"color":"1"
 		},
 		{
-			"id":"36627db47b08c47e",
-			"type":"text",
-			"text":"mb connect back to mining colonial exploitation into minecraft DLC",
-			"styleAttributes":{},
-			"x":-6740,
-			"y":10260,
-			"width":260,
-			"height":160,
-			"color":"1"
-		},
-		{
-			"id":"ef2813dd2fc1deef",
-			"type":"text",
-			"text":"minecraft dlc",
-			"styleAttributes":{},
-			"x":4480,
-			"y":11440,
-			"width":1950,
-			"height":1861,
-			"color":"1"
-		},
-		{
-			"id":"7be6ad5f9bf661ad",
-			"type":"text",
-			"text":"i genuinely thought defoe would have interesting travel and piracy stories\n\ni dug into the story of defoe",
-			"styleAttributes":{},
-			"x":-1280,
-			"y":11480,
-			"width":540,
-			"height":180,
-			"color":"1"
-		},
-		{
 			"id":"dc03d4d5b79bb3fd",
 			"type":"text",
 			"text":"i wrote two parabolas",
@@ -343,51 +290,6 @@
 			"styleAttributes":{},
 			"x":1600,
 			"y":12560,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"835d6f6466cb8676",
-			"type":"text",
-			"text":"The minecraft DLC gameplay DLC is probably an everlasting DLC (torch scanning)",
-			"styleAttributes":{},
-			"x":6380,
-			"y":13800,
-			"width":260,
-			"height":140,
-			"color":"1"
-		},
-		{
-			"id":"70d9d2a8ca7cc10b",
-			"type":"text",
-			"text":"the human who mined? ",
-			"styleAttributes":{},
-			"x":5045,
-			"y":14400,
-			"width":1020,
-			"height":785,
-			"color":"1"
-		},
-		{"id":"748af27869d7f063","type":"file","file":"projects/ongoing/buttons/person_who_mined.md","x":8000,"y":15800,"width":400,"height":400,"color":"1"},
-		{
-			"id":"e081043fe61c10df",
-			"type":"text",
-			"text":"the child who owned all the drawings\n",
-			"styleAttributes":{},
-			"x":9400,
-			"y":16480,
-			"width":1100,
-			"height":1160,
-			"color":"1"
-		},
-		{
-			"id":"3e79f3c62aa144d0",
-			"type":"text",
-			"text":"🏁 false end digging",
-			"styleAttributes":{},
-			"x":7880,
-			"y":16680,
 			"width":260,
 			"height":60,
 			"color":"1"
@@ -529,17 +431,6 @@
 			"styleAttributes":{},
 			"x":-4060,
 			"y":8868,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"a5c013592cd9b7b8",
-			"type":"text",
-			"text":"🏁 end of the minecraft dlc",
-			"styleAttributes":{},
-			"x":8010,
-			"y":17060,
 			"width":260,
 			"height":60,
 			"color":"1"
@@ -1270,17 +1161,6 @@
 			"color":"1"
 		},
 		{
-			"id":"6a635d69c075a767",
-			"type":"text",
-			"text":"🏁 true end",
-			"styleAttributes":{},
-			"x":9940,
-			"y":17820,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"0960ba5e853c2d1b",
 			"type":"text",
 			"text":"⭐ The life of Selkirk\nSelkirk backstory, orange, star",
@@ -1588,6 +1468,431 @@
 			"y":6855,
 			"width":260,
 			"height":60
+		},
+		{
+			"id":"7be6ad5f9bf661ad",
+			"type":"text",
+			"text":"i genuinely thought defoe would have interesting travel and piracy stories\n\ni dug into the story of defoe",
+			"styleAttributes":{},
+			"x":-1380,
+			"y":11220,
+			"width":540,
+			"height":180,
+			"color":"1"
+		},
+		{
+			"id":"36627db47b08c47e",
+			"type":"text",
+			"text":"mb connect back to mining colonial exploitation into minecraft DLC",
+			"styleAttributes":{},
+			"x":-6074,
+			"y":10320,
+			"width":260,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"5802689e88e00d7a",
+			"type":"text",
+			"text":"parabolas like",
+			"styleAttributes":{},
+			"x":1940,
+			"y":12820,
+			"width":300,
+			"height":140,
+			"color":"1"
+		},
+		{
+			"id":"12287a691a73d028",
+			"type":"text",
+			"text":"Do you want to hear it?",
+			"styleAttributes":{},
+			"x":8200,
+			"y":9028,
+			"width":260,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"e97a0502123e630c",
+			"type":"text",
+			"text":"The Human was puzzled by this weird tale.\n---\nIt was very different from most of the Content the Human had seen.\nWhat color was it, even?\nWhat did it mean?\nThe Human would have to think about it some more.",
+			"styleAttributes":{},
+			"x":8130,
+			"y":10348,
+			"width":560,
+			"height":200,
+			"color":"4"
+		},
+		{
+			"id":"24381438ebd2ccb0",
+			"type":"text",
+			"text":"The Human looked around, and pondered for a while. \n---\nDeep, deep, down the Content Mines were billions of little pebbles, each a slightly different color.",
+			"styleAttributes":{},
+			"x":8180,
+			"y":10608,
+			"width":460,
+			"height":170,
+			"color":"4"
+		},
+		{
+			"id":"15980fbc13bb0c44",
+			"type":"text",
+			"text":"🏁 And for a brief moment, the Human would behold.\n---\nAnd the pebble would shine, illuminated by their torch.",
+			"styleAttributes":{},
+			"x":8223,
+			"y":11648,
+			"width":375,
+			"height":160,
+			"color":"2"
+		},
+		{
+			"id":"83971dce8d62c4e6",
+			"type":"text",
+			"text":" Most of them too small to ever matter. Most of them weird and worthless.\n ---\n Could one be a color nobody saw before?",
+			"styleAttributes":{},
+			"x":8180,
+			"y":10828,
+			"width":460,
+			"height":180,
+			"color":"4"
+		},
+		{
+			"id":"14edf248898aec8e",
+			"type":"text",
+			"text":"But the Human had been promised.\n---\nDeep, deep down there was were true treasures lie.",
+			"styleAttributes":{},
+			"x":8180,
+			"y":11068,
+			"width":460,
+			"height":120,
+			"color":"4"
+		},
+		{
+			"id":"83c0899d0ee219f2",
+			"type":"text",
+			"text":"So the Human kept digging.\n---\nDug further, deeper than anyone before.",
+			"styleAttributes":{},
+			"x":8180,
+			"y":11248,
+			"width":460,
+			"height":120,
+			"color":"4"
+		},
+		{
+			"id":"c193f89345ffcbe2",
+			"type":"text",
+			"text":"And every now and then, the Human would stop and look at a pebble.\n---\nA pebble that the light of day would probably never reach.",
+			"styleAttributes":{},
+			"x":8155,
+			"y":11428,
+			"width":510,
+			"height":140,
+			"color":"4"
+		},
+		{
+			"id":"0abd418c5bf0aee6",
+			"type":"text",
+			"text":"The eyes sent a signal to the brain. It remained as a memory long after the light went out.\n---\n\"These Neurons are Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9680,
+			"y":9748,
+			"width":440,
+			"height":180
+		},
+		{
+			"id":"9471b87102b37668",
+			"type":"text",
+			"text":"He saved his PNG to JPG. He even saved to TXT! He made new formats and new programs so that his Drawing corresponded to many numbers and many many texts.\n---\n\"These Numbers are Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9670,
+			"y":10168,
+			"width":460,
+			"height":160
+		},
+		{
+			"id":"fc8f039d92d1418e",
+			"type":"text",
+			"text":"He took the fourth Drawing and changed the color.\n---\n\"This Drawing is Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9100,
+			"y":10488,
+			"width":340,
+			"height":120
+		},
+		{
+			"id":"9641b2aebd8ad4b7",
+			"type":"text",
+			"text":"As for the last Drawing...",
+			"styleAttributes":{},
+			"x":9700,
+			"y":11148,
+			"width":240,
+			"height":60
+		},
+		{
+			"id":"edf278694719a26c",
+			"type":"text",
+			"text":"He scanned the third Drawing into a computer. It made a PNG, a binary number on a silicon chip.\n---\n\"This Number is Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9170,
+			"y":10088,
+			"width":380,
+			"height":180
+		},
+		{
+			"id":"0fd10a82bb365399",
+			"type":"text",
+			"text":"He took the first Drawing and cut a small part, showing just a few colored shapes.\n---\n\"These Shapes are Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9200,
+			"y":9308,
+			"width":400,
+			"height":200
+		},
+		{
+			"id":"599163474d3b9662",
+			"type":"text",
+			"text":"On the other side of the world, a girl made a drawing of herself near a house.\nShe didn't know about the boy who owned all the Drawings.\nShe didn't know anything, she was too young to even speak.\nBut her drawing happened to be exactly identical to the last Drawing.\n---\n\"This drawing is Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9510,
+			"y":11288,
+			"width":620,
+			"height":220
+		},
+		{
+			"id":"ae2485302e589cc1",
+			"type":"text",
+			"text":"🏁 For her shameless theft, the girl was thrown into a jail, surrounded by Mines in the sand.\nThe boy continued to own all the Drawings.\nWhen people wanted new Drawings, they came to see him, and he would sell them one.\nBut he would always say as he gave them away:\n---\n\"This Drawing is Mine!\" and most of them agreed.",
+			"styleAttributes":{},
+			"x":9510,
+			"y":11548,
+			"width":620,
+			"height":240
+		},
+		{
+			"id":"a4f5abadbd2bcfee",
+			"type":"text",
+			"text":"He drew over it more and more, erased here, added traits there, so that the Drawing became identical to a famous Drawing.\n---\n\"This Drawing is Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9600,
+			"y":10568,
+			"width":460,
+			"height":160
+		},
+		{
+			"id":"d758051e241964bb",
+			"type":"text",
+			"text":"He drew over some more and it became another. Some more still and yet another.\n---\n\"All the Drawings are Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9600,
+			"y":10848,
+			"width":460,
+			"height":180
+		},
+		{"id":"0d5855d070abe7b6","type":"text","text":"⭐ The boy who owned all the drawings","x":9160,"y":8788,"width":480,"height":60,"color":"2"},
+		{
+			"id":"24240e64634959a5",
+			"type":"text",
+			"text":"He showed the second Drawing to people. The light reflected the Drawing on their eyes.\n---\n\"These Eyes are Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9160,
+			"y":9688,
+			"width":420,
+			"height":160
+		},
+		{
+			"id":"249743e9d7aff4d6",
+			"type":"text",
+			"text":"There once was a boy, no older than a child, who made five Drawings of himself near a Mine.",
+			"styleAttributes":{},
+			"x":9190,
+			"y":8888,
+			"width":420,
+			"height":80
+		},
+		{
+			"id":"bcbd0525ad1e316c",
+			"type":"text",
+			"text":"He lived in a world where Everything was Property.\n---\n\"These Drawings are Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9190,
+			"y":9008,
+			"width":420,
+			"height":160
+		},
+		{
+			"id":"8e088360bd57291f",
+			"type":"text",
+			"text":"He cut his Drawing even more, so that it was just a colorful square.\n---\n\"This Color is Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":9660,
+			"y":9428,
+			"width":440,
+			"height":160
+		},
+		{"id":"19e5fd7f23f8fd04","type":"text","text":"⭐ This is the story of a human.\n---\nA human who mined content in the content mines.\nA human like any other.","x":8120,"y":7629,"width":480,"height":115,"color":"6"},
+		{
+			"id":"8da47f57273fe7c8",
+			"type":"text",
+			"text":"Sometimes it was Blue!\n---\nRarer Content even!",
+			"styleAttributes":{},
+			"x":8180,
+			"y":7988,
+			"width":360,
+			"height":100,
+			"color":"5"
+		},
+		{
+			"id":"d1e1705298e2c5e8",
+			"type":"text",
+			"text":"And every now and then, the Human found really meaningful, life-changing Content!\n---\nIt would be Purple, or even Orange!",
+			"styleAttributes":{},
+			"x":8100,
+			"y":8153,
+			"width":520,
+			"height":175,
+			"color":"6"
+		},
+		{
+			"id":"b48c1a929392d1f5",
+			"type":"text",
+			"text":"Might there be other colors of Content, deeper down the Mine? \n---\nPerhaps even some color nobody had ever seen? ",
+			"styleAttributes":{},
+			"x":8120,
+			"y":8408,
+			"width":480,
+			"height":140
+		},
+		{
+			"id":"e6d90edba5127fbb",
+			"type":"text",
+			"text":"One day, the Human found a weird tale, deep at the bottom of the Content Mine.\n---\nIt was a tale written by a Human and it was called \"The boy who owned all the drawings\".",
+			"styleAttributes":{},
+			"x":8120,
+			"y":8708,
+			"width":420,
+			"height":200
+		},
+		{
+			"id":"2f238287f04d2a46",
+			"type":"text",
+			"text":"Sometimes the Content was slightly Green.\n---\nThat meant it was slightly rare.",
+			"styleAttributes":{},
+			"x":8190,
+			"y":7788,
+			"width":340,
+			"height":130,
+			"color":"4"
+		},
+		{
+			"id":"6eca2001d25b0b72",
+			"type":"text",
+			"text":"Every day, every night, the Human mined and mined.",
+			"styleAttributes":{},
+			"x":8230,
+			"y":8586,
+			"width":260,
+			"height":55
+		},
+		{
+			"id":"91ce07fab199b5d0",
+			"type":"text",
+			"text":"The Human did not hear the tale.\n---\nThe Human kept digging. Dug further, deeper than anyone before.",
+			"styleAttributes":{},
+			"x":8020,
+			"y":9308,
+			"width":660,
+			"height":120,
+			"color":"4"
+		},
+		{
+			"id":"d8e34c627353ef9b",
+			"type":"text",
+			"text":"Eager to get a promised treasure, the Person dug and dug some more.",
+			"styleAttributes":{},
+			"x":8140,
+			"y":9478,
+			"width":420,
+			"height":90,
+			"color":"4"
+		},
+		{
+			"id":"ca368645279d5073",
+			"type":"text",
+			"text":"Surrounded by pebbles, deeper, always deeper, the Person dug some more.",
+			"styleAttributes":{},
+			"x":8180,
+			"y":9688,
+			"width":340,
+			"height":80,
+			"color":"4"
+		},
+		{
+			"id":"9d59fd903533cb04",
+			"type":"text",
+			"text":">> mined attention ?? mb stick to shallow easy work ?\n== an interactive visual novel hommage to Curiosity: What's Inside the Cube? and The Cyberiad\n\n\t* Welcome to this new innovative game engine combining the elements of visual novel and clicker.\n\t* Sorry about the art, I'm not good at drawing. Please forgive me, for reasons that will become very clear very soon this game is only available in English. You are welcome to translate it with whatever tool you want. BTW This was made entirely without AI, whatever that might mean for you.\n\t* Click on the Content Mine to find Content. Once you have enough Content, you can turn to the next page of the book, next level of the mine. The book keeps you company while you Mine, the Mine gives you reward while you dig deeper. Win/win.\n\t* And of course, a pleasant progression and big climax at the end!\n\n---\n* On November 6th, 2012, Apple released accidentally \"Curiosity: What's Inside the Cube?\", an experimental game from Peter Molyneux intended to release at 12:22 on November 7th.\n* The game was simple: a cube with a mystery inside. It would open after 69 billion clicks. Only the last clicker would see and get the content of the cube.\n* On May 26th, 2013, after almost 7 months of collaborative clicking, Peter Molyneux announced the prize to everyone: the winner was to be a god in their next game, Godus.\n* In a 2013 Wired magazine, Molyneux indicated that the monetization options offered in the game to increase clicking rate generated \"a few tens of thousands\".\n* It is an interesting sum, small enough to barely register for his company, but big enough to really impact an individual life.\n* By the way it's well known in the psychology of game design that in monetization schemes like in many social phenomena following Pareto's law, 80% of the revenue is generated by 20% of the people. You know, the 99%/1% split.\n* That's microgaming whales, that's billionaire oligarch, that's every social network reproducing what's called a \"scale-free\" structure.\n---\n* The person who did the last click was named Bryan. He was promised the title of \"God of God\" in Godus, and a 1% share of its revenue.\n* Godus never left early access, Bryan received neither the economical ownership nor the metaphorical one he was promised over its world.\n* Peter Molyneux moved on to other projects. In 2026, he released in early access a project touted as his last. He claims it takes place in the same universe as Fable, but this cannot be explicit because Microsoft now owns the world he created.\n* He named the game \"Albion\", claiming that a historical term cannot be copyrighted.\n---\n* \"Curiosity: What's Inside the Cube?\" will forever remain as a weird experiment at the border between capitalism and poetry.\n* Its beautiful rendition of the prisoner dilemma at scale complemented a crisp allegory of the chase for object petit a, a lacanian theory best explained by philosopher Slavoj Zizek.\n* By the way, Lacan was notoriously right wing. His theory doesn't really address notions such as competition, or systemic phenomena for that matter.\n* Since this game was released, many more billions of clicks have been hammered down the Content Mines.\n* Clicks from Creators, working hard on their crafts.\n* Clicks from their Supporters, each platform taking a cut.\n* Clicks from Consumers, watching among the ads.\n* Clicks from Everyone! Who can Exist without Content?",
+			"styleAttributes":{},
+			"x":7630,
+			"y":6168,
+			"width":1200,
+			"height":1060,
+			"color":"1"
+		},
+		{
+			"id":"835d6f6466cb8676",
+			"type":"text",
+			"text":"The minecraft DLC gameplay DLC is probably an everlasting DLC (torch scanning)",
+			"styleAttributes":{},
+			"x":6560,
+			"y":9248,
+			"width":260,
+			"height":140,
+			"color":"1"
+		},
+		{
+			"id":"82e620a3e84fed09",
+			"type":"text",
+			"text":"🏁 end of minecraft dlc\n(mb mention that the cube kept growing towards the end)",
+			"styleAttributes":{},
+			"x":6560,
+			"y":10148,
+			"width":380,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"ef2813dd2fc1deef",
+			"type":"text",
+			"text":"minecraft dlc",
+			"styleAttributes":{},
+			"x":4740,
+			"y":7208,
+			"width":1950,
+			"height":1861,
+			"color":"1"
+		},
+		{
+			"id":"4c11af20a6c391c8",
+			"type":"text",
+			"text":"something cryptobro\ngo back to defoe",
+			"styleAttributes":{},
+			"x":5980,
+			"y":9159,
+			"width":260,
+			"height":179,
+			"color":"1"
+		},
+		{
+			"id":"a39a9c20ae56ea71",
+			"type":"text",
+			"text":"molyneux and  backstory",
+			"styleAttributes":{},
+			"x":6380,
+			"y":9219,
+			"width":260,
+			"height":60,
+			"color":"1"
 		}
 	],
 	"edges":[
@@ -2545,61 +2850,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"16be6c13eb5a43b1",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"a8f5434158d26eeb",
-			"fromSide":"right",
-			"toNode":"70d9d2a8ca7cc10b",
-			"toSide":"left",
-			"color":"1"
-		},
-		{
-			"id":"b9908bbd6f81d89a",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"70d9d2a8ca7cc10b",
-			"fromSide":"bottom",
-			"toNode":"e081043fe61c10df",
-			"toSide":"top"
-		},
-		{
-			"id":"40de8d34581b1066",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"70d9d2a8ca7cc10b",
-			"fromSide":"top",
-			"toNode":"4c11af20a6c391c8",
-			"toSide":"bottom"
-		},
-		{
-			"id":"02c5b699adecf1b6",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"e081043fe61c10df",
-			"fromSide":"bottom",
-			"toNode":"6a635d69c075a767",
-			"toSide":"top"
-		},
-		{
-			"id":"93ea553f25e59fe4",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"70d9d2a8ca7cc10b",
-			"fromSide":"bottom",
-			"toNode":"3e79f3c62aa144d0",
-			"toSide":"top"
-		},
-		{
-			"id":"ef176667ee56edad",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"70d9d2a8ca7cc10b",
-			"fromSide":"top",
-			"toNode":"a39a9c20ae56ea71",
-			"toSide":"bottom"
-		},
-		{
 			"id":"de16fbdba9894d0d",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -2619,39 +2869,12 @@
 			"toSide":"top"
 		},
 		{
-			"id":"94c33f51d892abf3",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"ef2813dd2fc1deef",
-			"fromSide":"bottom",
-			"toNode":"70d9d2a8ca7cc10b",
-			"toSide":"top"
-		},
-		{
 			"id":"e29e1828316d143e",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"9385802b5150608b",
 			"fromSide":"bottom",
 			"toNode":"ef2813dd2fc1deef",
-			"toSide":"top"
-		},
-		{
-			"id":"15828b28e84ede87",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"dc03d4d5b79bb3fd",
-			"fromSide":"bottom",
-			"toNode":"70d9d2a8ca7cc10b",
-			"toSide":"top"
-		},
-		{
-			"id":"eb5e18f6c2e3f4c4",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"dc03d4d5b79bb3fd",
-			"fromSide":"bottom",
-			"toNode":"e081043fe61c10df",
 			"toSide":"top"
 		},
 		{
@@ -2791,15 +3014,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"e5cc95e7ec421ac0",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"3e79f3c62aa144d0",
-			"fromSide":"bottom",
-			"toNode":"a5c013592cd9b7b8",
-			"toSide":"top"
-		},
-		{
 			"id":"9b87f3c8a87f3b86",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -2916,24 +3130,6 @@
 			"fromSide":"bottom",
 			"toNode":"ef2813dd2fc1deef",
 			"toSide":"top"
-		},
-		{
-			"id":"2b118846d2c16244",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"70d9d2a8ca7cc10b",
-			"fromSide":"right",
-			"toNode":"748af27869d7f063",
-			"toSide":"left"
-		},
-		{
-			"id":"f1f9ab38431203d0",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"748af27869d7f063",
-			"fromSide":"right",
-			"toNode":"e081043fe61c10df",
-			"toSide":"left"
 		},
 		{
 			"id":"2a8963b361d52f03",
@@ -3448,6 +3644,424 @@
 			"fromNode":"5929c71a78c15ca1",
 			"fromSide":"bottom",
 			"toNode":"c78c58970d985108",
+			"toSide":"top"
+		},
+		{
+			"id":"e08426830ed4d1d2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"0d5855d070abe7b6",
+			"fromSide":"bottom",
+			"toNode":"249743e9d7aff4d6",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"8cd8ff6ab79bd2b7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"249743e9d7aff4d6",
+			"fromSide":"bottom",
+			"toNode":"bcbd0525ad1e316c",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"84263e982c0672a8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"bcbd0525ad1e316c",
+			"fromSide":"bottom",
+			"toNode":"0fd10a82bb365399",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"8aa3e45bd6e5c7bd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"0fd10a82bb365399",
+			"fromSide":"bottom",
+			"toNode":"8e088360bd57291f",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"dfec2c2609a91e99",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8e088360bd57291f",
+			"fromSide":"bottom",
+			"toNode":"24240e64634959a5",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"af7db085a805b291",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"24240e64634959a5",
+			"fromSide":"bottom",
+			"toNode":"0abd418c5bf0aee6",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"ffeaf8c3b3098792",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"0abd418c5bf0aee6",
+			"fromSide":"bottom",
+			"toNode":"edf278694719a26c",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"bab307b31dec6aac",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"edf278694719a26c",
+			"fromSide":"bottom",
+			"toNode":"9471b87102b37668",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"b9561314bbfb05d4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"9471b87102b37668",
+			"fromSide":"bottom",
+			"toNode":"fc8f039d92d1418e",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"d1840fb54adf538b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"fc8f039d92d1418e",
+			"fromSide":"bottom",
+			"toNode":"a4f5abadbd2bcfee",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"e277b1b7f0ad65d7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"a4f5abadbd2bcfee",
+			"fromSide":"bottom",
+			"toNode":"d758051e241964bb",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"8c82ecf5e757ef5a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d758051e241964bb",
+			"fromSide":"bottom",
+			"toNode":"9641b2aebd8ad4b7",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"d39e811c556b5d2c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"9641b2aebd8ad4b7",
+			"fromSide":"bottom",
+			"toNode":"599163474d3b9662",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"e73915777396a786",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"599163474d3b9662",
+			"fromSide":"bottom",
+			"toNode":"ae2485302e589cc1",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"fb376cf6202313fb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"12287a691a73d028",
+			"fromSide":"bottom",
+			"toNode":"0d5855d070abe7b6",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"452c78f46f06859f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"12287a691a73d028",
+			"fromSide":"bottom",
+			"toNode":"91ce07fab199b5d0",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"c4c6eb525f217489",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"91ce07fab199b5d0",
+			"fromSide":"bottom",
+			"toNode":"d8e34c627353ef9b",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"bf4b3e5e5a7b9fd5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d8e34c627353ef9b",
+			"fromSide":"bottom",
+			"toNode":"ca368645279d5073",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"bd0d87ba45e6b4dc",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"ca368645279d5073",
+			"fromSide":"bottom",
+			"toNode":"82e620a3e84fed09",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"426774044dfaf592",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ae2485302e589cc1",
+			"fromSide":"bottom",
+			"toNode":"e97a0502123e630c",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"43eaf794df7c46ee",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e97a0502123e630c",
+			"fromSide":"bottom",
+			"toNode":"24381438ebd2ccb0",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"492a7cbfc07cc372",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"24381438ebd2ccb0",
+			"fromSide":"bottom",
+			"toNode":"83971dce8d62c4e6",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"a2d49823d337645d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"83971dce8d62c4e6",
+			"fromSide":"bottom",
+			"toNode":"14edf248898aec8e",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"11307a8e26c9974c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"14edf248898aec8e",
+			"fromSide":"bottom",
+			"toNode":"83c0899d0ee219f2",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"8343f3771c18ea47",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"83c0899d0ee219f2",
+			"fromSide":"bottom",
+			"toNode":"c193f89345ffcbe2",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"db32c438ed4b54ef",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"c193f89345ffcbe2",
+			"fromSide":"bottom",
+			"toNode":"15980fbc13bb0c44",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"936e83896d92f05b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"19e5fd7f23f8fd04",
+			"fromSide":"bottom",
+			"toNode":"2f238287f04d2a46",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"f997c000de291442",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"2f238287f04d2a46",
+			"fromSide":"bottom",
+			"toNode":"8da47f57273fe7c8",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"206825f4ecef74cd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"8da47f57273fe7c8",
+			"fromSide":"bottom",
+			"toNode":"d1e1705298e2c5e8",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"b0abb575cf9844a3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"d1e1705298e2c5e8",
+			"fromSide":"bottom",
+			"toNode":"b48c1a929392d1f5",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"b60cb0dc47af8c05",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"b48c1a929392d1f5",
+			"fromSide":"bottom",
+			"toNode":"6eca2001d25b0b72",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"e5f871d7aa35dd96",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"6eca2001d25b0b72",
+			"fromSide":"bottom",
+			"toNode":"e6d90edba5127fbb",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"317d88656fcef5b5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"e6d90edba5127fbb",
+			"fromSide":"bottom",
+			"toNode":"12287a691a73d028",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"c37403d14ad0278c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5802689e88e00d7a",
+			"fromSide":"bottom",
+			"toNode":"19e5fd7f23f8fd04",
+			"toSide":"top"
+		},
+		{
+			"id":"6f92f840227502f4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9d59fd903533cb04",
+			"fromSide":"bottom",
+			"toNode":"19e5fd7f23f8fd04",
+			"toSide":"top"
+		},
+		{
+			"id":"b14a81f7faddcdb3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ef2813dd2fc1deef",
+			"fromSide":"bottom",
+			"toNode":"9d59fd903533cb04",
+			"toSide":"top"
+		},
+		{
+			"id":"36fc6995678cccd4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ef2813dd2fc1deef",
+			"fromSide":"right",
+			"toNode":"4c11af20a6c391c8",
+			"toSide":"left"
+		},
+		{
+			"id":"1f9800159b1dead1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ef2813dd2fc1deef",
+			"fromSide":"right",
+			"toNode":"a39a9c20ae56ea71",
+			"toSide":"left"
+		},
+		{
+			"id":"bc2aa31c7a393071",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"36627db47b08c47e",
+			"fromSide":"bottom",
+			"toNode":"ef2813dd2fc1deef",
+			"toSide":"top"
+		},
+		{
+			"id":"0bc539c67e0f3802",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dc03d4d5b79bb3fd",
+			"fromSide":"bottom",
+			"toNode":"5802689e88e00d7a",
 			"toSide":"top"
 		}
 	],
