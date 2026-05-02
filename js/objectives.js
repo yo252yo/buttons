@@ -17,6 +17,21 @@ export const capitalized_substrings = [
   "MINE", "YOUR",
   "THEIR",
 
+  "PROPER",
+
+  "PRIVATE",
+  "GENERAL",
+  "MAJOR",
+  "AMERICA",
+
+  "SIGNIFIER",
+
+  "ESTABLISHMENT",
+  "COLONIAL",
+
+
+  "PARABLE",
+
   "LEFT",
   "RIGHT",
 

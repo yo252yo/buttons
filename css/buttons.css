@@ -108,3 +108,8 @@
   max-width: 400px;
   max-height: 400px;
 }
+
+.button iframe {
+  width: 600px;
+  height: 300px;
+}
