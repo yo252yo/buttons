@@ -204,17 +204,6 @@
 			"color":"3"
 		},
 		{
-			"id":"a8f5434158d26eeb",
-			"type":"text",
-			"text":"What the fuck is a parabola\n\nlinkback to beginning",
-			"styleAttributes":{},
-			"x":-870,
-			"y":8573,
-			"width":580,
-			"height":160,
-			"color":"1"
-		},
-		{
 			"id":"4c11af20a6c391c8",
 			"type":"text",
 			"text":"something cryptobro\ngo back to defoe",
@@ -718,7 +707,7 @@
 		{
 			"id":"fec336acff3f8ceb",
 			"type":"text",
-			"text":"# What's a Dissenter?\n---\nAs opposed to Conformists, Dissenters are catholic protestants who refuse the English monarch as \"pope\".\nA lot of them were in some ways refugees from the continent fleeing persecution.\nSome were of French or Flemish origins.\nThey were the religious movement underpinning the republican revolution a decade earlier, and the puritan dictatorship that succeeded.",
+			"text":"What's a Dissenter?\n---\nAs opposed to Conformists, Dissenters are catholic protestants who refuse the English monarch as \"pope\".\nA lot of them were in some ways refugees from the continent fleeing persecution.\nSome were of French or Flemish origins.\nThey were the religious movement underpinning the republican revolution a decade earlier, and the puritan dictatorship that succeeded.",
 			"styleAttributes":{},
 			"x":-4786,
 			"y":2142,
@@ -773,7 +762,7 @@
 		{
 			"id":"61c6472d86377400",
 			"type":"text",
-			"text":"📷 This guy?\n---\n\n\nYou can see it for yourself on <a href=\"https://commons.wikimedia.org/wiki/File:Daniel_Defoe_Kneller_Style.jpg\" target=\"_blank\">Wikimedia.\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Daniel_Defoe_Kneller_Style.jpg/960px-Daniel_Defoe_Kneller_Style.jpg\" /></a>",
+			"text":"📷 This guy?\n---\nYou can see it for yourself on <a href=\"https://commons.wikimedia.org/wiki/File:Daniel_Defoe_Kneller_Style.jpg\" target=\"_blank\">Wikimedia.\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Daniel_Defoe_Kneller_Style.jpg/960px-Daniel_Defoe_Kneller_Style.jpg\" /></a>",
 			"styleAttributes":{},
 			"x":-6001,
 			"y":390,
@@ -907,17 +896,6 @@
 			"height":220
 		},
 		{
-			"id":"5929c71a78c15ca1",
-			"type":"text",
-			"text":"🚧 He was instrumental in the redacting of the Act of Union in 1707\n---\nYou know, the creation of a \"United Kingdom\".\nBut this is a story for another DLC.",
-			"styleAttributes":{},
-			"x":-5742,
-			"y":6613,
-			"width":225,
-			"height":142,
-			"color":"3"
-		},
-		{
 			"id":"bbebbd90befb593a",
 			"type":"text",
 			"text":"He really did like allegories...",
@@ -949,26 +927,6 @@
 			"height":129
 		},
 		{
-			"id":"10818a63bbc83eb9",
-			"type":"text",
-			"text":"Prison?",
-			"styleAttributes":{},
-			"x":-5955,
-			"y":6808,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"53e72cec6b7fa897",
-			"type":"text",
-			"text":"Spying?",
-			"styleAttributes":{},
-			"x":-5955,
-			"y":6911,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"9f04098fd76affe4",
 			"type":"text",
 			"text":"👥 Robert Harley",
@@ -987,17 +945,6 @@
 			"y":6418,
 			"width":490,
 			"height":271
-		},
-		{
-			"id":"f2c4a78c2f9975be",
-			"type":"text",
-			"text":"Until he became a spy for the government!\n---\nThe Tory minister Robert Harley bailed him out of prison on condition that Daniel Defoe work for him.",
-			"styleAttributes":{},
-			"x":-6495,
-			"y":6773,
-			"width":380,
-			"height":230,
-			"color":"5"
 		},
 		{
 			"id":"892f81aa580d4be9",
@@ -1051,17 +998,6 @@
 			"y":5277,
 			"width":505,
 			"height":134,
-			"color":"4"
-		},
-		{
-			"id":"f033b3b0f313a483",
-			"type":"text",
-			"text":"After the Union Act, Daniel Defoe spent a lot of time in Edinburgh spying for the government.\n---\nHe monitored political dissent on the ground.\nAs the Union settled, he turned his attention to domestic affairs.",
-			"styleAttributes":{},
-			"x":-5825,
-			"y":7027,
-			"width":390,
-			"height":297,
 			"color":"4"
 		},
 		{
@@ -1292,7 +1228,7 @@
 		{
 			"id":"21687949a41e78bc",
 			"type":"text",
-			"text":"Daniel Defoe studied in Charles Morton’s Academy at Newington Green\n--\nIt was a brand new kind of education.\nThe best money could buy.\nIt was a very progressive education focused on knowledge for the sake of doing.",
+			"text":"Daniel Defoe studied in Charles Morton’s Academy at Newington Green\n---\nIt was a brand new kind of education.\nThe best money could buy.\nIt was a very progressive education focused on knowledge for the sake of doing.",
 			"styleAttributes":{},
 			"x":-5846,
 			"y":885,
@@ -1577,6 +1513,81 @@
 			"width":260,
 			"height":105,
 			"color":"1"
+		},
+		{
+			"id":"a8f5434158d26eeb",
+			"type":"text",
+			"text":"What the fuck is a parabola\n\nlinkback to beginning",
+			"styleAttributes":{},
+			"x":-2780,
+			"y":8561,
+			"width":580,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"f033b3b0f313a483",
+			"type":"text",
+			"text":"After the Union Act, Daniel Defoe spent a lot of time in Edinburgh spying for the government.\n---\nHe monitored political dissent on the ground.\nAs the Union settled, he turned his attention to domestic affairs.",
+			"styleAttributes":{},
+			"x":-5890,
+			"y":7011,
+			"width":390,
+			"height":297,
+			"color":"4"
+		},
+		{
+			"id":"c78c58970d985108",
+			"type":"text",
+			"text":"🚧 I'm sorry, the Act of Union is in another DLC",
+			"styleAttributes":{},
+			"x":-5657,
+			"y":6848,
+			"width":200,
+			"height":133,
+			"color":"3"
+		},
+		{
+			"id":"5929c71a78c15ca1",
+			"type":"text",
+			"text":"Daniel Defoe and his \"review\" were instrumental in the redacting of the Act of Union in 1707\n---\nYou know, the creation of a \"United Kingdom\".\nBut this is a story for another DLC.",
+			"styleAttributes":{},
+			"x":-5915,
+			"y":6629,
+			"width":398,
+			"height":180,
+			"color":"4"
+		},
+		{
+			"id":"10818a63bbc83eb9",
+			"type":"text",
+			"text":"Prison?",
+			"styleAttributes":{},
+			"x":-6185,
+			"y":6713,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f2c4a78c2f9975be",
+			"type":"text",
+			"text":"Until he became a spy for the government!\n---\nThe Tory minister Robert Harley bailed him out of prison on condition that Daniel Defoe work for him.",
+			"styleAttributes":{},
+			"x":-6590,
+			"y":6800,
+			"width":380,
+			"height":230,
+			"color":"5"
+		},
+		{
+			"id":"53e72cec6b7fa897",
+			"type":"text",
+			"text":"Spying?",
+			"styleAttributes":{},
+			"x":-6115,
+			"y":6855,
+			"width":260,
+			"height":60
 		}
 	],
 	"edges":[
@@ -2250,15 +2261,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"86a65bea2a9345d6",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"f2c4a78c2f9975be",
-			"fromSide":"bottom",
-			"toNode":"5929c71a78c15ca1",
-			"toSide":"top"
-		},
-		{
 			"id":"9b22d625d7ddd7d3",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -2350,15 +2352,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"2cf7213bbaab84cf",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"20daebf4571d973f",
-			"fromSide":"bottom",
-			"toNode":"5929c71a78c15ca1",
-			"toSide":"top"
-		},
-		{
 			"id":"384c51a4d0f611ad",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -2395,15 +2388,6 @@
 			"toNode":"f033b3b0f313a483",
 			"toSide":"top",
 			"color":"4"
-		},
-		{
-			"id":"e3eff41739054a26",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"5929c71a78c15ca1",
-			"fromSide":"bottom",
-			"toNode":"f033b3b0f313a483",
-			"toSide":"top"
 		},
 		{
 			"id":"977ac6517f9fde70",
@@ -3428,6 +3412,42 @@
 			"fromNode":"af6635b4e9d0d251",
 			"fromSide":"bottom",
 			"toNode":"6fc3fd90e4ff2bf8",
+			"toSide":"top"
+		},
+		{
+			"id":"86a65bea2a9345d6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f2c4a78c2f9975be",
+			"fromSide":"bottom",
+			"toNode":"5929c71a78c15ca1",
+			"toSide":"top"
+		},
+		{
+			"id":"2cf7213bbaab84cf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20daebf4571d973f",
+			"fromSide":"bottom",
+			"toNode":"5929c71a78c15ca1",
+			"toSide":"top"
+		},
+		{
+			"id":"e3eff41739054a26",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5929c71a78c15ca1",
+			"fromSide":"bottom",
+			"toNode":"f033b3b0f313a483",
+			"toSide":"top"
+		},
+		{
+			"id":"2edd42c6ae109152",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5929c71a78c15ca1",
+			"fromSide":"bottom",
+			"toNode":"c78c58970d985108",
 			"toSide":"top"
 		}
 	],

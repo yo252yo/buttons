@@ -8,7 +8,10 @@ export const capitalized_substrings = [
   "STORY", "STORIES",
   "GAME",
   "THREAD",
+
+
   "END",
+  "GOOD",
 
   "OPTION",
 
