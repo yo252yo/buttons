@@ -843,17 +843,6 @@
 			"color":"5"
 		},
 		{
-			"id":"a8f5434158d26eeb",
-			"type":"text",
-			"text":"What the fuck is a parabola",
-			"styleAttributes":{},
-			"x":-1440,
-			"y":8160,
-			"width":580,
-			"height":430,
-			"color":"1"
-		},
-		{
 			"id":"a681a2ce0613aa79",
 			"type":"text",
 			"text":"Balfour DLC",
@@ -882,28 +871,6 @@
 			"styleAttributes":{},
 			"x":9400,
 			"y":9810,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"cd0283e8195b2140",
-			"type":"text",
-			"text":"# ⏸️ buttons",
-			"styleAttributes":{},
-			"x":-2320,
-			"y":10580,
-			"width":860,
-			"height":920,
-			"color":"1"
-		},
-		{
-			"id":"9385802b5150608b",
-			"type":"text",
-			"text":"I started digging in the content mine",
-			"styleAttributes":{},
-			"x":-100,
-			"y":11860,
 			"width":260,
 			"height":60,
 			"color":"1"
@@ -1118,7 +1085,7 @@
 		{
 			"id":"42c71d35a9f25a25",
 			"type":"text",
-			"text":"a game you said? ",
+			"text":"a game engine, you said? ",
 			"styleAttributes":{},
 			"x":4100,
 			"y":780,
@@ -1137,7 +1104,6 @@
 			"height":60,
 			"color":"1"
 		},
-		{"id":"e99e235b31d5b83e","type":"text","text":"different ways to browse/ gameplay features","x":4600,"y":1760,"width":500,"height":360,"color":"1"},
 		{
 			"id":"74f9179ad1f54688",
 			"type":"text",
@@ -1147,17 +1113,6 @@
 			"y":1780,
 			"width":460,
 			"height":340,
-			"color":"1"
-		},
-		{
-			"id":"ba3673cd6fa08f24",
-			"type":"text",
-			"text":"arcanes arg lore",
-			"styleAttributes":{},
-			"x":4120,
-			"y":2280,
-			"width":260,
-			"height":60,
 			"color":"1"
 		},
 		{
@@ -1295,6 +1250,117 @@
 			"y":13800,
 			"width":260,
 			"height":140,
+			"color":"1"
+		},
+		{
+			"id":"cd0283e8195b2140",
+			"type":"text",
+			"text":"# ⏸️ buttons",
+			"styleAttributes":{},
+			"x":-2160,
+			"y":10200,
+			"width":860,
+			"height":920,
+			"color":"1"
+		},
+		{
+			"id":"7be6ad5f9bf661ad",
+			"type":"text",
+			"text":"i genuinely thought defoe would have interesting travel and piracy stories\n\ni dug into the story of defoe",
+			"styleAttributes":{},
+			"x":-1280,
+			"y":11480,
+			"width":540,
+			"height":180,
+			"color":"1"
+		},
+		{
+			"id":"36627db47b08c47e",
+			"type":"text",
+			"text":"mb connect back to mining colonial exploitation into minecraft DLC",
+			"styleAttributes":{},
+			"x":-6740,
+			"y":10260,
+			"width":260,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"9385802b5150608b",
+			"type":"text",
+			"text":"I started digging in the content mine",
+			"styleAttributes":{},
+			"x":-360,
+			"y":11600,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"a8f5434158d26eeb",
+			"type":"text",
+			"text":"What the fuck is a parabola\n\nlinkback to beginning",
+			"styleAttributes":{},
+			"x":-870,
+			"y":8573,
+			"width":580,
+			"height":160,
+			"color":"1"
+		},
+		{"id":"e99e235b31d5b83e","type":"text","text":"different ways to browse/ gameplay features","x":4540,"y":1760,"width":500,"height":360,"color":"1"},
+		{
+			"id":"bcdb168ae4e75846",
+			"type":"text",
+			"text":"AI DLC\ntts\n",
+			"styleAttributes":{},
+			"x":5420,
+			"y":1980,
+			"width":280,
+			"height":140,
+			"color":"1"
+		},
+		{
+			"id":"53f219ea36851a65",
+			"type":"text",
+			"text":"edit mode",
+			"styleAttributes":{},
+			"x":6000,
+			"y":1940,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"fe88966496d9ac52",
+			"type":"text",
+			"text":"history of game is another dlc",
+			"styleAttributes":{},
+			"x":4300,
+			"y":1000,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"7165d7f878426adb",
+			"type":"text",
+			"text":"the history of arg is another dlc",
+			"styleAttributes":{},
+			"x":4300,
+			"y":2420,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"ba3673cd6fa08f24",
+			"type":"text",
+			"text":"arcanes arg lore",
+			"styleAttributes":{},
+			"x":4060,
+			"y":2220,
+			"width":260,
+			"height":100,
 			"color":"1"
 		}
 	],
@@ -2426,6 +2492,7 @@
 			"id":"de16fbdba9894d0d",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"7eadeadfedd6bad8",
 			"fromSide":"bottom",
 			"toNode":"ef2813dd2fc1deef",
@@ -2447,15 +2514,6 @@
 			"fromNode":"ef2813dd2fc1deef",
 			"fromSide":"bottom",
 			"toNode":"70d9d2a8ca7cc10b",
-			"toSide":"top"
-		},
-		{
-			"id":"e6ea52f899712180",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"cd0283e8195b2140",
-			"fromSide":"bottom",
-			"toNode":"9385802b5150608b",
 			"toSide":"top"
 		},
 		{
@@ -2781,6 +2839,90 @@
 			"fromNode":"ef2813dd2fc1deef",
 			"fromSide":"bottom",
 			"toNode":"835d6f6466cb8676",
+			"toSide":"top"
+		},
+		{
+			"id":"3deba2e97e059135",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cd0283e8195b2140",
+			"fromSide":"bottom",
+			"toNode":"7be6ad5f9bf661ad",
+			"toSide":"top"
+		},
+		{
+			"id":"fb36c8626d6b6eb3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"7be6ad5f9bf661ad",
+			"fromSide":"bottom",
+			"toNode":"9385802b5150608b",
+			"toSide":"top"
+		},
+		{
+			"id":"2db5a54a1a9f2b38",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ca4174e6a440c2b6",
+			"fromSide":"bottom",
+			"toNode":"36627db47b08c47e",
+			"toSide":"top"
+		},
+		{
+			"id":"579c9574255d0ab6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9385802b5150608b",
+			"fromSide":"left",
+			"toNode":"7be6ad5f9bf661ad",
+			"toSide":"right",
+			"color":"1"
+		},
+		{
+			"id":"8f7412b6be26710b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a8f5434158d26eeb",
+			"fromSide":"bottom",
+			"toNode":"dc03d4d5b79bb3fd",
+			"toSide":"top"
+		},
+		{
+			"id":"9560617f136290fd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e99e235b31d5b83e",
+			"fromSide":"right",
+			"toNode":"bcdb168ae4e75846",
+			"toSide":"left",
+			"color":"1"
+		},
+		{
+			"id":"d1d587eddf74485e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"bcdb168ae4e75846",
+			"fromSide":"right",
+			"toNode":"53f219ea36851a65",
+			"toSide":"left",
+			"color":"1"
+		},
+		{
+			"id":"39baf363c9acc828",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"42c71d35a9f25a25",
+			"fromSide":"bottom",
+			"toNode":"fe88966496d9ac52",
+			"toSide":"top"
+		},
+		{
+			"id":"ccebc12fd5906f18",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ba3673cd6fa08f24",
+			"fromSide":"bottom",
+			"toNode":"7165d7f878426adb",
 			"toSide":"top"
 		}
 	],
