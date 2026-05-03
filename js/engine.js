@@ -11,7 +11,7 @@ function capitalize_substrings(text) {
   return result;
 }
 
-function button_html(btnData, expanded) {
+function button_content(btnData, expanded) {
   let html;
   if (expanded) {
     html = `<b>${btnData.emoji || ''} ${btnData.title}</b>${btnData.content || ''}`;
@@ -37,7 +37,7 @@ function create_button(buttonName, parent) {
   btn.className = `button button-${color} unclicked_button`;
   btn.dataset.id = buttonName;
 
-  btn.innerHTML = button_html(btnData, false);
+  btn.innerHTML = button_content(btnData, false);
 
   btn.addEventListener('click', button_click_listener);
   btn.addEventListener('touchstart', button_click_listener);
@@ -60,12 +60,12 @@ function button_click_listener() {
   if (!btnData) return;
 
   if (this.classList.contains('unclicked_button')) {
-    expand_button(this, btnData);
+    button_first_click(this, btnData);
   }
 }
 
-function expand_button(button, btnData) {
-  button.innerHTML = button_html(btnData, true);
+function button_first_click(button, btnData) {
+  button.innerHTML = button_content(btnData, true);
   button.classList.remove('unclicked_button');
 
   const buttonsZone = document.getElementById('buttons_zone');
