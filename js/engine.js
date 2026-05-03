@@ -1,4 +1,4 @@
-import { getButton, getChildren, loadButtonsFromCanvas } from './canvas_reader.js';
+import { getButton, getChildren, loadButtonsFromCanvas } from './canvas.js';
 import { capitalized_substrings as CAPITALIZED_SUBSTRINGS } from './objectives.js';
 
 function capitalize_substrings(text) {
