@@ -1,3 +1,13 @@
+export function capitalize_substrings(text) {
+  if (!text || !capitalized_substrings) return text;
+  let result = text;
+  for (const substr of capitalized_substrings) {
+    const regex = new RegExp(substr, 'gi');
+    result = result.replace(regex, substr);
+  }
+  return result;
+}
+
 export const capitalized_substrings = [
   "HUMAN",
   "BUTTON",
