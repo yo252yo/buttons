@@ -40,6 +40,9 @@ export function create_button(buttonName, parent) {
 }
 
 export function button_click_listener() {
+  document.querySelectorAll('.last_pressed').forEach(el => el.classList.remove('last_pressed'));
+  this.classList.add('last_pressed');
+
   this.classList.toggle('pressed');
 
   const btnId = this.dataset.id;
