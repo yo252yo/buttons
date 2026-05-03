@@ -75,3 +75,19 @@ make wiki links easier
 
 
 "Spying?" "Prison?" doesnt properly link to the spy career
+
+
+
+
+
+FIX UI = FIX UX/semantics: ITS ALL ABOUT NODE TRAVEL i just have to save all the existing nodes in a queue its just FIFO the screen is a queue of buttons thats in localstorage as an array, you can come back to it at any point
+i press a button,
+the children spawn below
+
+>>> WHAT ABOUT THE STUFF THAT WAS ALREADY BELOW, right now its catapulted up but it would make sense to propel them down and to always scroll up to the pushed button
+on mobile this is it cause the finger is on the button
+on desktop i can offer autoscroll
+if possible draw lines between parent and children
+children could have appeared before so they should always come back
+i do need to highlight the active parent
+and then everything will be perfect
