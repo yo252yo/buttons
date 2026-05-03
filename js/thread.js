@@ -34,42 +34,34 @@ export function create_button(buttonName, parent) {
 
   const buttonsZone = document.getElementById('buttons_zone');
   if (buttonsZone) {
-    buttonsZone.appendChild(btn);
+    if (parent && parent.nextSibling) {
+      buttonsZone.insertBefore(btn, parent.nextSibling);
+    } else {
+      buttonsZone.appendChild(btn);
+    }
   }
 
 }
 
 export function button_click_listener() {
-  document.querySelectorAll('.last_pressed').forEach(el => el.classList.remove('last_pressed'));
-  this.classList.add('last_pressed');
-
-  this.classList.toggle('pressed');
-
   const btnId = this.dataset.id;
   const btnData = getButton(btnId);
   if (!btnData) return;
 
   if (this.classList.contains('unclicked_button')) {
-    button_first_click(this, btnData);
-  }
-}
-
-export function button_first_click(button, btnData) {
-  button.innerHTML = button_content(btnData, true);
-  button.classList.remove('unclicked_button');
-
-  const buttonsZone = document.getElementById('buttons_zone');
-  if (buttonsZone) {
-    if (button.parent) {
-      button.parent.remove(button);
-    }
-    buttonsZone.appendChild(button);
+    this.classList.remove('unclicked_button');
+    this.innerHTML = button_content(btnData, true);
   }
 
-  const children = getChildren(button.dataset.id);
-  children.forEach(childId => {
-    create_button(childId, button);
-  });
+  if (!this.classList.contains('pressed')) {
+    const children = getChildren(btnId);
+    children.forEach(childId => {
+      create_button(childId, this);
+    });
+  }
 
-  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  document.querySelectorAll('.last_pressed').forEach(el => el.classList.remove('last_pressed'));
+  this.classList.add('last_pressed');
+
+  this.classList.toggle('pressed');
 }
