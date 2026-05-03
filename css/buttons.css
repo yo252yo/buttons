@@ -89,7 +89,7 @@
 
 .last_pressed {
   outline: 5px solid var(--black);
-  box-shadow: 0 0 15px 5px var(--black);
+  box-shadow: 0 0 15px 10px var(--black);
 }
 
 /* sparkle sweep */
