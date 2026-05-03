@@ -2,9 +2,10 @@
 #buttons_zone {
   position: relative;
   top: 100px;
-  left: 50px;
+  left: 80px;
   padding-bottom: 50px;
-  width: calc(100vw - 100px);
+  padding-left: 30px;
+  width: calc(100vw - 150px);
   z-index: 10;
 }
 
@@ -17,6 +18,38 @@
   max-width: calc(85vw - 100px);
   border: 8px outset;
   border-radius: 20px;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  width: 53px;
+  height: 4px;
+}
+
+
+/* Color-matching line by default - use border colors for proper color */
+.button-orange::before {
+  background: var(--orange);
+}
+
+.button-purple::before {
+  background: var(--purple);
+}
+
+.button-blue::before {
+  background: var(--blue);
+}
+
+.button-green::before {
+  background: var(--green);
+}
+
+.button-grey::before {
+  background: var(--grey);
 }
 
 .button.pressed {
@@ -69,21 +102,29 @@
 
 @keyframes sparkle {
   0% {
-    left: -120%;
+    left: 120%;
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
   }
 
   60% {
-    left: 120%;
+    left: -120%;
   }
 
   100% {
-    left: 120%;
+    left: -120%;
   }
 }
 
 .unclicked_button {
   position: relative;
-  overflow: hidden;
   animation: wiggle 2s ease-in-out infinite;
 }
 
