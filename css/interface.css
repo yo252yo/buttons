@@ -64,6 +64,52 @@ a {
   width: 20px;
   height: 20px;
   line-height: 20px;
+  background: var(--grey);
+  border-color: var(--grey-border);
+  cursor: pointer;
+  user-select: none;
+}
+
+.interface_button.pressed {
+  border-style: inset;
+  filter: brightness(0.7) contrast(1.2);
+  opacity: 0.9;
+}
+
+.meta_button {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  background: var(--grey);
+  padding: 20px;
+  z-index: 200;
+  overflow-y: auto;
+}
+
+.meta_button-grey {
+  left: 40px;
+  background: var(--grey);
+}
+
+.meta_button-green {
+  left: 50px;
+  background: var(--green);
+}
+
+.meta_button-blue {
+  left: 60px;
+  background: var(--blue);
+}
+
+.meta_button-purple {
+  left: 70px;
+  background: var(--purple);
+}
+
+.meta_button-orange {
+  left: 80px;
+  background: var(--orange);
 }
 
 .background_stripes {
