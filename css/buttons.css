@@ -52,7 +52,7 @@
 }
 
 .last_pressed::before,
-.chain_child::before {
+.last_children::before {
   background: var(--black);
   left: -180px;
   width: 172px;

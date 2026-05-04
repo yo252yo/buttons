@@ -61,12 +61,12 @@ export function button_click_listener() {
   document.querySelectorAll('.last_pressed').forEach(el => el.classList.remove('last_pressed'));
   this.classList.add('last_pressed');
 
-  document.querySelectorAll('.chain_child').forEach(el => el.classList.remove('chain_child'));
+  document.querySelectorAll('.last_children').forEach(el => el.classList.remove('last_children'));
 
   const children = getChildren(btnId);
   children.forEach(childId => {
     const btn = create_button(childId, this);
-    if (btn) btn.classList.add('chain_child');
+    if (btn) btn.classList.add('last_children');
   });
 
   if (this.classList.contains('unclicked_button')) {
