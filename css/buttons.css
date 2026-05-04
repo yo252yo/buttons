@@ -60,9 +60,34 @@
 
 .button.pressed {
   border-style: inset;
-
-  filter: brightness(0.7);
+  filter: brightness(0.7) contrast(1.2);
   opacity: 0.9;
+}
+
+.button-orange.pressed {
+  background: var(--orange-border);
+}
+
+.button-purple.pressed {
+  background: var(--purple-border);
+}
+
+.button-blue.pressed {
+  background: var(--blue-border);
+}
+
+.button-green.pressed {
+  background: var(--green-border);
+}
+
+.button-grey.pressed {
+  background: var(--grey-border);
+}
+
+.last_pressed {
+  outline: 10px solid var(--black);
+
+  box-shadow: 0 0 15px 10px var(--black);
 }
 
 .button-orange {
@@ -134,10 +159,6 @@
   animation: shake 1s linear infinite;
 }
 
-.last_pressed {
-  outline: 10px solid var(--black);
-  box-shadow: 0 0 15px 10px var(--black);
-}
 
 /* sparkle sweep */
 .unclicked_button::after {
