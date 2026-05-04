@@ -27,6 +27,11 @@ def js_static(filename):
     return send_from_directory(os.path.join(BASE_DIR, "js"), filename)
 
 
+@buttons_bp.route("/meta_buttons/<path:filename>")
+def meta_buttons_static(filename):
+    return send_from_directory(os.path.join(BASE_DIR, "meta_buttons"), filename)
+
+
 @buttons_bp.route("/assets/<path:filename>")
 def assets_static(filename):
     return send_from_directory(os.path.join(BASE_DIR, "assets"), filename)
