@@ -15,10 +15,6 @@ export function create_button(buttonName, parent) {
   const btnData = getButton(buttonName);
   if (!btnData) return;
 
-  const existingBtn = document.querySelector(`[data-id="${buttonName}"]`);
-  if (existingBtn) {
-    existingBtn.remove();
-  }
 
   if (!parent) {
     parent = document.getElementById('title');
@@ -27,11 +23,18 @@ export function create_button(buttonName, parent) {
 
   const btn = document.createElement('div');
   const color = btnData.color || "grey";
-  btn.className = `button button-${color} unclicked_button`;
   btn.dataset.id = buttonName;
   btn.dataset.parent = parent.dataset.id;
 
-  btn.innerHTML = button_content(btnData, false);
+  const existingBtn = document.querySelector(`[data-id="${buttonName}"]`);
+  if (existingBtn) {
+    btn.className = existingBtn.className;
+    btn.innerHTML = existingBtn.innerHTML;
+    existingBtn.remove();
+  } else {
+    btn.className = `button button-${color} unclicked_button`;
+    btn.innerHTML = button_content(btnData, false);
+  }
 
   btn.addEventListener('click', button_click_listener);
   btn.addEventListener('touchstart', button_click_listener);
@@ -59,13 +62,12 @@ export function button_click_listener() {
   this.classList.add('last_pressed');
 
   document.querySelectorAll('.chain_child').forEach(el => el.classList.remove('chain_child'));
-  if (!this.classList.contains('pressed')) {
-    const children = getChildren(btnId);
-    children.forEach(childId => {
-      const btn = create_button(childId, this);
-      if (btn) btn.classList.add('chain_child');
-    });
-  }
+
+  const children = getChildren(btnId);
+  children.forEach(childId => {
+    const btn = create_button(childId, this);
+    if (btn) btn.classList.add('chain_child');
+  });
 
   if (this.classList.contains('unclicked_button')) {
     this.classList.remove('unclicked_button');
