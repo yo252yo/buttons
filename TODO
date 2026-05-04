@@ -1,30 +1,21 @@
-highlight last click
 ofc sfx music
 interfaces, etc...
+
 allow people to save buttons 🔖
 
 https://emojipedia.org/wastebasket
 
-we should aim for edit mode with tts 
-
-systematize the all caps (i.e. word hunt system)
-
+edit mode with tts 
 
 phantom clicks on mobile, mb because of the two click handlers ????
 
-
 can i have the pressed button be fixed, the bubbles from below shoot up, and then children spawn below him?
 
-
-should the canvas be the only source of truth ? like on the fly parsing ???
-
-
 we could eventually nest canvases
+nesting could be really cool to have already tbh
 
-check left to right ordering
 
 google search/ llm sourcing when i for 🚰
-
 
 green + blue = per book
 purple + orange = platform wide
@@ -33,39 +24,27 @@ purple + orange = platform wide
 emoji as jungian archetype
 
 
-i think mb every node recalls all its children 
-
 
 simulacrum/copy
 
 
 can i have the 2d map in JS ? then it could be a wow moment when players discover this (early on in options i think
 
-
 what about integration with time/place indexing
 
 
 
 
-the human who pushed
-> robinson crusoe
-whats the link between robinson and the boy who mined
->> the human who mined 
->>> the child who owned
-
-
 
 flag pairings each ⭐ has a 🏁 
 
-nesting could be really cool to have already tbh
 
 
 
 encourage sharing/recording/ content creation/ pathfinding
 export your own path as png/link
 
-find the lives defoe stole
-
+find the lives defoe stole for his books
 
 DLC = other canvases/interlinking. the minecraft DLC could be a good attempt
 
@@ -78,23 +57,7 @@ make wiki links easier
 
 
 
-
-
-FIX UI = FIX UX/semantics: ITS ALL ABOUT NODE TRAVEL i just have to save all the existing nodes in a queue its just FIFO the screen is a queue of buttons thats in localstorage as an array, you can come back to it at any point
-i press a button,
-the children spawn below
-
->>> WHAT ABOUT THE STUFF THAT WAS ALREADY BELOW, right now its catapulted up but it would make sense to propel them down and to always scroll up to the pushed button
-on mobile this is it cause the finger is on the button
-on desktop i can offer autoscroll
-if possible draw lines between parent and children
-children could have appeared before so they should always come back
-i do need to highlight the active parent
-and then everything will be perfect
-
-
 you should be able to go inside a button thats what the menus are
-
 
 emoji could be linked to parsing note template to easily have like urls, iframes, etc...
 even refer to sources like gmap idk
@@ -105,7 +68,6 @@ and for instance instance finding some emoji classes unlocks some actual content
 
 
 
-
 mark as read first meta button?
 
 maybe remember one before last highlighted? to allow easy backtrack.
@@ -113,3 +75,7 @@ actually make it like last_children based on dom data, lasT_parents so you can c
 
 
 some day we need keyboard control =x
+
+
+have children spawn left to right from canvas
+check left to right ordering
