@@ -15,7 +15,7 @@ export function applyButtonState(btn, sourceBtn, btnData) {
   if (sourceBtn) {
     btn.className = sourceBtn.className;
     btn.innerHTML = sourceBtn.innerHTML;
-  } else {
+  } else if (btnData) {
     btn.className = `button button-${btnData.color || "grey"} unclicked_button`;
     btn.innerHTML = button_content(btnData, false);
   }
@@ -63,21 +63,24 @@ export function create_button(buttonName, parent) {
 export function button_click_listener() {
   const btnId = this.dataset.id;
   const btnData = getButton(btnId);
-  if (!btnData) return;
+
+  highlight_last_pressed(this);
+  change_button_state(this, btnId, btnData);
+
+  if (!btnData) {
+    console.log("Button clicked not in the loaded canvas:" + btnId);
+    return;
+  };
 
   // First click - create children (spawning)
   if (this.classList.contains('unclicked_button')) {
     this.classList.remove('unclicked_button');
     this.innerHTML = button_content(btnData, true);
 
-    const children = getChildren(btnId);
-    children.forEach(childId => {
+    getChildren(btnId).forEach(childId => {
       create_button(childId, this);
     });
   }
-
-  highlight_last_pressed(this);
-  change_button_state(this, btnId, btnData);
 }
 
 export function change_button_state(button, btnId, btnData) {
