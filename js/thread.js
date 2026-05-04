@@ -15,7 +15,10 @@ export function create_button(buttonName, parent) {
   const btnData = getButton(buttonName);
   if (!btnData) return;
 
-  if (document.querySelector(`[data-id="${buttonName}"]`)) return;
+  const existingBtn = document.querySelector(`[data-id="${buttonName}"]`);
+  if (existingBtn) {
+    existingBtn.remove();
+  }
 
   if (!parent) {
     parent = document.getElementById('title');
@@ -26,6 +29,7 @@ export function create_button(buttonName, parent) {
   const color = btnData.color || "grey";
   btn.className = `button button-${color} unclicked_button`;
   btn.dataset.id = buttonName;
+  btn.dataset.parent = parent.dataset.id;
 
   btn.innerHTML = button_content(btnData, false);
 
@@ -41,6 +45,8 @@ export function create_button(buttonName, parent) {
     }
   }
 
+  return btn;
+
 }
 
 export function button_click_listener() {
@@ -48,20 +54,22 @@ export function button_click_listener() {
   const btnData = getButton(btnId);
   if (!btnData) return;
 
-  if (this.classList.contains('unclicked_button')) {
-    this.classList.remove('unclicked_button');
-    this.innerHTML = button_content(btnData, true);
-  }
-
-  if (!this.classList.contains('pressed')) {
-    const children = getChildren(btnId);
-    children.forEach(childId => {
-      create_button(childId, this);
-    });
-  }
 
   document.querySelectorAll('.last_pressed').forEach(el => el.classList.remove('last_pressed'));
   this.classList.add('last_pressed');
 
+  document.querySelectorAll('.chain_child').forEach(el => el.classList.remove('chain_child'));
+  if (!this.classList.contains('pressed')) {
+    const children = getChildren(btnId);
+    children.forEach(childId => {
+      const btn = create_button(childId, this);
+      if (btn) btn.classList.add('chain_child');
+    });
+  }
+
+  if (this.classList.contains('unclicked_button')) {
+    this.classList.remove('unclicked_button');
+    this.innerHTML = button_content(btnData, true);
+  }
   this.classList.toggle('pressed');
 }

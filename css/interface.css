@@ -9,6 +9,16 @@ body {
   color: black;
 }
 
+.black_stripe {
+  position: fixed;
+  top: 0;
+  left: 30px;
+  width: 10px;
+  height: 100vh;
+  background: var(--black);
+  z-index: 100;
+}
+
 a {
   font-weight: bold;
   color: darkblue;
@@ -29,7 +39,7 @@ a {
 }
 
 .margin_interface {
-  width: 50px;
+  width: 40px;
   height: 100%;
   background: repeating-linear-gradient(180deg,
       var(--orange) 0 10px,
@@ -59,7 +69,7 @@ a {
 .background_stripes {
   position: fixed;
   top: 0;
-  left: 50px;
+  left: 40px;
   display: grid;
   grid-template-columns: repeat(5, 10px);
   height: 100vh;

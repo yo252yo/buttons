@@ -24,12 +24,11 @@
 .button::before {
   content: "";
   position: absolute;
-  left: -60px;
+  left: -80px;
   top: 50%;
-  width: 53px;
-  height: 4px;
+  width: 72px;
+  height: 10px;
 }
-
 
 /* Color-matching line by default - use border colors for proper color */
 .button-orange::before {
@@ -50,6 +49,13 @@
 
 .button-grey::before {
   background: var(--grey);
+}
+
+.last_pressed::before,
+.chain_child::before {
+  background: var(--black);
+  left: -180px;
+  width: 172px;
 }
 
 .button.pressed {
@@ -88,15 +94,15 @@
   border-color: var(--grey-border);
 }
 
-@keyframes wiggle {
+@keyframes shake {
 
   0%,
   100% {
-    transform: rotate(-1deg);
+    transform: translateX(0);
   }
 
   50% {
-    transform: rotate(1deg);
+    transform: translateX(6px);
   }
 }
 
@@ -125,11 +131,11 @@
 
 .unclicked_button {
   position: relative;
-  animation: wiggle 2s ease-in-out infinite;
+  animation: shake 1s linear infinite;
 }
 
 .last_pressed {
-  outline: 5px solid var(--black);
+  outline: 10px solid var(--black);
   box-shadow: 0 0 15px 10px var(--black);
 }
 
