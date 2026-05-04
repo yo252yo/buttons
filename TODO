@@ -107,3 +107,9 @@ and for instance instance finding some emoji classes unlocks some actual content
 
 
 mark as read first meta button?
+
+maybe remember one before last highlighted? to allow easy backtrack.
+actually make it like last_children based on dom data, lasT_parents so you can climb back from anywhere
+
+
+some day we need keyboard control =x

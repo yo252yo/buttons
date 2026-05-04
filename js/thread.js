@@ -11,16 +11,6 @@ export function button_content(btnData, expanded) {
   return capitalize_substrings(html);
 }
 
-export function applyButtonState(btn, sourceBtn, btnData) {
-  if (sourceBtn) {
-    btn.className = sourceBtn.className;
-    btn.innerHTML = sourceBtn.innerHTML;
-  } else if (btnData) {
-    btn.className = `button button-${btnData.color || "grey"} unclicked_button`;
-    btn.innerHTML = button_content(btnData, false);
-  }
-}
-
 export function create_button(buttonName, parent) {
   const btnData = getButton(buttonName);
   if (!btnData) return;
@@ -41,7 +31,7 @@ export function create_button(buttonName, parent) {
     btn.className = existingBtn.className;
     btn.innerHTML = existingBtn.innerHTML;
   } else {
-    btn.className = `button button-${btnData.color || 'grey'} unclicked_button`;
+    btn.className = `button button-${btnData.color || 'grey'} unclicked_button last_children`;
     btn.innerHTML = button_content(btnData, false);
   }
 
@@ -64,16 +54,12 @@ export function button_click_listener() {
   const btnId = this.dataset.id;
   const btnData = getButton(btnId);
 
-  highlight_last_pressed(this);
-  change_button_state(this, btnId, btnData);
-
   if (!btnData) {
     console.log("Button clicked not in the loaded canvas:" + btnId);
-    return;
-  };
+  }
+  else if (this.classList.contains('unclicked_button')) {
 
-  // First click - create children (spawning)
-  if (this.classList.contains('unclicked_button')) {
+    // First canvas click - create children (spawning)
     this.classList.remove('unclicked_button');
     this.innerHTML = button_content(btnData, true);
 
@@ -81,26 +67,35 @@ export function button_click_listener() {
       create_button(childId, this);
     });
   }
+
+  // commit changes to button dom
+  write_to_dom(this, btnId);
+
+  // finally highlight the last action
+  highlight_last_pressed(this);
 }
 
-export function change_button_state(button, btnId, btnData) {
-  button.classList.toggle('pressed');
+export function write_to_dom(dom_btn, btnId) {
+  dom_btn.classList.toggle('pressed');
 
   // Propagate through the DOM
-  document.querySelectorAll(`[data-id="${btnId}"]`).forEach(btn => {
-    applyButtonState(btn, button, btnData);
+  document.querySelectorAll(`[data-id="${btnId}"]`).forEach(dom_btn_ => {
+    dom_btn_.classList = dom_btn.classList;
+    dom_btn_.innerHTML = dom_btn.innerHTML;
   });
 }
 
 export function highlight_last_pressed(dom_button) {
+  // Remove all last_pressed in DOM, then add to dom_button
   document.querySelectorAll('.last_pressed').forEach(el => el.classList.remove('last_pressed'));
   dom_button.classList.add('last_pressed');
 
-  // Then highlight its children
+  // Remove all last_children in DOM, then add to children
   document.querySelectorAll('.last_children').forEach(el => el.classList.remove('last_children'));
   const children = getChildren(dom_button.dataset.id);
   children.forEach(childId => {
-    const childBtn = document.querySelector(`[data-id="${childId}"]`);
-    if (childBtn) childBtn.classList.add('last_children');
+    document.querySelectorAll(`[data-id="${childId}"]`).forEach(childBtn => {
+      childBtn.classList.add('last_children');
+    });
   });
 }
