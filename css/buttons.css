@@ -51,6 +51,13 @@
   background: var(--grey);
 }
 
+.second_to_last_pressed::before,
+.second_to_last_children::before {
+  background: var(--black-shine);
+  left: -180px;
+  width: 172px;
+}
+
 .last_pressed::before,
 .last_children::before {
   background: var(--black);

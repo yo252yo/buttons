@@ -86,9 +86,23 @@ export function write_to_dom(dom_btn, btnId) {
 }
 
 export function highlight_last_pressed(dom_button) {
+  // Handle second_to_last_pressed
+  document.querySelectorAll('.second_to_last_pressed').forEach(el => el.classList.remove('second_to_last_pressed'));
+  const prevLastPressed = document.querySelectorAll('.last_pressed');
+  prevLastPressed.forEach(el => {
+    el.classList.add('second_to_last_pressed');
+  });
+
   // Remove all last_pressed in DOM, then add to dom_button
   document.querySelectorAll('.last_pressed').forEach(el => el.classList.remove('last_pressed'));
   dom_button.classList.add('last_pressed');
+
+  // Handle second_to_last_children
+  document.querySelectorAll('.second_to_last_children').forEach(el => el.classList.remove('second_to_last_children'));
+  const prevLastChildren = document.querySelectorAll('.last_children');
+  prevLastChildren.forEach(el => {
+    el.classList.add('second_to_last_children');
+  });
 
   // Remove all last_children in DOM, then add to children
   document.querySelectorAll('.last_children').forEach(el => el.classList.remove('last_children'));
