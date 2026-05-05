@@ -1,4 +1,4 @@
-.meta_button {
+.page {
   position: fixed;
   top: 50px;
   right: 0;
@@ -9,27 +9,27 @@
   overflow-y: auto;
 }
 
-.meta_button-grey {
+.page-grey {
   left: 40px;
   background: var(--grey);
 }
 
-.meta_button-green {
+.page-green {
   left: 50px;
   background: var(--green);
 }
 
-.meta_button-blue {
+.page-blue {
   left: 60px;
   background: var(--blue);
 }
 
-.meta_button-purple {
+.page-purple {
   left: 70px;
   background: var(--purple);
 }
 
-.meta_button-orange {
+.page-orange {
   left: 80px;
   background: var(--orange);
 }

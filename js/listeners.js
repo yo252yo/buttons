@@ -1,16 +1,16 @@
 import { setupWindowBindings } from './api.js';
 import { loadButtonsFromCanvas } from './canvas.js';
-import { button_click_listener, create_button } from './thread.js';
 import { potentially_display_meta_button } from './interface.js';
+import { button_click_listener, create_button } from './thread.js';
 
 function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
 
-const metaButton = document.getElementById('meta_button');
+const pageDiv = document.getElementById('page_div');
 
 function preventWheel(e) {
-  if (metaButton.style.display === 'block') {
+  if (pageDiv.style.display === 'block') {
     e.preventDefault();
   }
 }
@@ -21,7 +21,7 @@ export async function handle_interface_button_click() {
   document.querySelectorAll('.interface_button').forEach(btn => btn.classList.remove('pressed'));
 
   if (wasPressed) {
-    if (metaButton) metaButton.style.display = 'none';
+    if (pageDiv) pageDiv.style.display = 'none';
     return;
   }
 

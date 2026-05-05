@@ -1,5 +1,5 @@
 (async () => {
-  const metaButton = document.getElementById('meta_button');
+  const pageDiv = document.getElementById('page_div');
   const { emojiCounts, colors } = window.getEmojiCount();
 
   const getCssVar = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
@@ -65,5 +65,5 @@
   }
 
   html += '</table>';
-  metaButton.innerHTML = html;
+  pageDiv.innerHTML = html;
 })();

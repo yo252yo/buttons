@@ -56,17 +56,17 @@ export async function potentially_display_meta_button(button) {
 
     const jsCode = await response.text();
 
-    const metaButton = document.getElementById('meta_button');
-    metaButton.className = `meta_button meta_button-${colorClass}`;
-    metaButton.innerHTML = '';
+    const pageDiv = document.getElementById('page_div');
+    pageDiv.className = `page page-${colorClass}`;
+    pageDiv.innerHTML = '';
 
     // Execute JS - JS can find metaButton via getElementById
     const fn = new Function(jsCode);
     const result = fn();
     if (result instanceof Promise) await result;
 
-    metaButton.style.display = 'block';
+    pageDiv.style.display = 'block';
   } catch (e) {
-    console.log('No page file for:', title);
+    console.log('No valid page file for:', title, e);
   }
 }
