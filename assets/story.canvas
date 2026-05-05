@@ -1,371 +1,24 @@
 {
 	"nodes":[
 		{"id":"8766146d53644fc3","type":"group","x":-935,"y":2560,"width":2835,"height":4103,"color":"1","label":"Robinson Crusoe"},
+		{"id":"a3b9526cd30285a1","type":"group","x":1720,"y":-9500,"width":4480,"height":2220,"label":"Settings/credits"},
 		{"id":"711dc3bbb688c332","type":"group","x":-6036,"y":212,"width":3076,"height":3056,"label":"Defoe's youth and education"},
+		{"id":"211a205e5efdd84a","type":"group","x":-5340,"y":-9140,"width":4420,"height":1820,"color":"4","label":"Chose your path onboarding"},
+		{"id":"cda20f890a136a96","type":"group","x":-9600,"y":-9280,"width":3680,"height":2040,"label":"All about buttons"},
 		{"id":"cec1d48054724399","type":"group","x":-7280,"y":4199,"width":2271,"height":3156,"color":"4","label":"Defoe's political career"},
-		{"id":"cda20f890a136a96","type":"group","x":-3615,"y":-8800,"width":2680,"height":2040,"label":"All about buttons"},
-		{"id":"ea3446471cf211b1","type":"group","x":3900,"y":1740,"width":2380,"height":1280,"color":"1","label":"Gameplay features"},
-		{"id":"bbee386f60e2b60c","type":"group","x":-6036,"y":-2480,"width":1750,"height":1580,"label":"The Human Who Pushed Buttons"},
-		{"id":"e63a3090b448a0c2","type":"group","x":-4710,"y":3680,"width":1750,"height":1505,"color":"4","label":"Defoe's trades and writings"},
-		{"id":"bf16d1f60e4558a1","type":"group","x":4620,"y":-20,"width":1420,"height":1200,"color":"1","label":"Options etc"},
 		{"id":"8208ce67bac49771","type":"group","x":3680,"y":7200,"width":2200,"height":2540,"color":"5","label":"minecraft DLC"},
 		{"id":"5f24c33fd42114fb","type":"group","x":8280,"y":11300,"width":1070,"height":3080,"color":"2","label":"The boy who owned all the drawings"},
 		{"id":"f7244ade739bb504","type":"group","x":-7540,"y":9240,"width":2243,"height":1362,"color":"1","label":"The Stationeers"},
 		{"id":"f94ab37e7aefdeea","type":"group","x":7200,"y":10140,"width":710,"height":4220,"color":"6","label":"the human who mined content"},
+		{"id":"bbee386f60e2b60c","type":"group","x":-6036,"y":-2480,"width":1750,"height":1580,"label":"The Human Who Pushed Buttons"},
+		{"id":"e63a3090b448a0c2","type":"group","x":-4710,"y":3680,"width":1750,"height":1505,"color":"4","label":"Defoe's trades and writings"},
 		{"id":"b8596f2a51ee65ce","type":"group","x":-4820,"y":8300,"width":1672,"height":1400,"color":"1","label":"The invention of copyright"},
 		{"id":"6d3549e4b28330a7","type":"group","x":-4803,"y":5619,"width":1460,"height":1470,"color":"5","label":"True born englishman"},
+		{"id":"360ef1b735f9cb68","type":"group","x":-7220,"y":-7140,"width":1940,"height":850,"color":"1","label":"FAQ/help"},
+		{"id":"613fbd4f47579417","type":"group","x":-420,"y":-9120,"width":1515,"height":1040,"label":"Quickstart"},
 		{"id":"5807b05d2c60b477","type":"group","x":-2640,"y":10140,"width":1360,"height":999,"color":"1","label":"meta fixed point/behind the scenes"},
 		{"id":"a5966a470f16692a","type":"group","x":-2480,"y":7200,"width":1060,"height":816,"color":"1","label":"Selkirk"},
 		{"id":"ee65f44360a9cfb8","type":"group","x":600,"y":7322,"width":600,"height":572,"color":"1","label":"Defoe later life"},
-		{
-			"id":"27a1954a4a5e8183",
-			"type":"text",
-			"text":"With deep ties to politics...",
-			"styleAttributes":{},
-			"x":-6660,
-			"y":4423,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"f9a85ef1f4484755",
-			"type":"text",
-			"text":"What kind of political intrigue?",
-			"styleAttributes":{},
-			"x":-6053,
-			"y":4453,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"4a3fa30454592086",
-			"type":"text",
-			"text":"At 25, Daniel Defoe took part in the Monmouth Rebellion\n---\nA protestant failed rebellion against the catholic king.",
-			"styleAttributes":{},
-			"x":-6398,
-			"y":4546,
-			"width":260,
-			"height":260,
-			"color":"4"
-		},
-		{
-			"id":"15ffce56be6fb0f6",
-			"type":"text",
-			"text":" 🚰 The True-Born Englishman?\n ---\n You can read the full text on <a href=\"https://gutenberg.org/ebooks/30159\">Project Gutenberg</a>.\n \n <iframe src=\"https://gutenberg.org/ebooks/30159\"></iframe>",
-			"styleAttributes":{},
-			"x":-3848,
-			"y":6153,
-			"width":340,
-			"height":283
-		},
-		{
-			"id":"ebf764b1093a8127",
-			"type":"text",
-			"text":"I do like this quote:\n---\nA true-born Englishman's a contradiction,  \nIn speech an irony, in fact a fiction;",
-			"styleAttributes":{},
-			"x":-4163,
-			"y":6257,
-			"width":260,
-			"height":230,
-			"color":"6"
-		},
-		{
-			"id":"8e055b600367b97e",
-			"type":"text",
-			"text":"In essence, a pro-immigration plea?\n---\nYes,  mostly focused on calling racial purity a myth, and pointing out shameful origins of established aristocrats.",
-			"styleAttributes":{},
-			"x":-4208,
-			"y":6009,
-			"width":350,
-			"height":213
-		},
-		{
-			"id":"e1ef83e94426eeac",
-			"type":"text",
-			"text":"it is widely credited for inventing realism",
-			"styleAttributes":{},
-			"x":-445,
-			"y":6088,
-			"width":260,
-			"height":150,
-			"color":"1"
-		},
-		{
-			"id":"732c607729abf65a",
-			"type":"text",
-			"text":"Authenticity",
-			"styleAttributes":{},
-			"x":-15,
-			"y":6358,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"99af32b09b97fb14",
-			"type":"text",
-			"text":"The history of PR is in another DLC",
-			"styleAttributes":{},
-			"x":85,
-			"y":6538,
-			"width":260,
-			"height":105,
-			"color":"1"
-		},
-		{
-			"id":"4ee260ef31d9900b",
-			"type":"text",
-			"text":"\"France?\" What does France have to do with it?\n---\nDefoe was a fervent admirer of Louis XIV's militaristic centralism.\nBy talking about France, he could criticize the English government with a veneer of deniability.",
-			"styleAttributes":{},
-			"x":-5490,
-			"y":6553,
-			"width":464,
-			"height":220
-		},
-		{
-			"id":"ecbf5cec60c58bf2",
-			"type":"text",
-			"text":"The True-Born Englishman was way more successful than the original poem it was responding to.",
-			"styleAttributes":{},
-			"x":-4128,
-			"y":6574,
-			"width":265,
-			"height":140
-		},
-		{
-			"id":"9cb46f16a0ebdfb7",
-			"type":"text",
-			"text":"In fact, the True-Born Englishman was a response...\n---\nIt was mostly a response to John Tutchin's 1700 poem \"The Foreigners\", attacking the Dutch ties of the king.",
-			"styleAttributes":{},
-			"x":-3803,
-			"y":6574,
-			"width":360,
-			"height":180,
-			"color":"5"
-		},
-		{
-			"id":"9fa40b1636a990f3",
-			"type":"text",
-			"text":"Woodes Rogers",
-			"styleAttributes":{},
-			"x":-2140,
-			"y":6755,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"db9af5deecdd4403",
-			"type":"text",
-			"text":"Wow, what happened to him then?\n---\nDaniel Defoe received a pardon and continued business as usual.",
-			"styleAttributes":{},
-			"x":-6768,
-			"y":4849,
-			"width":360,
-			"height":161
-		},
-		{
-			"id":"bda37b01f524fff7",
-			"type":"text",
-			"text":"Glorious?\n---\nHistory is written by the winners.",
-			"styleAttributes":{},
-			"x":-6963,
-			"y":5436,
-			"width":260,
-			"height":120,
-			"color":"6"
-		},
-		{
-			"id":"0fa336742d48d5a5",
-			"type":"text",
-			"text":"👥 King William III\nhttps://en.wikipedia.org/wiki/William_III_of_England",
-			"styleAttributes":{},
-			"x":-6663,
-			"y":5746,
-			"width":225,
-			"height":129
-		},
-		{
-			"id":"be08d3a2e0fb21b3",
-			"type":"text",
-			"text":"King William III died in 1702, his wife, Queen Anne, succeeded him to the throne.\n---\nShe was not close with Daniel Defoe. In fact she had strong ties to the Church of England.",
-			"styleAttributes":{},
-			"x":-6365,
-			"y":5732,
-			"width":340,
-			"height":268,
-			"color":"4"
-		},
-		{
-			"id":"833cbd5359bf31db",
-			"type":"text",
-			"text":"The king was quite pleased with the way Daniel Defoe defended him\n---\nDaniel Defoe became somewhat of an advisor to him in the last years of his life.",
-			"styleAttributes":{},
-			"x":-6487,
-			"y":5477,
-			"width":375,
-			"height":224,
-			"color":"4"
-		},
-		{
-			"id":"674e6a3c3e3e61d0",
-			"type":"text",
-			"text":"In 1703, Daniel Defoe was imprisoned for a satirical poem.\n---\nHe had published \"The Shortest-Way with the Dissenters\" anonymously but was later found out.",
-			"styleAttributes":{},
-			"x":-6745,
-			"y":6148,
-			"width":400,
-			"height":220,
-			"color":"4"
-		},
-		{
-			"id":"09813e983375b960",
-			"type":"text",
-			"text":"👥 Queen Anne\nhttps://en.wikipedia.org/wiki/Anne,_Queen_of_Great_Britain",
-			"styleAttributes":{},
-			"x":-6775,
-			"y":5944,
-			"width":225,
-			"height":129
-		},
-		{
-			"id":"892f81aa580d4be9",
-			"type":"text",
-			"text":"🚧 I'm sorry, the Glorious Revolution is in another DLC",
-			"styleAttributes":{},
-			"x":-6963,
-			"y":5589,
-			"width":260,
-			"height":115,
-			"color":"3"
-		},
-		{
-			"id":"e7fb061c2668af1b",
-			"type":"text",
-			"text":"William Dampier",
-			"styleAttributes":{},
-			"x":-1640,
-			"y":6785,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"19a8c144da17f00b",
-			"type":"text",
-			"text":"Untill the Glorious Revolution of 1688\n---\nA group of protestant elites worried about the catholic king organized a rebellion.\nIt worked and the king's son-in-law, a protestant, acceded to the throne.",
-			"styleAttributes":{},
-			"x":-6800,
-			"y":5037,
-			"width":500,
-			"height":201,
-			"color":"4"
-		},
-		{
-			"id":"939fb96ab11834bf",
-			"type":"text",
-			"text":"The new king was obviously quite controversial.\n---\nDaniel Defoe defended him in a satyrical poem.",
-			"styleAttributes":{},
-			"x":-6488,
-			"y":5277,
-			"width":505,
-			"height":134,
-			"color":"4"
-		},
-		{
-			"id":"d1a142f0a782dd56",
-			"type":"text",
-			"text":"🚧 I'm sorry, the Monmouth Rebellion is in another DLC",
-			"styleAttributes":{},
-			"x":-6183,
-			"y":4920,
-			"width":260,
-			"height":115,
-			"color":"3"
-		},
-		{
-			"id":"10818a63bbc83eb9",
-			"type":"text",
-			"text":"Prison?",
-			"styleAttributes":{},
-			"x":-6185,
-			"y":6713,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"f2c4a78c2f9975be",
-			"type":"text",
-			"text":"Until he became a spy for the government!\n---\nThe Tory minister Robert Harley bailed him out of prison on condition that Daniel Defoe work for him.",
-			"styleAttributes":{},
-			"x":-6590,
-			"y":6800,
-			"width":380,
-			"height":230,
-			"color":"5"
-		},
-		{
-			"id":"1eee3e89560bf812",
-			"type":"text",
-			"text":"👥 John Tutchin\n\nA radical political journalist. \nhttps://en.wikipedia.org/wiki/John_Tutchin",
-			"styleAttributes":{},
-			"x":-3988,
-			"y":6814,
-			"width":260,
-			"height":240
-		},
-		{
-			"id":"c0925e9d6778c0a2",
-			"type":"text",
-			"text":"🚰 John Tutchin's \"The Foreigners\"\n---\nOn the <a href=\"https://archive.org/details/bim_early-english-books-1641-1700_the-foreigners-a-poem-_tutchin-john_1700/page/4/mode/2up\">Internet Archive</a>\n<iframe src=\"https://archive.org/details/bim_early-english-books-1641-1700_the-foreigners-a-poem-_tutchin-john_1700/page/4/mode/2up\"></iframe>",
-			"styleAttributes":{},
-			"x":-3688,
-			"y":6814,
-			"width":265,
-			"height":240
-		},
-		{
-			"id":"c78c58970d985108",
-			"type":"text",
-			"text":"🚧 I'm sorry, the Act of Union is in another DLC",
-			"styleAttributes":{},
-			"x":-5657,
-			"y":6848,
-			"width":200,
-			"height":133,
-			"color":"3"
-		},
-		{
-			"id":"bbebbd90befb593a",
-			"type":"text",
-			"text":"He really did like allegories...",
-			"styleAttributes":{},
-			"x":-5204,
-			"y":6864,
-			"width":178,
-			"height":77
-		},
-		{
-			"id":"4aa765f37fcebc89",
-			"type":"text",
-			"text":"🚧 I'm sorry, Louis XIV is in another DLC",
-			"styleAttributes":{},
-			"x":-5430,
-			"y":6878,
-			"width":200,
-			"height":133,
-			"color":"3"
-		},
-		{
-			"id":"53e72cec6b7fa897",
-			"type":"text",
-			"text":"Spying?",
-			"styleAttributes":{},
-			"x":-6115,
-			"y":6855,
-			"width":260,
-			"height":60
-		},
 		{
 			"id":"14edf248898aec8e",
 			"type":"text",
@@ -524,17 +177,6 @@
 			"color":"4"
 		},
 		{
-			"id":"12287a691a73d028",
-			"type":"text",
-			"text":"Do you want to hear it?",
-			"styleAttributes":{},
-			"x":7400,
-			"y":11560,
-			"width":260,
-			"height":60,
-			"color":"5"
-		},
-		{
 			"id":"24381438ebd2ccb0",
 			"type":"text",
 			"text":"The Human looked around, and pondered for a while. \n---\nDeep, deep, down the Content Mines were billions of little pebbles, each a slightly different color.",
@@ -568,43 +210,12 @@
 			"color":"4"
 		},
 		{
-			"id":"6eca2001d25b0b72",
-			"type":"text",
-			"text":"Every day, every night, the Human mined and mined.",
-			"styleAttributes":{},
-			"x":7430,
-			"y":11118,
-			"width":260,
-			"height":55
-		},
-		{
 			"id":"24240e64634959a5",
 			"type":"text",
 			"text":"He showed the second Drawing to people. The light reflected the Drawing on their eyes.\n---\n\"These Eyes are Mine!\" the boy cried, and most of them agreed.",
 			"styleAttributes":{},
 			"x":8360,
 			"y":12220,
-			"width":420,
-			"height":160
-		},
-		{"id":"0d5855d070abe7b6","type":"text","text":"⭐ The boy who owned all the drawings","x":8360,"y":11320,"width":480,"height":60,"color":"2"},
-		{
-			"id":"249743e9d7aff4d6",
-			"type":"text",
-			"text":"There once was a boy, no older than a child, who made five Drawings of himself near a Mine.",
-			"styleAttributes":{},
-			"x":8390,
-			"y":11420,
-			"width":420,
-			"height":80
-		},
-		{
-			"id":"bcbd0525ad1e316c",
-			"type":"text",
-			"text":"He lived in a world where Everything was Property.\n---\n\"These Drawings are Mine!\" the boy cried, and most of them agreed.",
-			"styleAttributes":{},
-			"x":8390,
-			"y":11540,
 			"width":420,
 			"height":160
 		},
@@ -637,26 +248,6 @@
 			"y":13020,
 			"width":340,
 			"height":120
-		},
-		{
-			"id":"b48c1a929392d1f5",
-			"type":"text",
-			"text":"Might there be other colors of Content, deeper down the Mine? \n---\nPerhaps even some color nobody had ever seen? ",
-			"styleAttributes":{},
-			"x":7320,
-			"y":10940,
-			"width":480,
-			"height":140
-		},
-		{
-			"id":"e6d90edba5127fbb",
-			"type":"text",
-			"text":"One day, the Human found a weird tale, deep at the bottom of the Content Mine.\n---\nIt was a tale written by a Human and it was called \"The boy who owned all the drawings\".",
-			"styleAttributes":{},
-			"x":7320,
-			"y":11240,
-			"width":420,
-			"height":200
 		},
 		{
 			"id":"dc03d4d5b79bb3fd",
@@ -693,39 +284,6 @@
 		},
 		{"id":"6fc3fd90e4ff2bf8","type":"text","text":"🏴‍☠️ PYRATES?","x":1760,"y":12033,"width":490,"height":370,"color":"6"},
 		{
-			"id":"9d59fd903533cb04",
-			"type":"text",
-			"text":">> mined attention ?? mb stick to shallow easy work ?\n== an interactive visual novel hommage to Curiosity: What's Inside the Cube? and The Cyberiad\n\n\t* Welcome to this new innovative game engine combining the elements of visual novel and clicker.\n\t* Sorry about the art, I'm not good at drawing. Please forgive me, for reasons that will become very clear very soon this game is only available in English. You are welcome to translate it with whatever tool you want. BTW This was made entirely without AI, whatever that might mean for you.\n\t* Click on the Content Mine to find Content. Once you have enough Content, you can turn to the next page of the book, next level of the mine. The book keeps you company while you Mine, the Mine gives you reward while you dig deeper. Win/win.\n\t* And of course, a pleasant progression and big climax at the end!\n\n---\n* On November 6th, 2012, Apple released accidentally \"Curiosity: What's Inside the Cube?\", an experimental game from Peter Molyneux intended to release at 12:22 on November 7th.\n* The game was simple: a cube with a mystery inside. It would open after 69 billion clicks. Only the last clicker would see and get the content of the cube.\n* On May 26th, 2013, after almost 7 months of collaborative clicking, Peter Molyneux announced the prize to everyone: the winner was to be a god in their next game, Godus.\n* In a 2013 Wired magazine, Molyneux indicated that the monetization options offered in the game to increase clicking rate generated \"a few tens of thousands\".\n* It is an interesting sum, small enough to barely register for his company, but big enough to really impact an individual life.\n* By the way it's well known in the psychology of game design that in monetization schemes like in many social phenomena following Pareto's law, 80% of the revenue is generated by 20% of the people. You know, the 99%/1% split.\n* That's microgaming whales, that's billionaire oligarch, that's every social network reproducing what's called a \"scale-free\" structure.\n---\n* The person who did the last click was named Bryan. He was promised the title of \"God of God\" in Godus, and a 1% share of its revenue.\n* Godus never left early access, Bryan received neither the economical ownership nor the metaphorical one he was promised over its world.\n* Peter Molyneux moved on to other projects. In 2026, he released in early access a project touted as his last. He claims it takes place in the same universe as Fable, but this cannot be explicit because Microsoft now owns the world he created.\n* He named the game \"Albion\", claiming that a historical term cannot be copyrighted.\n---\n* \"Curiosity: What's Inside the Cube?\" will forever remain as a weird experiment at the border between capitalism and poetry.\n* Its beautiful rendition of the prisoner dilemma at scale complemented a crisp allegory of the chase for object petit a, a lacanian theory best explained by philosopher Slavoj Zizek.\n* By the way, Lacan was notoriously right wing. His theory doesn't really address notions such as competition, or systemic phenomena for that matter.\n* Since this game was released, many more billions of clicks have been hammered down the Content Mines.\n* Clicks from Creators, working hard on their crafts.\n* Clicks from their Supporters, each platform taking a cut.\n* Clicks from Consumers, watching among the ads.\n* Clicks from Everyone! Who can Exist without Content?",
-			"styleAttributes":{},
-			"x":6830,
-			"y":8700,
-			"width":1200,
-			"height":1060,
-			"color":"1"
-		},
-		{
-			"id":"88b541cdd8c55941",
-			"type":"text",
-			"text":"🚧 I'm sorry, believe it or not, the history of piracy is in another DLC.",
-			"styleAttributes":{},
-			"x":2705,
-			"y":9960,
-			"width":200,
-			"height":133,
-			"color":"3"
-		},
-		{
-			"id":"2f238287f04d2a46",
-			"type":"text",
-			"text":"Sometimes the Content was slightly Green.\n---\nThat meant it was slightly rare.",
-			"styleAttributes":{},
-			"x":7390,
-			"y":10320,
-			"width":340,
-			"height":130,
-			"color":"4"
-		},
-		{
 			"id":"15980fbc13bb0c44",
 			"type":"text",
 			"text":"🏁 And for a brief moment, the Human would behold.\n---\nAnd the pebble would shine, illuminated by their torch.",
@@ -736,640 +294,7 @@
 			"height":160,
 			"color":"2"
 		},
-		{"id":"19e5fd7f23f8fd04","type":"text","text":"⭐ This is the story of a human.\n---\nA human who mined content in the content mines.\nA human like any other.","x":7320,"y":10161,"width":480,"height":115,"color":"6"},
-		{
-			"id":"0a424ad760b7b70b",
-			"type":"text",
-			"text":"✝️ The protestant work ethic?",
-			"styleAttributes":{},
-			"x":-80,
-			"y":8090,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"e56458bd0df6f92f",
-			"type":"text",
-			"text":"defoe rest of life",
-			"styleAttributes":{},
-			"x":620,
-			"y":7336,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"2e1ab5221c315e9d",
-			"type":"text",
-			"text":"🏁 end of defoe",
-			"styleAttributes":{},
-			"x":620,
-			"y":7476,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"9385802b5150608b",
-			"type":"text",
-			"text":"I started digging in the content mine",
-			"styleAttributes":{},
-			"x":-360,
-			"y":11600,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"40eb47c3ef08be5a",
-			"type":"text",
-			"text":"💵 That worldview where money is a measure of salute?\n---\nMoney really is the ultimate signifier...",
-			"styleAttributes":{},
-			"x":180,
-			"y":8200,
-			"width":440,
-			"height":140,
-			"color":"6"
-		},
-		{
-			"id":"7099e851dc27ad23",
-			"type":"text",
-			"text":"🚧 I'm sorry, the history of protestantism is in another DLC",
-			"styleAttributes":{},
-			"x":400,
-			"y":8420,
-			"width":260,
-			"height":120,
-			"color":"3"
-		},
-		{
-			"id":"8da47f57273fe7c8",
-			"type":"text",
-			"text":"Sometimes it was Blue!\n---\nRarer Content even!",
-			"styleAttributes":{},
-			"x":7380,
-			"y":10520,
-			"width":360,
-			"height":100,
-			"color":"5"
-		},
-		{
-			"id":"d1e1705298e2c5e8",
-			"type":"text",
-			"text":"And every now and then, the Human found really meaningful, life-changing Content!\n---\nIt would be Purple, or even Orange!",
-			"styleAttributes":{},
-			"x":7300,
-			"y":10685,
-			"width":520,
-			"height":175,
-			"color":"6"
-		},
-		{
-			"id":"226ec3fff23eaa94",
-			"type":"text",
-			"text":"🏁 end of selkirk",
-			"styleAttributes":{},
-			"x":-1710,
-			"y":7936,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"ef2813dd2fc1deef",
-			"type":"text",
-			"text":"minecraft dlc",
-			"styleAttributes":{},
-			"x":3780,
-			"y":7540,
-			"width":1950,
-			"height":1861,
-			"color":"1"
-		},
-		{
-			"id":"4c11af20a6c391c8",
-			"type":"text",
-			"text":"something cryptobro\ngo back to defoe",
-			"styleAttributes":{},
-			"x":5020,
-			"y":9491,
-			"width":260,
-			"height":179,
-			"color":"1"
-		},
-		{
-			"id":"0960ba5e853c2d1b",
-			"type":"text",
-			"text":"⭐ The life of Selkirk\nSelkirk backstory, orange, star",
-			"styleAttributes":{},
-			"x":-2050,
-			"y":7220,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"f8195e67d0bd73b7",
-			"type":"text",
-			"text":"selkirk story published",
-			"styleAttributes":{},
-			"x":-1980,
-			"y":7753,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"5457838724c4f71f",
-			"type":"text",
-			"text":"selirk childhood",
-			"styleAttributes":{},
-			"x":-2010,
-			"y":7380,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"bbc20a2e28182560",
-			"type":"text",
-			"text":"⏰ On 2 February 1709\n---\nThe shipwrecked Alexander Selkirk was rescued by the way of Duke.\n",
-			"styleAttributes":{},
-			"x":-2470,
-			"y":7520,
-			"width":330,
-			"height":147,
-			"color":"5"
-		},
-		{
-			"id":"9f04098fd76affe4",
-			"type":"text",
-			"text":"👥 Robert Harley",
-			"styleAttributes":{},
-			"x":-6095,
-			"y":7074,
-			"width":180,
-			"height":60
-		},
-		{
-			"id":"6d889bbbf0bab92e",
-			"type":"text",
-			"text":"1709 you say?",
-			"styleAttributes":{},
-			"x":-3160,
-			"y":7906,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"a39a9c20ae56ea71",
-			"type":"text",
-			"text":"molyneux and  backstory",
-			"styleAttributes":{},
-			"x":5420,
-			"y":9551,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"835d6f6466cb8676",
-			"type":"text",
-			"text":"The minecraft DLC gameplay DLC is probably an everlasting DLC (torch scanning)",
-			"styleAttributes":{},
-			"x":5600,
-			"y":9580,
-			"width":260,
-			"height":140,
-			"color":"1"
-		},
-		{
-			"id":"c6af20895de1c73a",
-			"type":"text",
-			"text":"What was it before",
-			"styleAttributes":{},
-			"x":-4802,
-			"y":8831,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"af6635b4e9d0d251",
-			"type":"text",
-			"text":"How did it compare to the one in the sea",
-			"styleAttributes":{},
-			"x":-4485,
-			"y":8821,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"92aa118063569517",
-			"type":"text",
-			"text":"🗝️ Any source in particular?\n---\nHis writing at the time, but if you want something precise, check out Daniel Defoe's The Review, Vol. VI, No. 101 on November 10, 1709.\nYou can find a few extracts around that time from the man himself by searching online.",
-			"styleAttributes":{},
-			"x":-3840,
-			"y":8521,
-			"width":480,
-			"height":200
-		},
-		{
-			"id":"839a29e47b87d496",
-			"type":"text",
-			"text":"the internet and piracy",
-			"styleAttributes":{},
-			"x":-3740,
-			"y":9621,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"e302cb83277536b7",
-			"type":"text",
-			"text":"🧱 Where can I read the primary source?\n---\nAlthough the content of old periodicals are in the public domain by now, only rare digitized extracts are available to the public.\nMost of them are behind the paywall of private publishers like <a href=\"https://www.jstor.org/stable/20779451\" target=\"_blank\">JSTOR</a> or <a href=\"https://www.taylorfrancis.com/books/mono/10.4324/9781003576228/defoe-review-1704-13-volume-6-1709-10-part-john-mcveagh\" target=\"_blank\">Taylor & Francis</a>.",
-			"styleAttributes":{},
-			"x":-3670,
-			"y":8815,
-			"width":340,
-			"height":226
-		},
-		{
-			"id":"509848ca1071f626",
-			"type":"text",
-			"text":"🚧 I'm sorry, The Growing Inaccessibility Of Science is in another DLC",
-			"styleAttributes":{},
-			"x":-3590,
-			"y":9106,
-			"width":260,
-			"height":115,
-			"color":"3"
-		},
-		{
-			"id":"cd0283e8195b2140",
-			"type":"text",
-			"text":"⏸️ buttons\n# buttons\n",
-			"styleAttributes":{},
-			"x":-2160,
-			"y":10200,
-			"width":860,
-			"height":920,
-			"color":"1"
-		},
-		{
-			"id":"257e260d9008f8c8",
-			"type":"text",
-			"text":"🏁 a partisan debate on fuck capitalism jam?",
-			"styleAttributes":{},
-			"x":-2620,
-			"y":10161,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"1fe733323747f354",
-			"type":"text",
-			"text":"microsoft owns albyon",
-			"styleAttributes":{},
-			"x":-2590,
-			"y":9920,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"a8f5434158d26eeb",
-			"type":"text",
-			"text":"What the fuck is a parabola\n\nlinkback to beginning",
-			"styleAttributes":{},
-			"x":-2780,
-			"y":8561,
-			"width":580,
-			"height":160,
-			"color":"1"
-		},
-		{
-			"id":"94da80804b693f8a",
-			"type":"text",
-			"text":"old man yelling at the clouds energy\n?? add meme",
-			"styleAttributes":{},
-			"x":-4240,
-			"y":8981,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"f3f817ca4d964d3a",
-			"type":"text",
-			"text":"how was it received",
-			"styleAttributes":{},
-			"x":-4060,
-			"y":8868,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"ff888cb0f93683c4",
-			"type":"text",
-			"text":"⭐ The story of copyright",
-			"styleAttributes":{},
-			"x":-4080,
-			"y":9062,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"b4b7ec5acc09de30",
-			"type":"text",
-			"text":"the statute of anne\n\nsuccession turmoil ??",
-			"styleAttributes":{},
-			"x":-4060,
-			"y":9221,
-			"width":260,
-			"height":140,
-			"color":"1"
-		},
-		{
-			"id":"4abb0e0df2ecc5b6",
-			"type":"text",
-			"text":"centuries of exploitation",
-			"styleAttributes":{},
-			"x":-3930,
-			"y":9486,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"7be6ad5f9bf661ad",
-			"type":"text",
-			"text":"i genuinely thought defoe would have interesting travel and piracy stories\n\ni dug into the story of defoe",
-			"styleAttributes":{},
-			"x":-1380,
-			"y":11220,
-			"width":540,
-			"height":180,
-			"color":"1"
-		},
-		{
-			"id":"ca4174e6a440c2b6",
-			"type":"text",
-			"text":"the story of Doug Wills (see other tabs)\nhttps://chunib4.tumblr.com/post/815276017420746752/worshipful-company-of-stationers-and-newspaper\n\nchunib4.tumblr.com/post/815276152899993600/i-was-todays-years-old-when-i-learned-that-these\n\n\nhttps://www.tumblr.com/chunib4/815276997225938944/they-have-a-youth-program-o\n\nhttps://www.tumblr.com/chunib4/815276415710887936/im-starting-to-think-reality-is-always-better-than\n",
-			"styleAttributes":{},
-			"x":-7520,
-			"y":9311,
-			"width":1155,
-			"height":740,
-			"color":"1"
-		},
-		{
-			"id":"fabf8f58496f09f3",
-			"type":"text",
-			"text":"⭐ The story of the Stationeers",
-			"styleAttributes":{},
-			"x":-6312,
-			"y":9258,
-			"width":995,
-			"height":707,
-			"color":"1"
-		},
-		{
-			"id":"36627db47b08c47e",
-			"type":"text",
-			"text":"mb connect back to mining colonial exploitation into minecraft DLC",
-			"styleAttributes":{},
-			"x":-6074,
-			"y":10320,
-			"width":260,
-			"height":160,
-			"color":"1"
-		},
-		{
-			"id":"a8d38e0524f7896d",
-			"type":"text",
-			"text":"What kind of government?\n---\nThe politics at the time were an intense war between the \"progressive\" Whigs and the \"traditionalist\" Tories.\nThe balance of power was a constant tug-of-war.\nDaniel Defoe's positions were closer to the Whigs, but he was spying for the Tories.\nAs a result, he was widely distrusted and seen as a double agent.",
-			"styleAttributes":{},
-			"x":-6870,
-			"y":7074,
-			"width":470,
-			"height":252,
-			"color":"5"
-		},
-		{
-			"id":"f033b3b0f313a483",
-			"type":"text",
-			"text":"After the Union Act, Daniel Defoe spent a lot of time in Edinburgh spying for the government.\n---\nHe monitored political dissent on the ground.\nAs the Union settled, he turned his attention to domestic affairs.",
-			"styleAttributes":{},
-			"x":-5890,
-			"y":7011,
-			"width":390,
-			"height":297,
-			"color":"4"
-		},
-		{
-			"id":"b945d53941ae0ca7",
-			"type":"text",
-			"text":"london rotary club",
-			"styleAttributes":{},
-			"x":-7520,
-			"y":10280,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"78d56f5886038f05",
-			"type":"text",
-			"text":"🏁 genocide washing",
-			"styleAttributes":{},
-			"x":-7240,
-			"y":10520,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"516d8b49569ae19a",
-			"type":"text",
-			"text":"The Shortest-Way with the Dissenters?\n---\nIt was written from the point of view of a bloodthirsty catholic extremist.\nDaniel Defoe essentially impersonated his opponents and exaggerated their positions.\nThey initially loved it, and many believed that the government was actually planning a massacre.\nWhen the truth came out, everyone was understanbly quite upset.",
-			"styleAttributes":{},
-			"x":-7193,
-			"y":6392,
-			"width":360,
-			"height":390,
-			"color":"5"
-		},
-		{
-			"id":"d558c210ac6f1acc",
-			"type":"text",
-			"text":"🚰 Daniel Defoe's \"The Shortest-Way with the Dissenter\"\n---\nOn the <a href=\"https://archive.org/details/shortest-way-dissenters\">Internet Archive</a>\n<iframe src=\"https://archive.org/details/shortest-way-dissenters\"></iframe>",
-			"styleAttributes":{},
-			"x":-6790,
-			"y":6452,
-			"width":490,
-			"height":271
-		},
-		{
-			"id":"6a3eb1ddad2c0ac6",
-			"type":"text",
-			"text":"Did Daniel Defoe read any fiction?\n---\nHe was famously suspicious of fiction, that his religious upbringing pushed him to consider \"lies told for pleasure\".\n",
-			"styleAttributes":{},
-			"x":-3641,
-			"y":4637,
-			"width":540,
-			"height":180
-		},
-		{
-			"id":"458077cf65aea0f1",
-			"type":"text",
-			"text":"He loved to gather information.\n---\nThat was the key to a good deal.",
-			"styleAttributes":{},
-			"x":-4131,
-			"y":4685,
-			"width":410,
-			"height":120,
-			"color":"6"
-		},
-		{
-			"id":"c3f78645024410ce",
-			"type":"text",
-			"text":"I also think it's important to understand the world...\n---\nAnd where things come from.",
-			"styleAttributes":{},
-			"x":-4131,
-			"y":4857,
-			"width":420,
-			"height":145,
-			"color":"2"
-		},
-		{
-			"id":"c06caf1ce1c855b9",
-			"type":"text",
-			"text":"Wait, how did he reconcile that with the fact that he literaly wrote fiction?\n---\nDefoe didn’t just ignore the contradiction; he built an entire philosophical defense for it. He called his method \"Religious Allegory\" or \"Parabolic Writing.\"",
-			"styleAttributes":{},
-			"x":-3621,
-			"y":4872,
-			"width":520,
-			"height":210,
-			"color":"2"
-		},
-		{
-			"id":"20daebf4571d973f",
-			"type":"text",
-			"text":"In Prison, he started his own private publication.\n---\nA newsletter if you will.\n<a href=\"https://archive.org/details/bub_gb_El8TAAAAQAAJ\" target=\"_blank\">\"A Review of the Affairs of France\"</a> started as a weekly chronicle that shifted according to Daniel Defoe's interests.\n<iframe src=\"https://archive.org/details/bub_gb_El8TAAAAQAAJ\"></iframe>",
-			"styleAttributes":{},
-			"x":-5887,
-			"y":6185,
-			"width":460,
-			"height":267,
-			"color":"4"
-		},
-		{
-			"id":"5929c71a78c15ca1",
-			"type":"text",
-			"text":"Daniel Defoe and his \"review\" were instrumental in the redacting of the Act of Union in 1707\n---\nYou know, the creation of a \"United Kingdom\".\nBut this is a story for another DLC.",
-			"styleAttributes":{},
-			"x":-6138,
-			"y":6487,
-			"width":398,
-			"height":180,
-			"color":"4"
-		},
-		{
-			"id":"6bf4d15935fded99",
-			"type":"text",
-			"text":"🏴‍☠️ Around 1709, Daniel Defoe's \"Review\" turned its attention to the question of piracy\n---\nNo, not the one in the sea.\nUpset about his financial loss of opportunity cost in his previous experiences, he started claiming a bold new idea: a BOOK should be the AUTHOR’s Property.",
-			"styleAttributes":{},
-			"x":-4615,
-			"y":8371,
-			"width":390,
-			"height":300,
-			"color":"4"
-		},
-		{
-			"id":"8725a0235c1a2659",
-			"type":"text",
-			"text":"Daniel Defoe was quite upset that his poem had been widely copied.\n---\nIt appears that the majority of copies in circulation were cheap unauthorized versions on which he did not make any profit.\nHe claimed that up to 80000 copies were circulated, a staggering amount for the time.",
-			"styleAttributes":{},
-			"x":-4802,
-			"y":6550,
-			"width":460,
-			"height":232,
-			"color":"5"
-		},
-		{
-			"id":"5b9234d08f40366a",
-			"type":"text",
-			"text":"🗝️ In 1701, Daniel Defoe published The True-Born Englishman.\n---\nAt 41, he published this satirical poem against the xenophobic culture of England of the time.\nIt was aimed at defending the dutch born king, William III.",
-			"styleAttributes":{},
-			"x":-4608,
-			"y":5701,
-			"width":400,
-			"height":280,
-			"color":"2"
-		},
-		{
-			"id":"05a22844cd0ac569",
-			"type":"text",
-			"text":"Daniel Defoe's True-Born Englishman was a massive hit.\n---\nFirst published anonymously, the demand for it grew quickly, and many unauthorized copies were produced.",
-			"styleAttributes":{},
-			"x":-4782,
-			"y":6165,
-			"width":480,
-			"height":187,
-			"color":"4"
-		},
-		{"id":"options","type":"text","text":"⚙️ Options\n---\nWIP: Some buttons are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle.\n  Include a jab about language 🇬🇧 apologize for it being english only but the html structure is dead simple so translation tools should work. Add an aside to explain that websites used to have automated translation but that got out of fashion when google got monopoly over chrome.\n  Make sure to include plenty of accessibility options for gamers.","x":4640,"y":280,"width":300,"height":200,"color":"1"},
-		{
-			"id":"7eadeadfedd6bad8",
-			"type":"text",
-			"text":"Future updates/DLCs\nfirst dlc is ",
-			"styleAttributes":{},
-			"x":5210,
-			"y":520,
-			"width":260,
-			"height":170,
-			"color":"1"
-		},
 		{"id":"d674c3e21ca88716","type":"text","text":"⭐ The Life of Daniel Defoe\n---\nIn a very condensed format.","x":-3696,"y":-120,"width":300,"height":200,"color":"0"},
-		{
-			"id":"a05aebb07e232d1a",
-			"type":"text",
-			"text":"Ben Shahn DLC",
-			"styleAttributes":{},
-			"x":5760,
-			"y":820,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"241ea56d3a7ee635",
-			"type":"text",
-			"text":"Bossuet DLC",
-			"styleAttributes":{},
-			"x":5440,
-			"y":850,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"a681a2ce0613aa79",
-			"type":"text",
-			"text":"Balfour DLC",
-			"styleAttributes":{},
-			"x":5080,
-			"y":840,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
 		{"id":"intro_orange","type":"text","text":"Some buttons were orange.","x":-4626,"y":-2160,"width":300,"height":60,"color":"2"},
 		{"id":"intro_blue","type":"text","text":"Some buttons were blue.","x":-5366,"y":-2160,"width":300,"height":60,"color":"5"},
 		{"id":"intro_purple","type":"text","text":"Some buttons were purple.","x":-4986,"y":-2160,"width":300,"height":60,"color":"6"},
@@ -1499,17 +424,6 @@
 			"height":400
 		},
 		{
-			"id":"3b2ea4d56919ce64",
-			"type":"text",
-			"text":"Melanchon 2027 DLC",
-			"styleAttributes":{},
-			"x":5420,
-			"y":1100,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"31793240f96b9314",
 			"type":"text",
 			"text":"It's called \"networking\"\n---\nThe ruling class helping their owns.",
@@ -1543,29 +457,6 @@
 		},
 		{"id":"more","type":"text","text":"Could there be MORE to this story?\n---\nCould there be hidden depths burried far below what meets the eye?","x":160,"y":1760,"width":300,"height":200,"color":"0"},
 		{
-			"id":"74f9179ad1f54688",
-			"type":"text",
-			"text":"yes but first you need to pick a class objectives",
-			"styleAttributes":{},
-			"x":4000,
-			"y":1780,
-			"width":460,
-			"height":340,
-			"color":"1"
-		},
-		{"id":"e99e235b31d5b83e","type":"text","text":"different ways to browse/ gameplay features","x":4540,"y":1760,"width":500,"height":360,"color":"1"},
-		{
-			"id":"53f219ea36851a65",
-			"type":"text",
-			"text":"edit mode",
-			"styleAttributes":{},
-			"x":6000,
-			"y":1940,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"473213a9261ef550",
 			"type":"text",
 			"text":"A famous religious and intellectual microcosm for Dissenters.",
@@ -1574,17 +465,6 @@
 			"y":1952,
 			"width":260,
 			"height":190
-		},
-		{
-			"id":"bcdb168ae4e75846",
-			"type":"text",
-			"text":"AI DLC\ntts\n",
-			"styleAttributes":{},
-			"x":5420,
-			"y":1980,
-			"width":280,
-			"height":140,
-			"color":"1"
 		},
 		{"id":"more2","type":"text","text":"Could there be an orange button drowned in a sea of grey?\n---\nThat is when the human found a story.\n  It laid there, shining green, in the middle of all the buttons.\n  It was story left untold, almost forgotten.\n  And its title was...","x":160,"y":2020,"width":300,"height":200,"color":"2"},
 		{
@@ -1691,416 +571,9 @@
 		{"id":"title_aside","type":"text","text":"The story of a white man?\n---\nAlas, that is where we must start.\n  Humans do love their stories to be character-centered.\n  But fear not, you will see many characters if you press the right buttons.","x":25,"y":2820,"width":300,"height":200,"color":"6"},
 		{"id":"49209c0bf5486f14","type":"text","text":"I can't help but wonder if this psychological bias in stories reinforces a hyper-individualistic society.\n---","x":25,"y":3120,"width":300,"height":200,"color":"2"},
 		{"id":"title_aside2","type":"text","text":"Though I guess a lot of them were white men.\n---\nSorry, its mostly their story.\n  But it doesn't have to be about them.","x":525,"y":3100,"width":300,"height":200,"color":"0"},
-		{
-			"id":"e1de172a4c0d12f4",
-			"type":"text",
-			"text":"exciting, where do you wanna start? \nmain campaign or minecraft dlc",
-			"styleAttributes":{},
-			"x":3920,
-			"y":2720,
-			"width":800,
-			"height":280,
-			"color":"1"
-		},
-		{
-			"id":"a43ae9a713759e4e",
-			"type":"text",
-			"text":"gamer accessibility features",
-			"styleAttributes":{},
-			"x":4720,
-			"y":2240,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"7165d7f878426adb",
-			"type":"text",
-			"text":"the history of arg is another dlc",
-			"styleAttributes":{},
-			"x":4300,
-			"y":2420,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"ba3673cd6fa08f24",
-			"type":"text",
-			"text":"arcanes arg lore",
-			"styleAttributes":{},
-			"x":4060,
-			"y":2220,
-			"width":260,
-			"height":100,
-			"color":"1"
-		},
 		{"id":"beginning","type":"text","text":"⭐ The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.","x":-5666,"y":-2440,"width":300,"height":200,"color":"4"},
 		{"id":"start","type":"text","text":"⭐ Start\n---\nThis game is about buttons.","x":-35,"y":-9680,"width":300,"height":200,"color":"4"},
-		{"id":"title_button","type":"text","text":"<h1>Push YOUR Buttons!</h1>\n---\nPress the ⭐ Start button!","x":-35,"y":-9940,"width":300,"height":200,"color":"2"},
-		{
-			"id":"6f561fe79646f42e",
-			"type":"text",
-			"text":"Chose a path 👣?\n---\nYes, we need to customize your game experience, so you need to pick a starting class.🏆👣\nYour progress is measured along colored path. 🎨",
-			"styleAttributes":{},
-			"x":245,
-			"y":-7040,
-			"width":560,
-			"height":200,
-			"color":"1"
-		},
-		{"id":"tuto_star","type":"text","text":"❓ What does the star ⭐ mean ?\n---\nStar ⭐ is the icon for starter packs. They mark the beginning of a story.","x":55,"y":-6600,"width":300,"height":160,"color":"0"},
-		{
-			"id":"6c903f277691a2b7",
-			"type":"text",
-			"text":"the path of the gamer",
-			"styleAttributes":{},
-			"x":765,
-			"y":-6505,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"09f889c1c6139414",
-			"type":"text",
-			"text":"❓ My objective?",
-			"styleAttributes":{},
-			"x":435,
-			"y":-6480,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"d688b3590b019998",
-			"type":"text",
-			"text":"❓ Game?\n---\nThere are many ways to play this game.\nAnd it all starts with finding your own path 👣.\n",
-			"styleAttributes":{},
-			"x":-235,
-			"y":-7010,
-			"width":360,
-			"height":160,
-			"color":"1"
-		},
-		{
-			"id":"6fda12f97f89f6fb",
-			"type":"text",
-			"text":"the path of the reader",
-			"styleAttributes":{},
-			"x":1125,
-			"y":-6510,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"a70e60e018c06da3",
-			"type":"text",
-			"text":"finding emojis",
-			"styleAttributes":{},
-			"x":1315,
-			"y":-6720,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"28461ca198ba1708",
-			"type":"text",
-			"text":"finding words",
-			"styleAttributes":{},
-			"x":1575,
-			"y":-6720,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"f436e6b903df9eb3",
-			"type":"text",
-			"text":"finding colors",
-			"styleAttributes":{},
-			"x":1835,
-			"y":-6720,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"c565c4de39b22791",
-			"type":"text",
-			"text":"❓ How do I play the game?\n---\nExcellent question!\nWe cater to a wide variety of playstyles. \nTo play, you must first...",
-			"styleAttributes":{},
-			"x":2205,
-			"y":-6810,
-			"width":440,
-			"height":180,
-			"color":"4"
-		},
-		{
-			"id":"93ea9dee7495aa53",
-			"type":"text",
-			"text":"❓Icons ☺️ ?",
-			"styleAttributes":{},
-			"x":125,
-			"y":-6430,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"c72cdfba73cddacf",
-			"type":"text",
-			"text":"accessibilities options \n\nwhat kind of gamer?\n\ni wanna go straight into the story ? \ni wanna understand everything about the game?\n\n\nthe path of the collector",
-			"styleAttributes":{},
-			"x":665,
-			"y":-6410,
-			"width":460,
-			"height":290,
-			"color":"1"
-		},
-		{"id":"tuto_colors","type":"text","text":"❓ What's up with the colors?\n---\nWIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨","x":-45,"y":-6160,"width":480,"height":300,"color":"1"},
-		{
-			"id":"200148ca741c45f9",
-			"type":"text",
-			"text":"whats the goal? \nto find a end flag of course",
-			"styleAttributes":{},
-			"x":765,
-			"y":-5995,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"28d7f97393cb2dcc",
-			"type":"text",
-			"text":"the player self defines and i provide accessibility and objectives for them",
-			"styleAttributes":{},
-			"x":315,
-			"y":-5870,
-			"width":760,
-			"height":100
-		},
-		{"id":"02b8cc538f2e9888","type":"text","text":"❓ This thing is new kind of game engine?\n---\nA new medium?\nA new way to see?\nA new way to LOOK.","x":-265,"y":-6780,"width":360,"height":180,"color":"2"},
-		{"id":"tutorial","type":"text","text":"❓ What do I have to do?\n---\nYour GOAL is simple: find an ending flag 🏁.\n  There's an ending 🏁 at the end of the green 🟢 line.\n  There may be others.","x":-505,"y":-6620,"width":300,"height":200,"color":"4"},
-		{"id":"tuto_archive","type":"text","text":"❓ Help, my screen is full of stuff!\n---\nWIP: The thread 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe","x":-385,"y":-6120,"width":300,"height":200,"color":"1"},
-		{"id":"tuto_apology","type":"text","text":"❓ This tutorial is too long!\n---\nI apologize, this is brand new game engine, a lot of things need to be explained.\n  Feel free to skip everything you want, or look at the ⚙️ options to customize your experience.","x":-455,"y":-5860,"width":300,"height":200,"color":"1"},
-		{
-			"id":"3dc05573068d8e07",
-			"type":"text",
-			"text":"Why are some buttons a different color?\n---\nButtons can have different colors.\nColors influence the rarity and amount of text, but they have other secrets.\nFor instance, I heard that the green 🟢 path was the path to your objective.",
-			"styleAttributes":{},
-			"x":-1975,
-			"y":-8050,
-			"width":440,
-			"height":220,
-			"color":"4"
-		},
-		{
-			"id":"f0529aca661fbc4e",
-			"type":"text",
-			"text":"❓ Rarity?",
-			"styleAttributes":{},
-			"x":-1935,
-			"y":-7630,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"efd763cad938f719",
-			"type":"text",
-			"text":"Grey is most common.",
-			"styleAttributes":{},
-			"x":-1935,
-			"y":-7490,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"e4f4bb3fc1323c35",
-			"type":"text",
-			"text":"Why do some buttons have emoji?\n---\nYou will find many types of buttons on your path.\nSome will have icons, other not.\nEach icon has a different meaning.\n❓ is Tutorial/Help.\n☺️ is the icon for icons ☺️.\nSome will help you in your objectives.",
-			"styleAttributes":{},
-			"x":-1515,
-			"y":-8050,
-			"width":480,
-			"height":220,
-			"color":"1"
-		},
-		{
-			"id":"78134217e5bc6ffd",
-			"type":"text",
-			"text":"But if your button draws other buttons, they will be connected on the left.\n---\nThis also leaves a trace to help you see where you come from.",
-			"styleAttributes":{},
-			"x":-2535,
-			"y":-8420,
-			"width":320,
-			"height":230
-		},
-		{
-			"id":"cced47e2636b9442",
-			"type":"text",
-			"text":"Why does this button wiggle?\n---\nIt's because you haven't clicked on it yet.\nSee, it's fixed now.\nIt's a clever trick to remember which button you haven't pushed yet.",
-			"styleAttributes":{},
-			"x":-2445,
-			"y":-8050,
-			"width":440,
-			"height":160
-		},
-		{
-			"id":"051f8f7881d34615",
-			"type":"text",
-			"text":"Enough about buttons!",
-			"styleAttributes":{},
-			"x":-2425,
-			"y":-7710,
-			"width":220,
-			"height":70
-		},
-		{
-			"id":"3dfecaa0cfdd2129",
-			"type":"text",
-			"text":"And finally, orange!\n---\nIt is hardwired in every gamer's brain.",
-			"styleAttributes":{},
-			"x":-1935,
-			"y":-6950,
-			"width":260,
-			"height":160,
-			"color":"2"
-		},
-		{
-			"id":"152b7455f6b307a6",
-			"type":"text",
-			"text":"I'd rather keep pressing buttons for now.\n---\nSuit yourself :)",
-			"styleAttributes":{},
-			"x":-3595,
-			"y":-7710,
-			"width":320,
-			"height":140
-		},
-		{
-			"id":"5d9d17e73b02f73f",
-			"type":"text",
-			"text":"On second thoughts, I'm not that much into buttons.\n---\nLet me try and change your mind.\nTry another, just one more push.\nI promise it will be worth it!",
-			"styleAttributes":{},
-			"x":-3255,
-			"y":-7710,
-			"width":320,
-			"height":220
-		},
-		{
-			"id":"f88d036ba343ec9c",
-			"type":"text",
-			"text":"Wow, I have so many choices all at once!\n---\nLife is like that sometimes.\nI hope it's not too overwhelming.\nIf it's any comfort, like in life, some choices don't matter.",
-			"styleAttributes":{},
-			"x":-2785,
-			"y":-7710,
-			"width":340,
-			"height":220
-		},
-		{
-			"id":"e3a17b749f47089f",
-			"type":"text",
-			"text":"Which choices matter?\n---\nYou tell me.",
-			"styleAttributes":{},
-			"x":-2575,
-			"y":-7390,
-			"width":220,
-			"height":140
-		},
-		{
-			"id":"c60d11f49e410b11",
-			"type":"text",
-			"text":"Then green...",
-			"styleAttributes":{},
-			"x":-1935,
-			"y":-7350,
-			"width":260,
-			"height":60,
-			"color":"4"
-		},
-		{
-			"id":"359659a13718c524",
-			"type":"text",
-			"text":"Then blue...",
-			"styleAttributes":{},
-			"x":-1935,
-			"y":-7210,
-			"width":260,
-			"height":60,
-			"color":"5"
-		},
-		{
-			"id":"9c8ea1a3b417de9e",
-			"type":"text",
-			"text":"Why does this button appear multiple time?\n---\nIt's because a lot of different buttons can draw the same button. \nYou can customize this in the settings.",
-			"styleAttributes":{},
-			"x":-1515,
-			"y":-7170,
-			"width":440,
-			"height":220,
-			"color":"1"
-		},
-		{
-			"id":"38bb2cb3b9a4fa11",
-			"type":"text",
-			"text":"Then purple...",
-			"styleAttributes":{},
-			"x":-1935,
-			"y":-7070,
-			"width":260,
-			"height":60,
-			"color":"6"
-		},
-		{
-			"id":"658362153a4dcbd8",
-			"type":"text",
-			"text":"❓ Buttons?\n---\nThat thing you just pressed on.\nButtons have two states: NORMAL and PUSHED.\nWhen you FIRST click on them, they can EXPAND and draw other buttons.",
-			"styleAttributes":{},
-			"x":-2775,
-			"y":-8790,
-			"width":480,
-			"height":180
-		},
-		{
-			"id":"04a19e2087f1b3cc",
-			"type":"text",
-			"text":"Some buttons do not draw other buttons.\n---\nBut you can keep clicking on them to change their state.",
-			"styleAttributes":{},
-			"x":-2895,
-			"y":-8525,
-			"width":320,
-			"height":140
-		},
-		{
-			"id":"4992927b36d2f1a5",
-			"type":"text",
-			"text":"Some buttons do not EXPAND.",
-			"styleAttributes":{},
-			"x":-2535,
-			"y":-8525,
-			"width":320,
-			"height":60
-		},
-		{
-			"id":"4fd88cbcaa322c0b",
-			"type":"text",
-			"text":"All this talk of buttons is fascinating!\n---\nI know, right?\nWould you like to hear a story about buttons?",
-			"styleAttributes":{},
-			"x":-3015,
-			"y":-8070,
-			"width":260,
-			"height":220
-		},
-		{
-			"id":"f964fb74821b968e",
-			"type":"text",
-			"text":"What about the rest of the game?",
-			"styleAttributes":{},
-			"x":-765,
-			"y":-7040,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{"id":"tuto_emoji","type":"text","text":"❓ What's up with the EMOJIs?\n---\nSome buttons have icons.\n  WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟)","x":-805,"y":-6100,"width":300,"height":200,"color":"1"},
+		{"id":"title_button","type":"text","text":"<h1>Push YOUR Buttons!</h1>\n---\nPush the ⭐ Start button!","x":-35,"y":-9940,"width":300,"height":200,"color":"2"},
 		{
 			"id":"129c1ea38464bd60",
 			"type":"text",
@@ -2193,38 +666,6 @@
 			"color":"4"
 		},
 		{
-			"id":"42c71d35a9f25a25",
-			"type":"text",
-			"text":"a game engine, you said? ",
-			"styleAttributes":{},
-			"x":2800,
-			"y":-1560,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"fe88966496d9ac52",
-			"type":"text",
-			"text":"history of game is another dlc",
-			"styleAttributes":{},
-			"x":3000,
-			"y":-1340,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"df4c70c4f678a712",
-			"type":"text",
-			"text":"former",
-			"styleAttributes":{},
-			"x":3840,
-			"y":-1240,
-			"width":260,
-			"height":60
-		},
-		{
 			"id":"b88844f76bf4c415",
 			"type":"text",
 			"text":"🏁 and thats the end of robinson crusoe",
@@ -2249,27 +690,6 @@
 			"color":"1"
 		},
 		{"id":"f919133328a5e0d3","type":"text","text":"It was a groundbreaking book\n---\n\nfirst book starting with \"I\"","x":-585,"y":5173,"width":800,"height":620,"color":"1"},
-		{
-			"id":"eed47474d8e02fee",
-			"type":"text",
-			"text":"Why is it in the web browser?\n---\nSo that it's on every webpage?\nSo it can be automated?\nSo that webmasters could not control the way it's being used?\nSo that users can't opt out?\n\nIt's a general trend, obfuscating control away from the humans, putting it in the hands of corporations.\nIn return you get a simple, smooth, integrated ecosystem.\nAnd you end up captive consumer.",
-			"styleAttributes":{},
-			"x":2515,
-			"y":-8760,
-			"width":560,
-			"height":300
-		},
-		{
-			"id":"fbf2799b952d0f8b",
-			"type":"text",
-			"text":"🚧 The general trend obfuscating control away from the humans, putting it in the hands of corporations is in another DLC.\n---\nYou'll be shocked to find out whether humans chose simplicity or control!",
-			"styleAttributes":{},
-			"x":2805,
-			"y":-8410,
-			"width":360,
-			"height":230,
-			"color":"3"
-		},
 		{
 			"id":"f204bc009ee78d03",
 			"type":"text",
@@ -2301,61 +721,6 @@
 			"height":180
 		},
 		{
-			"id":"dfc73eefe3104065",
-			"type":"text",
-			"text":"It didn't used to be like this...\n---\nWhen the internet started, Google made a little script that webmasters could put on their webpages so that the visitors could auto-translate the content.\nNow it's in the web browser.",
-			"styleAttributes":{},
-			"x":2205,
-			"y":-9000,
-			"width":620,
-			"height":200,
-			"color":"6"
-		},
-		{
-			"id":"f9e0945e662c3409",
-			"type":"text",
-			"text":"⚙️ Settings\n---\nUse the ⚙️ button at the top of the page.\n\nSettings can significantly change the game, you might want to have a look to customize your experience.\n",
-			"styleAttributes":{},
-			"x":2775,
-			"y":-9480,
-			"width":450,
-			"height":210
-		},
-		{"id":"warning","type":"text","text":"⚠️ Content warning\n---\nThis game contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.\nIt discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY...\n\nNo topic is ever approached without a suitable foreshadowing in the unpressed button text.\n\nReader discretion is advised when pushing buttons.\nNever forget who is pushing the buttons.","x":3680,"y":-9480,"width":580,"height":310},
-		{"id":"619cd30afe3f3836","type":"text","text":"💳 Credits\n---\nEverything is the work of an anonymous human.\nExternal assets will specify attribution directly in the buttons.","x":3680,"y":-9120,"width":580,"height":160},
-		{
-			"id":"2436635c3af531aa",
-			"type":"text",
-			"text":"🎵 Audio\n---\nIn this game, you will unlock audio and new features as you progress.\n\nWIP/TBC giveone free bgm here, make the button SFX. \"A new audio will autoplay when its found\"\n\nUse the 🎵 button at the top of the page to tweak volume.",
-			"styleAttributes":{},
-			"x":3440,
-			"y":-7360,
-			"width":640,
-			"height":210,
-			"color":"1"
-		},
-		{
-			"id":"361369e1fd17a101",
-			"type":"text",
-			"text":"character creation/objective choices",
-			"styleAttributes":{},
-			"x":1240,
-			"y":-7842,
-			"width":260,
-			"height":165
-		},
-		{
-			"id":"56b3c01bf1c15521",
-			"type":"text",
-			"text":"Start the story right away!",
-			"styleAttributes":{},
-			"x":1120,
-			"y":-8110,
-			"width":280,
-			"height":60,
-			"color":"5"
-		},
-		{
 			"id":"6200e55c2806281a",
 			"type":"text",
 			"text":"I'm ready for the main story",
@@ -2363,36 +728,1674 @@
 			"x":170,
 			"y":-8190,
 			"width":260,
-			"height":135,
+			"height":80,
 			"color":"4"
 		},
 		{
 			"id":"48d74ce56047da1e",
 			"type":"text",
-			"text":"I want more gameplay right now!\n---\nClick on the objective 🏆 button or the settings ⚙️ button to get more gameplay!",
+			"text":"I want advanced gameplay right now!\n---\nPush the objective 🏆 button or the settings ⚙️ button to explore advanced gameplay!",
 			"styleAttributes":{},
 			"x":340,
 			"y":-8570,
 			"width":380,
-			"height":180
+			"height":170
 		},
 		{"id":"4cb94f139917f64f","type":"text","text":"🏆 What's the objective?\n---\nYour first objective is simple: find an ending flag 🏁.\n\nKeep track of your progress with the objective 🏆 button at the top of the page.","x":-60,"y":-9110,"width":400,"height":240,"color":"4"},
-		{"id":"10063a69e5cc8023","type":"text","text":"How do I find an ending flag 🏁?\n---\nYou click on buttons to draw more buttons.\nThere's an ending flag 🏁 at the end of the green 🟢 path.\nThere may be others.","x":-60,"y":-8570,"width":300,"height":240},
 		{
 			"id":"708e731fd6b02191",
 			"type":"text",
-			"text":"\"First\" objective?\n---\nYou will find many other objectives along your path.\nClick on the objective 🏆 button at the top of the page to learn more.",
+			"text":"\"First\" objective?\n---\nYou will find many other objectives along your path.\nPush the objective 🏆 button at the top of the page to learn more.",
 			"styleAttributes":{},
 			"x":-410,
 			"y":-8570,
 			"width":330,
 			"height":180
 		},
-		{"id":"5af2d599f6742628","type":"text","text":"Create my character\n---\netc","x":-860,"y":-8242,"width":400,"height":240,"color":"1"}
+		{"id":"10063a69e5cc8023","type":"text","text":"How do I find an ending flag 🏁?\n---\nYou push buttons to draw more buttons.\nThere's an ending flag 🏁 at the end of the green 🟢 path.\nThere may be others.","x":-40,"y":-8600,"width":300,"height":240,"color":"4"},
+		{
+			"id":"152b7455f6b307a6",
+			"type":"text",
+			"text":"I'd rather keep pushing buttons for now.\n---\nSuit yourself :)",
+			"styleAttributes":{},
+			"x":-9580,
+			"y":-8190,
+			"width":320,
+			"height":140
+		},
+		{
+			"id":"5d9d17e73b02f73f",
+			"type":"text",
+			"text":"On second thoughts, I'm not that much into buttons.\n---\nLet me try and change your mind.\nTry another, just one more push.\nI promise it will be worth it!",
+			"styleAttributes":{},
+			"x":-9240,
+			"y":-8190,
+			"width":320,
+			"height":220
+		},
+		{
+			"id":"4fd88cbcaa322c0b",
+			"type":"text",
+			"text":"All this talk of buttons is fascinating!\n---\nI know, right?\nWould you like to hear a story about buttons?",
+			"styleAttributes":{},
+			"x":-9000,
+			"y":-8550,
+			"width":260,
+			"height":220
+		},
+		{
+			"id":"04a19e2087f1b3cc",
+			"type":"text",
+			"text":"Some buttons do not draw other buttons.\n---\nBut you can keep pushing on them to change their state.",
+			"styleAttributes":{},
+			"x":-8880,
+			"y":-9005,
+			"width":320,
+			"height":140
+		},
+		{
+			"id":"f88d036ba343ec9c",
+			"type":"text",
+			"text":"Wow, I have so many choices all at once!\n---\nLife is like that sometimes.\nI hope it's not too overwhelming.\nIf it's any comfort, like in life, some choices don't matter.",
+			"styleAttributes":{},
+			"x":-8770,
+			"y":-8190,
+			"width":340,
+			"height":220
+		},
+		{
+			"id":"cced47e2636b9442",
+			"type":"text",
+			"text":"Why does this button wiggle?\n---\nIt's because you haven't pushed it yet.\nSee, it's fixed now.\n\nIt's a clever trick to remember which button you haven't pushed yet.",
+			"styleAttributes":{},
+			"x":-8430,
+			"y":-8530,
+			"width":440,
+			"height":190
+		},
+		{
+			"id":"051f8f7881d34615",
+			"type":"text",
+			"text":"Enough about buttons!",
+			"styleAttributes":{},
+			"x":-8410,
+			"y":-8190,
+			"width":220,
+			"height":60
+		},
+		{
+			"id":"3dc05573068d8e07",
+			"type":"text",
+			"text":"Why are some buttons a different color?\n---\nButtons can have different colors.\nColors influence the rarity and amount of text, but they have other secrets.\n\nFor instance, I heard that the green 🟢 path was the path to your objective.",
+			"styleAttributes":{},
+			"x":-7960,
+			"y":-8530,
+			"width":440,
+			"height":250,
+			"color":"4"
+		},
+		{
+			"id":"c60d11f49e410b11",
+			"type":"text",
+			"text":"Then green...",
+			"styleAttributes":{},
+			"x":-7920,
+			"y":-7830,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"f0529aca661fbc4e",
+			"type":"text",
+			"text":"❓ Rarity?",
+			"styleAttributes":{},
+			"x":-7920,
+			"y":-8110,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"efd763cad938f719",
+			"type":"text",
+			"text":"Grey is most common.",
+			"styleAttributes":{},
+			"x":-7920,
+			"y":-7970,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"e3a17b749f47089f",
+			"type":"text",
+			"text":"Which choices matter?\n---\nYou tell me.",
+			"styleAttributes":{},
+			"x":-8560,
+			"y":-7870,
+			"width":220,
+			"height":140
+		},
+		{
+			"id":"3dfecaa0cfdd2129",
+			"type":"text",
+			"text":"And finally, orange!\n---\nIt is hardwired in every gamer's brain.",
+			"styleAttributes":{},
+			"x":-7920,
+			"y":-7430,
+			"width":260,
+			"height":160,
+			"color":"2"
+		},
+		{
+			"id":"658362153a4dcbd8",
+			"type":"text",
+			"text":"❓ Buttons?\n---\nThat thing you just pushed on.\nButtons have two states: NORMAL and PUSHED.\nWhen you FIRST push them, they can EXPAND and draw other buttons.",
+			"styleAttributes":{},
+			"x":-8760,
+			"y":-9270,
+			"width":480,
+			"height":180
+		},
+		{
+			"id":"4992927b36d2f1a5",
+			"type":"text",
+			"text":"Some buttons do not EXPAND.",
+			"styleAttributes":{},
+			"x":-8520,
+			"y":-9005,
+			"width":320,
+			"height":60
+		},
+		{
+			"id":"78134217e5bc6ffd",
+			"type":"text",
+			"text":"But if your button draws other buttons, they will be connected on the left.\n---\nThis also leaves a trace to help you see where you come from.",
+			"styleAttributes":{},
+			"x":-8520,
+			"y":-8900,
+			"width":320,
+			"height":230
+		},
+		{
+			"id":"e4f4bb3fc1323c35",
+			"type":"text",
+			"text":"Why do some buttons have emoji?\n---\nYou will find many types of buttons on your path.\n\nSome will have icons, other not.\nEach icon has a different meaning.\n\n❓ is Tutorial/Help.\n☺️ is the icon for icons ☺️.\n\nSome will help you in your objectives.",
+			"styleAttributes":{},
+			"x":-7500,
+			"y":-8530,
+			"width":480,
+			"height":270,
+			"color":"1"
+		},
+		{
+			"id":"359659a13718c524",
+			"type":"text",
+			"text":"Then blue...",
+			"styleAttributes":{},
+			"x":-7920,
+			"y":-7690,
+			"width":260,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"9c8ea1a3b417de9e",
+			"type":"text",
+			"text":"Why does this button appear multiple times?\n---\nDoes it?\nIf it does, it's because different buttons can draw the same button. \nYou can customize this in the settings ⚙️.",
+			"styleAttributes":{},
+			"x":-7500,
+			"y":-7650,
+			"width":440,
+			"height":220
+		},
+		{
+			"id":"38bb2cb3b9a4fa11",
+			"type":"text",
+			"text":"Then purple...",
+			"styleAttributes":{},
+			"x":-7920,
+			"y":-7550,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"56b3c01bf1c15521",
+			"type":"text",
+			"text":"Start the story right away!",
+			"styleAttributes":{},
+			"x":785,
+			"y":-8360,
+			"width":280,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"6a3eb1ddad2c0ac6",
+			"type":"text",
+			"text":"Did Daniel Defoe read any fiction?\n---\nHe was famously suspicious of fiction, that his religious upbringing pushed him to consider \"lies told for pleasure\".\n",
+			"styleAttributes":{},
+			"x":-3641,
+			"y":4637,
+			"width":540,
+			"height":180
+		},
+		{
+			"id":"c06caf1ce1c855b9",
+			"type":"text",
+			"text":"Wait, how did he reconcile that with the fact that he literaly wrote fiction?\n---\nDefoe didn’t just ignore the contradiction; he built an entire philosophical defense for it. He called his method \"Religious Allegory\" or \"Parabolic Writing.\"",
+			"styleAttributes":{},
+			"x":-3621,
+			"y":4872,
+			"width":520,
+			"height":210,
+			"color":"2"
+		},
+		{
+			"id":"e1ef83e94426eeac",
+			"type":"text",
+			"text":"it is widely credited for inventing realism",
+			"styleAttributes":{},
+			"x":-445,
+			"y":6088,
+			"width":260,
+			"height":150,
+			"color":"1"
+		},
+		{
+			"id":"732c607729abf65a",
+			"type":"text",
+			"text":"Authenticity",
+			"styleAttributes":{},
+			"x":-15,
+			"y":6358,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"99af32b09b97fb14",
+			"type":"text",
+			"text":"The history of PR is in another DLC",
+			"styleAttributes":{},
+			"x":85,
+			"y":6538,
+			"width":260,
+			"height":105,
+			"color":"1"
+		},
+		{
+			"id":"9cb46f16a0ebdfb7",
+			"type":"text",
+			"text":"In fact, the True-Born Englishman was a response...\n---\nIt was mostly a response to John Tutchin's 1700 poem \"The Foreigners\", attacking the Dutch ties of the king.",
+			"styleAttributes":{},
+			"x":-3803,
+			"y":6574,
+			"width":360,
+			"height":180,
+			"color":"5"
+		},
+		{
+			"id":"9fa40b1636a990f3",
+			"type":"text",
+			"text":"Woodes Rogers",
+			"styleAttributes":{},
+			"x":-2140,
+			"y":6755,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"e7fb061c2668af1b",
+			"type":"text",
+			"text":"William Dampier",
+			"styleAttributes":{},
+			"x":-1640,
+			"y":6785,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"c0925e9d6778c0a2",
+			"type":"text",
+			"text":"🚰 John Tutchin's \"The Foreigners\"\n---\nOn the <a href=\"https://archive.org/details/bim_early-english-books-1641-1700_the-foreigners-a-poem-_tutchin-john_1700/page/4/mode/2up\">Internet Archive</a>\n<iframe src=\"https://archive.org/details/bim_early-english-books-1641-1700_the-foreigners-a-poem-_tutchin-john_1700/page/4/mode/2up\"></iframe>",
+			"styleAttributes":{},
+			"x":-3688,
+			"y":6814,
+			"width":265,
+			"height":240
+		},
+		{
+			"id":"9d59fd903533cb04",
+			"type":"text",
+			"text":">> mined attention ?? mb stick to shallow easy work ?\n== an interactive visual novel hommage to Curiosity: What's Inside the Cube? and The Cyberiad\n\n\t* Welcome to this new innovative game engine combining the elements of visual novel and clicker.\n\t* Sorry about the art, I'm not good at drawing. Please forgive me, for reasons that will become very clear very soon this game is only available in English. You are welcome to translate it with whatever tool you want. BTW This was made entirely without AI, whatever that might mean for you.\n\t* Click on the Content Mine to find Content. Once you have enough Content, you can turn to the next page of the book, next level of the mine. The book keeps you company while you Mine, the Mine gives you reward while you dig deeper. Win/win.\n\t* And of course, a pleasant progression and big climax at the end!\n\n---\n* On November 6th, 2012, Apple released accidentally \"Curiosity: What's Inside the Cube?\", an experimental game from Peter Molyneux intended to release at 12:22 on November 7th.\n* The game was simple: a cube with a mystery inside. It would open after 69 billion clicks. Only the last clicker would see and get the content of the cube.\n* On May 26th, 2013, after almost 7 months of collaborative clicking, Peter Molyneux announced the prize to everyone: the winner was to be a god in their next game, Godus.\n* In a 2013 Wired magazine, Molyneux indicated that the monetization options offered in the game to increase clicking rate generated \"a few tens of thousands\".\n* It is an interesting sum, small enough to barely register for his company, but big enough to really impact an individual life.\n* By the way it's well known in the psychology of game design that in monetization schemes like in many social phenomena following Pareto's law, 80% of the revenue is generated by 20% of the people. You know, the 99%/1% split.\n* That's microgaming whales, that's billionaire oligarch, that's every social network reproducing what's called a \"scale-free\" structure.\n---\n* The person who did the last click was named Bryan. He was promised the title of \"God of God\" in Godus, and a 1% share of its revenue.\n* Godus never left early access, Bryan received neither the economical ownership nor the metaphorical one he was promised over its world.\n* Peter Molyneux moved on to other projects. In 2026, he released in early access a project touted as his last. He claims it takes place in the same universe as Fable, but this cannot be explicit because Microsoft now owns the world he created.\n* He named the game \"Albion\", claiming that a historical term cannot be copyrighted.\n---\n* \"Curiosity: What's Inside the Cube?\" will forever remain as a weird experiment at the border between capitalism and poetry.\n* Its beautiful rendition of the prisoner dilemma at scale complemented a crisp allegory of the chase for object petit a, a lacanian theory best explained by philosopher Slavoj Zizek.\n* By the way, Lacan was notoriously right wing. His theory doesn't really address notions such as competition, or systemic phenomena for that matter.\n* Since this game was released, many more billions of clicks have been hammered down the Content Mines.\n* Clicks from Creators, working hard on their crafts.\n* Clicks from their Supporters, each platform taking a cut.\n* Clicks from Consumers, watching among the ads.\n* Clicks from Everyone! Who can Exist without Content?",
+			"styleAttributes":{},
+			"x":6830,
+			"y":8700,
+			"width":1200,
+			"height":1060,
+			"color":"1"
+		},
+		{
+			"id":"e56458bd0df6f92f",
+			"type":"text",
+			"text":"defoe rest of life",
+			"styleAttributes":{},
+			"x":620,
+			"y":7336,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"2e1ab5221c315e9d",
+			"type":"text",
+			"text":"🏁 end of defoe",
+			"styleAttributes":{},
+			"x":620,
+			"y":7476,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"40eb47c3ef08be5a",
+			"type":"text",
+			"text":"💵 That worldview where money is a measure of salute?\n---\nMoney really is the ultimate signifier...",
+			"styleAttributes":{},
+			"x":180,
+			"y":8200,
+			"width":440,
+			"height":140,
+			"color":"6"
+		},
+		{
+			"id":"7099e851dc27ad23",
+			"type":"text",
+			"text":"🚧 I'm sorry, the history of protestantism is in another DLC",
+			"styleAttributes":{},
+			"x":400,
+			"y":8420,
+			"width":260,
+			"height":120,
+			"color":"3"
+		},
+		{
+			"id":"ef2813dd2fc1deef",
+			"type":"text",
+			"text":"minecraft dlc",
+			"styleAttributes":{},
+			"x":3780,
+			"y":7540,
+			"width":1950,
+			"height":1861,
+			"color":"1"
+		},
+		{
+			"id":"4c11af20a6c391c8",
+			"type":"text",
+			"text":"something cryptobro\ngo back to defoe",
+			"styleAttributes":{},
+			"x":5020,
+			"y":9491,
+			"width":260,
+			"height":179,
+			"color":"1"
+		},
+		{
+			"id":"a39a9c20ae56ea71",
+			"type":"text",
+			"text":"molyneux and  backstory",
+			"styleAttributes":{},
+			"x":5420,
+			"y":9551,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"835d6f6466cb8676",
+			"type":"text",
+			"text":"The minecraft DLC gameplay DLC is probably an everlasting DLC (torch scanning)",
+			"styleAttributes":{},
+			"x":5600,
+			"y":9580,
+			"width":260,
+			"height":140,
+			"color":"1"
+		},
+		{
+			"id":"27a1954a4a5e8183",
+			"type":"text",
+			"text":"With deep ties to politics...",
+			"styleAttributes":{},
+			"x":-6660,
+			"y":4423,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f9a85ef1f4484755",
+			"type":"text",
+			"text":"What kind of political intrigue?",
+			"styleAttributes":{},
+			"x":-6053,
+			"y":4453,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"4a3fa30454592086",
+			"type":"text",
+			"text":"At 25, Daniel Defoe took part in the Monmouth Rebellion\n---\nA protestant failed rebellion against the catholic king.",
+			"styleAttributes":{},
+			"x":-6398,
+			"y":4546,
+			"width":260,
+			"height":260,
+			"color":"4"
+		},
+		{
+			"id":"eaf2e99a90887d6f",
+			"type":"text",
+			"text":"The Simplest Path\n---\nThe path every human is already on.",
+			"styleAttributes":{},
+			"x":-5320,
+			"y":-8280,
+			"width":260,
+			"height":140,
+			"color":"4"
+		},
+		{
+			"id":"4f4fadc40ae81eba",
+			"type":"text",
+			"text":"TODO TBC WIP\nTO IMPLEMENT WITH THE OBJECTIVES MENU LMAO\n\npath of the hunter of numbers\n\npath of the four houses?\npath of the words??????? reader?\nnumbers=pent, mb collect all the prices\n\nwand = explorer/completionist\nsword = collect the names mb\n\ni also had like pixel hunt/grammar objectives, letters\n\n\nmb each house has different  set of emoji/ set for each \n\n\n\npentacle - hunt for words in the text\nsword - search for emoji/collect emoji\nwood - explore map\ni could hide tags in code and have detector widget, ",
+			"styleAttributes":{},
+			"x":-4600,
+			"y":-7660,
+			"width":820,
+			"height":570,
+			"color":"1"
+		},
+		{
+			"id":"7174e6b57a7b9c6c",
+			"type":"text",
+			"text":"I have chosen my paths.\n---\nIt's time for the story.",
+			"styleAttributes":{},
+			"x":-1200,
+			"y":-7480,
+			"width":260,
+			"height":140,
+			"color":"4"
+		},
+		{
+			"id":"674820f9ab3e9b16",
+			"type":"text",
+			"text":"🚧 The Minecraft DLC\n---\nThe one where you dig in the mines.",
+			"styleAttributes":{},
+			"x":2435,
+			"y":-7670,
+			"width":360,
+			"height":130,
+			"color":"1"
+		},
+		{
+			"id":"0e06b327b8be53c9",
+			"type":"text",
+			"text":"🚧 The AI text-to-speech DLC\n---\nAnd other AI powered accessibility features.",
+			"styleAttributes":{},
+			"x":2805,
+			"y":-7670,
+			"width":360,
+			"height":170,
+			"color":"3"
+		},
+		{
+			"id":"15ffce56be6fb0f6",
+			"type":"text",
+			"text":" 🚰 The True-Born Englishman?\n ---\n You can read the full text on <a href=\"https://gutenberg.org/ebooks/30159\">Project Gutenberg</a>.\n \n <iframe src=\"https://gutenberg.org/ebooks/30159\"></iframe>",
+			"styleAttributes":{},
+			"x":-3848,
+			"y":6153,
+			"width":340,
+			"height":283
+		},
+		{
+			"id":"ebf764b1093a8127",
+			"type":"text",
+			"text":"I do like this quote:\n---\nA true-born Englishman's a contradiction,  \nIn speech an irony, in fact a fiction;",
+			"styleAttributes":{},
+			"x":-4163,
+			"y":6257,
+			"width":260,
+			"height":230,
+			"color":"6"
+		},
+		{
+			"id":"8e055b600367b97e",
+			"type":"text",
+			"text":"In essence, a pro-immigration plea?\n---\nYes,  mostly focused on calling racial purity a myth, and pointing out shameful origins of established aristocrats.",
+			"styleAttributes":{},
+			"x":-4208,
+			"y":6009,
+			"width":350,
+			"height":213
+		},
+		{
+			"id":"ecbf5cec60c58bf2",
+			"type":"text",
+			"text":"The True-Born Englishman was way more successful than the original poem it was responding to.",
+			"styleAttributes":{},
+			"x":-4128,
+			"y":6574,
+			"width":265,
+			"height":140
+		},
+		{
+			"id":"0fa336742d48d5a5",
+			"type":"text",
+			"text":"👥 King William III\nhttps://en.wikipedia.org/wiki/William_III_of_England",
+			"styleAttributes":{},
+			"x":-6663,
+			"y":5746,
+			"width":225,
+			"height":129
+		},
+		{
+			"id":"833cbd5359bf31db",
+			"type":"text",
+			"text":"The king was quite pleased with the way Daniel Defoe defended him\n---\nDaniel Defoe became somewhat of an advisor to him in the last years of his life.",
+			"styleAttributes":{},
+			"x":-6487,
+			"y":5477,
+			"width":375,
+			"height":224,
+			"color":"4"
+		},
+		{
+			"id":"674e6a3c3e3e61d0",
+			"type":"text",
+			"text":"In 1703, Daniel Defoe was imprisoned for a satirical poem.\n---\nHe had published \"The Shortest-Way with the Dissenters\" anonymously but was later found out.",
+			"styleAttributes":{},
+			"x":-6745,
+			"y":6148,
+			"width":400,
+			"height":220,
+			"color":"4"
+		},
+		{
+			"id":"4ee260ef31d9900b",
+			"type":"text",
+			"text":"\"France?\" What does France have to do with it?\n---\nDefoe was a fervent admirer of Louis XIV's militaristic centralism.\nBy talking about France, he could criticize the English government with a veneer of deniability.",
+			"styleAttributes":{},
+			"x":-5490,
+			"y":6553,
+			"width":464,
+			"height":220
+		},
+		{
+			"id":"be08d3a2e0fb21b3",
+			"type":"text",
+			"text":"King William III died in 1702, his wife, Queen Anne, succeeded him to the throne.\n---\nShe was not close with Daniel Defoe. In fact she had strong ties to the Church of England.",
+			"styleAttributes":{},
+			"x":-6365,
+			"y":5732,
+			"width":340,
+			"height":268,
+			"color":"4"
+		},
+		{
+			"id":"d1a142f0a782dd56",
+			"type":"text",
+			"text":"🚧 I'm sorry, the Monmouth Rebellion is in another DLC",
+			"styleAttributes":{},
+			"x":-6183,
+			"y":4920,
+			"width":260,
+			"height":115,
+			"color":"3"
+		},
+		{
+			"id":"10818a63bbc83eb9",
+			"type":"text",
+			"text":"Prison?",
+			"styleAttributes":{},
+			"x":-6185,
+			"y":6713,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"1eee3e89560bf812",
+			"type":"text",
+			"text":"👥 John Tutchin\n\nA radical political journalist. \nhttps://en.wikipedia.org/wiki/John_Tutchin",
+			"styleAttributes":{},
+			"x":-3988,
+			"y":6814,
+			"width":260,
+			"height":240
+		},
+		{
+			"id":"c78c58970d985108",
+			"type":"text",
+			"text":"🚧 I'm sorry, the Act of Union is in another DLC",
+			"styleAttributes":{},
+			"x":-5657,
+			"y":6848,
+			"width":200,
+			"height":133,
+			"color":"3"
+		},
+		{
+			"id":"bbebbd90befb593a",
+			"type":"text",
+			"text":"He really did like allegories...",
+			"styleAttributes":{},
+			"x":-5204,
+			"y":6864,
+			"width":178,
+			"height":77
+		},
+		{
+			"id":"4aa765f37fcebc89",
+			"type":"text",
+			"text":"🚧 I'm sorry, Louis XIV is in another DLC",
+			"styleAttributes":{},
+			"x":-5430,
+			"y":6878,
+			"width":200,
+			"height":133,
+			"color":"3"
+		},
+		{
+			"id":"53e72cec6b7fa897",
+			"type":"text",
+			"text":"Spying?",
+			"styleAttributes":{},
+			"x":-6115,
+			"y":6855,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f033b3b0f313a483",
+			"type":"text",
+			"text":"After the Union Act, Daniel Defoe spent a lot of time in Edinburgh spying for the government.\n---\nHe monitored political dissent on the ground.\nAs the Union settled, he turned his attention to domestic affairs.",
+			"styleAttributes":{},
+			"x":-5890,
+			"y":7011,
+			"width":390,
+			"height":297,
+			"color":"4"
+		},
+		{
+			"id":"516d8b49569ae19a",
+			"type":"text",
+			"text":"The Shortest-Way with the Dissenters?\n---\nIt was written from the point of view of a bloodthirsty catholic extremist.\nDaniel Defoe essentially impersonated his opponents and exaggerated their positions.\nThey initially loved it, and many believed that the government was actually planning a massacre.\nWhen the truth came out, everyone was understanbly quite upset.",
+			"styleAttributes":{},
+			"x":-7193,
+			"y":6392,
+			"width":360,
+			"height":390,
+			"color":"5"
+		},
+		{
+			"id":"d558c210ac6f1acc",
+			"type":"text",
+			"text":"🚰 Daniel Defoe's \"The Shortest-Way with the Dissenter\"\n---\nOn the <a href=\"https://archive.org/details/shortest-way-dissenters\">Internet Archive</a>\n<iframe src=\"https://archive.org/details/shortest-way-dissenters\"></iframe>",
+			"styleAttributes":{},
+			"x":-6790,
+			"y":6452,
+			"width":490,
+			"height":271
+		},
+		{
+			"id":"458077cf65aea0f1",
+			"type":"text",
+			"text":"He loved to gather information.\n---\nThat was the key to a good deal.",
+			"styleAttributes":{},
+			"x":-4131,
+			"y":4685,
+			"width":410,
+			"height":120,
+			"color":"6"
+		},
+		{
+			"id":"c3f78645024410ce",
+			"type":"text",
+			"text":"I also think it's important to understand the world...\n---\nAnd where things come from.",
+			"styleAttributes":{},
+			"x":-4131,
+			"y":4857,
+			"width":420,
+			"height":145,
+			"color":"2"
+		},
+		{
+			"id":"8725a0235c1a2659",
+			"type":"text",
+			"text":"Daniel Defoe was quite upset that his poem had been widely copied.\n---\nIt appears that the majority of copies in circulation were cheap unauthorized versions on which he did not make any profit.\nHe claimed that up to 80000 copies were circulated, a staggering amount for the time.",
+			"styleAttributes":{},
+			"x":-4802,
+			"y":6550,
+			"width":460,
+			"height":232,
+			"color":"5"
+		},
+		{
+			"id":"5b9234d08f40366a",
+			"type":"text",
+			"text":"🗝️ In 1701, Daniel Defoe published The True-Born Englishman.\n---\nAt 41, he published this satirical poem against the xenophobic culture of England of the time.\nIt was aimed at defending the dutch born king, William III.",
+			"styleAttributes":{},
+			"x":-4608,
+			"y":5701,
+			"width":400,
+			"height":280,
+			"color":"2"
+		},
+		{
+			"id":"05a22844cd0ac569",
+			"type":"text",
+			"text":"Daniel Defoe's True-Born Englishman was a massive hit.\n---\nFirst published anonymously, the demand for it grew quickly, and many unauthorized copies were produced.",
+			"styleAttributes":{},
+			"x":-4782,
+			"y":6165,
+			"width":480,
+			"height":187,
+			"color":"4"
+		},
+		{
+			"id":"db9af5deecdd4403",
+			"type":"text",
+			"text":"Wow, what happened to him then?\n---\nDaniel Defoe received a pardon and continued business as usual.",
+			"styleAttributes":{},
+			"x":-6768,
+			"y":4849,
+			"width":360,
+			"height":161
+		},
+		{
+			"id":"bda37b01f524fff7",
+			"type":"text",
+			"text":"Glorious?\n---\nHistory is written by the winners.",
+			"styleAttributes":{},
+			"x":-6963,
+			"y":5436,
+			"width":260,
+			"height":120,
+			"color":"6"
+		},
+		{
+			"id":"19a8c144da17f00b",
+			"type":"text",
+			"text":"Untill the Glorious Revolution of 1688\n---\nA group of protestant elites worried about the catholic king organized a rebellion.\nIt worked and the king's son-in-law, a protestant, acceded to the throne.",
+			"styleAttributes":{},
+			"x":-6800,
+			"y":5037,
+			"width":500,
+			"height":201,
+			"color":"4"
+		},
+		{
+			"id":"939fb96ab11834bf",
+			"type":"text",
+			"text":"The new king was obviously quite controversial.\n---\nDaniel Defoe defended him in a satyrical poem.",
+			"styleAttributes":{},
+			"x":-6488,
+			"y":5277,
+			"width":505,
+			"height":134,
+			"color":"4"
+		},
+		{
+			"id":"f2c4a78c2f9975be",
+			"type":"text",
+			"text":"Until he became a spy for the government!\n---\nThe Tory minister Robert Harley bailed him out of prison on condition that Daniel Defoe work for him.",
+			"styleAttributes":{},
+			"x":-6590,
+			"y":6800,
+			"width":380,
+			"height":230,
+			"color":"5"
+		},
+		{
+			"id":"9f04098fd76affe4",
+			"type":"text",
+			"text":"👥 Robert Harley",
+			"styleAttributes":{},
+			"x":-6095,
+			"y":7074,
+			"width":180,
+			"height":60
+		},
+		{
+			"id":"a8d38e0524f7896d",
+			"type":"text",
+			"text":"What kind of government?\n---\nThe politics at the time were an intense war between the \"progressive\" Whigs and the \"traditionalist\" Tories.\nThe balance of power was a constant tug-of-war.\nDaniel Defoe's positions were closer to the Whigs, but he was spying for the Tories.\nAs a result, he was widely distrusted and seen as a double agent.",
+			"styleAttributes":{},
+			"x":-6870,
+			"y":7074,
+			"width":470,
+			"height":252,
+			"color":"5"
+		},
+		{
+			"id":"5929c71a78c15ca1",
+			"type":"text",
+			"text":"Daniel Defoe and his \"review\" were instrumental in the redacting of the Act of Union in 1707\n---\nYou know, the creation of a \"United Kingdom\".\nBut this is a story for another DLC.",
+			"styleAttributes":{},
+			"x":-6138,
+			"y":6487,
+			"width":398,
+			"height":180,
+			"color":"4"
+		},
+		{
+			"id":"09813e983375b960",
+			"type":"text",
+			"text":"👥 Queen Anne\nhttps://en.wikipedia.org/wiki/Anne,_Queen_of_Great_Britain",
+			"styleAttributes":{},
+			"x":-6775,
+			"y":5944,
+			"width":225,
+			"height":129
+		},
+		{
+			"id":"892f81aa580d4be9",
+			"type":"text",
+			"text":"🚧 I'm sorry, the Glorious Revolution is in another DLC",
+			"styleAttributes":{},
+			"x":-6963,
+			"y":5589,
+			"width":260,
+			"height":115,
+			"color":"3"
+		},
+		{
+			"id":"20daebf4571d973f",
+			"type":"text",
+			"text":"In Prison, he started his own private publication.\n---\nA newsletter if you will.\n<a href=\"https://archive.org/details/bub_gb_El8TAAAAQAAJ\" target=\"_blank\">\"A Review of the Affairs of France\"</a> started as a weekly chronicle that shifted according to Daniel Defoe's interests.\n<iframe src=\"https://archive.org/details/bub_gb_El8TAAAAQAAJ\"></iframe>",
+			"styleAttributes":{},
+			"x":-5887,
+			"y":6185,
+			"width":460,
+			"height":267,
+			"color":"4"
+		},
+		{
+			"id":"226ec3fff23eaa94",
+			"type":"text",
+			"text":"🏁 end of selkirk",
+			"styleAttributes":{},
+			"x":-1710,
+			"y":7936,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"0960ba5e853c2d1b",
+			"type":"text",
+			"text":"⭐ The life of Selkirk\nSelkirk backstory, orange, star",
+			"styleAttributes":{},
+			"x":-2050,
+			"y":7220,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"f8195e67d0bd73b7",
+			"type":"text",
+			"text":"selkirk story published",
+			"styleAttributes":{},
+			"x":-1980,
+			"y":7753,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"5457838724c4f71f",
+			"type":"text",
+			"text":"selirk childhood",
+			"styleAttributes":{},
+			"x":-2010,
+			"y":7380,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"bbc20a2e28182560",
+			"type":"text",
+			"text":"⏰ On 2 February 1709\n---\nThe shipwrecked Alexander Selkirk was rescued by the way of Duke.\n",
+			"styleAttributes":{},
+			"x":-2470,
+			"y":7520,
+			"width":330,
+			"height":147,
+			"color":"5"
+		},
+		{
+			"id":"6d889bbbf0bab92e",
+			"type":"text",
+			"text":"1709 you say?",
+			"styleAttributes":{},
+			"x":-3160,
+			"y":7906,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0a424ad760b7b70b",
+			"type":"text",
+			"text":"✝️ The protestant work ethic?",
+			"styleAttributes":{},
+			"x":-80,
+			"y":8090,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"92aa118063569517",
+			"type":"text",
+			"text":"🗝️ Any source in particular?\n---\nHis writing at the time, but if you want something precise, check out Daniel Defoe's The Review, Vol. VI, No. 101 on November 10, 1709.\nYou can find a few extracts around that time from the man himself by searching online.",
+			"styleAttributes":{},
+			"x":-3840,
+			"y":8521,
+			"width":480,
+			"height":200
+		},
+		{
+			"id":"a8f5434158d26eeb",
+			"type":"text",
+			"text":"What the fuck is a parabola\n\nlinkback to beginning",
+			"styleAttributes":{},
+			"x":-2780,
+			"y":8561,
+			"width":580,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"6bf4d15935fded99",
+			"type":"text",
+			"text":"🏴‍☠️ Around 1709, Daniel Defoe's \"Review\" turned its attention to the question of piracy\n---\nNo, not the one in the sea.\nUpset about his financial loss of opportunity cost in his previous experiences, he started claiming a bold new idea: a BOOK should be the AUTHOR’s Property.",
+			"styleAttributes":{},
+			"x":-4615,
+			"y":8371,
+			"width":390,
+			"height":300,
+			"color":"4"
+		},
+		{
+			"id":"88b541cdd8c55941",
+			"type":"text",
+			"text":"🚧 I'm sorry, believe it or not, the history of piracy is in another DLC.",
+			"styleAttributes":{},
+			"x":2705,
+			"y":9960,
+			"width":200,
+			"height":133,
+			"color":"3"
+		},
+		{"id":"19e5fd7f23f8fd04","type":"text","text":"⭐ This is the story of a human.\n---\nA human who mined content in the content mines.\nA human like any other.","x":7320,"y":10161,"width":480,"height":115,"color":"6"},
+		{
+			"id":"e302cb83277536b7",
+			"type":"text",
+			"text":"🧱 Where can I read the primary source?\n---\nAlthough the content of old periodicals are in the public domain by now, only rare digitized extracts are available to the public.\nMost of them are behind the paywall of private publishers like <a href=\"https://www.jstor.org/stable/20779451\" target=\"_blank\">JSTOR</a> or <a href=\"https://www.taylorfrancis.com/books/mono/10.4324/9781003576228/defoe-review-1704-13-volume-6-1709-10-part-john-mcveagh\" target=\"_blank\">Taylor & Francis</a>.",
+			"styleAttributes":{},
+			"x":-3670,
+			"y":8815,
+			"width":340,
+			"height":226
+		},
+		{
+			"id":"509848ca1071f626",
+			"type":"text",
+			"text":"🚧 I'm sorry, The Growing Inaccessibility Of Science is in another DLC",
+			"styleAttributes":{},
+			"x":-3590,
+			"y":9106,
+			"width":260,
+			"height":115,
+			"color":"3"
+		},
+		{
+			"id":"cd0283e8195b2140",
+			"type":"text",
+			"text":"⏸️ buttons\n# buttons\n",
+			"styleAttributes":{},
+			"x":-2160,
+			"y":10200,
+			"width":860,
+			"height":920,
+			"color":"1"
+		},
+		{
+			"id":"257e260d9008f8c8",
+			"type":"text",
+			"text":"🏁 a partisan debate on fuck capitalism jam?",
+			"styleAttributes":{},
+			"x":-2620,
+			"y":10161,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"1fe733323747f354",
+			"type":"text",
+			"text":"microsoft owns albyon",
+			"styleAttributes":{},
+			"x":-2590,
+			"y":9920,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"2f238287f04d2a46",
+			"type":"text",
+			"text":"Sometimes the Content was slightly Green.\n---\nThat meant it was slightly rare.",
+			"styleAttributes":{},
+			"x":7390,
+			"y":10320,
+			"width":340,
+			"height":130,
+			"color":"4"
+		},
+		{
+			"id":"8da47f57273fe7c8",
+			"type":"text",
+			"text":"Sometimes it was Blue!\n---\nRarer Content even!",
+			"styleAttributes":{},
+			"x":7380,
+			"y":10520,
+			"width":360,
+			"height":100,
+			"color":"5"
+		},
+		{
+			"id":"94da80804b693f8a",
+			"type":"text",
+			"text":"old man yelling at the clouds energy\n?? add meme",
+			"styleAttributes":{},
+			"x":-4240,
+			"y":8981,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"f3f817ca4d964d3a",
+			"type":"text",
+			"text":"how was it received",
+			"styleAttributes":{},
+			"x":-4060,
+			"y":8868,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"ff888cb0f93683c4",
+			"type":"text",
+			"text":"⭐ The story of copyright",
+			"styleAttributes":{},
+			"x":-4080,
+			"y":9062,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"b4b7ec5acc09de30",
+			"type":"text",
+			"text":"the statute of anne\n\nsuccession turmoil ??",
+			"styleAttributes":{},
+			"x":-4060,
+			"y":9221,
+			"width":260,
+			"height":140,
+			"color":"1"
+		},
+		{
+			"id":"4abb0e0df2ecc5b6",
+			"type":"text",
+			"text":"centuries of exploitation",
+			"styleAttributes":{},
+			"x":-3930,
+			"y":9486,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"c6af20895de1c73a",
+			"type":"text",
+			"text":"What was it before",
+			"styleAttributes":{},
+			"x":-4802,
+			"y":8831,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"af6635b4e9d0d251",
+			"type":"text",
+			"text":"How did it compare to the one in the sea",
+			"styleAttributes":{},
+			"x":-4485,
+			"y":8821,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"839a29e47b87d496",
+			"type":"text",
+			"text":"the internet and piracy",
+			"styleAttributes":{},
+			"x":-3740,
+			"y":9621,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"ca4174e6a440c2b6",
+			"type":"text",
+			"text":"the story of Doug Wills (see other tabs)\nhttps://chunib4.tumblr.com/post/815276017420746752/worshipful-company-of-stationers-and-newspaper\n\nchunib4.tumblr.com/post/815276152899993600/i-was-todays-years-old-when-i-learned-that-these\n\n\nhttps://www.tumblr.com/chunib4/815276997225938944/they-have-a-youth-program-o\n\nhttps://www.tumblr.com/chunib4/815276415710887936/im-starting-to-think-reality-is-always-better-than\n",
+			"styleAttributes":{},
+			"x":-7520,
+			"y":9311,
+			"width":1155,
+			"height":740,
+			"color":"1"
+		},
+		{
+			"id":"fabf8f58496f09f3",
+			"type":"text",
+			"text":"⭐ The story of the Stationeers",
+			"styleAttributes":{},
+			"x":-6312,
+			"y":9258,
+			"width":995,
+			"height":707,
+			"color":"1"
+		},
+		{
+			"id":"36627db47b08c47e",
+			"type":"text",
+			"text":"mb connect back to mining colonial exploitation into minecraft DLC",
+			"styleAttributes":{},
+			"x":-6074,
+			"y":10320,
+			"width":260,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"b945d53941ae0ca7",
+			"type":"text",
+			"text":"london rotary club",
+			"styleAttributes":{},
+			"x":-7520,
+			"y":10280,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"78d56f5886038f05",
+			"type":"text",
+			"text":"🏁 genocide washing",
+			"styleAttributes":{},
+			"x":-7240,
+			"y":10520,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"25f2fb33fb851709",
+			"type":"text",
+			"text":"🚧 The Balfour Declaration DLC\n---\nYou're not going to believe who's actually behind the idea of colonizing Palestine.",
+			"styleAttributes":{},
+			"x":3180,
+			"y":-7670,
+			"width":360,
+			"height":170,
+			"color":"3"
+		},
+		{
+			"id":"5ca315209fa69b1e",
+			"type":"text",
+			"text":"🚧 The Chadt Chronicles DLC\n---\nChadt and Elyan go through all of time and space to fight the Extractors and protect Reality from Leaks!\nFeaturing Ben Shahn and Jacques-Bénigne Bossuet!",
+			"styleAttributes":{},
+			"x":3560,
+			"y":-7670,
+			"width":360,
+			"height":250,
+			"color":"3"
+		},
+		{
+			"id":"979ca70319983d4b",
+			"type":"text",
+			"text":"The Path of Fortune\n---\nJust let your fate guide you all the way through this maze,\nAnd find your unique path leading to your true self.",
+			"styleAttributes":{},
+			"x":-5030,
+			"y":-8280,
+			"width":280,
+			"height":230,
+			"color":"4"
+		},
+		{
+			"id":"3ee85ec403a85c1c",
+			"type":"text",
+			"text":"The Path of the Finisher\n---\nBring any start to its rightful end.",
+			"styleAttributes":{},
+			"x":-4730,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"5"
+		},
+		{
+			"id":"01bb67cc42f3d28f",
+			"type":"text",
+			"text":"The Path of the Collector\n---\nChose one Aspect to focus on.\nWill you gather songs? features? or souls?",
+			"styleAttributes":{},
+			"x":-4450,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"5"
+		},
+		{
+			"id":"0796cc3e630c4422",
+			"type":"text",
+			"text":"The Path of the Treasure Hunter\n---\nFind the rare gems hidden in the story.",
+			"styleAttributes":{},
+			"x":-4160,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"6"
+		},
+		{
+			"id":"4cd20436abedc3a0",
+			"type":"text",
+			"text":"The Path of the Detective/Ritual/ARG\n---\nIn this place, to the meter,  \nAt this time, to the hour,  \nWe seal the Leak, to the name.",
+			"styleAttributes":{},
+			"x":-3880,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"6"
+		},
+		{
+			"id":"33133661505c31fb",
+			"type":"text",
+			"text":"The Path of the Completionist Explorer\n---\nBlaze all the trails.\nSee all the sights.",
+			"styleAttributes":{},
+			"x":-3600,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"2"
+		},
+		{
+			"id":"78cc4cbc172fea1c",
+			"type":"text",
+			"text":"The Path of the Gambler\n---\nYou will find all gambler feature options in the settings ⚙️.",
+			"styleAttributes":{},
+			"x":-3320,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"5"
+		},
+		{
+			"id":"286b63b8df8b008b",
+			"type":"text",
+			"text":"The Path of the Gamer\n---\nYou will find all gamer feature options in the settings ⚙️.",
+			"styleAttributes":{},
+			"x":-3040,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"4"
+		},
+		{
+			"id":"c2cd19d8057f086d",
+			"type":"text",
+			"text":"The Path Where I Don't Have To Read\n---\nThe path of the True Gamer, I see...\nYou will find all gamer feature options in the settings ⚙️.",
+			"styleAttributes":{},
+			"x":-2760,
+			"y":-8280,
+			"width":260,
+			"height":230
+		},
+		{
+			"id":"fe23fd91e29feea9",
+			"type":"text",
+			"text":"⚙️ Settings\n---\nUse the ⚙️ button at the top of the page.\n\nYou will be able to control exactly how much gaming you want in this game! \nNo amount is too much!\n",
+			"styleAttributes":{},
+			"x":-3060,
+			"y":-7690,
+			"width":450,
+			"height":210,
+			"color":"4"
+		},
+		{
+			"id":"b48c1a929392d1f5",
+			"type":"text",
+			"text":"Might there be other colors of Content, deeper down the Mine? \n---\nPerhaps even some color nobody had ever seen? ",
+			"styleAttributes":{},
+			"x":7320,
+			"y":10940,
+			"width":480,
+			"height":140
+		},
+		{
+			"id":"d1e1705298e2c5e8",
+			"type":"text",
+			"text":"And every now and then, the Human found really meaningful, life-changing Content!\n---\nIt would be Purple, or even Orange!",
+			"styleAttributes":{},
+			"x":7300,
+			"y":10685,
+			"width":520,
+			"height":175,
+			"color":"6"
+		},
+		{
+			"id":"6eca2001d25b0b72",
+			"type":"text",
+			"text":"Every day, every night, the Human mined and mined.",
+			"styleAttributes":{},
+			"x":7430,
+			"y":11118,
+			"width":260,
+			"height":55
+		},
+		{
+			"id":"e6d90edba5127fbb",
+			"type":"text",
+			"text":"One day, the Human found a weird tale, deep at the bottom of the Content Mine.\n---\nIt was a tale written by a Human and it was called \"The boy who owned all the drawings\".",
+			"styleAttributes":{},
+			"x":7320,
+			"y":11240,
+			"width":420,
+			"height":200
+		},
+		{
+			"id":"7be6ad5f9bf661ad",
+			"type":"text",
+			"text":"i genuinely thought defoe would have interesting travel and piracy stories\n\ni dug into the story of defoe",
+			"styleAttributes":{},
+			"x":-1380,
+			"y":11220,
+			"width":540,
+			"height":180,
+			"color":"1"
+		},
+		{"id":"0d5855d070abe7b6","type":"text","text":"⭐ The boy who owned all the drawings","x":8360,"y":11320,"width":480,"height":60,"color":"2"},
+		{
+			"id":"249743e9d7aff4d6",
+			"type":"text",
+			"text":"There once was a boy, no older than a child, who made five Drawings of himself near a Mine.",
+			"styleAttributes":{},
+			"x":8390,
+			"y":11420,
+			"width":420,
+			"height":80
+		},
+		{
+			"id":"12287a691a73d028",
+			"type":"text",
+			"text":"Do you want to hear it?",
+			"styleAttributes":{},
+			"x":7400,
+			"y":11560,
+			"width":260,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"bcbd0525ad1e316c",
+			"type":"text",
+			"text":"He lived in a world where Everything was Property.\n---\n\"These Drawings are Mine!\" the boy cried, and most of them agreed.",
+			"styleAttributes":{},
+			"x":8390,
+			"y":11540,
+			"width":420,
+			"height":160
+		},
+		{
+			"id":"9385802b5150608b",
+			"type":"text",
+			"text":"I started digging in the content mine",
+			"styleAttributes":{},
+			"x":-360,
+			"y":11600,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"ded980b68af81904",
+			"type":"text",
+			"text":"🚧 The History of ARG DLC\n---\nDo you want to know how the young composer Stephen Sondheim's murder mystery dinners caused the election of Donald Trump half a century later?\nI bet you would.",
+			"styleAttributes":{},
+			"x":4380,
+			"y":-7660,
+			"width":360,
+			"height":250,
+			"color":"3"
+		},
+		{
+			"id":"1193aeec378c5e6c",
+			"type":"text",
+			"text":"🚧 The Melanchon 2027 DLC\n---\nIn the imperial core, a serious reformist moderate left party might be able to save the world from itself...",
+			"styleAttributes":{},
+			"x":4780,
+			"y":-7660,
+			"width":360,
+			"height":250,
+			"color":"3"
+		},
+		{
+			"id":"d5b45c6ad738bb55",
+			"type":"text",
+			"text":"🚧 The Edit mode DLC\n---\nSoon, you will be able to write your own adventure in the open source Push The Button engine (that's not the name, by the way).",
+			"styleAttributes":{},
+			"x":5180,
+			"y":-7660,
+			"width":360,
+			"height":240,
+			"color":"3"
+		},
+		{
+			"id":"f00efb580d5894cc",
+			"type":"text",
+			"text":"🚧 The ARG DLC\n---\nThe history you thought you knew is just a surface.\nBehind the veil of reality, mysterious memetic entities pull the strings.\nThe Four Tarot Houses have been at war since the beginning of time, but it looks like the final singularity is approaching.\nWill you side with the Swords, the Wands, the Cups or the Pentacles?",
+			"styleAttributes":{},
+			"x":3980,
+			"y":-7660,
+			"width":360,
+			"height":300,
+			"color":"3"
+		},
+		{
+			"id":"2436635c3af531aa",
+			"type":"text",
+			"text":"🎵 Audio\n---\nIn this game, you will unlock audio and new features as you progress.\n\nWIP/TBC giveone free bgm here, make the button SFX. \"A new audio will autoplay when its found\"\n\nUse the 🎵 button at the top of the page to tweak volume.",
+			"styleAttributes":{},
+			"x":2665,
+			"y":-6800,
+			"width":640,
+			"height":210,
+			"color":"1"
+		},
+		{"id":"warning","type":"text","text":"⚠️ Content warning\n---\nThis game contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.\nIt discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY...\n\nNo topic is ever approached without a suitable foreshadowing in the unpushed button text.\n\nReader discretion is advised when pushing buttons.\nNever forget who is pushing the buttons.","x":5440,"y":-9400,"width":580,"height":310},
+		{"id":"619cd30afe3f3836","type":"text","text":"💳 Credits\n---\nEverything is the work of an anonymous human.\nExternal assets will specify attribution directly in the buttons.","x":5440,"y":-9040,"width":580,"height":160},
+		{
+			"id":"195ecdce6ca54a65",
+			"type":"text",
+			"text":"❓ DLCs 🚧 ?\n---\nThis is just the beginning of your path.\nA lot more is yet to come.",
+			"styleAttributes":{},
+			"x":4045,
+			"y":-7955,
+			"width":380,
+			"height":145
+		},
+		{
+			"id":"3c887e8fdcf0ba36",
+			"type":"text",
+			"text":"❓ How do I change the difficulty?\n---\nThe difficulty changes with the path you chose.",
+			"styleAttributes":{},
+			"x":4365,
+			"y":-9110,
+			"width":480,
+			"height":180
+		},
+		{
+			"id":"f9e0945e662c3409",
+			"type":"text",
+			"text":"⚙️ Settings\n---\nUse the ⚙️ button at the top of the page.\n\nSettings can significantly change the game, you might want to have a look to customize your experience.\n",
+			"styleAttributes":{},
+			"x":4560,
+			"y":-9370,
+			"width":450,
+			"height":210
+		},
+		{
+			"id":"dfc73eefe3104065",
+			"type":"text",
+			"text":"It didn't used to be like this...\n---\nWhen the internet started, Google made a little script that webmasters could put on their webpages so that the visitors could auto-translate the content.\nNow it's in the web browser.",
+			"styleAttributes":{},
+			"x":3885,
+			"y":-8890,
+			"width":620,
+			"height":200,
+			"color":"6"
+		},
+		{
+			"id":"eed47474d8e02fee",
+			"type":"text",
+			"text":"Why is it in the web browser?\n---\nSo that it's on every webpage?\nSo it can be automated?\nSo that webmasters could not control the way it's being used?\nSo that users can't opt out?\n\nIt's a general trend, obfuscating control away from the humans, putting it in the hands of corporations.\nIn return you get a simple, smooth, integrated ecosystem.\nAnd you end up captive consumer.",
+			"styleAttributes":{},
+			"x":4195,
+			"y":-8650,
+			"width":560,
+			"height":300
+		},
+		{
+			"id":"fbf2799b952d0f8b",
+			"type":"text",
+			"text":"🚧 The general trend obfuscating control away from the humans, putting it in the hands of corporations is in another DLC.\n---\nYou'll be shocked to find out whether humans chose simplicity or control!",
+			"styleAttributes":{},
+			"x":4485,
+			"y":-8300,
+			"width":360,
+			"height":230,
+			"color":"3"
+		},
+		{
+			"id":"072593befd0f4aeb",
+			"type":"text",
+			"text":"What are my objectives?",
+			"styleAttributes":{},
+			"x":-5860,
+			"y":-8320,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{"id":"tuto_star","type":"text","text":"❓ What does the star ⭐ mean ?\n---\nStar ⭐ is the icon for starter packs. They mark the beginning of a story.","x":-5600,"y":-6865,"width":300,"height":160,"color":"1"},
+		{
+			"id":"93ea9dee7495aa53",
+			"type":"text",
+			"text":"❓ Icons ☺️ ?",
+			"styleAttributes":{},
+			"x":-6460,
+			"y":-7120,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{"id":"b0be7ea51e65e65a","type":"text","text":"❓ i need help","x":-6440,"y":-7020,"width":360,"height":180,"color":"1"},
+		{"id":"tuto_colors","type":"text","text":"❓ What's up with the colors?\n---\nWIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨","x":-6050,"y":-6660,"width":480,"height":300,"color":"1"},
+		{"id":"tuto_archive","type":"text","text":"❓ Help, my screen is full of stuff!\n---\nWIP: The thread 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe","x":-6430,"y":-6770,"width":300,"height":200,"color":"1"},
+		{"id":"tuto_apology","type":"text","text":"❓ This tutorial is too long!\n---\nI apologize, this is brand new game engine, a lot of things need to be explained.\n  Feel free to skip everything you want, or look at the ⚙️ options to customize your experience.","x":-6500,"y":-6510,"width":300,"height":200,"color":"1"},
+		{"id":"tuto_emoji","type":"text","text":"❓ What's up with the EMOJIs?\n---\nSome buttons have icons.\n  WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟)","x":-6850,"y":-6750,"width":300,"height":200,"color":"1"},
+		{"id":"tutorial","type":"text","text":"❓ What do I have to do?\n---\nYour GOAL is simple: find an ending flag 🏁.\n  There's an ending 🏁 at the end of the green 🟢 line.\n  There may be others.","x":-6050,"y":-6865,"width":430,"height":190,"color":"1"},
+		{"id":"02b8cc538f2e9888","type":"text","text":"❓ This thing is new kind of game engine?\n---\nA new medium?\nA new way to see?\nA new way to LOOK.","x":-7200,"y":-7020,"width":360,"height":180,"color":"1"},
+		{"id":"44c63a84e447fb56","type":"text","text":"❓ how do i remove buttons?","x":-6820,"y":-7020,"width":360,"height":180,"color":"1"},
+		{
+			"id":"c565c4de39b22791",
+			"type":"text",
+			"text":"❓ How do I play the game?\n---\nExcellent question!\nWe cater to a wide variety of playstyles. \nTo play, you must first...",
+			"styleAttributes":{},
+			"x":-6010,
+			"y":-7090,
+			"width":440,
+			"height":180,
+			"color":"1"
+		},
+		{
+			"id":"f964fb74821b968e",
+			"type":"text",
+			"text":"I'm ready to jump into the game now!",
+			"styleAttributes":{},
+			"x":-5800,
+			"y":-8900,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{"id":"5af2d599f6742628","type":"text","text":"Create a character\n---\nIn this game, your character is defined by paths.\nIt's kinda like a class in traditional roleplay, but you can have as many paths as you want.\nStill, I suggest you start with one or two.","x":-4820,"y":-9120,"width":400,"height":220,"color":"4"},
+		{"id":"8df8a1ccc225f999","type":"text","text":"Chose my experience\n---\nThis game offers a wide variety of gameplay styles called Paths.\nYou can have as many paths as you want, but I suggest you start with one or two.","x":-4400,"y":-9120,"width":400,"height":200,"color":"4"},
+		{
+			"id":"62cb7fb510c44e0f",
+			"type":"text",
+			"text":"🏆 Your paths determines your objectives.\n---\nPush the objectives 🏆 button at the top of the screen at any time to change your paths.\n\nYou can also see your current progress on your paths.",
+			"styleAttributes":{},
+			"x":-4640,
+			"y":-8840,
+			"width":400,
+			"height":240,
+			"color":"4"
+		},
+		{
+			"id":"20cbe78d8456768b",
+			"type":"text",
+			"text":"❓ What are the different paths?\n---\nGreen paths are easy.\nBlue paths are normal.\nPurple paths are hard.\nOrange paths are impossible.",
+			"styleAttributes":{},
+			"x":-4620,
+			"y":-8580,
+			"width":400,
+			"height":220,
+			"color":"4"
+		},
+		{
+			"id":"c8abfde2875e96b1",
+			"type":"text",
+			"text":"cups - blood (human bodies)  \npentacle - money  \nwands - informational entropy?  \nsword - belief: attention! for time * affect",
+			"styleAttributes":{},
+			"x":-5160,
+			"y":-7580,
+			"width":480,
+			"height":160
+		}
 	],
 	"edges":[
-		{"id":"c51fd28e-555e-4b79-9d29-82513e1958ff","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_emoji","toSide":"top"},
-		{"id":"61ceb921-dbd4-4052-a227-a6cb691d023f","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_colors","toSide":"top"},
 		{"id":"d96d3eef-9236-418c-a0ee-d635f87fc304","fromFloating":false,"fromNode":"more","fromSide":"bottom","toNode":"more2","toSide":"top","color":"4"},
 		{"id":"deb7683c-e349-4362-ba2e-72a1a0e3a667","toFloating":false,"fromFloating":false,"fromNode":"more2","fromSide":"bottom","toNode":"title","toSide":"top","color":"4"},
 		{"id":"0e839c2e-8cd3-4de9-ba1d-b1e5b222b8c8","fromNode":"title","fromSide":"bottom","toNode":"title_aside","toSide":"top"},
@@ -2410,10 +2413,6 @@
 		{"id":"62b7eb7bf325f983","fromNode":"e8a4775851bc5327","fromSide":"bottom","toNode":"72d5074d19b63713","toSide":"top"},
 		{"id":"8dd48722b8762bed","fromNode":"72d5074d19b63713","fromSide":"bottom","toNode":"ed26200129d229b8","toSide":"top"},
 		{"id":"679b79ddacbb271e","fromNode":"72d5074d19b63713","fromSide":"bottom","toNode":"99677d0088771e0d","toSide":"top"},
-		{"id":"97da9995-38dd-4bbb-8ad9-6876818c2eef","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_archive","toSide":"top"},
-		{"id":"765fa59c-0816-4633-88f2-eaa71f4dd662","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_star","toSide":"top"},
-		{"id":"3633e949-cf7c-434f-a3bd-cbab6af5f61f","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_apology","toSide":"top"},
-		{"id":"3f151f49-c992-433a-9792-241a361b8dbd","fromNode":"tuto_apology","fromSide":"bottom","toNode":"options","toSide":"top"},
 		{"id":"616dc736-29cb-4473-a71e-b9b763d9c5bf","fromNode":"beginning","fromSide":"bottom","toNode":"intro_grey","toSide":"top"},
 		{"id":"91485fc9-3e8f-4a75-a307-d6813aa60a79","toFloating":false,"fromNode":"beginning","fromSide":"bottom","toNode":"intro_green","toSide":"top","color":"4"},
 		{"id":"f065582c-48b0-4ef3-bcaf-c4120dd31b02","fromNode":"beginning","fromSide":"bottom","toNode":"intro_blue","toSide":"top"},
@@ -2631,15 +2630,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"4577a8ed916b6c31",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"tutorial",
-			"fromSide":"bottom",
-			"toNode":"02b8cc538f2e9888",
-			"toSide":"top"
-		},
-		{
 			"id":"52c5b5236f49ab05",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -2736,15 +2726,6 @@
 			"fromNode":"e1aff5886c20bec7",
 			"fromSide":"bottom",
 			"toNode":"239181232a3195da",
-			"toSide":"top"
-		},
-		{
-			"id":"b0084bf828f80a26",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"options",
-			"fromSide":"bottom",
-			"toNode":"7eadeadfedd6bad8",
 			"toSide":"top"
 		},
 		{
@@ -3349,25 +3330,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"de16fbdba9894d0d",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"7eadeadfedd6bad8",
-			"fromSide":"bottom",
-			"toNode":"ef2813dd2fc1deef",
-			"toSide":"top"
-		},
-		{
-			"id":"f9b680c91c21feaa",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"7eadeadfedd6bad8",
-			"fromSide":"bottom",
-			"toNode":"a681a2ce0613aa79",
-			"toSide":"top"
-		},
-		{
 			"id":"e29e1828316d143e",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -3410,24 +3372,6 @@
 			"fromNode":"e14a7245f36b38df",
 			"fromSide":"bottom",
 			"toNode":"cd0283e8195b2140",
-			"toSide":"top"
-		},
-		{
-			"id":"773a0036eafde35b",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"7eadeadfedd6bad8",
-			"fromSide":"bottom",
-			"toNode":"241ea56d3a7ee635",
-			"toSide":"top"
-		},
-		{
-			"id":"c80e30082bc564eb",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"7eadeadfedd6bad8",
-			"fromSide":"bottom",
-			"toNode":"a05aebb07e232d1a",
 			"toSide":"top"
 		},
 		{
@@ -3513,115 +3457,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"9b87f3c8a87f3b86",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"02b8cc538f2e9888",
-			"fromSide":"bottom",
-			"toNode":"42c71d35a9f25a25",
-			"toSide":"top"
-		},
-		{
-			"id":"0c09d9e49e2577ff",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"42c71d35a9f25a25",
-			"fromSide":"bottom",
-			"toNode":"74f9179ad1f54688",
-			"toSide":"top"
-		},
-		{
-			"id":"ad4958a61293eaf2",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"tutorial",
-			"fromSide":"bottom",
-			"toNode":"c565c4de39b22791",
-			"toSide":"top"
-		},
-		{
-			"id":"947f5a56643413a1",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"c565c4de39b22791",
-			"fromSide":"bottom",
-			"toNode":"74f9179ad1f54688",
-			"toSide":"top"
-		},
-		{
-			"id":"12d532d2ac496070",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"options",
-			"fromSide":"bottom",
-			"toNode":"e99e235b31d5b83e",
-			"toSide":"top"
-		},
-		{
-			"id":"de9c2333b11824fc",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"74f9179ad1f54688",
-			"fromSide":"right",
-			"toNode":"e99e235b31d5b83e",
-			"toSide":"left",
-			"color":"1"
-		},
-		{
-			"id":"e8d449457b1eb800",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"74f9179ad1f54688",
-			"fromSide":"bottom",
-			"toNode":"ba3673cd6fa08f24",
-			"toSide":"top"
-		},
-		{
-			"id":"b90addcd91ad9002",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"e99e235b31d5b83e",
-			"fromSide":"bottom",
-			"toNode":"a43ae9a713759e4e",
-			"toSide":"top"
-		},
-		{
-			"id":"e35a92111d7c7cf6",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"ba3673cd6fa08f24",
-			"fromSide":"bottom",
-			"toNode":"e1de172a4c0d12f4",
-			"toSide":"top"
-		},
-		{
-			"id":"ec0955695fa50114",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"a43ae9a713759e4e",
-			"fromSide":"bottom",
-			"toNode":"e1de172a4c0d12f4",
-			"toSide":"top"
-		},
-		{
-			"id":"1013195552e0d28a",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"e1de172a4c0d12f4",
-			"fromSide":"bottom",
-			"toNode":"title",
-			"toSide":"top"
-		},
-		{
-			"id":"15b754860607e81b",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"e1de172a4c0d12f4",
-			"fromSide":"bottom",
-			"toNode":"ef2813dd2fc1deef",
-			"toSide":"top"
-		},
-		{
 			"id":"2a8963b361d52f03",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -3686,59 +3521,12 @@
 			"toSide":"top"
 		},
 		{
-			"id":"9560617f136290fd",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"e99e235b31d5b83e",
-			"fromSide":"right",
-			"toNode":"bcdb168ae4e75846",
-			"toSide":"left",
-			"color":"1"
-		},
-		{
-			"id":"d1d587eddf74485e",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"bcdb168ae4e75846",
-			"fromSide":"right",
-			"toNode":"53f219ea36851a65",
-			"toSide":"left",
-			"color":"1"
-		},
-		{
-			"id":"39baf363c9acc828",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"42c71d35a9f25a25",
-			"fromSide":"bottom",
-			"toNode":"fe88966496d9ac52",
-			"toSide":"top"
-		},
-		{
-			"id":"ccebc12fd5906f18",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"ba3673cd6fa08f24",
-			"fromSide":"bottom",
-			"toNode":"7165d7f878426adb",
-			"toSide":"top"
-		},
-		{
 			"id":"3fbe5d477e558f07",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"40eb47c3ef08be5a",
 			"fromSide":"bottom",
 			"toNode":"7099e851dc27ad23",
-			"toSide":"top"
-		},
-		{
-			"id":"d8e4da08e024efb7",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"7eadeadfedd6bad8",
-			"fromSide":"bottom",
-			"toNode":"3b2ea4d56919ce64",
 			"toSide":"top"
 		},
 		{
@@ -4572,42 +4360,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"fa773191f202d6e2",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"df4c70c4f678a712",
-			"fromSide":"bottom",
-			"toNode":"tutorial",
-			"toSide":"top"
-		},
-		{
-			"id":"4c13c120cd440c58",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"df4c70c4f678a712",
-			"fromSide":"bottom",
-			"toNode":"c565c4de39b22791",
-			"toSide":"top"
-		},
-		{
-			"id":"186aada0f9ddef59",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"df4c70c4f678a712",
-			"fromSide":"bottom",
-			"toNode":"options",
-			"toSide":"top"
-		},
-		{
-			"id":"acff3bb036079fb2",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"df4c70c4f678a712",
-			"fromSide":"bottom",
-			"toNode":"beginning",
-			"toSide":"top"
-		},
-		{
 			"id":"27ee7c25716586a6",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -4615,17 +4367,6 @@
 			"fromSide":"bottom",
 			"toNode":"658362153a4dcbd8",
 			"toSide":"top"
-		},
-		{
-			"id":"b2c223f1f8f65607",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"d688b3590b019998",
-			"fromSide":"bottom",
-			"toNode":"6f561fe79646f42e",
-			"toSide":"top",
-			"color":"4"
 		},
 		{
 			"id":"113ea697178b4ed1",
@@ -4667,10 +4408,12 @@
 			"id":"530c7961b6f8be68",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"4fd88cbcaa322c0b",
 			"fromSide":"bottom",
 			"toNode":"beginning",
-			"toSide":"top"
+			"toSide":"top",
+			"color":"4"
 		},
 		{
 			"id":"23aca028497edc67",
@@ -4733,16 +4476,6 @@
 			"fromNode":"f88d036ba343ec9c",
 			"fromSide":"bottom",
 			"toNode":"e3a17b749f47089f",
-			"toSide":"top"
-		},
-		{
-			"id":"072ea2ded50dc110",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"3dc05573068d8e07",
-			"fromSide":"bottom",
-			"toNode":"09f889c1c6139414",
 			"toSide":"top"
 		},
 		{
@@ -4848,17 +4581,6 @@
 			"color":"4"
 		},
 		{
-			"id":"9182e46bc72a7e1c",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"f964fb74821b968e",
-			"fromSide":"bottom",
-			"toNode":"d688b3590b019998",
-			"toSide":"top",
-			"color":"4"
-		},
-		{
 			"id":"7f0d2aeeacdc916d",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -4886,49 +4608,14 @@
 			"toSide":"top"
 		},
 		{
-			"id":"37bd63964e93a3c5",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"e4f4bb3fc1323c35",
-			"fromSide":"bottom",
-			"toNode":"09f889c1c6139414",
-			"toSide":"top"
-		},
-		{
-			"id":"ac1c8212a049f1d4",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"6f561fe79646f42e",
-			"fromSide":"bottom",
-			"toNode":"6c903f277691a2b7",
-			"toSide":"top"
-		},
-		{
-			"id":"3d66a86f84685a6a",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"6f561fe79646f42e",
-			"fromSide":"bottom",
-			"toNode":"6fda12f97f89f6fb",
-			"toSide":"top"
-		},
-		{
-			"id":"5604cd87f0ea5925",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"6c903f277691a2b7",
-			"fromSide":"bottom",
-			"toNode":"c72cdfba73cddacf",
-			"toSide":"top"
-		},
-		{
 			"id":"a33042dfbf0ef8c0",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"4cb94f139917f64f",
 			"fromSide":"bottom",
 			"toNode":"10063a69e5cc8023",
-			"toSide":"top"
+			"toSide":"top",
+			"color":"4"
 		},
 		{
 			"id":"cbd06ab6d70cad3a",
@@ -4970,6 +4657,7 @@
 			"id":"d193dd644fecdfce",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"9c8ea1a3b417de9e",
 			"fromSide":"bottom",
 			"toNode":"f9e0945e662c3409",
@@ -4991,33 +4679,6 @@
 			"fromNode":"e4f4bb3fc1323c35",
 			"fromSide":"bottom",
 			"toNode":"93ea9dee7495aa53",
-			"toSide":"top"
-		},
-		{
-			"id":"7cc9bb218149e510",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"6f561fe79646f42e",
-			"fromSide":"bottom",
-			"toNode":"a70e60e018c06da3",
-			"toSide":"top"
-		},
-		{
-			"id":"52575057a2954daf",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"6f561fe79646f42e",
-			"fromSide":"bottom",
-			"toNode":"28461ca198ba1708",
-			"toSide":"top"
-		},
-		{
-			"id":"0e93c7a0e308ed51",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"6f561fe79646f42e",
-			"fromSide":"bottom",
-			"toNode":"f436e6b903df9eb3",
 			"toSide":"top"
 		},
 		{
@@ -5134,6 +4795,487 @@
 			"fromNode":"start",
 			"fromSide":"bottom",
 			"toNode":"5af2d599f6742628",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"713afcf9b19c3bfd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"5af2d599f6742628",
+			"fromSide":"bottom",
+			"toNode":"62cb7fb510c44e0f",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"1ad29f0f0a4f26ab",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"f964fb74821b968e",
+			"fromSide":"bottom",
+			"toNode":"5af2d599f6742628",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"2f315025507b3f00",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"62cb7fb510c44e0f",
+			"fromSide":"bottom",
+			"toNode":"20cbe78d8456768b",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"72bd3110ed2533c5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"33133661505c31fb",
+			"toSide":"top"
+		},
+		{
+			"id":"400af59620b0b195",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"4cd20436abedc3a0",
+			"toSide":"top"
+		},
+		{
+			"id":"0ab1187fdce5af53",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"33133661505c31fb",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"ca4abc3f0755c817",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"7174e6b57a7b9c6c",
+			"fromSide":"bottom",
+			"toNode":"beginning",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"8e7a0b5d6c0689b6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4cd20436abedc3a0",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"0a66e93eb476e949",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"33133661505c31fb",
+			"fromSide":"bottom",
+			"toNode":"4f4fadc40ae81eba",
+			"toSide":"top"
+		},
+		{
+			"id":"3ebf8e350973c953",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"eaf2e99a90887d6f",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"e66ec47b66d06be5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"eaf2e99a90887d6f",
+			"fromSide":"bottom",
+			"toNode":"4cb94f139917f64f",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"d8a7569a00986630",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"0796cc3e630c4422",
+			"toSide":"top"
+		},
+		{
+			"id":"b7abbf023fef17f7",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0796cc3e630c4422",
+			"fromSide":"bottom",
+			"toNode":"4f4fadc40ae81eba",
+			"toSide":"top"
+		},
+		{
+			"id":"7846dd74003855e3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"4cd20436abedc3a0",
+			"fromSide":"bottom",
+			"toNode":"4f4fadc40ae81eba",
+			"toSide":"top"
+		},
+		{
+			"id":"72d1a694ca3ab2fb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c2cd19d8057f086d",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"66c32727e8249943",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"c2cd19d8057f086d",
+			"toSide":"top"
+		},
+		{
+			"id":"238cc70de9039d9e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0796cc3e630c4422",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"b65f017b79b9bab6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"979ca70319983d4b",
+			"toSide":"top"
+		},
+		{
+			"id":"47ab921f2264857b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"979ca70319983d4b",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"f4edf81b366a32d8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"979ca70319983d4b",
+			"fromSide":"bottom",
+			"toNode":"4f4fadc40ae81eba",
+			"toSide":"top"
+		},
+		{
+			"id":"a65e1bd137c3ae5c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"286b63b8df8b008b",
+			"toSide":"top"
+		},
+		{
+			"id":"899c8d37d34e7b2c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"286b63b8df8b008b",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"eeddc923bb493126",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"3ee85ec403a85c1c",
+			"toSide":"top"
+		},
+		{
+			"id":"e77d1fa8d525bd91",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3ee85ec403a85c1c",
+			"fromSide":"bottom",
+			"toNode":"4f4fadc40ae81eba",
+			"toSide":"top"
+		},
+		{
+			"id":"ce3f6e327c0ffc05",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3ee85ec403a85c1c",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"a00cfb2ab159fb04",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"01bb67cc42f3d28f",
+			"toSide":"top"
+		},
+		{
+			"id":"beb5eb73f527746b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01bb67cc42f3d28f",
+			"fromSide":"bottom",
+			"toNode":"4f4fadc40ae81eba",
+			"toSide":"top"
+		},
+		{
+			"id":"750f81c9b70c5c00",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"01bb67cc42f3d28f",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"a33f69e4c46c2754",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f9e0945e662c3409",
+			"fromSide":"bottom",
+			"toNode":"3c887e8fdcf0ba36",
+			"toSide":"top"
+		},
+		{
+			"id":"2802b2f985e529dc",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3c887e8fdcf0ba36",
+			"fromSide":"bottom",
+			"toNode":"20cbe78d8456768b",
+			"toSide":"top"
+		},
+		{
+			"id":"c0c05a2a2d9b9e78",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"286b63b8df8b008b",
+			"fromSide":"bottom",
+			"toNode":"674820f9ab3e9b16",
+			"toSide":"top"
+		},
+		{
+			"id":"eab0a4509a3c215e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f9e0945e662c3409",
+			"fromSide":"bottom",
+			"toNode":"195ecdce6ca54a65",
+			"toSide":"top"
+		},
+		{
+			"id":"25d3478e04ca63a6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"195ecdce6ca54a65",
+			"fromSide":"bottom",
+			"toNode":"674820f9ab3e9b16",
+			"toSide":"top"
+		},
+		{
+			"id":"24b2f441234aae84",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"195ecdce6ca54a65",
+			"fromSide":"bottom",
+			"toNode":"0e06b327b8be53c9",
+			"toSide":"top"
+		},
+		{
+			"id":"36566723b09d4869",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"195ecdce6ca54a65",
+			"fromSide":"bottom",
+			"toNode":"25f2fb33fb851709",
+			"toSide":"top"
+		},
+		{
+			"id":"9e885ce51e73df4b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"195ecdce6ca54a65",
+			"fromSide":"bottom",
+			"toNode":"5ca315209fa69b1e",
+			"toSide":"top"
+		},
+		{
+			"id":"ffd0754674e7240b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"195ecdce6ca54a65",
+			"fromSide":"bottom",
+			"toNode":"1193aeec378c5e6c",
+			"toSide":"top"
+		},
+		{
+			"id":"6396a09a41a84fd0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"78cc4cbc172fea1c",
+			"toSide":"top"
+		},
+		{
+			"id":"ca200ef661263a41",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"78cc4cbc172fea1c",
+			"fromSide":"bottom",
+			"toNode":"7174e6b57a7b9c6c",
+			"toSide":"top"
+		},
+		{
+			"id":"094df43e79340029",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"78cc4cbc172fea1c",
+			"fromSide":"bottom",
+			"toNode":"fe23fd91e29feea9",
+			"toSide":"top"
+		},
+		{
+			"id":"ebd117c1161c520c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"286b63b8df8b008b",
+			"fromSide":"bottom",
+			"toNode":"fe23fd91e29feea9",
+			"toSide":"top"
+		},
+		{
+			"id":"47141cda3a743e9c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c2cd19d8057f086d",
+			"fromSide":"bottom",
+			"toNode":"fe23fd91e29feea9",
+			"toSide":"top"
+		},
+		{
+			"id":"87189b4ecc6b53ef",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"195ecdce6ca54a65",
+			"fromSide":"bottom",
+			"toNode":"d5b45c6ad738bb55",
+			"toSide":"top"
+		},
+		{
+			"id":"246830f85a007779",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"195ecdce6ca54a65",
+			"fromSide":"bottom",
+			"toNode":"ded980b68af81904",
+			"toSide":"top"
+		},
+		{
+			"id":"5a6cee0810fa0584",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"195ecdce6ca54a65",
+			"fromSide":"bottom",
+			"toNode":"f00efb580d5894cc",
+			"toSide":"top"
+		},
+		{
+			"id":"26897d0cb9bbcf5f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"e4f4bb3fc1323c35",
+			"fromSide":"bottom",
+			"toNode":"072593befd0f4aeb",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"fb917d9aa086d27c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3dc05573068d8e07",
+			"fromSide":"bottom",
+			"toNode":"072593befd0f4aeb",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"a11515ce09f8a18f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"072593befd0f4aeb",
+			"fromSide":"bottom",
+			"toNode":"62cb7fb510c44e0f",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"c461788cfdfa145a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"start",
+			"fromSide":"bottom",
+			"toNode":"8df8a1ccc225f999",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"efb40fa44016e681",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"f964fb74821b968e",
+			"fromSide":"bottom",
+			"toNode":"8df8a1ccc225f999",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"920d6b72deb4f3c9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"8df8a1ccc225f999",
+			"fromSide":"bottom",
+			"toNode":"62cb7fb510c44e0f",
 			"toSide":"top",
 			"color":"4"
 		}
