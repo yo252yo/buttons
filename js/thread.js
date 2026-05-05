@@ -1,5 +1,5 @@
 import { getButton, getChildren } from './canvas.js';
-import { potentially_unlock_interface } from './interface.js';
+import { handle_buttonzone_button_click } from './listeners.js';
 import { capitalize_substrings } from './objectives.js';
 
 export function button_content(btnData, expanded) {
@@ -36,7 +36,7 @@ export function create_button(buttonName, parent) {
     btn.innerHTML = button_content(btnData, false);
   }
 
-  btn.addEventListener('click', button_click_listener);
+  btn.addEventListener('click', handle_buttonzone_button_click);
 
   const buttonsZone = document.getElementById('buttons_zone');
   if (buttonsZone) {
@@ -50,36 +50,26 @@ export function create_button(buttonName, parent) {
   return btn;
 }
 
-export function button_click_listener() {
-  const btnId = this.dataset.id;
-  const btnData = getButton(btnId);
+export function handle_first_press(dom_btn, btnId, btnData) {
+  if (!dom_btn.classList.contains('unclicked_button')) {
+    return;
+  }
 
-  if (!btnData) {
-    console.log("Button clicked not in the loaded canvas:" + btnId);
-  } else {
-    if (btnData.emoji) {
-      potentially_unlock_interface(btnData.emoji);
-    }
+  // Expand
+  dom_btn.classList.remove('unclicked_button');
+  dom_btn.innerHTML = button_content(btnData, true);
 
-    if (this.classList.contains('unclicked_button')) {
-      // First canvas click - create children (spawning)
-      this.classList.remove('unclicked_button');
-      this.innerHTML = button_content(btnData, true);
+  // Span children
+  getChildren(btnId).forEach(childId => {
+    create_button(childId, dom_btn);
+  });
 
-      getChildren(btnId).forEach(childId => {
-        create_button(childId, this);
-      });
-    }
-
-    // commit changes to button dom
-    write_to_dom(this, btnId);
-
-    // finally highlight the last action
-    highlight_last_pressed(btnId);
+  if (btnData.emoji) {
+    potentially_unlock_interface(btnData.emoji);
   }
 }
 
-export function write_to_dom(dom_btn, btnId) {
+export function press_dom_buttons(dom_btn, btnId) {
   dom_btn.classList.toggle('pressed');
 
   // Propagate through the DOM

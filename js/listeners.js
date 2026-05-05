@@ -1,7 +1,7 @@
 import { setupWindowBindings } from './api.js';
-import { loadButtonsFromCanvas } from './canvas.js';
+import { getButton, loadButtonsFromCanvas } from './canvas.js';
 import { potentially_display_meta_button } from './interface.js';
-import { button_click_listener, create_button } from './thread.js';
+import { create_button, handle_first_press, highlight_last_pressed, press_dom_buttons } from './thread.js';
 
 function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);
@@ -30,13 +30,28 @@ export async function handle_interface_button_click() {
   await potentially_display_meta_button(this);
 }
 
+export function handle_buttonzone_button_click() {
+  const btnId = this.dataset.id;
+  const btnData = getButton(btnId);
+
+  press_dom_buttons(this, btnId);
+
+  if (!btnData) {
+    console.log("Button clicked not in the loaded canvas:" + btnId);
+    return;
+  }
+
+  handle_first_press(this, btnId, btnData);
+  highlight_last_pressed(btnId);
+}
+
 async function initial_load() {
   // Load buttons then setup window bindings with the cache
   const buttonsCache = await loadButtonsFromCanvas();
   setupWindowBindings(buttonsCache);
 
   document.querySelectorAll('.button').forEach(btn => {
-    btn.addEventListener('click', button_click_listener);
+    btn.addEventListener('click', handle_buttonzone_button_click);
   });
 
 
