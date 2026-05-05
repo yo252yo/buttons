@@ -1,5 +1,5 @@
 import { getButton, getChildren } from './canvas.js';
-import { potentially_unlock_interface } from './interface.js';
+import { mb_create_interface_button } from './interface.js';
 import { handle_buttonzone_button_click } from './listeners.js';
 import { capitalize_substrings } from './objectives.js';
 
@@ -51,22 +51,25 @@ export function create_button(buttonName, parent) {
   return btn;
 }
 
-export function handle_first_press(dom_btn, btnId, btnData) {
-  if (!dom_btn.classList.contains('unclicked_button')) {
-    return;
+export function handle_press(dom_btn, btnId, btnData) {
+  let first_click = false;
+  if (dom_btn.classList.contains('unclicked_button')) {
+    first_click = true;
+    // Expand
+    dom_btn.classList.remove('unclicked_button');
+    dom_btn.innerHTML = button_content(btnData, true);
+
+    // Span children
+    getChildren(btnId).forEach(childId => {
+      create_button(childId, dom_btn);
+    });
   }
 
-  // Expand
-  dom_btn.classList.remove('unclicked_button');
-  dom_btn.innerHTML = button_content(btnData, true);
+  // Ordering matters: we update last_pressed AFTER spawning children but BEFORE giving it to interface button
+  highlight_last_pressed(btnId);
 
-  // Span children
-  getChildren(btnId).forEach(childId => {
-    create_button(childId, dom_btn);
-  });
-
-  if (btnData.emoji) {
-    potentially_unlock_interface(btnData.emoji);
+  if (first_click && btnData.emoji) {
+    mb_create_interface_button(btnData.emoji);
   }
 }
 

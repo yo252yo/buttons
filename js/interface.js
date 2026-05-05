@@ -15,10 +15,10 @@ const interfaceButtonMeta = {
   // '🎵': { title: 'Audio', color: 'green' },
   // '🐟': { title: 'Catches', color: 'grey' },
   // '❓': { title: 'Help', color: 'grey' },
-  // '⭐': { title: 'STARters', color: 'grey' },
+  '⭐': { title: 'STARters', color: 'grey' },
 };
 
-export function potentially_unlock_interface(emoji) {
+export function mb_create_interface_button(emoji) {
   const meta = interfaceButtonMeta[emoji];
   if (!meta) return;
 
@@ -27,7 +27,7 @@ export function potentially_unlock_interface(emoji) {
   if (existingBtn) return;
 
   const btn = document.createElement('div');
-  btn.className = `interface_button button-${meta.color}`;
+  btn.className = `interface_button last_pressed button-${meta.color}`;
   btn.title = meta.title;
   btn.textContent = emoji;
   btn.addEventListener('click', handle_interface_button_click);
@@ -40,7 +40,7 @@ export function potentially_unlock_interface(emoji) {
   }
 }
 
-export async function potentially_display_meta_button(button) {
+export async function mb_display_page_div(button) {
   const title = button.title;
 
   const jsPath = `pages/${title.toLowerCase()}.js`;

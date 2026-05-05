@@ -50,3 +50,7 @@
   filter: brightness(0.7) contrast(1.2);
   opacity: 0.9;
 }
+
+.interface_button.last_pressed {
+  outline: 1px;
+}

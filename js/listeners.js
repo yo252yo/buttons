@@ -1,7 +1,7 @@
 import { setupWindowBindings } from './api.js';
+import { create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
-import { potentially_display_meta_button } from './interface.js';
-import { create_button, handle_first_press, highlight_last_pressed, press_dom_buttons } from './buttons_zone.js';
+import { mb_display_page_div } from './interface.js';
 
 function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);
@@ -27,7 +27,7 @@ export async function handle_interface_button_click() {
 
   this.classList.add('pressed');
 
-  await potentially_display_meta_button(this);
+  await mb_display_page_div(this);
 }
 
 export function handle_buttonzone_button_click() {
@@ -41,8 +41,7 @@ export function handle_buttonzone_button_click() {
     return;
   }
 
-  handle_first_press(this, btnId, btnData);
-  highlight_last_pressed(btnId);
+  handle_press(this, btnId, btnData);
 }
 
 async function initial_load() {
