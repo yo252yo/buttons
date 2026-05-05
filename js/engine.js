@@ -1,5 +1,6 @@
 import { loadButtonsFromCanvas } from './canvas.js';
-import { create_button, button_click_listener } from './thread.js';
+import { setupWindowBindings } from './api.js';
+import { button_click_listener, create_button } from './thread.js';
 
 function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);
@@ -19,22 +20,29 @@ async function handle_interface_button_click() {
 
   this.classList.add('pressed');
 
-  const colorClass = [...this.classList]
-    .find(c => c.startsWith('button-') && c !== 'interface_button')
-    ?.replace('button-', '') || 'grey';
-
   const title = this.title.toLowerCase();
-  const metaPath = `meta_buttons/${title}.html`;
+  const jsPath = `meta_buttons/${title}.js`;
+
 
   try {
-    const response = await fetch(metaPath);
+    const response = await fetch(jsPath);
     if (!response.ok) return;
 
-    const html = await response.text();
-    if (!html.trim()) return;
+    const jsCode = await response.text();
+
+    // Prepare DOM first
+    const colorClass = [...this.classList]
+      .find(c => c.startsWith('button-') && c !== 'interface_button')
+      ?.replace('button-', '') || 'grey';
 
     metaButton.className = `meta_button meta_button-${colorClass}`;
-    metaButton.innerHTML = html;
+    metaButton.innerHTML = '';
+
+    // Execute JS - JS can find metaButton via getElementById
+    const fn = new Function(jsCode);
+    const result = fn();
+    if (result instanceof Promise) await result;
+
     metaButton.style.display = 'block';
   } catch (e) {
     console.log('No meta_button file for:', title);
@@ -42,6 +50,10 @@ async function handle_interface_button_click() {
 }
 
 async function initial_load() {
+  // Load buttons then setup window bindings with the cache
+  const buttonsCache = await loadButtonsFromCanvas();
+  setupWindowBindings(buttonsCache);
+
   document.querySelectorAll('.button').forEach(btn => {
     btn.addEventListener('click', button_click_listener);
     btn.addEventListener('touchstart', button_click_listener);
@@ -50,8 +62,6 @@ async function initial_load() {
   document.querySelectorAll('.interface_button').forEach(btn => {
     btn.addEventListener('click', handle_interface_button_click);
   });
-
-  await loadButtonsFromCanvas();
 
   const startId = get_query_param('start') || 'start';
   create_button(startId);
