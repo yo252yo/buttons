@@ -30,31 +30,37 @@
 
   const colorEmoji = { grey: '⚫', green: '🟢', blue: '🔵', purple: '🟣', orange: '🟠' };
 
-  // Transposed: colors as rows, emojis as columns
-  let html = '<table border="1" style="border-collapse: collapse; text-align: center;">';
+  const black = getCssVar('--black');
 
-  // Column headers: emoji, Total, then each emoji (sorted by total)
-  html += '<tr><th></th><th>Total</th>' + emojisWithTotals.map(e => `<th>${e.emoji}</th>`).join('') + '</tr>';
+  // Transposed: colors as rows, emojis as columns - Total at the end (inverted from before)
+  let html = '<table style="border-collapse: collapse; text-align: center; border-left: 2px solid ' + black + '; border-right: 2px solid ' + black + ';">';
+
+  // Column headers: emoji, then each emoji (sorted by total), then Total at end
+  html += '<tr><th></th>';
+  for (const e of emojisWithTotals) {
+    html += '<th style="border-left: 1px solid ' + black + ';">' + e.emoji + '</th>';
+  }
+  html += '<th style="border-left: 1px solid ' + black + ';">Total</th></tr>';
 
   // Row 1: totals for each emoji
   html += '<tr><td><b>Total</b></td>';
-  html += `<td><b>${emojisWithTotals.reduce((sum, e) => sum + e.total, 0)}</b></td>`;
   for (const e of emojisWithTotals) {
-    html += `<td><b>${e.total}</b></td>`;
+    html += '<td style="border-left: 1px solid ' + black + ';"><b>' + e.total + '</b></td>';
   }
+  html += '<td style="border-left: 1px solid ' + black + ';"><b>' + emojisWithTotals.reduce((sum, e) => sum + e.total, 0) + '</b></td>';
   html += '</tr>';
 
   // Color rows: grey, green, blue, purple, orange
   for (let rowIdx = 0; rowIdx < colors.length; rowIdx++) {
     const c = colors[rowIdx];
     const rowBg = rowIdx % 2 === 0 ? colorBg : colorBgDark;
-    html += `<tr><td style="background:${colorBg[c]};padding:5px;">${colorEmoji[c]}</td>`;
-    // Sum for this color across all emojis
-    html += `<td>${emojisWithTotals.reduce((sum, e) => sum + (e.counts[c] || 0), 0)}</td>`;
+    html += '<tr><td style="background:' + colorBg[c] + ';padding:5px;">' + colorEmoji[c] + '</td>';
     // Count for each emoji in this color
     for (const e of emojisWithTotals) {
-      html += `<td style="background:${rowBg[c]};">${e.counts[c] || ''}</td>`;
+      html += '<td style="border-left: 1px solid ' + black + '; background:' + rowBg[c] + ';">' + (e.counts[c] || '') + '</td>';
     }
+    // Sum for this color across all emojis
+    html += '<td style="border-left: 1px solid ' + black + ';">' + emojisWithTotals.reduce((sum, e) => sum + (e.counts[c] || 0), 0) + '</td>';
     html += '</tr>';
   }
 
