@@ -173,14 +173,14 @@
   }
 }
 
-.unclicked_button {
+.unpushed_button {
   position: relative;
   animation: shake 1s linear infinite;
 }
 
 
 /* sparkle sweep */
-.unclicked_button::after {
+.unpushed_button::after {
   content: "";
   position: absolute;
   top: 0;
