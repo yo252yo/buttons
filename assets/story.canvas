@@ -3,7 +3,7 @@
 		{"id":"8766146d53644fc3","type":"group","x":-935,"y":2560,"width":2835,"height":4103,"color":"1","label":"Robinson Crusoe"},
 		{"id":"a3b9526cd30285a1","type":"group","x":1720,"y":-9500,"width":4480,"height":2220,"label":"Settings/credits"},
 		{"id":"711dc3bbb688c332","type":"group","x":-6036,"y":212,"width":3076,"height":3056,"label":"Defoe's youth and education"},
-		{"id":"211a205e5efdd84a","type":"group","x":-5340,"y":-9140,"width":4420,"height":1820,"color":"4","label":"Chose your path onboarding"},
+		{"id":"211a205e5efdd84a","type":"group","x":-5340,"y":-9140,"width":4420,"height":2100,"color":"4","label":"Chose your path onboarding"},
 		{"id":"cda20f890a136a96","type":"group","x":-9600,"y":-9280,"width":3680,"height":2040,"label":"All about buttons"},
 		{"id":"cec1d48054724399","type":"group","x":-7280,"y":4199,"width":2271,"height":3156,"color":"4","label":"Defoe's political career"},
 		{"id":"8208ce67bac49771","type":"group","x":3680,"y":7200,"width":2200,"height":2540,"color":"5","label":"minecraft DLC"},
@@ -1211,7 +1211,7 @@
 		{
 			"id":"4f4fadc40ae81eba",
 			"type":"text",
-			"text":"TODO TBC WIP\nTO IMPLEMENT WITH THE OBJECTIVES MENU LMAO\n\npath of the hunter of numbers\n\npath of the four houses?\npath of the words??????? reader?\nnumbers=pent, mb collect all the prices\n\nwand = explorer/completionist\nsword = collect the names mb\n\ni also had like pixel hunt/grammar objectives, letters\n\n\nmb each house has different  set of emoji/ set for each \n\n\n\npentacle - hunt for words in the text\nsword - search for emoji/collect emoji\nwood - explore map\ni could hide tags in code and have detector widget, ",
+			"text":"TODO TBC WIP\nTO IMPLEMENT WITH THE OBJECTIVES MENU LMAO\n\npath of the hunter of numbers\n\npath of the four houses?\npath of the words??????? reader?\nnumbers=pent, mb collect all the prices\n\nwand = explorer/completionist\nsword = collect the names mb\n\ni also had like pixel hunt/grammar objectives, letters\n\n\nmb each house has different  set of emoji/ set for each \n\n\nsword ?? try to make patterns with colors\npentacle - hunt for words in the text\ncups - search for emoji/collect emoji\nwood - explore map\ni could hide tags in code and have detector widget, \n\n\nEMOJI/WORDS/COLORS/COMPLETION",
 			"styleAttributes":{},
 			"x":-4600,
 			"y":-7660,
@@ -2051,49 +2051,6 @@
 			"color":"2"
 		},
 		{
-			"id":"78cc4cbc172fea1c",
-			"type":"text",
-			"text":"The Path of the Gambler\n---\nYou will find all gambler feature options in the settings ⚙️.",
-			"styleAttributes":{},
-			"x":-3320,
-			"y":-8280,
-			"width":260,
-			"height":230,
-			"color":"5"
-		},
-		{
-			"id":"286b63b8df8b008b",
-			"type":"text",
-			"text":"The Path of the Gamer\n---\nYou will find all gamer feature options in the settings ⚙️.",
-			"styleAttributes":{},
-			"x":-3040,
-			"y":-8280,
-			"width":260,
-			"height":230,
-			"color":"4"
-		},
-		{
-			"id":"c2cd19d8057f086d",
-			"type":"text",
-			"text":"The Path Where I Don't Have To Read\n---\nThe path of the True Gamer, I see...\nYou will find all gamer feature options in the settings ⚙️.",
-			"styleAttributes":{},
-			"x":-2760,
-			"y":-8280,
-			"width":260,
-			"height":230
-		},
-		{
-			"id":"fe23fd91e29feea9",
-			"type":"text",
-			"text":"⚙️ Settings\n---\nUse the ⚙️ button at the top of the page.\n\nYou will be able to control exactly how much gaming you want in this game! \nNo amount is too much!\n",
-			"styleAttributes":{},
-			"x":-3060,
-			"y":-7690,
-			"width":450,
-			"height":210,
-			"color":"4"
-		},
-		{
 			"id":"b48c1a929392d1f5",
 			"type":"text",
 			"text":"Might there be other colors of Content, deeper down the Mine? \n---\nPerhaps even some color nobody had ever seen? ",
@@ -2393,6 +2350,113 @@
 			"y":-7580,
 			"width":480,
 			"height":160
+		},
+		{
+			"id":"78cc4cbc172fea1c",
+			"type":"text",
+			"text":"The Path of the Gambler\n---\nYou will find all gambler feature options in the settings ⚙️.",
+			"styleAttributes":{},
+			"x":-3000,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"5"
+		},
+		{
+			"id":"286b63b8df8b008b",
+			"type":"text",
+			"text":"The Path of the Gamer\n---\nYou will find all gamer feature options in the settings ⚙️.",
+			"styleAttributes":{},
+			"x":-2720,
+			"y":-8280,
+			"width":260,
+			"height":230,
+			"color":"4"
+		},
+		{
+			"id":"c2cd19d8057f086d",
+			"type":"text",
+			"text":"The Path Where I Don't Have To Read\n---\nThe path of the True Gamer, I see...\nYou will find all gamer feature options in the settings ⚙️.",
+			"styleAttributes":{},
+			"x":-2440,
+			"y":-8280,
+			"width":260,
+			"height":230
+		},
+		{
+			"id":"fe23fd91e29feea9",
+			"type":"text",
+			"text":"⚙️ Settings\n---\nUse the ⚙️ button at the top of the page.\n\nYou will be able to control exactly how much gaming you want in this game! \nNo amount is too much!\n",
+			"styleAttributes":{},
+			"x":-2740,
+			"y":-7690,
+			"width":450,
+			"height":210,
+			"color":"4"
+		},
+		{
+			"id":"81673b158f775277",
+			"type":"text",
+			"text":"The path of the censor\n---\nHunt for specific words, DEPLATFORM them out of existence with your new DEPLATFORM CURSOR.\n\nComes with a Pixel Hunter path (by letter/syllables), Mathematician path (works on numbers) and all kind of targets to DEPLATFORM.",
+			"styleAttributes":{},
+			"x":-3750,
+			"y":-7615,
+			"width":370,
+			"height":230,
+			"color":"6"
+		},
+		{
+			"id":"8dae149fba01a0a1",
+			"type":"text",
+			"text":"cups?",
+			"styleAttributes":{},
+			"x":-2645,
+			"y":-7420,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"36b517f99c9cd2e3",
+			"type":"text",
+			"text":"cups = green\nwoods = orange\npent = purple\nsword = blue",
+			"styleAttributes":{},
+			"x":-5120,
+			"y":-7220,
+			"width":260,
+			"height":160
+		},
+		{
+			"id":"a888cd272a165d16",
+			"type":"text",
+			"text":"The path of the colors\n---\nSeek the patterns behind the truth\nColor is ALL that matters\n\nYou will be rewarded for specific color patterns in the buttons ordering.",
+			"styleAttributes":{},
+			"x":-3370,
+			"y":-7615,
+			"width":370,
+			"height":230,
+			"color":"5"
+		},
+		{
+			"id":"4bd78c360b9dcd8f",
+			"type":"text",
+			"text":"🚧 The Sword House DLC\n---\nThe Sword House is characterized by rigor, organization and purity.",
+			"styleAttributes":{},
+			"x":-3365,
+			"y":-7260,
+			"width":360,
+			"height":170,
+			"color":"3"
+		},
+		{
+			"id":"0ce9958b63ee32ee",
+			"type":"text",
+			"text":"🚧 The Pentacle House DLC\n---\nThe Pentacle House is characterized by measurement, categorization and optimization.",
+			"styleAttributes":{},
+			"x":-3740,
+			"y":-7260,
+			"width":360,
+			"height":170,
+			"color":"3"
 		}
 	],
 	"edges":[
@@ -5048,6 +5112,7 @@
 			"id":"beb5eb73f527746b",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"01bb67cc42f3d28f",
 			"fromSide":"bottom",
 			"toNode":"4f4fadc40ae81eba",
@@ -5278,6 +5343,42 @@
 			"toNode":"62cb7fb510c44e0f",
 			"toSide":"top",
 			"color":"4"
+		},
+		{
+			"id":"3e92cfec115cb4d1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a888cd272a165d16",
+			"fromSide":"bottom",
+			"toNode":"4bd78c360b9dcd8f",
+			"toSide":"top"
+		},
+		{
+			"id":"3e923650b701016f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"81673b158f775277",
+			"fromSide":"bottom",
+			"toNode":"0ce9958b63ee32ee",
+			"toSide":"top"
+		},
+		{
+			"id":"7ba2c0ec9e5487dd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"a888cd272a165d16",
+			"toSide":"top"
+		},
+		{
+			"id":"391af3a37cb044a5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20cbe78d8456768b",
+			"fromSide":"bottom",
+			"toNode":"81673b158f775277",
+			"toSide":"top"
 		}
 	],
 	"metadata":{
