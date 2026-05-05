@@ -4,6 +4,9 @@ const CANVAS_TO_JS_COLORS = {
   "4": "green",
   "5": "blue",
   "6": "purple",
+
+  "1": "empty", // yellow
+  //  "3": "empty", // red
 };
 
 const startsWithEmoji = (str) => {
