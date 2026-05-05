@@ -87,6 +87,10 @@ i can start by spawning:
 - icons☺️
 - colors🎨
 - goals 🏁
+Chose a path 👣?
+---
+Yes, we need to customize your game experience, so you need to pick a starting class.🏆👣
+Your progress is measured along colored path. 🎨
 
 mb icons should be mapped if they appear in the text like systematically
 
@@ -98,3 +102,11 @@ paint dlc nodes in yellow fr mb ???
 spawn the new meta icon with last_presed but not pressed so we can have interfce.last_pressed glow 
 
 the button mb shouldnt press if there sis text selected
+
+❓ can go to all ❓ nodes even unexplored
+
+
+YOUR FIRST PATH IS FREE BUT THE NEXT ONES COST BUTTONS
+>> path finding logic
+
+FAQ

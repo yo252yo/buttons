@@ -28,7 +28,7 @@ export function create_button(buttonName, parent) {
     btn.className = existingBtn.className;
     btn.innerHTML = existingBtn.innerHTML;
   } else {
-    btn.className = `button button-${btnData.color || 'grey'} unclicked_button last_children`;
+    btn.className = `button button-${btnData.color || 'grey'} unpushed_button last_children`;
     btn.innerHTML = button_content(btnData, false);
   }
 
@@ -48,12 +48,12 @@ export function create_button(buttonName, parent) {
 
 export function handle_press(dom_btn, btnId, btnData) {
   let first_click = false;
-  if (dom_btn.classList.contains('unclicked_button')) {
+  if (dom_btn.classList.contains('unpushed_button')) {
     first_click = true;
 
     // Remove unclick, expand
     document.querySelectorAll(`[data-id="${btnId}"]`).forEach(dom_btn_ => {
-      dom_btn_.classList.remove('unclicked_button');
+      dom_btn_.classList.remove('unpushed_button');
       dom_btn_.innerHTML = button_content(btnData, true);
     });
 
