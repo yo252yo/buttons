@@ -22,7 +22,7 @@
   touch-action: manipulation;
 }
 
-.button::before {
+#buttons_zone .button::before {
   content: "";
   position: absolute;
   left: -80px;
@@ -32,35 +32,35 @@
 }
 
 /* Color-matching line by default - use border colors for proper color */
-.button-orange::before {
+#buttons_zone .button-orange::before {
   background: var(--orange);
 }
 
-.button-purple::before {
+#buttons_zone .button-purple::before {
   background: var(--purple);
 }
 
-.button-blue::before {
+#buttons_zone .button-blue::before {
   background: var(--blue);
 }
 
-.button-green::before {
+#buttons_zone .button-green::before {
   background: var(--green);
 }
 
-.button-grey::before {
+#buttons_zone .button-grey::before {
   background: var(--grey);
 }
 
-.second_to_last_pressed::before,
-.second_to_last_children::before {
+#buttons_zone .second_to_last_pressed::before,
+#buttons_zone .second_to_last_children::before {
   background: var(--black-shine);
   left: -180px;
   width: 172px;
 }
 
-.last_pressed::before,
-.last_children::before {
+#buttons_zone .last_pressed::before,
+#buttons_zone .last_children::before {
   background: var(--black);
   left: -180px;
   width: 172px;
@@ -94,7 +94,6 @@
 
 .last_pressed {
   outline: 10px solid var(--black);
-
   box-shadow: 0 0 15px 10px var(--black);
 }
 

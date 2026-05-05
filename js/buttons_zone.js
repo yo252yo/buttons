@@ -4,7 +4,6 @@ import { handle_buttonzone_button_click } from './listeners.js';
 import { capitalize_substrings } from './objectives.js';
 
 export function button_content(btnData, expanded) {
-  console.log(btnData)
   let html;
   if (expanded) {
     html = `<b>${btnData.emoji || ''} ${btnData.title}</b>${btnData.content || ''}`;
