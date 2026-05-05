@@ -36,7 +36,6 @@ export function create_button(buttonName, parent) {
   }
 
   btn.addEventListener('click', button_click_listener);
-  btn.addEventListener('touchstart', button_click_listener);
 
   const buttonsZone = document.getElementById('buttons_zone');
   if (buttonsZone) {

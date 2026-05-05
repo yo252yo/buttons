@@ -8,6 +8,12 @@ function get_query_param(name) {
 
 let metaButton = document.getElementById('meta_button');
 
+function preventWheel(e) {
+  if (metaButton.style.display === 'block') {
+    e.preventDefault();
+  }
+}
+
 async function handle_interface_button_click() {
   const wasPressed = this.classList.contains('pressed');
 
@@ -22,7 +28,6 @@ async function handle_interface_button_click() {
 
   const title = this.title.toLowerCase();
   const jsPath = `meta_buttons/${title}.js`;
-
 
   try {
     const response = await fetch(jsPath);
@@ -56,12 +61,14 @@ async function initial_load() {
 
   document.querySelectorAll('.button').forEach(btn => {
     btn.addEventListener('click', button_click_listener);
-    btn.addEventListener('touchstart', button_click_listener);
   });
 
   document.querySelectorAll('.interface_button').forEach(btn => {
     btn.addEventListener('click', handle_interface_button_click);
   });
+
+  // Prevent wheel scroll when meta button is visible
+  window.addEventListener('wheel', preventWheel, { passive: false });
 
   const startId = get_query_param('start') || 'start';
   create_button(startId);

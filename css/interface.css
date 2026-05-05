@@ -68,6 +68,7 @@ a {
   border-color: var(--grey-border);
   cursor: pointer;
   user-select: none;
+  touch-action: manipulation;
 }
 
 .interface_button.pressed {
