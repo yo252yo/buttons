@@ -27,7 +27,7 @@ async function handle_interface_button_click() {
   this.classList.add('pressed');
 
   const title = this.title.toLowerCase();
-  const jsPath = `meta_buttons/${title}.js`;
+  const jsPath = `pages/${title}.js`;
 
   try {
     const response = await fetch(jsPath);
@@ -50,7 +50,7 @@ async function handle_interface_button_click() {
 
     metaButton.style.display = 'block';
   } catch (e) {
-    console.log('No meta_button file for:', title);
+    console.log('No page file for:', title);
   }
 }
 
