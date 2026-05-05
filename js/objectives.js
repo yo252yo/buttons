@@ -17,7 +17,9 @@ export const capitalized_substrings = [
   "STAR",
   "STORY", "STORIES",
   "GAME",
+
   "THREAD",
+  "PATH", "OBJECTIVE",
 
   "DIG", "DUG",
   "CONTENT",
@@ -30,7 +32,11 @@ export const capitalized_substrings = [
 
   "DRAW", "DREW ", "DROW",
 
-  "MINE", "YOUR",
+
+  "NORMAL",
+
+
+  "MINE", "YOUR", "MY",
   "THEIR",
 
   "PROPER",
@@ -41,6 +47,7 @@ export const capitalized_substrings = [
   "AMERICA",
 
   "SIGNIFIER",
+
 
   "ESTABLISHMENT",
   "COLONIAL",

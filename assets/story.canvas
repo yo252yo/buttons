@@ -4,12 +4,13 @@
 		{"id":"711dc3bbb688c332","type":"group","x":-6036,"y":212,"width":3076,"height":3056,"label":"Defoe's youth and education"},
 		{"id":"cec1d48054724399","type":"group","x":-7280,"y":4199,"width":2271,"height":3156,"color":"4","label":"Defoe's political career"},
 		{"id":"8208ce67bac49771","type":"group","x":3680,"y":7200,"width":2200,"height":2540,"color":"5","label":"minecraft DLC"},
+		{"id":"cda20f890a136a96","type":"group","x":-2640,"y":-4520,"width":2680,"height":2040,"label":"All about buttons"},
 		{"id":"5f24c33fd42114fb","type":"group","x":8280,"y":11300,"width":1070,"height":3080,"color":"2","label":"The boy who owned all the drawings"},
 		{"id":"f7244ade739bb504","type":"group","x":-7540,"y":9240,"width":2243,"height":1362,"color":"1","label":"The Stationeers"},
 		{"id":"ea3446471cf211b1","type":"group","x":3900,"y":1740,"width":2380,"height":1280,"color":"1","label":"Gameplay features"},
-		{"id":"a706cb9b93c3c7e7","type":"group","x":1900,"y":100,"width":2260,"height":1340,"color":"1","label":"Tutorial"},
+		{"id":"a706cb9b93c3c7e7","type":"group","x":1600,"y":-2360,"width":2260,"height":1340,"color":"1","label":"Tutorial"},
 		{"id":"f94ab37e7aefdeea","type":"group","x":7200,"y":10140,"width":710,"height":4220,"color":"6","label":"the human who mined content"},
-		{"id":"bbee386f60e2b60c","type":"group","x":20,"y":100,"width":1750,"height":1580,"label":"The Human Who Pushed Buttons"},
+		{"id":"bbee386f60e2b60c","type":"group","x":-6036,"y":-2480,"width":1750,"height":1580,"label":"The Human Who Pushed Buttons"},
 		{"id":"e63a3090b448a0c2","type":"group","x":-4710,"y":3680,"width":1750,"height":1505,"color":"4","label":"Defoe's trades and writings"},
 		{"id":"b8596f2a51ee65ce","type":"group","x":-4820,"y":8300,"width":1672,"height":1400,"color":"1","label":"The invention of copyright"},
 		{"id":"6d3549e4b28330a7","type":"group","x":-4803,"y":5619,"width":1460,"height":1470,"color":"5","label":"True born englishman"},
@@ -96,21 +97,8 @@
 		},
 		{"id":"title_aside","type":"text","text":"The story of a white man?\n---\nAlas, that is where we must start.\n  Humans do love their stories to be character-centered.\n  But fear not, you will see many characters if you press the right buttons.","x":25,"y":2820,"width":300,"height":200,"color":"6"},
 		{"id":"49209c0bf5486f14","type":"text","text":"I can't help but wonder if this psychological bias in stories reinforces a hyper-individualistic society.\n---","x":25,"y":3120,"width":300,"height":200,"color":"2"},
-		{"id":"intro_grey","type":"text","text":"Some buttons were grey.","x":20,"y":420,"width":300,"height":60,"color":"0"},
-		{"id":"end_flag","type":"text","text":"🏁 And so it came to be that the human stopped pushing buttons.\n---","x":540,"y":1420,"width":300,"height":200,"color":"4"},
 		{"id":"more","type":"text","text":"Could there be MORE to this story?\n---\nCould there be hidden depths burried far below what meets the eye?","x":160,"y":1760,"width":300,"height":200,"color":"0"},
-		{"id":"found_flag","type":"text","text":"One day, while pushing buttons, the human came accross an ending flag 🏁.\n---\nThis puzzled the human quite a bit. An ending flag 🏁 ? So soon?","x":400,"y":1160,"width":300,"height":200,"color":"4"},
-		{"id":"intro_draw3","type":"text","text":"It was always a surprise to push buttons and wonder what would happen next.","x":400,"y":720,"width":300,"height":120,"color":"4"},
-		{"id":"intro_draw4","type":"text","text":"And so the human kept pushing buttons.\n---\nThe human pushed buttons by day,\n  The human pushed buttons by night.\n  So much so that the human's life was mostly pushing buttons.\n  But the human had to keep pushing.\n  How else would the human live?","x":400,"y":900,"width":300,"height":200,"color":"4"},
-		{"id":"start","type":"text","text":"⭐ Start\n---\nThis game is about buttons.\n  Buttons have two states: pushed and not pushed.\n  When you FIRST click on them, they EXPAND and draw other buttons.","x":360,"y":-320,"width":300,"height":200,"color":"4"},
-		{"id":"beginning","type":"text","text":"⭐ The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.","x":390,"y":120,"width":300,"height":200,"color":"4"},
 		{"id":"e8a4775851bc5327","type":"text","text":"📷 That's not the title of the book, though...\n---\nIts original title was:\n\"The\nLIFE\nand\nStrange Surprizing \nADVENTURES\nof \nRobinson Crusoe\nof York, Mariner:\n\nWho lived Eight and Twenty Years, all alone in an un-inhabited Island on the Coast of America, near the Mouth of the Great River of Oroonoque;\nHaving been cast on Shore by Shipwreck, wherein all the Men perished but himself. \n\nWITH\nAn Account how he was at last as strangely deliver'd by Pyrates. \nWritten by Himself.\"\n\nYou can see it for yourself on <a href=\"https://en.wikipedia.org/wiki/File:Robinson_Crusoe_1719_1st_edition.jpg\" target=\"_blank\">Wikimedia.\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/1/1e/Robinson_Crusoe_1719_1st_edition.jpg\" /></a>","x":265,"y":3530,"width":440,"height":460,"color":"5"},
-		{"id":"intro_draw","type":"text","text":"Pushing some buttons drew more buttons.","x":240,"y":568,"width":300,"height":72,"color":"4"},
-		{"id":"intro_green","type":"text","text":"Some buttons were green.","x":350,"y":420,"width":300,"height":60,"color":"4"},
-		{"id":"intro_orange","type":"text","text":"Some buttons were orange.","x":1430,"y":420,"width":300,"height":60,"color":"2"},
-		{"id":"intro_blue","type":"text","text":"Some buttons were blue.","x":690,"y":420,"width":300,"height":60,"color":"5"},
-		{"id":"intro_purple","type":"text","text":"Some buttons were purple.","x":1070,"y":420,"width":300,"height":60,"color":"6"},
-		{"id":"intro_draw2","type":"text","text":"Pushing some buttons did not draw more buttons.","x":590,"y":568,"width":300,"height":72,"color":"0"},
 		{
 			"id":"15ffce56be6fb0f6",
 			"type":"text",
@@ -153,11 +141,6 @@
 			"height":220,
 			"color":"2"
 		},
-		{"id":"tuto_apology","type":"text","text":"❓ This tutorial is too long!\n---\nI apologize, this is brand new game engine, a lot of things need to be explained.\n  Feel free to skip everything you want, or look at the ⚙️ options to customize your experience.","x":2370,"y":1220,"width":300,"height":200,"color":"1"},
-		{"id":"tuto_archive","type":"text","text":"❓ Help, my screen is full of stuff!\n---\nWIP: The thread 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe","x":2440,"y":960,"width":300,"height":200,"color":"1"},
-		{"id":"tuto_emoji","type":"text","text":"❓ What's up with the EMOJIs?\n---\nSome buttons have icons.\n  WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟)","x":2020,"y":980,"width":300,"height":200,"color":"1"},
-		{"id":"tuto_colors","type":"text","text":"❓ What's up with the colors?\n---\nWIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨","x":2780,"y":920,"width":300,"height":200,"color":"1"},
-		{"id":"tutorial","type":"text","text":"❓ What do I have to do?\n---\nYour GOAL is simple: find an ending flag 🏁.\n  There's an ending 🏁 at the end of the green 🟢 line.\n  There may be others.","x":2480,"y":120,"width":300,"height":200,"color":"4"},
 		{
 			"id":"e1ef83e94426eeac",
 			"type":"text",
@@ -176,7 +159,6 @@
 		{"id":"99677d0088771e0d","type":"text","text":"📍 at the Shop in Pater-Noster-Row","x":1685,"y":4200,"width":200,"height":120,"color":"0"},
 		{"id":"title_aside2","type":"text","text":"Though I guess a lot of them were white men.\n---\nSorry, its mostly their story.\n  But it doesn't have to be about them.","x":525,"y":3100,"width":300,"height":200,"color":"0"},
 		{"id":"more2","type":"text","text":"Could there be an orange button drowned in a sea of grey?\n---\nThat is when the human found a story.\n  It laid there, shining green, in the middle of all the buttons.\n  It was story left untold, almost forgotten.\n  And its title was...","x":160,"y":2020,"width":300,"height":200,"color":"2"},
-		{"id":"tuto_star","type":"text","text":"❓ What does the star ⭐ mean ?\n---\nStar ⭐ is the icon for starter packs. They mark the beginning of a story.","x":2880,"y":480,"width":300,"height":160,"color":"0"},
 		{
 			"id":"732c607729abf65a",
 			"type":"text",
@@ -243,7 +225,6 @@
 			"color":"1"
 		},
 		{"id":"f919133328a5e0d3","type":"text","text":"It was a groundbreaking book\n---\n\nfirst book starting with \"I\"","x":-585,"y":5173,"width":800,"height":620,"color":"1"},
-		{"id":"02b8cc538f2e9888","type":"text","text":"❓ This thing is new kind of game engine?\n---\nA new medium?\nA new way to see?\nA new way to LOOK.","x":3200,"y":480,"width":360,"height":180,"color":"2"},
 		{
 			"id":"9fa40b1636a990f3",
 			"type":"text",
@@ -435,17 +416,6 @@
 			"width":200,
 			"height":133,
 			"color":"3"
-		},
-		{
-			"id":"c565c4de39b22791",
-			"type":"text",
-			"text":"❓ How do I play the game?\n---\nExcellent question!\nWe cater to a wide variety of playstyles. \nTo play, you must first...",
-			"styleAttributes":{},
-			"x":3600,
-			"y":200,
-			"width":440,
-			"height":180,
-			"color":"4"
 		},
 		{
 			"id":"bbebbd90befb593a",
@@ -1893,12 +1863,481 @@
 			"width":480,
 			"height":187,
 			"color":"4"
+		},
+		{
+			"id":"df4c70c4f678a712",
+			"type":"text",
+			"text":"former",
+			"styleAttributes":{},
+			"x":4780,
+			"y":-720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"d688b3590b019998",
+			"type":"text",
+			"text":"❓ Game?\n---\nThere are many ways to play this game.\nAnd it all starts with finding your own path 👣.\n",
+			"styleAttributes":{},
+			"x":900,
+			"y":-4050,
+			"width":360,
+			"height":160,
+			"color":"4"
+		},
+		{"id":"10063a69e5cc8023","type":"text","text":"How do I find an ending flag 🏁?\n---\nYou click on buttons to draw more buttons.\nThere's an ending flag 🏁 at the end of the green 🟢 path.\nThere may be others.","x":240,"y":-3560,"width":300,"height":240,"color":"4"},
+		{"id":"intro_grey","type":"text","text":"Some buttons were grey.","x":-6036,"y":-2160,"width":300,"height":60,"color":"0"},
+		{"id":"intro_draw","type":"text","text":"Pushing some buttons drew more buttons.","x":-5816,"y":-2012,"width":300,"height":72,"color":"4"},
+		{"id":"intro_green","type":"text","text":"Some buttons were green.","x":-5706,"y":-2160,"width":300,"height":60,"color":"4"},
+		{"id":"intro_draw2","type":"text","text":"Pushing some buttons did not draw more buttons.","x":-5466,"y":-2012,"width":300,"height":72,"color":"0"},
+		{"id":"intro_blue","type":"text","text":"Some buttons were blue.","x":-5366,"y":-2160,"width":300,"height":60,"color":"5"},
+		{"id":"intro_purple","type":"text","text":"Some buttons were purple.","x":-4986,"y":-2160,"width":300,"height":60,"color":"6"},
+		{"id":"intro_orange","type":"text","text":"Some buttons were orange.","x":-4626,"y":-2160,"width":300,"height":60,"color":"2"},
+		{"id":"beginning","type":"text","text":"⭐ The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.","x":-5666,"y":-2460,"width":300,"height":200,"color":"4"},
+		{"id":"intro_draw3","type":"text","text":"It was always a surprise to push buttons and wonder what would happen next.","x":-5656,"y":-1860,"width":300,"height":120,"color":"4"},
+		{"id":"intro_draw4","type":"text","text":"And so the human kept pushing buttons.\n---\nThe human pushed buttons by day,\n  The human pushed buttons by night.\n  So much so that the human's life was mostly pushing buttons.\n  But the human had to keep pushing.\n  How else would the human live?","x":-5656,"y":-1680,"width":300,"height":200,"color":"4"},
+		{"id":"found_flag","type":"text","text":"One day, while pushing buttons, the human came accross an ending flag 🏁.\n---\nThis puzzled the human quite a bit. An ending flag 🏁 ? So soon?","x":-5656,"y":-1420,"width":300,"height":200,"color":"4"},
+		{"id":"end_flag","type":"text","text":"🏁 And so it came to be that the human stopped pushing buttons.\n---","x":-5516,"y":-1160,"width":300,"height":200,"color":"4"},
+		{
+			"id":"4fd88cbcaa322c0b",
+			"type":"text",
+			"text":"All this talk of buttons is fascinating!\n---\nI know, right?\nWould you like to hear a story about buttons?",
+			"styleAttributes":{},
+			"x":-2040,
+			"y":-3790,
+			"width":260,
+			"height":220
+		},
+		{
+			"id":"04a19e2087f1b3cc",
+			"type":"text",
+			"text":"Some buttons do not draw other buttons.\n---\nBut you can keep clicking on them to change their state.",
+			"styleAttributes":{},
+			"x":-1920,
+			"y":-4245,
+			"width":320,
+			"height":140
+		},
+		{
+			"id":"658362153a4dcbd8",
+			"type":"text",
+			"text":"❓ Buttons?\n---\nThat thing you just pressed on.\nButtons have two states: NORMAL and PUSHED.\nWhen you FIRST click on them, they can EXPAND and draw other buttons.",
+			"styleAttributes":{},
+			"x":-1800,
+			"y":-4510,
+			"width":480,
+			"height":180
+		},
+		{
+			"id":"4992927b36d2f1a5",
+			"type":"text",
+			"text":"Some buttons do not EXPAND.",
+			"styleAttributes":{},
+			"x":-1560,
+			"y":-4245,
+			"width":320,
+			"height":60
+		},
+		{
+			"id":"78134217e5bc6ffd",
+			"type":"text",
+			"text":"But if your button draws other buttons, they will be connected on the left.\n---\nThis also leaves a trace to help you see where you come from.",
+			"styleAttributes":{},
+			"x":-1560,
+			"y":-4140,
+			"width":320,
+			"height":230
+		},
+		{
+			"id":"3dc05573068d8e07",
+			"type":"text",
+			"text":"Why are some button a different color?\n---\nButtons can have different colors.\nColors influence the rarity and amount of text, but they have other secrets.\nFor instance, I heard that the green 🟢 path was the path to your objective.",
+			"styleAttributes":{},
+			"x":-1000,
+			"y":-3770,
+			"width":440,
+			"height":220,
+			"color":"4"
+		},
+		{
+			"id":"e4f4bb3fc1323c35",
+			"type":"text",
+			"text":"Why do some buttons have emoji?\n---\nYou will find many types of buttons on your path.\nSome will have icons, other not.\nEach icon has a different meaning.\n❓ is Tutorial/Help.\n☺️ is the icon for icons ☺️.\nSome will help you in your objectives.",
+			"styleAttributes":{},
+			"x":-540,
+			"y":-3770,
+			"width":480,
+			"height":220,
+			"color":"1"
+		},
+		{
+			"id":"9c8ea1a3b417de9e",
+			"type":"text",
+			"text":"Why does this button appear multiple time?\n---\nIt's because a lot of different buttons can draw the same button. \nYou can customize this in the settings.",
+			"styleAttributes":{},
+			"x":-540,
+			"y":-2890,
+			"width":440,
+			"height":220,
+			"color":"1"
+		},
+		{
+			"id":"152b7455f6b307a6",
+			"type":"text",
+			"text":"I'd rather keep pressing buttons for now.\n---\nSuit yourself :)",
+			"styleAttributes":{},
+			"x":-2620,
+			"y":-3430,
+			"width":320,
+			"height":140
+		},
+		{
+			"id":"5d9d17e73b02f73f",
+			"type":"text",
+			"text":"On second thoughts, I'm not that much into buttons.\n---\nLet me try and change your mind.\nTry another, just one more push.\nI promise it will be worth it!",
+			"styleAttributes":{},
+			"x":-2280,
+			"y":-3430,
+			"width":320,
+			"height":220
+		},
+		{
+			"id":"f88d036ba343ec9c",
+			"type":"text",
+			"text":"Wow, I have so many choices all at once!\n---\nLife is like that sometimes.\nI hope it's not too overwhelming.\nIf it's any comfort, like in life, some choices don't matter.",
+			"styleAttributes":{},
+			"x":-1810,
+			"y":-3430,
+			"width":340,
+			"height":220
+		},
+		{
+			"id":"e3a17b749f47089f",
+			"type":"text",
+			"text":"Which choices matter?\n---\nYou tell me.",
+			"styleAttributes":{},
+			"x":-1600,
+			"y":-3110,
+			"width":220,
+			"height":140
+		},
+		{
+			"id":"cced47e2636b9442",
+			"type":"text",
+			"text":"Why does this button wiggle?\n---\nIt's because you haven't clicked on it yet.\nSee, it's fixed now.\nIt's a clever trick to remember which button you haven't pushed yet.",
+			"styleAttributes":{},
+			"x":-1470,
+			"y":-3770,
+			"width":440,
+			"height":160
+		},
+		{
+			"id":"051f8f7881d34615",
+			"type":"text",
+			"text":"Enough about buttons!",
+			"styleAttributes":{},
+			"x":-1450,
+			"y":-3430,
+			"width":220,
+			"height":70
+		},
+		{
+			"id":"efd763cad938f719",
+			"type":"text",
+			"text":"Grey is most common.",
+			"styleAttributes":{},
+			"x":-960,
+			"y":-3210,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c60d11f49e410b11",
+			"type":"text",
+			"text":"Then green...",
+			"styleAttributes":{},
+			"x":-960,
+			"y":-3070,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"f0529aca661fbc4e",
+			"type":"text",
+			"text":"❓ Rarity?",
+			"styleAttributes":{},
+			"x":-960,
+			"y":-3350,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"359659a13718c524",
+			"type":"text",
+			"text":"Then blue...",
+			"styleAttributes":{},
+			"x":-960,
+			"y":-2930,
+			"width":260,
+			"height":60,
+			"color":"5"
+		},
+		{
+			"id":"38bb2cb3b9a4fa11",
+			"type":"text",
+			"text":"Then purple...",
+			"styleAttributes":{},
+			"x":-960,
+			"y":-2790,
+			"width":260,
+			"height":60,
+			"color":"6"
+		},
+		{
+			"id":"3dfecaa0cfdd2129",
+			"type":"text",
+			"text":"And finally, orange!\n---\nIt is hardwired in every gamer's brain.",
+			"styleAttributes":{},
+			"x":-960,
+			"y":-2670,
+			"width":260,
+			"height":160,
+			"color":"2"
+		},
+		{"id":"start","type":"text","text":"⭐ Start\n---\nThis game is about buttons.","x":700,"y":-5760,"width":300,"height":200,"color":"4"},
+		{
+			"id":"f204bc009ee78d03",
+			"type":"text",
+			"text":"🇬🇧 LANGUAGE\n---\nSorry, this game is english only.\nYou can use translation tools.",
+			"styleAttributes":{},
+			"x":3540,
+			"y":-5605,
+			"width":600,
+			"height":120
+		},
+		{
+			"id":"378060dee2094712",
+			"type":"text",
+			"text":"Why is this game english only?\n---\nIt should become clear very soon.",
+			"styleAttributes":{},
+			"x":3560,
+			"y":-5385,
+			"width":260,
+			"height":180
+		},
+		{
+			"id":"d604931737233191",
+			"type":"text",
+			"text":"Translation tools?\n---\nMost web browser have an automated translation feature.\nIt depends on your setup.",
+			"styleAttributes":{},
+			"x":3880,
+			"y":-5385,
+			"width":300,
+			"height":180
+		},
+		{
+			"id":"dfc73eefe3104065",
+			"type":"text",
+			"text":"It didn't used to be like this...\n---\nWhen the internet started, Google made a little script that webmasters could put on their webpages so that the visitors could auto-translate the content.\nNow it's in the web browser.",
+			"styleAttributes":{},
+			"x":4000,
+			"y":-5125,
+			"width":620,
+			"height":200,
+			"color":"5"
+		},
+		{
+			"id":"eed47474d8e02fee",
+			"type":"text",
+			"text":"Why is it in the web browser?\n---\nSo that it's on every webpage?\nSo it can be automated?\nSo that webmasters could not control the way it's being used?\nSo that users can't opt out?\n\nIt's a general trend, obfuscating control away from the humans, putting it in the hands of corporations.\nIn return you get a simple, smooth, integrated ecosystem.\nAnd you end up captive consumer.",
+			"styleAttributes":{},
+			"x":4310,
+			"y":-4885,
+			"width":560,
+			"height":300
+		},
+		{
+			"id":"fbf2799b952d0f8b",
+			"type":"text",
+			"text":"🚧 The general trend obfuscating control away from the humans, putting it in the hands of corporations is in another DLC.\n---\nYou'll be shocked to find out whether humans chose simplicity or control!",
+			"styleAttributes":{},
+			"x":4600,
+			"y":-4535,
+			"width":360,
+			"height":230,
+			"color":"3"
+		},
+		{"id":"4cb94f139917f64f","type":"text","text":"What my goal?\n---\nYour first GOAL is simple: find an ending flag 🏁.\nBut you will find many other GOALs along your path.","x":510,"y":-3820,"width":300,"height":200,"color":"4"},
+		{
+			"id":"6fda12f97f89f6fb",
+			"type":"text",
+			"text":"the path of the reader",
+			"styleAttributes":{},
+			"x":1340,
+			"y":-2380,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"6c903f277691a2b7",
+			"type":"text",
+			"text":"the path of the gamer",
+			"styleAttributes":{},
+			"x":980,
+			"y":-2375,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"09f889c1c6139414",
+			"type":"text",
+			"text":"❓ My objective?",
+			"styleAttributes":{},
+			"x":650,
+			"y":-2350,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"c72cdfba73cddacf",
+			"type":"text",
+			"text":"accessibilities options \n\nwhat kind of gamer?\n\ni wanna go straight into the story ? \ni wanna understand everything about the game?\n\n\nthe path of the collector",
+			"styleAttributes":{},
+			"x":880,
+			"y":-2280,
+			"width":460,
+			"height":290,
+			"color":"1"
+		},
+		{
+			"id":"200148ca741c45f9",
+			"type":"text",
+			"text":"whats the goal? \nto find a end flag of course",
+			"styleAttributes":{},
+			"x":980,
+			"y":-1865,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a70e60e018c06da3",
+			"type":"text",
+			"text":"finding emojis",
+			"styleAttributes":{},
+			"x":1530,
+			"y":-2590,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"28461ca198ba1708",
+			"type":"text",
+			"text":"finding words",
+			"styleAttributes":{},
+			"x":1790,
+			"y":-2590,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f436e6b903df9eb3",
+			"type":"text",
+			"text":"finding colors",
+			"styleAttributes":{},
+			"x":2050,
+			"y":-2590,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"93ea9dee7495aa53",
+			"type":"text",
+			"text":"❓Icons ☺️ ?",
+			"styleAttributes":{},
+			"x":340,
+			"y":-2300,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"2436635c3af531aa",
+			"type":"text",
+			"text":"🎵 Where is the audio?",
+			"styleAttributes":{},
+			"x":3170,
+			"y":-2410,
+			"width":360,
+			"height":120,
+			"color":"1"
+		},
+		{
+			"id":"c565c4de39b22791",
+			"type":"text",
+			"text":"❓ How do I play the game?\n---\nExcellent question!\nWe cater to a wide variety of playstyles. \nTo play, you must first...",
+			"styleAttributes":{},
+			"x":2690,
+			"y":-1970,
+			"width":440,
+			"height":180,
+			"color":"4"
+		},
+		{
+			"id":"28d7f97393cb2dcc",
+			"type":"text",
+			"text":"the player self defines and i provide accessibility and objectives for them",
+			"styleAttributes":{},
+			"x":1920,
+			"y":-2380,
+			"width":760,
+			"height":380
+		},
+		{"id":"tutorial","type":"text","text":"❓ What do I have to do?\n---\nYour GOAL is simple: find an ending flag 🏁.\n  There's an ending 🏁 at the end of the green 🟢 line.\n  There may be others.","x":1990,"y":-1570,"width":300,"height":200,"color":"4"},
+		{"id":"tuto_colors","type":"text","text":"❓ What's up with the colors?\n---\nWIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨","x":2450,"y":-1110,"width":480,"height":300,"color":"1"},
+		{"id":"tuto_archive","type":"text","text":"❓ Help, my screen is full of stuff!\n---\nWIP: The thread 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe","x":2110,"y":-1070,"width":300,"height":200,"color":"1"},
+		{"id":"tuto_emoji","type":"text","text":"❓ What's up with the EMOJIs?\n---\nSome buttons have icons.\n  WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟)","x":1690,"y":-1050,"width":300,"height":200,"color":"1"},
+		{"id":"tuto_apology","type":"text","text":"❓ This tutorial is too long!\n---\nI apologize, this is brand new game engine, a lot of things need to be explained.\n  Feel free to skip everything you want, or look at the ⚙️ options to customize your experience.","x":2040,"y":-810,"width":300,"height":200,"color":"1"},
+		{"id":"tuto_star","type":"text","text":"❓ What does the star ⭐ mean ?\n---\nStar ⭐ is the icon for starter packs. They mark the beginning of a story.","x":2550,"y":-1550,"width":300,"height":160,"color":"0"},
+		{"id":"02b8cc538f2e9888","type":"text","text":"❓ This thing is new kind of game engine?\n---\nA new medium?\nA new way to see?\nA new way to LOOK.","x":2870,"y":-1550,"width":360,"height":180,"color":"2"},
+		{
+			"id":"f9e0945e662c3409",
+			"type":"text",
+			"text":"⚙️ Settings\n---\n⚙️In this game, you \n",
+			"styleAttributes":{},
+			"x":2310,
+			"y":-2950,
+			"width":360,
+			"height":120,
+			"color":"1"
+		},
+		{
+			"id":"f964fb74821b968e",
+			"type":"text",
+			"text":"What about the rest of the game?",
+			"styleAttributes":{},
+			"x":160,
+			"y":-3950,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"6f561fe79646f42e",
+			"type":"text",
+			"text":"Chose a path 👣?\n---\nYes, we need to customize your game experience, so you need to pick a starting class.🏆👣\nYour progress is measured along colored path. 🎨",
+			"styleAttributes":{},
+			"x":1160,
+			"y":-3660,
+			"width":560,
+			"height":200,
+			"color":"1"
 		}
 	],
 	"edges":[
-		{"id":"a1e1d7a3-bbd4-405e-b5b6-1beda28198a4","toFloating":false,"fromNode":"start","fromSide":"bottom","toNode":"tutorial","toSide":"top"},
-		{"id":"6a3a24c0-d425-4693-ac3d-9a4b5d5a0590","fromNode":"start","fromSide":"bottom","toNode":"options","toSide":"top"},
-		{"id":"3b318367-b07a-4af5-9fbd-4c7827536485","toFloating":false,"fromNode":"start","fromSide":"bottom","toNode":"warning","toSide":"top"},
 		{"id":"c51fd28e-555e-4b79-9d29-82513e1958ff","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_emoji","toSide":"top"},
 		{"id":"61ceb921-dbd4-4052-a227-a6cb691d023f","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_colors","toSide":"top"},
 		{"id":"d96d3eef-9236-418c-a0ee-d635f87fc304","fromFloating":false,"fromNode":"more","fromSide":"bottom","toNode":"more2","toSide":"top","color":"4"},
@@ -1918,7 +2357,6 @@
 		{"id":"62b7eb7bf325f983","fromNode":"e8a4775851bc5327","fromSide":"bottom","toNode":"72d5074d19b63713","toSide":"top"},
 		{"id":"8dd48722b8762bed","fromNode":"72d5074d19b63713","fromSide":"bottom","toNode":"ed26200129d229b8","toSide":"top"},
 		{"id":"679b79ddacbb271e","fromNode":"72d5074d19b63713","fromSide":"bottom","toNode":"99677d0088771e0d","toSide":"top"},
-		{"id":"d6c7288c-aa7e-4a60-96c7-2c991f0a75fc","fromFloating":false,"fromNode":"start","fromSide":"bottom","toNode":"beginning","toSide":"top","color":"4"},
 		{"id":"97da9995-38dd-4bbb-8ad9-6876818c2eef","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_archive","toSide":"top"},
 		{"id":"765fa59c-0816-4633-88f2-eaa71f4dd662","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_star","toSide":"top"},
 		{"id":"3633e949-cf7c-434f-a3bd-cbab6af5f61f","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_apology","toSide":"top"},
@@ -3095,15 +3533,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"4f74909fccfddf2b",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"start",
-			"fromSide":"bottom",
-			"toNode":"c565c4de39b22791",
-			"toSide":"top"
-		},
-		{
 			"id":"e35a92111d7c7cf6",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -4087,6 +4516,514 @@
 			"fromNode":"title_aside",
 			"fromSide":"bottom",
 			"toNode":"d674c3e21ca88716",
+			"toSide":"top"
+		},
+		{
+			"id":"fa773191f202d6e2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"df4c70c4f678a712",
+			"fromSide":"bottom",
+			"toNode":"tutorial",
+			"toSide":"top"
+		},
+		{
+			"id":"4c13c120cd440c58",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"df4c70c4f678a712",
+			"fromSide":"bottom",
+			"toNode":"c565c4de39b22791",
+			"toSide":"top"
+		},
+		{
+			"id":"186aada0f9ddef59",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"df4c70c4f678a712",
+			"fromSide":"bottom",
+			"toNode":"options",
+			"toSide":"top"
+		},
+		{
+			"id":"6cc6b1064713c8e2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"df4c70c4f678a712",
+			"fromSide":"bottom",
+			"toNode":"warning",
+			"toSide":"top"
+		},
+		{
+			"id":"7549941b0ed4eddd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"start",
+			"fromSide":"bottom",
+			"toNode":"d688b3590b019998",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"acff3bb036079fb2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"df4c70c4f678a712",
+			"fromSide":"bottom",
+			"toNode":"beginning",
+			"toSide":"top"
+		},
+		{
+			"id":"27ee7c25716586a6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"start",
+			"fromSide":"bottom",
+			"toNode":"658362153a4dcbd8",
+			"toSide":"top"
+		},
+		{
+			"id":"b2c223f1f8f65607",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"d688b3590b019998",
+			"fromSide":"bottom",
+			"toNode":"6f561fe79646f42e",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"113ea697178b4ed1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"658362153a4dcbd8",
+			"fromSide":"bottom",
+			"toNode":"4992927b36d2f1a5",
+			"toSide":"top"
+		},
+		{
+			"id":"043117c44b5478ba",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"658362153a4dcbd8",
+			"fromSide":"bottom",
+			"toNode":"04a19e2087f1b3cc",
+			"toSide":"top"
+		},
+		{
+			"id":"879db9bbc267d644",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4992927b36d2f1a5",
+			"fromSide":"bottom",
+			"toNode":"78134217e5bc6ffd",
+			"toSide":"top"
+		},
+		{
+			"id":"401000d4c7870b99",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"78134217e5bc6ffd",
+			"fromSide":"bottom",
+			"toNode":"4fd88cbcaa322c0b",
+			"toSide":"top"
+		},
+		{
+			"id":"530c7961b6f8be68",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4fd88cbcaa322c0b",
+			"fromSide":"bottom",
+			"toNode":"beginning",
+			"toSide":"top"
+		},
+		{
+			"id":"23aca028497edc67",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"78134217e5bc6ffd",
+			"fromSide":"bottom",
+			"toNode":"3dc05573068d8e07",
+			"toSide":"top"
+		},
+		{
+			"id":"22fcb5506d1a0bf2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4fd88cbcaa322c0b",
+			"fromSide":"bottom",
+			"toNode":"152b7455f6b307a6",
+			"toSide":"top"
+		},
+		{
+			"id":"d1e2a7ce305ff983",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4fd88cbcaa322c0b",
+			"fromSide":"bottom",
+			"toNode":"5d9d17e73b02f73f",
+			"toSide":"top"
+		},
+		{
+			"id":"f2b03ea749ab28bf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4fd88cbcaa322c0b",
+			"fromSide":"bottom",
+			"toNode":"f88d036ba343ec9c",
+			"toSide":"top"
+		},
+		{
+			"id":"ee3ba166927b3726",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4fd88cbcaa322c0b",
+			"fromSide":"bottom",
+			"toNode":"051f8f7881d34615",
+			"toSide":"top"
+		},
+		{
+			"id":"7a2c993328ea20f9",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"78134217e5bc6ffd",
+			"fromSide":"bottom",
+			"toNode":"cced47e2636b9442",
+			"toSide":"top"
+		},
+		{
+			"id":"aa57cfc90e3b0836",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f88d036ba343ec9c",
+			"fromSide":"bottom",
+			"toNode":"e3a17b749f47089f",
+			"toSide":"top"
+		},
+		{
+			"id":"072ea2ded50dc110",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"3dc05573068d8e07",
+			"fromSide":"bottom",
+			"toNode":"09f889c1c6139414",
+			"toSide":"top"
+		},
+		{
+			"id":"932d8b09495d9b13",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"start",
+			"fromSide":"bottom",
+			"toNode":"f204bc009ee78d03",
+			"toSide":"top"
+		},
+		{
+			"id":"051a88b971bd16d6",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f204bc009ee78d03",
+			"fromSide":"bottom",
+			"toNode":"378060dee2094712",
+			"toSide":"top"
+		},
+		{
+			"id":"9659d3d6a15b6e4d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f204bc009ee78d03",
+			"fromSide":"bottom",
+			"toNode":"d604931737233191",
+			"toSide":"top"
+		},
+		{
+			"id":"a1e6271ab7aa2284",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d604931737233191",
+			"fromSide":"bottom",
+			"toNode":"dfc73eefe3104065",
+			"toSide":"top"
+		},
+		{
+			"id":"27b83859f85d1ecd",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"3dc05573068d8e07",
+			"fromSide":"bottom",
+			"toNode":"f0529aca661fbc4e",
+			"toSide":"top"
+		},
+		{
+			"id":"37b7682177146368",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f0529aca661fbc4e",
+			"fromSide":"bottom",
+			"toNode":"efd763cad938f719",
+			"toSide":"top"
+		},
+		{
+			"id":"bcccb53a2705ed7f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"efd763cad938f719",
+			"fromSide":"bottom",
+			"toNode":"c60d11f49e410b11",
+			"toSide":"top"
+		},
+		{
+			"id":"b6a7560f1fcf616e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c60d11f49e410b11",
+			"fromSide":"bottom",
+			"toNode":"359659a13718c524",
+			"toSide":"top"
+		},
+		{
+			"id":"4423f1bc7ba61e29",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"359659a13718c524",
+			"fromSide":"bottom",
+			"toNode":"38bb2cb3b9a4fa11",
+			"toSide":"top"
+		},
+		{
+			"id":"041d8bc88671f137",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"38bb2cb3b9a4fa11",
+			"fromSide":"bottom",
+			"toNode":"3dfecaa0cfdd2129",
+			"toSide":"top"
+		},
+		{
+			"id":"1b5c8d07d92af822",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4fd88cbcaa322c0b",
+			"fromSide":"bottom",
+			"toNode":"f964fb74821b968e",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"9182e46bc72a7e1c",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"f964fb74821b968e",
+			"fromSide":"bottom",
+			"toNode":"d688b3590b019998",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"7f0d2aeeacdc916d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dfc73eefe3104065",
+			"fromSide":"bottom",
+			"toNode":"eed47474d8e02fee",
+			"toSide":"top"
+		},
+		{
+			"id":"36d3f6bbd4fb3ac0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"eed47474d8e02fee",
+			"fromSide":"bottom",
+			"toNode":"fbf2799b952d0f8b",
+			"toSide":"top"
+		},
+		{
+			"id":"7c9808b127752476",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f204bc009ee78d03",
+			"fromSide":"bottom",
+			"toNode":"f9e0945e662c3409",
+			"toSide":"top"
+		},
+		{
+			"id":"8ae371e32eede817",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"78134217e5bc6ffd",
+			"fromSide":"bottom",
+			"toNode":"e4f4bb3fc1323c35",
+			"toSide":"top"
+		},
+		{
+			"id":"37bd63964e93a3c5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e4f4bb3fc1323c35",
+			"fromSide":"bottom",
+			"toNode":"09f889c1c6139414",
+			"toSide":"top"
+		},
+		{
+			"id":"ac1c8212a049f1d4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6f561fe79646f42e",
+			"fromSide":"bottom",
+			"toNode":"6c903f277691a2b7",
+			"toSide":"top"
+		},
+		{
+			"id":"3d66a86f84685a6a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6f561fe79646f42e",
+			"fromSide":"bottom",
+			"toNode":"6fda12f97f89f6fb",
+			"toSide":"top"
+		},
+		{
+			"id":"5604cd87f0ea5925",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6c903f277691a2b7",
+			"fromSide":"bottom",
+			"toNode":"c72cdfba73cddacf",
+			"toSide":"top"
+		},
+		{
+			"id":"799d8a5ad66b71b0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"d688b3590b019998",
+			"fromSide":"bottom",
+			"toNode":"4cb94f139917f64f",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"a33042dfbf0ef8c0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4cb94f139917f64f",
+			"fromSide":"bottom",
+			"toNode":"10063a69e5cc8023",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"cbd06ab6d70cad3a",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"78134217e5bc6ffd",
+			"fromSide":"bottom",
+			"toNode":"9c8ea1a3b417de9e",
+			"toSide":"top"
+		},
+		{
+			"id":"e5c667ddbc3e29cf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e4f4bb3fc1323c35",
+			"fromSide":"bottom",
+			"toNode":"9c8ea1a3b417de9e",
+			"toSide":"top"
+		},
+		{
+			"id":"7ab541cba12135bb",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3dc05573068d8e07",
+			"fromSide":"bottom",
+			"toNode":"9c8ea1a3b417de9e",
+			"toSide":"top"
+		},
+		{
+			"id":"af81b72d396fabb4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cced47e2636b9442",
+			"fromSide":"bottom",
+			"toNode":"9c8ea1a3b417de9e",
+			"toSide":"top"
+		},
+		{
+			"id":"d193dd644fecdfce",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9c8ea1a3b417de9e",
+			"fromSide":"bottom",
+			"toNode":"f9e0945e662c3409",
+			"toSide":"top"
+		},
+		{
+			"id":"8ab6143f58dddfe8",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"10063a69e5cc8023",
+			"fromSide":"bottom",
+			"toNode":"658362153a4dcbd8",
+			"toSide":"top"
+		},
+		{
+			"id":"32fb0df869da3c21",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f9e0945e662c3409",
+			"fromSide":"bottom",
+			"toNode":"2436635c3af531aa",
+			"toSide":"top"
+		},
+		{
+			"id":"ef3821eee94271d5",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e4f4bb3fc1323c35",
+			"fromSide":"bottom",
+			"toNode":"93ea9dee7495aa53",
+			"toSide":"top"
+		},
+		{
+			"id":"7cc9bb218149e510",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6f561fe79646f42e",
+			"fromSide":"bottom",
+			"toNode":"a70e60e018c06da3",
+			"toSide":"top"
+		},
+		{
+			"id":"52575057a2954daf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6f561fe79646f42e",
+			"fromSide":"bottom",
+			"toNode":"28461ca198ba1708",
+			"toSide":"top"
+		},
+		{
+			"id":"0e93c7a0e308ed51",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6f561fe79646f42e",
+			"fromSide":"bottom",
+			"toNode":"f436e6b903df9eb3",
+			"toSide":"top"
+		},
+		{
+			"id":"27cbefcbe4e49ddc",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"start",
+			"fromSide":"bottom",
+			"toNode":"f9e0945e662c3409",
 			"toSide":"top"
 		}
 	],
