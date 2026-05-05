@@ -6,9 +6,9 @@ import { capitalize_substrings } from './objectives.js';
 export function button_content(btnData, expanded) {
   let html;
   if (expanded) {
-    html = `<b>${btnData.emoji || ''} ${btnData.title}</b>${btnData.content || ''}`;
+    html = `<b><span class="btn-emoji">${btnData.emoji || ''}</span> ${btnData.title}</b>${btnData.content || ''}`;
   } else {
-    html = `<b>${btnData.emoji || ''} ${btnData.title}</b>`;
+    html = `<b><span class="btn-emoji">${btnData.emoji || ''}</span> ${btnData.title}</b>`;
   }
   return capitalize_substrings(html);
 }
