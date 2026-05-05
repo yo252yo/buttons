@@ -6,6 +6,15 @@ const CANVAS_TO_JS_COLORS = {
   "6": "purple",
 };
 
+const startsWithEmoji = (str) => {
+  if (!str || str.length === 0) return false;
+  if (/^[0-9]/.test(str)) return false;
+  const segmenter = new Intl.Segmenter();
+  const segments = [...segmenter.segment(str)];
+  const first = segments[0];
+  return first && /\p{Emoji}/u.test(first.segment);
+};
+
 class Button {
   constructor({ id, emoji, title, content, color, children = [] }) {
     this.id = id;
@@ -31,7 +40,7 @@ class Button {
 
     const titlePart = title.split(" ");
     const first = titlePart[0];
-    if (first && first.length === 1 && !first.match(/[a-zA-Z]/)) {
+    if (first && startsWithEmoji(first)) {
       emoji = first;
       title = titlePart.slice(1).join(" ");
     }
