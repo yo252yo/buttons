@@ -1,7 +1,7 @@
 import { setupWindowBindings } from './api.js';
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
 import { potentially_display_meta_button } from './interface.js';
-import { create_button, handle_first_press, highlight_last_pressed, press_dom_buttons } from './thread.js';
+import { create_button, handle_first_press, highlight_last_pressed, press_dom_buttons } from './buttons_zone.js';
 
 function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);

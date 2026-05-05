@@ -1,4 +1,5 @@
 import { getButton, getChildren } from './canvas.js';
+import { potentially_unlock_interface } from './interface.js';
 import { handle_buttonzone_button_click } from './listeners.js';
 import { capitalize_substrings } from './objectives.js';
 
