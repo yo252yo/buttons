@@ -77,5 +77,6 @@ actually make it like last_children based on dom data, lasT_parents so you can c
 some day we need keyboard control =x
 
 
-have children spawn left to right from canvas
-check left to right ordering
+
+
+mb i should hide the interface bar before first metabutton
