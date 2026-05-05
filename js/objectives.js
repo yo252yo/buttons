@@ -52,6 +52,7 @@ export const capitalized_substrings = [
   "ESTABLISHMENT",
   "COLONIAL",
 
+  "PROGRESS",
 
   "PARABLE",
 
