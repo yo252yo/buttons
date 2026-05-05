@@ -71,7 +71,7 @@ export function button_click_listener() {
   write_to_dom(this, btnId);
 
   // finally highlight the last action
-  highlight_last_pressed(this);
+  highlight_last_pressed(btnId);
 }
 
 export function write_to_dom(dom_btn, btnId) {
@@ -84,7 +84,7 @@ export function write_to_dom(dom_btn, btnId) {
   });
 }
 
-export function highlight_last_pressed(dom_button) {
+export function highlight_last_pressed(btnId) {
   // Handle second_to_last_pressed
   document.querySelectorAll('.second_to_last_pressed').forEach(el => el.classList.remove('second_to_last_pressed'));
   const prevLastPressed = document.querySelectorAll('.last_pressed');
@@ -92,9 +92,9 @@ export function highlight_last_pressed(dom_button) {
     el.classList.add('second_to_last_pressed');
   });
 
-  // Remove all last_pressed in DOM, then add to dom_button
+  // Remove all last_pressed in DOM, then add to all buttons with same id
   document.querySelectorAll('.last_pressed').forEach(el => el.classList.remove('last_pressed'));
-  dom_button.classList.add('last_pressed');
+  document.querySelectorAll(`[data-id="${btnId}"]`).forEach(el => el.classList.add('last_pressed'));
 
   // Handle second_to_last_children
   document.querySelectorAll('.second_to_last_children').forEach(el => el.classList.remove('second_to_last_children'));
@@ -105,7 +105,7 @@ export function highlight_last_pressed(dom_button) {
 
   // Remove all last_children in DOM, then add to children
   document.querySelectorAll('.last_children').forEach(el => el.classList.remove('last_children'));
-  const children = getChildren(dom_button.dataset.id);
+  const children = getChildren(btnId);
   children.forEach(childId => {
     document.querySelectorAll(`[data-id="${childId}"]`).forEach(childBtn => {
       childBtn.classList.add('last_children');
