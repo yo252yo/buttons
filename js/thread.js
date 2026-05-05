@@ -1,4 +1,5 @@
 import { getButton, getChildren } from './canvas.js';
+import { potentially_unlock_interface } from './interface.js';
 import { capitalize_substrings } from './objectives.js';
 
 export function button_content(btnData, expanded) {
@@ -55,23 +56,27 @@ export function button_click_listener() {
 
   if (!btnData) {
     console.log("Button clicked not in the loaded canvas:" + btnId);
+  } else {
+    if (btnData.emoji) {
+      potentially_unlock_interface(btnData.emoji);
+    }
+
+    if (this.classList.contains('unclicked_button')) {
+      // First canvas click - create children (spawning)
+      this.classList.remove('unclicked_button');
+      this.innerHTML = button_content(btnData, true);
+
+      getChildren(btnId).forEach(childId => {
+        create_button(childId, this);
+      });
+    }
+
+    // commit changes to button dom
+    write_to_dom(this, btnId);
+
+    // finally highlight the last action
+    highlight_last_pressed(btnId);
   }
-  else if (this.classList.contains('unclicked_button')) {
-
-    // First canvas click - create children (spawning)
-    this.classList.remove('unclicked_button');
-    this.innerHTML = button_content(btnData, true);
-
-    getChildren(btnId).forEach(childId => {
-      create_button(childId, this);
-    });
-  }
-
-  // commit changes to button dom
-  write_to_dom(this, btnId);
-
-  // finally highlight the last action
-  highlight_last_pressed(btnId);
 }
 
 export function write_to_dom(dom_btn, btnId) {

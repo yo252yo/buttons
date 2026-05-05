@@ -1,0 +1,72 @@
+
+import { handle_interface_button_click } from './listeners.js';
+
+const interfaceButtonMeta = {
+  '⚙️': { title: 'Settings', color: 'grey' },
+  // '🧵': { title: 'Threads', color: 'grey' },
+  // '☺️': { title: 'Collections', color: 'blue' },
+  // '🎨': { title: 'Progress', color: 'blue' },
+  // '🗑️': { title: 'Archive', color: 'orange' },
+  // '👥': { title: 'Characters', color: 'purple' },
+  // '📍': { title: 'Locations', color: 'purple' },
+  // '⏰': { title: 'Times', color: 'grey' },
+  // '🏆': { title: 'Quests', color: 'grey' },
+  // '💾': { title: 'Disk', color: 'grey' },
+  // '🎵': { title: 'Audio', color: 'green' },
+  // '🐟': { title: 'Catches', color: 'grey' },
+  // '❓': { title: 'Help', color: 'grey' },
+  // '⭐': { title: 'STARters', color: 'grey' },
+};
+
+export function potentially_unlock_interface(emoji) {
+  const meta = interfaceButtonMeta[emoji];
+  if (!meta) return;
+
+  const interfaceDiv = document.getElementById('interface');
+  const existingBtn = interfaceDiv.querySelector(`.interface_button[title="${meta.title}"]`);
+  if (existingBtn) return;
+
+  const btn = document.createElement('div');
+  btn.className = `interface_button button-${meta.color}`;
+  btn.title = meta.title;
+  btn.textContent = emoji;
+  btn.addEventListener('click', handle_interface_button_click);
+
+  const margin = document.getElementById('margin_interface');
+  if (margin && margin.nextSibling) {
+    interfaceDiv.insertBefore(btn, margin.nextSibling);
+  } else {
+    interfaceDiv.appendChild(btn);
+  }
+}
+
+export async function potentially_display_meta_button(button) {
+  const title = button.title;
+
+  const jsPath = `pages/${title.toLowerCase()}.js`;
+
+  try {
+    const response = await fetch(jsPath);
+    if (!response.ok) return;
+
+    // Prepare DOM first
+    const colorClass = [...button.classList]
+      .find(c => c.startsWith('button-') && c !== 'interface_button')
+      ?.replace('button-', '') || 'grey';
+
+    const jsCode = await response.text();
+
+    const metaButton = document.getElementById('meta_button');
+    metaButton.className = `meta_button meta_button-${colorClass}`;
+    metaButton.innerHTML = '';
+
+    // Execute JS - JS can find metaButton via getElementById
+    const fn = new Function(jsCode);
+    const result = fn();
+    if (result instanceof Promise) await result;
+
+    metaButton.style.display = 'block';
+  } catch (e) {
+    console.log('No page file for:', title);
+  }
+}

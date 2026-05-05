@@ -1,12 +1,13 @@
 import { setupWindowBindings } from './api.js';
 import { loadButtonsFromCanvas } from './canvas.js';
 import { button_click_listener, create_button } from './thread.js';
+import { potentially_display_meta_button } from './interface.js';
 
 function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
 
-let metaButton = document.getElementById('meta_button');
+const metaButton = document.getElementById('meta_button');
 
 function preventWheel(e) {
   if (metaButton.style.display === 'block') {
@@ -14,7 +15,7 @@ function preventWheel(e) {
   }
 }
 
-async function handle_interface_button_click() {
+export async function handle_interface_button_click() {
   const wasPressed = this.classList.contains('pressed');
 
   document.querySelectorAll('.interface_button').forEach(btn => btn.classList.remove('pressed'));
@@ -26,32 +27,7 @@ async function handle_interface_button_click() {
 
   this.classList.add('pressed');
 
-  const title = this.title.toLowerCase();
-  const jsPath = `pages/${title}.js`;
-
-  try {
-    const response = await fetch(jsPath);
-    if (!response.ok) return;
-
-    const jsCode = await response.text();
-
-    // Prepare DOM first
-    const colorClass = [...this.classList]
-      .find(c => c.startsWith('button-') && c !== 'interface_button')
-      ?.replace('button-', '') || 'grey';
-
-    metaButton.className = `meta_button meta_button-${colorClass}`;
-    metaButton.innerHTML = '';
-
-    // Execute JS - JS can find metaButton via getElementById
-    const fn = new Function(jsCode);
-    const result = fn();
-    if (result instanceof Promise) await result;
-
-    metaButton.style.display = 'block';
-  } catch (e) {
-    console.log('No page file for:', title);
-  }
+  await potentially_display_meta_button(this);
 }
 
 async function initial_load() {
