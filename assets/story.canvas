@@ -2,19 +2,19 @@
 	"nodes":[
 		{"id":"8766146d53644fc3","type":"group","x":-935,"y":2560,"width":2835,"height":4103,"color":"1","label":"Robinson Crusoe"},
 		{"id":"711dc3bbb688c332","type":"group","x":-6036,"y":212,"width":3076,"height":3056,"label":"Defoe's youth and education"},
+		{"id":"cda20f890a136a96","type":"group","x":-2640,"y":-4520,"width":2680,"height":2040,"label":"All about buttons"},
+		{"id":"a706cb9b93c3c7e7","type":"group","x":1600,"y":-2360,"width":2260,"height":1340,"color":"1","label":"Tutorial"},
+		{"id":"bf16d1f60e4558a1","type":"group","x":4620,"y":-20,"width":1420,"height":1200,"color":"1","label":"Options etc"},
 		{"id":"cec1d48054724399","type":"group","x":-7280,"y":4199,"width":2271,"height":3156,"color":"4","label":"Defoe's political career"},
 		{"id":"8208ce67bac49771","type":"group","x":3680,"y":7200,"width":2200,"height":2540,"color":"5","label":"minecraft DLC"},
-		{"id":"cda20f890a136a96","type":"group","x":-2640,"y":-4520,"width":2680,"height":2040,"label":"All about buttons"},
 		{"id":"5f24c33fd42114fb","type":"group","x":8280,"y":11300,"width":1070,"height":3080,"color":"2","label":"The boy who owned all the drawings"},
 		{"id":"f7244ade739bb504","type":"group","x":-7540,"y":9240,"width":2243,"height":1362,"color":"1","label":"The Stationeers"},
 		{"id":"ea3446471cf211b1","type":"group","x":3900,"y":1740,"width":2380,"height":1280,"color":"1","label":"Gameplay features"},
-		{"id":"a706cb9b93c3c7e7","type":"group","x":1600,"y":-2360,"width":2260,"height":1340,"color":"1","label":"Tutorial"},
 		{"id":"f94ab37e7aefdeea","type":"group","x":7200,"y":10140,"width":710,"height":4220,"color":"6","label":"the human who mined content"},
 		{"id":"bbee386f60e2b60c","type":"group","x":-6036,"y":-2480,"width":1750,"height":1580,"label":"The Human Who Pushed Buttons"},
 		{"id":"e63a3090b448a0c2","type":"group","x":-4710,"y":3680,"width":1750,"height":1505,"color":"4","label":"Defoe's trades and writings"},
 		{"id":"b8596f2a51ee65ce","type":"group","x":-4820,"y":8300,"width":1672,"height":1400,"color":"1","label":"The invention of copyright"},
 		{"id":"6d3549e4b28330a7","type":"group","x":-4803,"y":5619,"width":1460,"height":1470,"color":"5","label":"True born englishman"},
-		{"id":"bf16d1f60e4558a1","type":"group","x":4620,"y":-20,"width":1420,"height":1200,"color":"1","label":"Options etc"},
 		{"id":"5807b05d2c60b477","type":"group","x":-2640,"y":10140,"width":1360,"height":999,"color":"1","label":"meta fixed point/behind the scenes"},
 		{"id":"a5966a470f16692a","type":"group","x":-2480,"y":7200,"width":1060,"height":816,"color":"1","label":"Selkirk"},
 		{"id":"ee65f44360a9cfb8","type":"group","x":600,"y":7322,"width":600,"height":572,"color":"1","label":"Defoe later life"},
@@ -1344,39 +1344,6 @@
 			"color":"1"
 		},
 		{
-			"id":"a05aebb07e232d1a",
-			"type":"text",
-			"text":"Ben Shahn DLC",
-			"styleAttributes":{},
-			"x":5760,
-			"y":820,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"241ea56d3a7ee635",
-			"type":"text",
-			"text":"Bossuet DLC",
-			"styleAttributes":{},
-			"x":5440,
-			"y":850,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"7eadeadfedd6bad8",
-			"type":"text",
-			"text":"Future updates/DLCs\nfirst dlc is ",
-			"styleAttributes":{},
-			"x":5210,
-			"y":520,
-			"width":260,
-			"height":170,
-			"color":"1"
-		},
-		{
 			"id":"fe88966496d9ac52",
 			"type":"text",
 			"text":"history of game is another dlc",
@@ -1387,30 +1354,6 @@
 			"height":60,
 			"color":"1"
 		},
-		{
-			"id":"a681a2ce0613aa79",
-			"type":"text",
-			"text":"Balfour DLC",
-			"styleAttributes":{},
-			"x":5080,
-			"y":840,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"42c71d35a9f25a25",
-			"type":"text",
-			"text":"a game engine, you said? ",
-			"styleAttributes":{},
-			"x":4100,
-			"y":780,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{"id":"options","type":"text","text":"⚙️ Options\n---\nWIP: Some buttons are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle.\n  Include a jab about language 🇬🇧 apologize for it being english only but the html structure is dead simple so translation tools should work. Add an aside to explain that websites used to have automated translation but that got out of fashion when google got monopoly over chrome.\n  Make sure to include plenty of accessibility options for gamers.","x":4640,"y":280,"width":300,"height":200,"color":"1"},
-		{"id":"warning","type":"text","text":"⚠️ Content warning\n---\nThis games contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.\n  It discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...\n  No topic is ever approached without a suitable warning in the unpressed button text.\n  Never forget who is pushing the buttons.\n  Reader discretion is advised when pushing buttons.","x":5040,"y":0,"width":300,"height":200,"color":"1"},
 		{
 			"id":"3df206418f34d8a5",
 			"type":"text",
@@ -1433,7 +1376,6 @@
 			"height":60,
 			"color":"2"
 		},
-		{"id":"d674c3e21ca88716","type":"text","text":"⭐ The Life of Daniel Defoe\n---\nIn a very condensed format.","x":-3696,"y":-120,"width":300,"height":200,"color":"0"},
 		{
 			"id":"b945d53941ae0ca7",
 			"type":"text",
@@ -1864,28 +1806,6 @@
 			"height":187,
 			"color":"4"
 		},
-		{
-			"id":"df4c70c4f678a712",
-			"type":"text",
-			"text":"former",
-			"styleAttributes":{},
-			"x":4780,
-			"y":-720,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"d688b3590b019998",
-			"type":"text",
-			"text":"❓ Game?\n---\nThere are many ways to play this game.\nAnd it all starts with finding your own path 👣.\n",
-			"styleAttributes":{},
-			"x":900,
-			"y":-4050,
-			"width":360,
-			"height":160,
-			"color":"4"
-		},
-		{"id":"10063a69e5cc8023","type":"text","text":"How do I find an ending flag 🏁?\n---\nYou click on buttons to draw more buttons.\nThere's an ending flag 🏁 at the end of the green 🟢 path.\nThere may be others.","x":240,"y":-3560,"width":300,"height":240,"color":"4"},
 		{"id":"intro_grey","type":"text","text":"Some buttons were grey.","x":-6036,"y":-2160,"width":300,"height":60,"color":"0"},
 		{"id":"intro_draw","type":"text","text":"Pushing some buttons drew more buttons.","x":-5816,"y":-2012,"width":300,"height":72,"color":"4"},
 		{"id":"intro_green","type":"text","text":"Some buttons were green.","x":-5706,"y":-2160,"width":300,"height":60,"color":"4"},
@@ -1899,65 +1819,39 @@
 		{"id":"found_flag","type":"text","text":"One day, while pushing buttons, the human came accross an ending flag 🏁.\n---\nThis puzzled the human quite a bit. An ending flag 🏁 ? So soon?","x":-5656,"y":-1420,"width":300,"height":200,"color":"4"},
 		{"id":"end_flag","type":"text","text":"🏁 And so it came to be that the human stopped pushing buttons.\n---","x":-5516,"y":-1160,"width":300,"height":200,"color":"4"},
 		{
-			"id":"4fd88cbcaa322c0b",
+			"id":"d688b3590b019998",
 			"type":"text",
-			"text":"All this talk of buttons is fascinating!\n---\nI know, right?\nWould you like to hear a story about buttons?",
+			"text":"❓ Game?\n---\nThere are many ways to play this game.\nAnd it all starts with finding your own path 👣.\n",
 			"styleAttributes":{},
-			"x":-2040,
-			"y":-3790,
-			"width":260,
-			"height":220
-		},
-		{
-			"id":"04a19e2087f1b3cc",
-			"type":"text",
-			"text":"Some buttons do not draw other buttons.\n---\nBut you can keep clicking on them to change their state.",
-			"styleAttributes":{},
-			"x":-1920,
-			"y":-4245,
-			"width":320,
-			"height":140
-		},
-		{
-			"id":"658362153a4dcbd8",
-			"type":"text",
-			"text":"❓ Buttons?\n---\nThat thing you just pressed on.\nButtons have two states: NORMAL and PUSHED.\nWhen you FIRST click on them, they can EXPAND and draw other buttons.",
-			"styleAttributes":{},
-			"x":-1800,
-			"y":-4510,
-			"width":480,
-			"height":180
-		},
-		{
-			"id":"4992927b36d2f1a5",
-			"type":"text",
-			"text":"Some buttons do not EXPAND.",
-			"styleAttributes":{},
-			"x":-1560,
-			"y":-4245,
-			"width":320,
-			"height":60
-		},
-		{
-			"id":"78134217e5bc6ffd",
-			"type":"text",
-			"text":"But if your button draws other buttons, they will be connected on the left.\n---\nThis also leaves a trace to help you see where you come from.",
-			"styleAttributes":{},
-			"x":-1560,
-			"y":-4140,
-			"width":320,
-			"height":230
-		},
-		{
-			"id":"3dc05573068d8e07",
-			"type":"text",
-			"text":"Why are some button a different color?\n---\nButtons can have different colors.\nColors influence the rarity and amount of text, but they have other secrets.\nFor instance, I heard that the green 🟢 path was the path to your objective.",
-			"styleAttributes":{},
-			"x":-1000,
-			"y":-3770,
-			"width":440,
-			"height":220,
+			"x":900,
+			"y":-4050,
+			"width":360,
+			"height":160,
 			"color":"4"
+		},
+		{"id":"10063a69e5cc8023","type":"text","text":"How do I find an ending flag 🏁?\n---\nYou click on buttons to draw more buttons.\nThere's an ending flag 🏁 at the end of the green 🟢 path.\nThere may be others.","x":240,"y":-3560,"width":300,"height":240,"color":"4"},
+		{"id":"4cb94f139917f64f","type":"text","text":"What my goal?\n---\nYour first GOAL is simple: find an ending flag 🏁.\nBut you will find many other GOALs along your path.","x":510,"y":-3820,"width":300,"height":200,"color":"4"},
+		{
+			"id":"f964fb74821b968e",
+			"type":"text",
+			"text":"What about the rest of the game?",
+			"styleAttributes":{},
+			"x":160,
+			"y":-3950,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"6f561fe79646f42e",
+			"type":"text",
+			"text":"Chose a path 👣?\n---\nYes, we need to customize your game experience, so you need to pick a starting class.🏆👣\nYour progress is measured along colored path. 🎨",
+			"styleAttributes":{},
+			"x":1160,
+			"y":-3660,
+			"width":560,
+			"height":200,
+			"color":"1"
 		},
 		{
 			"id":"e4f4bb3fc1323c35",
@@ -1982,64 +1876,15 @@
 			"color":"1"
 		},
 		{
-			"id":"152b7455f6b307a6",
+			"id":"3dc05573068d8e07",
 			"type":"text",
-			"text":"I'd rather keep pressing buttons for now.\n---\nSuit yourself :)",
+			"text":"Why are some button a different color?\n---\nButtons can have different colors.\nColors influence the rarity and amount of text, but they have other secrets.\nFor instance, I heard that the green 🟢 path was the path to your objective.",
 			"styleAttributes":{},
-			"x":-2620,
-			"y":-3430,
-			"width":320,
-			"height":140
-		},
-		{
-			"id":"5d9d17e73b02f73f",
-			"type":"text",
-			"text":"On second thoughts, I'm not that much into buttons.\n---\nLet me try and change your mind.\nTry another, just one more push.\nI promise it will be worth it!",
-			"styleAttributes":{},
-			"x":-2280,
-			"y":-3430,
-			"width":320,
-			"height":220
-		},
-		{
-			"id":"f88d036ba343ec9c",
-			"type":"text",
-			"text":"Wow, I have so many choices all at once!\n---\nLife is like that sometimes.\nI hope it's not too overwhelming.\nIf it's any comfort, like in life, some choices don't matter.",
-			"styleAttributes":{},
-			"x":-1810,
-			"y":-3430,
-			"width":340,
-			"height":220
-		},
-		{
-			"id":"e3a17b749f47089f",
-			"type":"text",
-			"text":"Which choices matter?\n---\nYou tell me.",
-			"styleAttributes":{},
-			"x":-1600,
-			"y":-3110,
-			"width":220,
-			"height":140
-		},
-		{
-			"id":"cced47e2636b9442",
-			"type":"text",
-			"text":"Why does this button wiggle?\n---\nIt's because you haven't clicked on it yet.\nSee, it's fixed now.\nIt's a clever trick to remember which button you haven't pushed yet.",
-			"styleAttributes":{},
-			"x":-1470,
+			"x":-1000,
 			"y":-3770,
 			"width":440,
-			"height":160
-		},
-		{
-			"id":"051f8f7881d34615",
-			"type":"text",
-			"text":"Enough about buttons!",
-			"styleAttributes":{},
-			"x":-1450,
-			"y":-3430,
-			"width":220,
-			"height":70
+			"height":220,
+			"color":"4"
 		},
 		{
 			"id":"efd763cad938f719",
@@ -2094,81 +1939,7 @@
 			"height":60,
 			"color":"6"
 		},
-		{
-			"id":"3dfecaa0cfdd2129",
-			"type":"text",
-			"text":"And finally, orange!\n---\nIt is hardwired in every gamer's brain.",
-			"styleAttributes":{},
-			"x":-960,
-			"y":-2670,
-			"width":260,
-			"height":160,
-			"color":"2"
-		},
 		{"id":"start","type":"text","text":"⭐ Start\n---\nThis game is about buttons.","x":700,"y":-5760,"width":300,"height":200,"color":"4"},
-		{
-			"id":"f204bc009ee78d03",
-			"type":"text",
-			"text":"🇬🇧 LANGUAGE\n---\nSorry, this game is english only.\nYou can use translation tools.",
-			"styleAttributes":{},
-			"x":3540,
-			"y":-5605,
-			"width":600,
-			"height":120
-		},
-		{
-			"id":"378060dee2094712",
-			"type":"text",
-			"text":"Why is this game english only?\n---\nIt should become clear very soon.",
-			"styleAttributes":{},
-			"x":3560,
-			"y":-5385,
-			"width":260,
-			"height":180
-		},
-		{
-			"id":"d604931737233191",
-			"type":"text",
-			"text":"Translation tools?\n---\nMost web browser have an automated translation feature.\nIt depends on your setup.",
-			"styleAttributes":{},
-			"x":3880,
-			"y":-5385,
-			"width":300,
-			"height":180
-		},
-		{
-			"id":"dfc73eefe3104065",
-			"type":"text",
-			"text":"It didn't used to be like this...\n---\nWhen the internet started, Google made a little script that webmasters could put on their webpages so that the visitors could auto-translate the content.\nNow it's in the web browser.",
-			"styleAttributes":{},
-			"x":4000,
-			"y":-5125,
-			"width":620,
-			"height":200,
-			"color":"5"
-		},
-		{
-			"id":"eed47474d8e02fee",
-			"type":"text",
-			"text":"Why is it in the web browser?\n---\nSo that it's on every webpage?\nSo it can be automated?\nSo that webmasters could not control the way it's being used?\nSo that users can't opt out?\n\nIt's a general trend, obfuscating control away from the humans, putting it in the hands of corporations.\nIn return you get a simple, smooth, integrated ecosystem.\nAnd you end up captive consumer.",
-			"styleAttributes":{},
-			"x":4310,
-			"y":-4885,
-			"width":560,
-			"height":300
-		},
-		{
-			"id":"fbf2799b952d0f8b",
-			"type":"text",
-			"text":"🚧 The general trend obfuscating control away from the humans, putting it in the hands of corporations is in another DLC.\n---\nYou'll be shocked to find out whether humans chose simplicity or control!",
-			"styleAttributes":{},
-			"x":4600,
-			"y":-4535,
-			"width":360,
-			"height":230,
-			"color":"3"
-		},
-		{"id":"4cb94f139917f64f","type":"text","text":"What my goal?\n---\nYour first GOAL is simple: find an ending flag 🏁.\nBut you will find many other GOALs along your path.","x":510,"y":-3820,"width":300,"height":200,"color":"4"},
 		{
 			"id":"6fda12f97f89f6fb",
 			"type":"text",
@@ -2187,17 +1958,6 @@
 			"styleAttributes":{},
 			"x":980,
 			"y":-2375,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"09f889c1c6139414",
-			"type":"text",
-			"text":"❓ My objective?",
-			"styleAttributes":{},
-			"x":650,
-			"y":-2350,
 			"width":260,
 			"height":60,
 			"color":"1"
@@ -2254,17 +2014,6 @@
 			"height":60
 		},
 		{
-			"id":"93ea9dee7495aa53",
-			"type":"text",
-			"text":"❓Icons ☺️ ?",
-			"styleAttributes":{},
-			"x":340,
-			"y":-2300,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"2436635c3af531aa",
 			"type":"text",
 			"text":"🎵 Where is the audio?",
@@ -2274,6 +2023,67 @@
 			"width":360,
 			"height":120,
 			"color":"1"
+		},
+		{
+			"id":"28d7f97393cb2dcc",
+			"type":"text",
+			"text":"the player self defines and i provide accessibility and objectives for them",
+			"styleAttributes":{},
+			"x":1920,
+			"y":-2380,
+			"width":760,
+			"height":380
+		},
+		{
+			"id":"f204bc009ee78d03",
+			"type":"text",
+			"text":"🇬🇧 LANGUAGE\n---\nSorry, this game is english only.\nYou can use translation tools.",
+			"styleAttributes":{},
+			"x":3540,
+			"y":-5605,
+			"width":600,
+			"height":120
+		},
+		{
+			"id":"378060dee2094712",
+			"type":"text",
+			"text":"Why is this game english only?\n---\nIt should become clear very soon.",
+			"styleAttributes":{},
+			"x":3560,
+			"y":-5385,
+			"width":260,
+			"height":180
+		},
+		{
+			"id":"d604931737233191",
+			"type":"text",
+			"text":"Translation tools?\n---\nMost web browser have an automated translation feature.\nIt depends on your setup.",
+			"styleAttributes":{},
+			"x":3880,
+			"y":-5385,
+			"width":300,
+			"height":180
+		},
+		{
+			"id":"dfc73eefe3104065",
+			"type":"text",
+			"text":"It didn't used to be like this...\n---\nWhen the internet started, Google made a little script that webmasters could put on their webpages so that the visitors could auto-translate the content.\nNow it's in the web browser.",
+			"styleAttributes":{},
+			"x":4000,
+			"y":-5125,
+			"width":620,
+			"height":200,
+			"color":"5"
+		},
+		{
+			"id":"eed47474d8e02fee",
+			"type":"text",
+			"text":"Why is it in the web browser?\n---\nSo that it's on every webpage?\nSo it can be automated?\nSo that webmasters could not control the way it's being used?\nSo that users can't opt out?\n\nIt's a general trend, obfuscating control away from the humans, putting it in the hands of corporations.\nIn return you get a simple, smooth, integrated ecosystem.\nAnd you end up captive consumer.",
+			"styleAttributes":{},
+			"x":4310,
+			"y":-4885,
+			"width":560,
+			"height":300
 		},
 		{
 			"id":"c565c4de39b22791",
@@ -2286,54 +2096,244 @@
 			"height":180,
 			"color":"4"
 		},
-		{
-			"id":"28d7f97393cb2dcc",
-			"type":"text",
-			"text":"the player self defines and i provide accessibility and objectives for them",
-			"styleAttributes":{},
-			"x":1920,
-			"y":-2380,
-			"width":760,
-			"height":380
-		},
 		{"id":"tutorial","type":"text","text":"❓ What do I have to do?\n---\nYour GOAL is simple: find an ending flag 🏁.\n  There's an ending 🏁 at the end of the green 🟢 line.\n  There may be others.","x":1990,"y":-1570,"width":300,"height":200,"color":"4"},
+		{"id":"tuto_star","type":"text","text":"❓ What does the star ⭐ mean ?\n---\nStar ⭐ is the icon for starter packs. They mark the beginning of a story.","x":2550,"y":-1550,"width":300,"height":160,"color":"0"},
+		{"id":"02b8cc538f2e9888","type":"text","text":"❓ This thing is new kind of game engine?\n---\nA new medium?\nA new way to see?\nA new way to LOOK.","x":2870,"y":-1550,"width":360,"height":180,"color":"2"},
+		{
+			"id":"4fd88cbcaa322c0b",
+			"type":"text",
+			"text":"All this talk of buttons is fascinating!\n---\nI know, right?\nWould you like to hear a story about buttons?",
+			"styleAttributes":{},
+			"x":-2040,
+			"y":-3790,
+			"width":260,
+			"height":220
+		},
+		{
+			"id":"04a19e2087f1b3cc",
+			"type":"text",
+			"text":"Some buttons do not draw other buttons.\n---\nBut you can keep clicking on them to change their state.",
+			"styleAttributes":{},
+			"x":-1920,
+			"y":-4245,
+			"width":320,
+			"height":140
+		},
+		{
+			"id":"658362153a4dcbd8",
+			"type":"text",
+			"text":"❓ Buttons?\n---\nThat thing you just pressed on.\nButtons have two states: NORMAL and PUSHED.\nWhen you FIRST click on them, they can EXPAND and draw other buttons.",
+			"styleAttributes":{},
+			"x":-1800,
+			"y":-4510,
+			"width":480,
+			"height":180
+		},
+		{
+			"id":"4992927b36d2f1a5",
+			"type":"text",
+			"text":"Some buttons do not EXPAND.",
+			"styleAttributes":{},
+			"x":-1560,
+			"y":-4245,
+			"width":320,
+			"height":60
+		},
+		{
+			"id":"78134217e5bc6ffd",
+			"type":"text",
+			"text":"But if your button draws other buttons, they will be connected on the left.\n---\nThis also leaves a trace to help you see where you come from.",
+			"styleAttributes":{},
+			"x":-1560,
+			"y":-4140,
+			"width":320,
+			"height":230
+		},
+		{
+			"id":"cced47e2636b9442",
+			"type":"text",
+			"text":"Why does this button wiggle?\n---\nIt's because you haven't clicked on it yet.\nSee, it's fixed now.\nIt's a clever trick to remember which button you haven't pushed yet.",
+			"styleAttributes":{},
+			"x":-1470,
+			"y":-3770,
+			"width":440,
+			"height":160
+		},
+		{
+			"id":"051f8f7881d34615",
+			"type":"text",
+			"text":"Enough about buttons!",
+			"styleAttributes":{},
+			"x":-1450,
+			"y":-3430,
+			"width":220,
+			"height":70
+		},
+		{
+			"id":"fbf2799b952d0f8b",
+			"type":"text",
+			"text":"🚧 The general trend obfuscating control away from the humans, putting it in the hands of corporations is in another DLC.\n---\nYou'll be shocked to find out whether humans chose simplicity or control!",
+			"styleAttributes":{},
+			"x":4600,
+			"y":-4535,
+			"width":360,
+			"height":230,
+			"color":"3"
+		},
+		{
+			"id":"09f889c1c6139414",
+			"type":"text",
+			"text":"❓ My objective?",
+			"styleAttributes":{},
+			"x":650,
+			"y":-2350,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"93ea9dee7495aa53",
+			"type":"text",
+			"text":"❓Icons ☺️ ?",
+			"styleAttributes":{},
+			"x":340,
+			"y":-2300,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"152b7455f6b307a6",
+			"type":"text",
+			"text":"I'd rather keep pressing buttons for now.\n---\nSuit yourself :)",
+			"styleAttributes":{},
+			"x":-2620,
+			"y":-3430,
+			"width":320,
+			"height":140
+		},
+		{
+			"id":"5d9d17e73b02f73f",
+			"type":"text",
+			"text":"On second thoughts, I'm not that much into buttons.\n---\nLet me try and change your mind.\nTry another, just one more push.\nI promise it will be worth it!",
+			"styleAttributes":{},
+			"x":-2280,
+			"y":-3430,
+			"width":320,
+			"height":220
+		},
+		{
+			"id":"f88d036ba343ec9c",
+			"type":"text",
+			"text":"Wow, I have so many choices all at once!\n---\nLife is like that sometimes.\nI hope it's not too overwhelming.\nIf it's any comfort, like in life, some choices don't matter.",
+			"styleAttributes":{},
+			"x":-1810,
+			"y":-3430,
+			"width":340,
+			"height":220
+		},
+		{
+			"id":"e3a17b749f47089f",
+			"type":"text",
+			"text":"Which choices matter?\n---\nYou tell me.",
+			"styleAttributes":{},
+			"x":-1600,
+			"y":-3110,
+			"width":220,
+			"height":140
+		},
+		{
+			"id":"3dfecaa0cfdd2129",
+			"type":"text",
+			"text":"And finally, orange!\n---\nIt is hardwired in every gamer's brain.",
+			"styleAttributes":{},
+			"x":-960,
+			"y":-2670,
+			"width":260,
+			"height":160,
+			"color":"2"
+		},
 		{"id":"tuto_colors","type":"text","text":"❓ What's up with the colors?\n---\nWIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨","x":2450,"y":-1110,"width":480,"height":300,"color":"1"},
 		{"id":"tuto_archive","type":"text","text":"❓ Help, my screen is full of stuff!\n---\nWIP: The thread 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe","x":2110,"y":-1070,"width":300,"height":200,"color":"1"},
 		{"id":"tuto_emoji","type":"text","text":"❓ What's up with the EMOJIs?\n---\nSome buttons have icons.\n  WIP: You can collect them in this menu ☺️. There might be other quests 🏆 (find names 👥, places 📍, times ⏰, maybe rare collectibles 🐟)","x":1690,"y":-1050,"width":300,"height":200,"color":"1"},
 		{"id":"tuto_apology","type":"text","text":"❓ This tutorial is too long!\n---\nI apologize, this is brand new game engine, a lot of things need to be explained.\n  Feel free to skip everything you want, or look at the ⚙️ options to customize your experience.","x":2040,"y":-810,"width":300,"height":200,"color":"1"},
-		{"id":"tuto_star","type":"text","text":"❓ What does the star ⭐ mean ?\n---\nStar ⭐ is the icon for starter packs. They mark the beginning of a story.","x":2550,"y":-1550,"width":300,"height":160,"color":"0"},
-		{"id":"02b8cc538f2e9888","type":"text","text":"❓ This thing is new kind of game engine?\n---\nA new medium?\nA new way to see?\nA new way to LOOK.","x":2870,"y":-1550,"width":360,"height":180,"color":"2"},
+		{"id":"options","type":"text","text":"⚙️ Options\n---\nWIP: Some buttons are part of the INTERFACE at the top of your screen. They'll appear one by one with context. Obviously a light/dark mode toggle.\n  Include a jab about language 🇬🇧 apologize for it being english only but the html structure is dead simple so translation tools should work. Add an aside to explain that websites used to have automated translation but that got out of fashion when google got monopoly over chrome.\n  Make sure to include plenty of accessibility options for gamers.","x":4640,"y":280,"width":300,"height":200,"color":"1"},
 		{
-			"id":"f9e0945e662c3409",
+			"id":"7eadeadfedd6bad8",
 			"type":"text",
-			"text":"⚙️ Settings\n---\n⚙️In this game, you \n",
+			"text":"Future updates/DLCs\nfirst dlc is ",
 			"styleAttributes":{},
-			"x":2310,
-			"y":-2950,
-			"width":360,
-			"height":120,
+			"x":5210,
+			"y":520,
+			"width":260,
+			"height":170,
+			"color":"1"
+		},
+		{"id":"warning","type":"text","text":"⚠️ Content warning\n---\nThis games contains a lot of button pushing, and a lot of TEXT including METAPHORS and ALLEGORIES.\n  It discusses sensitive topics such as colors, HISTORY, SLAVERY, INTELLECTUAL PROPERTY, WIP...\n  No topic is ever approached without a suitable warning in the unpressed button text.\n  Never forget who is pushing the buttons.\n  Reader discretion is advised when pushing buttons.","x":5040,"y":0,"width":300,"height":200,"color":"1"},
+		{"id":"d674c3e21ca88716","type":"text","text":"⭐ The Life of Daniel Defoe\n---\nIn a very condensed format.","x":-3696,"y":-120,"width":300,"height":200,"color":"0"},
+		{
+			"id":"df4c70c4f678a712",
+			"type":"text",
+			"text":"former",
+			"styleAttributes":{},
+			"x":4780,
+			"y":-720,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a05aebb07e232d1a",
+			"type":"text",
+			"text":"Ben Shahn DLC",
+			"styleAttributes":{},
+			"x":5760,
+			"y":820,
+			"width":260,
+			"height":60,
 			"color":"1"
 		},
 		{
-			"id":"f964fb74821b968e",
+			"id":"241ea56d3a7ee635",
 			"type":"text",
-			"text":"What about the rest of the game?",
+			"text":"Bossuet DLC",
 			"styleAttributes":{},
-			"x":160,
-			"y":-3950,
+			"x":5440,
+			"y":850,
 			"width":260,
 			"height":60,
-			"color":"4"
+			"color":"1"
 		},
 		{
-			"id":"6f561fe79646f42e",
+			"id":"a681a2ce0613aa79",
 			"type":"text",
-			"text":"Chose a path 👣?\n---\nYes, we need to customize your game experience, so you need to pick a starting class.🏆👣\nYour progress is measured along colored path. 🎨",
+			"text":"Balfour DLC",
 			"styleAttributes":{},
-			"x":1160,
-			"y":-3660,
-			"width":560,
-			"height":200,
+			"x":5080,
+			"y":840,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"42c71d35a9f25a25",
+			"type":"text",
+			"text":"a game engine, you said? ",
+			"styleAttributes":{},
+			"x":4100,
+			"y":780,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"f9e0945e662c3409",
+			"type":"text",
+			"text":"⚙️ Settings\n---\nUse the ⚙️ button at the top of the page.\n\nSettings can significantly change the game, you might want to have a look to customize your experience.\n",
+			"styleAttributes":{},
+			"x":2550,
+			"y":-3320,
+			"width":450,
+			"height":210,
 			"color":"1"
 		}
 	],

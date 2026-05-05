@@ -55,9 +55,12 @@ export function handle_press(dom_btn, btnId, btnData) {
   let first_click = false;
   if (dom_btn.classList.contains('unclicked_button')) {
     first_click = true;
-    // Expand
-    dom_btn.classList.remove('unclicked_button');
-    dom_btn.innerHTML = button_content(btnData, true);
+
+    // Remove unclick, expand
+    document.querySelectorAll(`[data-id="${btnId}"]`).forEach(dom_btn_ => {
+      dom_btn_.classList.remove('unclicked_button');
+      dom_btn_.innerHTML = button_content(btnData, true);
+    });
 
     // Span children
     getChildren(btnId).forEach(childId => {
