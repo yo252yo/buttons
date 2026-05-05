@@ -1466,7 +1466,7 @@
 		{
 			"id":"3dc05573068d8e07",
 			"type":"text",
-			"text":"Why are some button a different color?\n---\nButtons can have different colors.\nColors influence the rarity and amount of text, but they have other secrets.\nFor instance, I heard that the green 🟢 path was the path to your objective.",
+			"text":"Why are some buttons a different color?\n---\nButtons can have different colors.\nColors influence the rarity and amount of text, but they have other secrets.\nFor instance, I heard that the green 🟢 path was the path to your objective.",
 			"styleAttributes":{},
 			"x":-1000,
 			"y":-3770,
@@ -1600,27 +1600,6 @@
 			"y":-2590,
 			"width":260,
 			"height":60
-		},
-		{
-			"id":"2436635c3af531aa",
-			"type":"text",
-			"text":"🎵 Where is the audio?",
-			"styleAttributes":{},
-			"x":3170,
-			"y":-2410,
-			"width":360,
-			"height":120,
-			"color":"1"
-		},
-		{
-			"id":"28d7f97393cb2dcc",
-			"type":"text",
-			"text":"the player self defines and i provide accessibility and objectives for them",
-			"styleAttributes":{},
-			"x":1920,
-			"y":-2380,
-			"width":760,
-			"height":380
 		},
 		{
 			"id":"f204bc009ee78d03",
@@ -1914,39 +1893,6 @@
 			"color":"1"
 		},
 		{
-			"id":"f9e0945e662c3409",
-			"type":"text",
-			"text":"⚙️ Settings\n---\nUse the ⚙️ button at the top of the page.\n\nSettings can significantly change the game, you might want to have a look to customize your experience.\n",
-			"styleAttributes":{},
-			"x":2550,
-			"y":-3320,
-			"width":450,
-			"height":210,
-			"color":"1"
-		},
-		{
-			"id":"6f561fe79646f42e",
-			"type":"text",
-			"text":"Chose a path 👣?\n---\nYes, we need to customize your game experience, so you need to pick a starting class.🏆👣\nYour progress is measured along colored path. 🎨",
-			"styleAttributes":{},
-			"x":1470,
-			"y":-3540,
-			"width":560,
-			"height":200,
-			"color":"1"
-		},
-		{
-			"id":"f964fb74821b968e",
-			"type":"text",
-			"text":"What about the rest of the game?",
-			"styleAttributes":{},
-			"x":210,
-			"y":-4220,
-			"width":260,
-			"height":60,
-			"color":"4"
-		},
-		{
 			"id":"d688b3590b019998",
 			"type":"text",
 			"text":"❓ Game?\n---\nThere are many ways to play this game.\nAnd it all starts with finding your own path 👣.\n",
@@ -1957,8 +1903,6 @@
 			"height":160,
 			"color":"4"
 		},
-		{"id":"4cb94f139917f64f","type":"text","text":"What my goal?\n---\nYour first GOAL is simple: find an ending flag 🏁.\nBut you will find many other GOALs along your path.","x":390,"y":-3870,"width":300,"height":200,"color":"4"},
-		{"id":"10063a69e5cc8023","type":"text","text":"How do I find an ending flag 🏁?\n---\nYou click on buttons to draw more buttons.\nThere's an ending flag 🏁 at the end of the green 🟢 path.\nThere may be others.","x":190,"y":-3560,"width":300,"height":240,"color":"4"},
 		{
 			"id":"56b3c01bf1c15521",
 			"type":"text",
@@ -1966,8 +1910,8 @@
 			"styleAttributes":{},
 			"x":980,
 			"y":-4160,
-			"width":360,
-			"height":160,
+			"width":280,
+			"height":60,
 			"color":"4"
 		},
 		{"id":"intro_orange","type":"text","text":"Some buttons were orange.","x":-4626,"y":-2160,"width":300,"height":60,"color":"2"},
@@ -2346,7 +2290,74 @@
 			"height":100,
 			"color":"1"
 		},
-		{"id":"beginning","type":"text","text":"⭐ The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.","x":-5666,"y":-2440,"width":300,"height":200,"color":"4"}
+		{"id":"beginning","type":"text","text":"⭐ The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.","x":-5666,"y":-2440,"width":300,"height":200,"color":"4"},
+		{
+			"id":"6f561fe79646f42e",
+			"type":"text",
+			"text":"Chose a path 👣?\n---\nYes, we need to customize your game experience, so you need to pick a starting class.🏆👣\nYour progress is measured along colored path. 🎨",
+			"styleAttributes":{},
+			"x":980,
+			"y":-3120,
+			"width":560,
+			"height":200,
+			"color":"1"
+		},
+		{
+			"id":"28d7f97393cb2dcc",
+			"type":"text",
+			"text":"the player self defines and i provide accessibility and objectives for them",
+			"styleAttributes":{},
+			"x":530,
+			"y":-1740,
+			"width":760,
+			"height":100
+		},
+		{
+			"id":"2436635c3af531aa",
+			"type":"text",
+			"text":"🎵 Audio\n---\nIn this game, you will unlock audio and new features as you progress.\n\nWIP/TBC giveone free bgm here, make the button SFX. \"A new audio will autoplay when its found\"\n\nUse the 🎵 button at the top of the page to tweak volume.",
+			"styleAttributes":{},
+			"x":3960,
+			"y":-3440,
+			"width":640,
+			"height":210,
+			"color":"1"
+		},
+		{"id":"10063a69e5cc8023","type":"text","text":"How do I find an ending flag 🏁?\n---\nYou click on buttons to draw more buttons.\nThere's an ending flag 🏁 at the end of the green 🟢 path.\nThere may be others.","x":170,"y":-3500,"width":300,"height":240,"color":"4"},
+		{"id":"4cb94f139917f64f","type":"text","text":"🏁 What my goal?\n---\nYour first GOAL is simple: find an ending flag 🏁.\nBut you will find many other GOALs along your path.","x":400,"y":-3820,"width":300,"height":200,"color":"4"},
+		{
+			"id":"f9e0945e662c3409",
+			"type":"text",
+			"text":"⚙️ Settings\n---\nUse the ⚙️ button at the top of the page.\n\nSettings can significantly change the game, you might want to have a look to customize your experience.\n",
+			"styleAttributes":{},
+			"x":1880,
+			"y":-4105,
+			"width":450,
+			"height":210
+		},
+		{
+			"id":"166a047b8a29eaf5",
+			"type":"text",
+			"text":"Create my character",
+			"styleAttributes":{},
+			"x":1280,
+			"y":-4160,
+			"width":280,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"f964fb74821b968e",
+			"type":"text",
+			"text":"What about the rest of the game?",
+			"styleAttributes":{},
+			"x":190,
+			"y":-4360,
+			"width":260,
+			"height":60,
+			"color":"4"
+		},
+		{"id":"title_button","type":"text","text":"<h1>Push YOUR Buttons!</h1>\n---\nPress the ⭐ Start button!","x":700,"y":-6020,"width":300,"height":200,"color":"2"}
 	],
 	"edges":[
 		{"id":"c51fd28e-555e-4b79-9d29-82513e1958ff","fromNode":"tutorial","fromSide":"bottom","toNode":"tuto_emoji","toSide":"top"},
@@ -4855,15 +4866,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"7c9808b127752476",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"f204bc009ee78d03",
-			"fromSide":"bottom",
-			"toNode":"f9e0945e662c3409",
-			"toSide":"top"
-		},
-		{
 			"id":"8ae371e32eede817",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -4984,15 +4986,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"32fb0df869da3c21",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"f9e0945e662c3409",
-			"fromSide":"bottom",
-			"toNode":"2436635c3af531aa",
-			"toSide":"top"
-		},
-		{
 			"id":"ef3821eee94271d5",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -5053,6 +5046,24 @@
 			"fromNode":"56b3c01bf1c15521",
 			"fromSide":"bottom",
 			"toNode":"beginning",
+			"toSide":"top"
+		},
+		{
+			"id":"5cff530ac981139f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"start",
+			"fromSide":"bottom",
+			"toNode":"2436635c3af531aa",
+			"toSide":"top"
+		},
+		{
+			"id":"34c961f2696c125e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"start",
+			"fromSide":"bottom",
+			"toNode":"166a047b8a29eaf5",
 			"toSide":"top"
 		}
 	],

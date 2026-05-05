@@ -1,5 +1,5 @@
 import { setupWindowBindings } from './api.js';
-import { create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
+import { button_content, create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
 import { mb_display_page_div } from './interface.js';
 
@@ -58,7 +58,10 @@ async function initial_load() {
   window.addEventListener('wheel', preventWheel, { passive: false });
 
   const startId = get_query_param('start') || 'start';
-  create_button(startId);
+
+  const button_title = document.getElementById('title');
+  button_title.innerHTML = button_content(getButton('title_button'));
+  create_button(startId, button_title);
 }
 
 document.addEventListener('DOMContentLoaded', initial_load);

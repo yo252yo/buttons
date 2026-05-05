@@ -4,6 +4,7 @@ import { handle_buttonzone_button_click } from './listeners.js';
 import { capitalize_substrings } from './objectives.js';
 
 export function button_content(btnData, expanded) {
+  console.log(btnData)
   let html;
   if (expanded) {
     html = `<b>${btnData.emoji || ''} ${btnData.title}</b>${btnData.content || ''}`;
@@ -15,12 +16,7 @@ export function button_content(btnData, expanded) {
 
 export function create_button(buttonName, parent) {
   const btnData = getButton(buttonName);
-  if (!btnData) return;
-
-  if (!parent) {
-    parent = document.getElementById('title');
-    if (!parent) return;
-  }
+  if (!btnData || !parent) return;
 
   const existingBtn = document.querySelector(`[data-id="${buttonName}"]`);
 
