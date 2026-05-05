@@ -1,5 +1,5 @@
-import { loadButtonsFromCanvas } from './canvas.js';
 import { setupWindowBindings } from './api.js';
+import { loadButtonsFromCanvas } from './canvas.js';
 import { button_click_listener, create_button } from './thread.js';
 
 function get_query_param(name) {
@@ -63,9 +63,6 @@ async function initial_load() {
     btn.addEventListener('click', button_click_listener);
   });
 
-  document.querySelectorAll('.interface_button').forEach(btn => {
-    btn.addEventListener('click', handle_interface_button_click);
-  });
 
   // Prevent wheel scroll when meta button is visible
   window.addEventListener('wheel', preventWheel, { passive: false });
