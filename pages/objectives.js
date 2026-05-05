@@ -33,7 +33,7 @@
   const black = getCssVar('--black');
 
   // Transposed: colors as rows, emojis as columns - Total at the end (inverted from before)
-  let html = '<table style="border-collapse: collapse; text-align: center; border-left: 2px solid ' + black + '; border-right: 2px solid ' + black + ';">';
+  let html = 'TBC WIP your first objective is to find an ending flag 🏁 > more objectives/tracking/etc...<table style="border-collapse: collapse; text-align: center; border-left: 2px solid ' + black + '; border-right: 2px solid ' + black + ';">';
 
   // Column headers: emoji, then each emoji (sorted by total), then Total at end
   html += '<tr><th></th>';

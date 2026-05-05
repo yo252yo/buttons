@@ -96,3 +96,5 @@ paint dlc nodes in yellow fr mb ???
 
 
 spawn the new meta icon with last_presed but not pressed so we can have interfce.last_pressed glow 
+
+the button mb shouldnt press if there sis text selected

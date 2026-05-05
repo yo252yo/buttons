@@ -5,6 +5,8 @@ const interfaceButtonMeta = {
   '⚙️': { title: 'Settings', color: 'grey' },
   '🎵': { title: 'Audio', color: 'grey' },
   '⭐': { title: 'STARters', color: 'grey' },
+  '🏆': { title: 'Objectives', color: 'green' },
+
 
   // '🧵': { title: 'Threads', color: 'grey' },
   // '☺️': { title: 'Collections', color: 'blue' },
