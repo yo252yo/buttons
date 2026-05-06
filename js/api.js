@@ -1,3 +1,5 @@
+import { getPressedButtons, getSpawnedButtons } from './buttons_zone.js';
+
 export function setupWindowBindings(buttonsCache) {
   window.getEmojiCount = () => {
     const colors = ['grey', 'green', 'blue', 'purple', 'orange'];
@@ -14,4 +16,20 @@ export function setupWindowBindings(buttonsCache) {
   };
 
   window.getButtonCount = () => Object.keys(buttonsCache).length;
+
+  // Count spawned green buttons (check buttonsCache for color)
+  window.getGreenSpawnedCount = () => getSpawnedButtons().filter(id => {
+    const btn = buttonsCache[id];
+    return btn && btn.color === 'green';
+  }).length;
+
+  window.getGreenTotalCount = () => Object.values(buttonsCache).filter(b => b.color === 'green').length;
+
+  window.getFlagsFound = () => {
+    const pressed = getPressedButtons();
+    return Object.keys(pressed).filter(id => {
+      const btn = buttonsCache[id];
+      return btn && btn.emoji === '🏁' && pressed[id];
+    }).length;
+  };
 }

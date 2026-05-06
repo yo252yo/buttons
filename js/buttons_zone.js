@@ -3,6 +3,9 @@ import { mb_create_interface_button } from './interface.js';
 import { handle_buttonzone_button_click } from './listeners.js';
 import { capitalize_substrings } from './objectives.js';
 
+const spawnedButtons = [];
+const pressedButtons = {};
+
 export function button_content(btnData, expanded) {
   let html;
   if (expanded) {
@@ -30,6 +33,8 @@ export function create_button(buttonName, parent) {
   } else {
     btn.className = `button button-${btnData.color || 'grey'} unpushed_button last_children`;
     btn.innerHTML = button_content(btnData, false);
+    // Track spawned button
+    spawnedButtons.push(buttonName);
   }
 
   btn.addEventListener('click', handle_buttonzone_button_click);
@@ -72,7 +77,8 @@ export function handle_press(dom_btn, btnId, btnData) {
 }
 
 export function press_dom_buttons(dom_btn, btnId) {
-  dom_btn.classList.toggle('pressed');
+  const pressed = dom_btn.classList.toggle('pressed');
+  pressedButtons[btnId] = pressed;
 
   // Propagate through the DOM
   document.querySelectorAll(`[data-id="${btnId}"]`).forEach(dom_btn_ => {
@@ -108,4 +114,12 @@ export function highlight_last_pressed(btnId) {
       childBtn.classList.add('last_children');
     });
   });
+}
+
+export function getSpawnedButtons() {
+  return spawnedButtons;
+}
+
+export function getPressedButtons() {
+  return pressedButtons;
 }
