@@ -3,6 +3,9 @@ import { button_content, create_button, handle_press, press_dom_buttons } from '
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
 import { mb_display_page_div } from './interface.js';
 
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
+
 function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);
 }

@@ -9,8 +9,20 @@
   --green-border: #00aa2e;
   --grey: #c8c4bf;
   --grey-border: #95918c;
+}
+
+[data-theme="light"] {
   --black: #000000;
   --black-shine: #00000055;
   --white: #ffffff;
   --white-shine: #ffffffaa;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --black: #ffffff;
+  --black-shine: #ffffffcc;
+  --white: #000000;
+  --white-shine: #00000044;
+  color-scheme: dark;
 }

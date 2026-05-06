@@ -68,8 +68,15 @@
 
 .button.pressed {
   border-style: inset;
-  filter: brightness(0.7) contrast(1.2);
   opacity: 0.9;
+}
+
+[data-theme="light"] .button.pressed {
+  filter: brightness(0.7) contrast(1.2);
+}
+
+[data-theme="dark"] .button.pressed {
+  filter: brightness(.85) contrast(1.2);
 }
 
 .button-orange.pressed {

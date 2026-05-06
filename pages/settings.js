@@ -18,11 +18,14 @@ const gamer_mode_on_css = `
 const gamer_mode_off_css = '#buttons_zone .button { color: var(--black); }';
 
 let gamerMode = gamerModeStyle.textContent.includes('font-size');
+let darkMode = document.documentElement.dataset.theme === 'dark';
 
 const pageDiv = document.getElementById('page_div');
 pageDiv.innerHTML = `
 <h1>Settings</h1>
 <button id="gamer_mode_btn" class="button button-grey${gamerMode ? ' pressed' : ''}">Gamer Mode: ${gamerMode ? 'ON' : 'OFF'}</button>
+<br /><br />
+<button id="dark_mode_btn" class="button button-grey${darkMode ? ' pressed' : ''}">Dark Mode: ${darkMode ? 'ON' : 'OFF'}</button>
 <br /><br />
 TBC WIP<br />
 Should have an option to dedupe duplicates, autoscroll, keyboard control<br />
@@ -42,5 +45,18 @@ document.getElementById('gamer_mode_btn').onclick = () => {
         btn.classList.remove('pressed');
         btn.textContent = 'Gamer Mode: OFF';
         gamerModeStyle.textContent = gamer_mode_off_css;
+    }
+};
+
+document.getElementById('dark_mode_btn').onclick = () => {
+    darkMode = !darkMode;
+    const btn = document.getElementById('dark_mode_btn');
+    document.documentElement.dataset.theme = darkMode ? 'dark' : 'light';
+    if (darkMode) {
+        btn.classList.add('pressed');
+        btn.textContent = 'Dark Mode: ON';
+    } else {
+        btn.classList.remove('pressed');
+        btn.textContent = 'Dark Mode: OFF';
     }
 };
