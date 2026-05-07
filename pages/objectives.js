@@ -12,8 +12,8 @@ if (flagsFound > 0) {
   pct = Math.min(99, pct);
 }
 
-const html = `
-<div class="button button-grey${(pct >= 100) ? ' pressed' : ''}">
+const simplest_path = `
+<div class="button button_path button-grey${(pct >= 100) ? ' pressed' : ''}">
   <h2>The Simplest PATH</h2>
   <div class="progress-track">
     <div class="progress-fill" style="width: ${pct}%;"></div>
@@ -29,4 +29,9 @@ const html = `
   </div>
 </div>
 `;
-pageDiv.innerHTML = html;
+pageDiv.innerHTML = `
+${simplest_path}
+<hr>
+<h1>You may chose 1 extra path</h1>
+${simplest_path}
+`;
