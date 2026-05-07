@@ -59,30 +59,3 @@ a {
 .background_stripe:nth-child(1) {
   background: var(--grey);
 }
-
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  #buttons_zone {
-    margin-left: -10px
-  }
-
-  .black_stripe {
-    left: 20px;
-  }
-
-  .background_stripes {
-    left: 30px;
-  }
-
-  .black_stripe,
-  .background_stripes {
-    height: 300vh;
-  }
-
-  .margin_interface {
-    width: 20px;
-  }
-}
