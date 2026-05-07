@@ -3,10 +3,19 @@
   top: 50px;
   right: 0;
   bottom: 0;
+  left: 0;
   background: var(--grey);
   padding: 20px;
   z-index: 200;
   overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Clearfix: forces container to wrap floated children */
+.page::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .page-grey {

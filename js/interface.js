@@ -2,13 +2,15 @@
 import { handle_interface_button_click } from './listeners.js';
 
 const interfaceButtonMeta = {
+  '🏆': { title: 'Objectives', color: 'green' },
+
   '⚙️': { title: 'Settings', color: 'grey' },
   '🎵': { title: 'Audio', color: 'grey' },
-  '⭐': { title: 'STARters', color: 'grey' },
-  '🏆': { title: 'Objectives', color: 'green' },
+
   '☺️': { title: 'debug', color: 'blue' },
 
 
+  //  '⭐': { title: 'STARters', color: 'grey' },
   // '🧵': { title: 'Threads', color: 'grey' },
   // '🎨': { title: 'Progress', color: 'blue' },
   // '🗑️': { title: 'Archive', color: 'orange' },

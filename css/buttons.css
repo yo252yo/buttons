@@ -211,3 +211,24 @@
   width: 600px;
   height: 300px;
 }
+
+.purchase_button {
+  width: 250px;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.purchase_button .purchase_description {
+  display: none;
+  padding-top: 10px;
+}
+
+.purchase_button.pressed .purchase_description {
+  display: block;
+}
+
+
+hr {
+  clear: both;
+}
