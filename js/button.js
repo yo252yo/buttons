@@ -22,13 +22,15 @@ const startsWithEmoji = (str) => {
 };
 
 class Button {
-  constructor({ id, emoji, title, content, color, children = [] }) {
+  constructor({ id, emoji, title, content, color, children = [], x = 0, y = 0 }) {
     this.id = id;
     this.emoji = emoji;
     this.title = title;
     this.content = content;
     this.color = color;
     this.children = children;
+    this.x = x;
+    this.y = y;
   }
 
   static fromCanvasNode(node, children = []) {
@@ -60,6 +62,8 @@ class Button {
       content: capitalize_substrings(content),
       color,
       children,
+      x: node.x || 0,
+      y: node.y || 0,
     });
   }
 }

@@ -15,11 +15,6 @@ export async function loadButtonsFromCanvas() {
     buttonsCache[id] = Button.fromCanvasNode(node, []);
   }
 
-  const nodePositions = {};
-  for (const node of canvas.nodes) {
-    nodePositions[node.id] = node.x || 0;
-  }
-
   for (const edge of canvas.edges) {
     const from = edge.fromNode;
     const to = edge.toNode;
@@ -28,11 +23,11 @@ export async function loadButtonsFromCanvas() {
     }
   }
 
-  // Sort children by x position of child nodes (left to right)
+  // Sort children by x position (left to right)
   for (const id in buttonsCache) {
     const btn = buttonsCache[id];
     if (btn.children.length > 0) {
-      btn.children.sort((a, b) => -1 * (nodePositions[a] - nodePositions[b]));
+      btn.children.sort((a, b) => (buttonsCache[b]?.x || 0) - (buttonsCache[a]?.x || 0));
     }
   }
 
@@ -42,4 +37,13 @@ export async function loadButtonsFromCanvas() {
 export function getButton(id) {
   if (!buttonsCache) return null;
   return buttonsCache[id];
+}
+
+
+function sortByY(buttons) {
+  return [...buttons].sort((a, b) => a.y - b.y);
+}
+
+export function getButtonsByEmoji(emoji) {
+  return sortByY(Object.values(buttonsCache).filter(b => b.emoji === emoji));
 }
