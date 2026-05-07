@@ -1,9 +1,13 @@
+.fullscreen-btn {
+  display: none;
+}
+
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
 
-  #fullscreen_toggle {
+  .fullscreen-btn {
     display: block !important;
   }
 
