@@ -1,7 +1,6 @@
 import { getButton, getChildren } from './canvas.js';
 import { mb_create_interface_button } from './interface.js';
 import { handle_buttonzone_button_click } from './listeners.js';
-import { capitalize_substrings } from './objectives.js';
 
 const spawnedButtons = [];
 const pressedButtons = {};
@@ -13,7 +12,7 @@ export function button_content(btnData, expanded) {
   } else {
     html = `<b><span class="btn-emoji">${btnData.emoji || ''}</span> ${btnData.title}</b>`;
   }
-  return capitalize_substrings(html);
+  return html;
 }
 
 export function create_button(buttonName, parent) {

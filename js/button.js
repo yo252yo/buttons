@@ -1,3 +1,6 @@
+
+import { capitalize_substrings } from './objectives.js';
+
 const CANVAS_TO_JS_COLORS = {
   "0": "grey",
   "2": "orange",
@@ -53,8 +56,8 @@ class Button {
     return new Button({
       id: node.id,
       emoji,
-      title,
-      content,
+      title: capitalize_substrings(title),
+      content: capitalize_substrings(content),
       color,
       children,
     });
