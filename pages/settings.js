@@ -23,16 +23,20 @@ let darkMode = document.documentElement.dataset.theme === 'dark';
 const pageDiv = document.getElementById('page_div');
 pageDiv.innerHTML = `
 <h1>Settings</h1>
+<hr />
+<h2>Gaming/Accessibility</h2>
+<button id="gamer_mode_btn" class="button button-grey${gamerMode ? ' pressed' : ''}">0-Text Mode: ${gamerMode ? 'ON' : 'OFF'}</button>
+<hr />
+<h2>Graphics</h2>
 <button class="button button-grey fullscreen-btn"><span class="btn-emoji">📱</span> Fullscreen OFF</button>
-<br /><br />
-<button id="gamer_mode_btn" class="button button-grey${gamerMode ? ' pressed' : ''}">Gamer Mode: ${gamerMode ? 'ON' : 'OFF'}</button>
-<br /><br />
 <button id="dark_mode_btn" class="button button-grey${darkMode ? ' pressed' : ''}">Dark Mode: ${darkMode ? 'ON' : 'OFF'}</button>
-<br /><br />
+
+<hr />
+
 TBC WIP<br />
-Should have an option to dedupe duplicates, autoscroll, keyboard control<br />
+Should have an option to dedupe buttons, behavious of spawning children, etc... , autoscroll, keyboard control<br />
 Also control the content of the interface bar.<br />
-More lootbox options, etc... autoclicker...
+More lootbox options, etc... autoclicker... though a lot of this is more of an objective menu thing.
 
 `;
 
