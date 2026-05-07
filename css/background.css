@@ -15,6 +15,10 @@ body {
   scroll-behavior: smooth;
 }
 
+button {
+  color: black;
+}
+
 .black_stripe {
   position: fixed;
   top: 0;
