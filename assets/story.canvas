@@ -4716,17 +4716,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"a68ad14f787f7507",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"start",
-			"fromSide":"bottom",
-			"toNode":"658362153a4dcbd8",
-			"toSide":"top",
-			"color":"4"
-		},
-		{
 			"id":"713afcf9b19c3bfd",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -4869,16 +4858,6 @@
 			"toNode":"62cb7fb510c44e0f",
 			"toSide":"top",
 			"color":"4"
-		},
-		{
-			"id":"c461788cfdfa145a",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"start",
-			"fromSide":"bottom",
-			"toNode":"658362153a4dcbd8",
-			"toSide":"top"
 		},
 		{
 			"id":"efb40fa44016e681",
