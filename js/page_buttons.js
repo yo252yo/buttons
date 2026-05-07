@@ -21,3 +21,21 @@ export function setupExpandablePageButtons(containerSelector = '#page_div') {
     });
   });
 }
+
+export function purchaseButtonHTML(title, description, color = "green") {
+  const isLocked = color === "blue" || color === "purple";
+  return `<div class="button button-${color} purchase_button${isLocked ? ' pressed' : ''}">` +
+    `<h2>${title}</h2>` +
+    `<div class="purchase_description">${description}</div>` +
+  `</div>`;
+}
+
+export function setupPurchaseButtons(containerSelector = '#page_div') {
+  const container = document.querySelector(containerSelector);
+  if (!container) return;
+  container.querySelectorAll('.purchase_button:not(.pressed)').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('pressed');
+    });
+  });
+}
