@@ -1,20 +1,20 @@
-import { getChildren, button_content } from './buttons.js';
+import { button_content, getChildren } from './buttons.js';
 import { getButton } from './canvas.js';
 import { mb_create_interface_button } from './interface.js';
 import { handle_buttonzone_button_click } from './listeners.js';
 
 const spawnedButtons = [];
 const pressedButtons = {};
+let pressCount = 0;
 
 export function create_button(buttonName, parent) {
   const btnData = getButton(buttonName);
-  if (!btnData || !parent) return;
+  if (!btnData) return;
 
   const existingBtn = document.querySelector(`[data-id="${buttonName}"]`);
 
   const btn = document.createElement('div');
   btn.dataset.id = buttonName;
-  btn.dataset.parent = parent.dataset.id;
 
   if (existingBtn) {
     // Preserve state by copying className and innerHTML
@@ -32,6 +32,7 @@ export function create_button(buttonName, parent) {
   const buttonsZone = document.getElementById('buttons_zone');
   if (buttonsZone) {
     if (parent && parent.nextSibling) {
+      btn.dataset.parent = parent.dataset.id;
       buttonsZone.insertBefore(btn, parent.nextSibling);
     } else {
       buttonsZone.appendChild(btn);
@@ -56,6 +57,11 @@ export function handle_press(dom_btn, btnId, btnData) {
     getChildren(btnId).forEach(childId => {
       create_button(childId, dom_btn);
     });
+
+    pressCount++;
+    if (pressCount === 2) {
+      create_button('tuto_dismissing');
+    }
   }
 
   // Ordering matters: we update last_pressed AFTER spawning children but BEFORE giving it to interface button
