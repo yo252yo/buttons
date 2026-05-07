@@ -1,16 +1,16 @@
 {
 	"nodes":[
 		{"id":"8766146d53644fc3","type":"group","x":-1380,"y":-355,"width":3280,"height":7018,"color":"1","label":"Robinson Crusoe"},
-		{"id":"cda20f890a136a96","type":"group","x":-2620,"y":-9120,"width":4040,"height":3820,"color":"1","label":"All about buttons/FAQ"},
+		{"id":"a3b9526cd30285a1","type":"group","x":1480,"y":-9100,"width":4480,"height":2780,"label":"Settings/credits"},
 		{"id":"711dc3bbb688c332","type":"group","x":-6836,"y":240,"width":3876,"height":3056,"label":"Defoe's youth and education"},
-		{"id":"a3b9526cd30285a1","type":"group","x":1480,"y":-9100,"width":4480,"height":2220,"label":"Settings/credits"},
+		{"id":"cda20f890a136a96","type":"group","x":-2620,"y":-9120,"width":4040,"height":2800,"label":"All about buttons/FAQ"},
+		{"id":"613fbd4f47579417","type":"group","x":-6160,"y":-9120,"width":3095,"height":2800,"color":"4","label":"Onboarding"},
 		{"id":"cec1d48054724399","type":"group","x":-7280,"y":4199,"width":2271,"height":3156,"color":"4","label":"Defoe's political career"},
-		{"id":"613fbd4f47579417","type":"group","x":-6160,"y":-9120,"width":3095,"height":2240,"color":"4","label":"Onboarding"},
 		{"id":"8208ce67bac49771","type":"group","x":3680,"y":7200,"width":2200,"height":2540,"color":"5","label":"minecraft DLC"},
 		{"id":"5f24c33fd42114fb","type":"group","x":8280,"y":11300,"width":1070,"height":3080,"color":"2","label":"The boy who owned all the drawings"},
 		{"id":"f7244ade739bb504","type":"group","x":-7540,"y":9240,"width":2243,"height":1362,"color":"1","label":"The Stationeers"},
 		{"id":"f94ab37e7aefdeea","type":"group","x":7200,"y":10140,"width":710,"height":4220,"color":"6","label":"the human who mined content"},
-		{"id":"bbee386f60e2b60c","type":"group","x":-5773,"y":-4800,"width":1750,"height":1580,"label":"The Human Who Pushed Buttons"},
+		{"id":"bbee386f60e2b60c","type":"group","x":-4240,"y":-5680,"width":1750,"height":1580,"color":"4","label":"The Human Who Pushed Buttons"},
 		{"id":"e63a3090b448a0c2","type":"group","x":-4710,"y":3680,"width":1750,"height":1505,"color":"4","label":"Defoe's trades and writings"},
 		{"id":"b8596f2a51ee65ce","type":"group","x":-4820,"y":8300,"width":1672,"height":1400,"color":"1","label":"The invention of copyright"},
 		{"id":"6d3549e4b28330a7","type":"group","x":-4803,"y":5619,"width":1460,"height":1470,"color":"5","label":"True born englishman"},
@@ -1388,17 +1388,6 @@
 			"color":"2"
 		},
 		{
-			"id":"2436635c3af531aa",
-			"type":"text",
-			"text":"🎵 Audio\n---\nIn this game, you will unlock audio and new features as you progress.\n\nWIP/TBC giveone free bgm here, make the button SFX. \"A new audio will autoplay when its found\"\n\nUse the 🎵 button at the top of the page to tweak volume.",
-			"styleAttributes":{},
-			"x":3040,
-			"y":-6800,
-			"width":880,
-			"height":550,
-			"color":"1"
-		},
-		{
 			"id":"531817bb5f8b90ca",
 			"type":"text",
 			"text":"Dignity?\n---\nAs opposed to the \"decadent\" birthright aristocracy.\nToo complacent.",
@@ -1873,18 +1862,6 @@
 			"height":60,
 			"color":"4"
 		},
-		{"id":"intro_blue","type":"text","text":"Some buttons were blue.","x":-5103,"y":-4480,"width":300,"height":60,"color":"5"},
-		{"id":"intro_purple","type":"text","text":"Some buttons were purple.","x":-4723,"y":-4480,"width":300,"height":60,"color":"6"},
-		{"id":"intro_orange","type":"text","text":"Some buttons were orange.","x":-4363,"y":-4480,"width":300,"height":60,"color":"2"},
-		{"id":"intro_draw2","type":"text","text":"Pushing some buttons did not draw more buttons.","x":-5203,"y":-4332,"width":300,"height":72,"color":"0"},
-		{"id":"beginning","type":"text","text":"⭐ The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.","x":-5403,"y":-4760,"width":300,"height":200,"color":"4"},
-		{"id":"intro_grey","type":"text","text":"Some buttons were grey.","x":-5773,"y":-4480,"width":300,"height":60,"color":"0"},
-		{"id":"intro_green","type":"text","text":"Some buttons were green.","x":-5443,"y":-4480,"width":300,"height":60,"color":"4"},
-		{"id":"intro_draw","type":"text","text":"Pushing some buttons drew more buttons.","x":-5553,"y":-4332,"width":300,"height":72,"color":"4"},
-		{"id":"intro_draw3","type":"text","text":"It was always a surprise to push buttons and wonder what would happen next.","x":-5393,"y":-4180,"width":300,"height":120,"color":"4"},
-		{"id":"intro_draw4","type":"text","text":"And so the human kept pushing buttons.\n---\nThe human pushed buttons by day,\n  The human pushed buttons by night.\n  So much so that the human's life was mostly pushing buttons.\n  But the human had to keep pushing.\n  How else would the human live?","x":-5393,"y":-4000,"width":300,"height":200,"color":"4"},
-		{"id":"found_flag","type":"text","text":"One day, while pushing buttons, the human came accross an ending flag 🏁.\n---\nThis puzzled the human quite a bit. An ending flag 🏁 ? So soon?","x":-5393,"y":-3740,"width":300,"height":200,"color":"4"},
-		{"id":"end_flag","type":"text","text":"🏁 And so it came to be that the human stopped pushing buttons.\n---","x":-5253,"y":-3480,"width":300,"height":200,"color":"4"},
 		{
 			"id":"ce55d271f1c5fc5d",
 			"type":"text",
@@ -1909,21 +1886,6 @@
 			"height":93,
 			"color":"1"
 		},
-		{"id":"44c63a84e447fb56","type":"text","text":"❓ how do i remove buttons?","x":-250,"y":-7265,"width":360,"height":120,"color":"1"},
-		{
-			"id":"c565c4de39b22791",
-			"type":"text",
-			"text":"❓ How do I play the game?\n---\nExcellent question!\nWe cater to a wide variety of playstyles. \nTo play, you must first...",
-			"styleAttributes":{},
-			"x":-150,
-			"y":-7120,
-			"width":440,
-			"height":180,
-			"color":"1"
-		},
-		{"id":"a5ffdc1bb3916860","type":"text","text":"❓ What the f*** is this?\n---\nE","x":310,"y":-7120,"width":360,"height":120,"color":"1"},
-		{"id":"02b8cc538f2e9888","type":"text","text":"❓ This thing is new kind of game engine?\n---\nA new medium?\nA new way to see?\nA new way to LOOK.","x":310,"y":-6965,"width":360,"height":180,"color":"1"},
-		{"id":"c5f999fad144bfbf","type":"text","text":"❓ Why is scrolling so weird\n---\nWIP: Buttons have colors, you can see how many you got in this menu. This is meant to help people track progress. maybe i'll add completion rates at the bottom though its hard in HTML 🎨","x":450,"y":-6720,"width":480,"height":300,"color":"1"},
 		{
 			"id":"38bb2cb3b9a4fa11",
 			"type":"text",
@@ -2130,16 +2092,6 @@
 			"height":220
 		},
 		{
-			"id":"2d82065fc320d456",
-			"type":"text",
-			"text":"Help, I have a question...\n---\nI hope it's one of these, but if not feel free to reach out :)",
-			"styleAttributes":{},
-			"x":230,
-			"y":-7575,
-			"width":440,
-			"height":155
-		},
-		{
 			"id":"48d74ce56047da1e",
 			"type":"text",
 			"text":"I want advanced gameplay right now!\n---\nEach objective 🏆 path comes with distinct gameplay options.\nYou can also find alternate gameplay modes in the settings ⚙️.",
@@ -2158,158 +2110,6 @@
 			"y":-8275,
 			"width":260,
 			"height":170
-		},
-		{"id":"tuto_apology","type":"text","text":"❓ I don't want to read!\n---\nDon't worry, you don't have to!\n\nThis is only the tutorial.\nThere are many ways to play this game so that this button is the longest you'll ever have to read!\n\nChoose the GAMBLER or MINER path in your objectives 🏆 and you'll never need to read another word!\n\nUse settings ⚙️ to see gamer accessibility options.\n\nStick to the green 🟢 path, it is guaranteed to have the least text. ","x":880,"y":-8670,"width":470,"height":380,"color":"5"},
-		{
-			"id":"195ecdce6ca54a65",
-			"type":"text",
-			"text":"❓ DLCs 🚧 ?\n---\nThis is just the beginning of your path.\nA lot more is yet to come.",
-			"styleAttributes":{},
-			"x":4120,
-			"y":-7842,
-			"width":380,
-			"height":145
-		},
-		{
-			"id":"d5b45c6ad738bb55",
-			"type":"text",
-			"text":"🚧 The Edit mode DLC\n---\nSoon, you will be able to write your own adventure in the open source Push The Button engine (that's not the name, by the way).",
-			"styleAttributes":{},
-			"x":4585,
-			"y":-7230,
-			"width":360,
-			"height":240,
-			"color":"3"
-		},
-		{
-			"id":"f00efb580d5894cc",
-			"type":"text",
-			"text":"🚧 The ARG DLC\n---\nThe history you thought you knew is just a surface.\nBehind the veil of reality, mysterious memetic entities pull the strings.\nThe Four Tarot Houses have been at war since the beginning of time, but it looks like the final singularity is approaching.\nWill you side with the Swords, the Wands, the Cups or the Pentacles?",
-			"styleAttributes":{},
-			"x":4975,
-			"y":-7550,
-			"width":360,
-			"height":300,
-			"color":"3"
-		},
-		{
-			"id":"ded980b68af81904",
-			"type":"text",
-			"text":"🚧 The History of ARG DLC\n---\nDo you want to know how the young composer Stephen Sondheim's murder mystery dinners caused the election of Donald Trump half a century later?\nI bet you would.",
-			"styleAttributes":{},
-			"x":3785,
-			"y":-7230,
-			"width":360,
-			"height":250,
-			"color":"3"
-		},
-		{
-			"id":"69e88e4ff2141ae4",
-			"type":"text",
-			"text":"🚧 The Polish DLC\n---\nNo not the country, quality of life stuff.\nText appearing letter by letter...\nReport mechanism for broken links...",
-			"styleAttributes":{},
-			"x":4965,
-			"y":-7230,
-			"width":360,
-			"height":240,
-			"color":"3"
-		},
-		{
-			"id":"1193aeec378c5e6c",
-			"type":"text",
-			"text":"🚧 The Melanchon 2027 DLC\n---\nIn the imperial core, a serious reformist moderate left party might be able to save the world from itself...\nBut they will have to face the whole might of the Status Quo, and the army of propagandists that serve It loyally!",
-			"styleAttributes":{},
-			"x":4185,
-			"y":-7230,
-			"width":360,
-			"height":280,
-			"color":"3"
-		},
-		{
-			"id":"0e06b327b8be53c9",
-			"type":"text",
-			"text":"🚧 The AI text-to-speech DLC\n---\nAnd other AI powered accessibility features such as live fact-checking for every single node /o/",
-			"styleAttributes":{},
-			"x":3800,
-			"y":-7560,
-			"width":360,
-			"height":210,
-			"color":"3"
-		},
-		{
-			"id":"25f2fb33fb851709",
-			"type":"text",
-			"text":"🚧 The Balfour Declaration DLC\n---\nYou're not going to believe who's actually behind the idea of colonizing Palestine.\nFind out the origins of the world \"first livestreamed genocide\"!",
-			"styleAttributes":{},
-			"x":4175,
-			"y":-7560,
-			"width":360,
-			"height":250,
-			"color":"3"
-		},
-		{
-			"id":"5ca315209fa69b1e",
-			"type":"text",
-			"text":"🚧 The Chadt Chronicles DLC\n---\nChadt and Elyan go through all of time and space to fight the Extractors and protect Reality from Leaks!\nFeaturing Ben Shahn and Jacques-Bénigne Bossuet!",
-			"styleAttributes":{},
-			"x":4555,
-			"y":-7560,
-			"width":360,
-			"height":250,
-			"color":"3"
-		},
-		{
-			"id":"674820f9ab3e9b16",
-			"type":"text",
-			"text":"🚧 The Minecraft DLC\n---\nThe one where you dig in the mines.\nIt's supposed to be included in the game jam release, but I'm not sure I can make it XD",
-			"styleAttributes":{},
-			"x":3325,
-			"y":-7400,
-			"width":360,
-			"height":210,
-			"color":"1"
-		},
-		{
-			"id":"dfc73eefe3104065",
-			"type":"text",
-			"text":"It didn't use to be like this...\n---\nWhen the internet started, Google made a little script that webmasters could put on their webpages so that the visitors could auto-translate the content.\nNow it's in the web browser.",
-			"styleAttributes":{},
-			"x":2235,
-			"y":-7770,
-			"width":620,
-			"height":200,
-			"color":"6"
-		},
-		{
-			"id":"eed47474d8e02fee",
-			"type":"text",
-			"text":"Why is it in the web browser?\n---\nSo that it's on every webpage?\nSo it can be automated?\nSo that webmasters could not control the way it's being used?\nSo that users can't opt out?\n\nIt's a general trend, obfuscating control away from the humans, putting it in the hands of corporations.\nIn return you get a simple, smooth, integrated ecosystem.\nAnd you end up captive consumer.",
-			"styleAttributes":{},
-			"x":2545,
-			"y":-7530,
-			"width":560,
-			"height":300
-		},
-		{
-			"id":"fbf2799b952d0f8b",
-			"type":"text",
-			"text":"🚧 The general trend obfuscating control away from the humans, putting it in the hands of corporations is in another DLC.\n---\nYou'll be shocked to find out whether humans chose simplicity or control!",
-			"styleAttributes":{},
-			"x":2835,
-			"y":-7180,
-			"width":360,
-			"height":230,
-			"color":"3"
-		},
-		{
-			"id":"3c887e8fdcf0ba36",
-			"type":"text",
-			"text":"❓ How do I change the difficulty?\n---\nThe difficulty changes with the path you chose.",
-			"styleAttributes":{},
-			"x":870,
-			"y":-7490,
-			"width":480,
-			"height":180
 		},
 		{
 			"id":"729545779065a799",
@@ -2332,18 +2132,226 @@
 			"width":450,
 			"height":210
 		},
-		{"id":"9b3ce56de1cc435a","type":"text","text":"❓ How do I level up?\n---\nProgress is made along paths, in the 🏆 objectives menu.\nEach path needs different kind of objectives.\n\nWhen you finish a path, a new path of a higher level will appear.\nFor instance, finishing [SIMPLEST PATH] will unlock [SIMPLEST PATH II].","x":870,"y":-7265,"width":480,"height":265},
+		{
+			"id":"2436635c3af531aa",
+			"type":"text",
+			"text":"🎵 Audio\n---\nIn this game, you will unlock audio and new features as you progress.\n\nWIP/TBC giveone free bgm here, make the button SFX. \"A new audio will autoplay when its found\"\n\nUse the 🎵 button at the top of the page to tweak volume.",
+			"styleAttributes":{},
+			"x":2920,
+			"y":-4350,
+			"width":880,
+			"height":550,
+			"color":"1"
+		},
+		{
+			"id":"2d82065fc320d456",
+			"type":"text",
+			"text":"Help, I have a question...\n---\nI hope it's one of these, but if not feel free to reach out :)",
+			"styleAttributes":{},
+			"x":90,
+			"y":-8595,
+			"width":440,
+			"height":155
+		},
+		{
+			"id":"3c887e8fdcf0ba36",
+			"type":"text",
+			"text":"❓ How do I change the difficulty?\n---\nThe difficulty changes with the path you chose.",
+			"styleAttributes":{},
+			"x":880,
+			"y":-8065,
+			"width":480,
+			"height":180
+		},
+		{"id":"9b3ce56de1cc435a","type":"text","text":"❓ How do I level up?\n---\nProgress is made along paths, in the 🏆 objectives menu.\nEach path needs different kind of objectives.\n\nWhen you finish a path, a new path of a higher level will appear.\nFor instance, finishing [SIMPLEST PATH] will unlock [SIMPLEST PATH II].","x":880,"y":-7840,"width":480,"height":265},
+		{"id":"02b8cc538f2e9888","type":"text","text":"Something new?\n---\nA new MEDIUM?\nA new way to SEE?\nA new way to LOOK.","x":440,"y":-7820,"width":360,"height":160},
+		{"id":"a5ffdc1bb3916860","type":"text","text":"❓ What the f*** is this?\n---\nThis is a new game engine for interactive visual novels.\nIt's weird because it's trying something new.","x":440,"y":-8050,"width":360,"height":190},
+		{
+			"id":"c565c4de39b22791",
+			"type":"text",
+			"text":"❓ How do I play the game?\n---\nBy pushing buttons...\n\nNo but seriously, the gameplay differs a lot depending on the PATH you choose.",
+			"styleAttributes":{},
+			"x":880,
+			"y":-7540,
+			"width":440,
+			"height":200
+		},
 		{
 			"id":"tuto_dismissing",
 			"type":"text",
-			"text":"❓ Help! There are too many buttons! My screen is full!\n---\n...\nWIP: The thread 🧵 button helps navigate between open threads. The 🗑️ button will give you options to cleanup READ messages. 💾 there will be a save management file to allow EASY sync between different devices/different scenarii of the game engine maybe",
+			"text":"❓ Help! There are too many buttons!<br />My screen is full!\n---\nEvery time you push the ARCHIVE 🗑️ button, all your pushed buttons will be deleted.\n\nThis is NOT REVERSIBLE yet, so use this feature should be used with caution, which is why you'll get it only by pushing the button below this one, at the very bottom of your list.",
 			"styleAttributes":{},
-			"x":-50,
-			"y":-6680,
+			"x":0,
+			"y":-8345,
 			"width":360,
-			"height":390,
+			"height":365,
+			"color":"4"
+		},
+		{"id":"c5f999fad144bfbf","type":"text","text":"❓ Why is scrolling so weird\n---\nYou're probably on mobile... \nI've spent countless hours trying to understand what's going on, but the scroll is managed by the phone and it doesn't give me any visibility :(\nI suggest you use the colored bands at the left of the screen to navigate.","x":380,"y":-7460,"width":480,"height":240},
+		{
+			"id":"1193aeec378c5e6c",
+			"type":"text",
+			"text":"🚧 The Melanchon 2027 DLC\n---\nIn the imperial core, a serious reformist moderate left party might be able to save the world from itself...\nBut they will have to face the whole might of the Status Quo, and the army of propagandists that serve It loyally!",
+			"styleAttributes":{},
+			"x":4240,
+			"y":-6700,
+			"width":360,
+			"height":280,
+			"color":"3"
+		},
+		{
+			"id":"d5b45c6ad738bb55",
+			"type":"text",
+			"text":"🚧 The Edit mode DLC\n---\nSoon, you will be able to write your own adventure in the open source Push The Button engine (that's not the name, by the way).",
+			"styleAttributes":{},
+			"x":4640,
+			"y":-6700,
+			"width":360,
+			"height":240,
+			"color":"3"
+		},
+		{
+			"id":"69e88e4ff2141ae4",
+			"type":"text",
+			"text":"🚧 The Polish DLC\n---\nNo not the country, quality of life stuff.\nText appearing letter by letter...\nReport mechanism for broken links...\nUn-delete buttons...",
+			"styleAttributes":{},
+			"x":5020,
+			"y":-6700,
+			"width":360,
+			"height":240,
+			"color":"3"
+		},
+		{
+			"id":"f00efb580d5894cc",
+			"type":"text",
+			"text":"🚧 The ARG DLC\n---\nThe history you thought you knew is just a surface.\nBehind the veil of reality, mysterious memetic entities pull the strings.\nThe Four Tarot Houses have been at war since the beginning of time, but it looks like the final singularity is approaching.\nWill you side with the Swords, the Wands, the Cups or the Pentacles?",
+			"styleAttributes":{},
+			"x":5030,
+			"y":-7020,
+			"width":360,
+			"height":300,
+			"color":"3"
+		},
+		{
+			"id":"0e06b327b8be53c9",
+			"type":"text",
+			"text":"🚧 The AI text-to-speech DLC\n---\nAnd other AI powered accessibility features such as live fact-checking for every single node /o/",
+			"styleAttributes":{},
+			"x":3855,
+			"y":-7030,
+			"width":360,
+			"height":210,
+			"color":"3"
+		},
+		{
+			"id":"195ecdce6ca54a65",
+			"type":"text",
+			"text":"❓ DLCs 🚧 ?\n---\nThis is just the beginning of your path.\nA lot more is yet to come.",
+			"styleAttributes":{},
+			"x":4175,
+			"y":-7312,
+			"width":380,
+			"height":145
+		},
+		{
+			"id":"25f2fb33fb851709",
+			"type":"text",
+			"text":"🚧 The Balfour Declaration DLC\n---\nYou're not going to believe who's actually behind the idea of colonizing Palestine.\nFind out the origins of the world \"first livestreamed genocide\"!",
+			"styleAttributes":{},
+			"x":4230,
+			"y":-7030,
+			"width":360,
+			"height":250,
+			"color":"3"
+		},
+		{
+			"id":"5ca315209fa69b1e",
+			"type":"text",
+			"text":"🚧 The Chadt Chronicles DLC\n---\nChadt and Elyan go through all of time and space to fight the Extractors and protect Reality from Leaks!\nFeaturing Ben Shahn and Jacques-Bénigne Bossuet!",
+			"styleAttributes":{},
+			"x":4610,
+			"y":-7030,
+			"width":360,
+			"height":250,
+			"color":"3"
+		},
+		{
+			"id":"674820f9ab3e9b16",
+			"type":"text",
+			"text":"🚧 The Minecraft DLC\n---\nThe one where you dig in the mines.\nIt's supposed to be included in the game jam release, but I'm not sure I can make it XD",
+			"styleAttributes":{},
+			"x":3380,
+			"y":-6870,
+			"width":360,
+			"height":210,
 			"color":"1"
-		}
+		},
+		{
+			"id":"ded980b68af81904",
+			"type":"text",
+			"text":"🚧 The History of ARG DLC\n---\nDo you want to know how the young composer Stephen Sondheim's murder mystery dinners caused the election of Donald Trump half a century later?\nI bet you would.",
+			"styleAttributes":{},
+			"x":3840,
+			"y":-6700,
+			"width":360,
+			"height":250,
+			"color":"3"
+		},
+		{
+			"id":"fbf2799b952d0f8b",
+			"type":"text",
+			"text":"🚧 The general trend obfuscating control away from the humans, putting it in the hands of corporations is in another DLC.\n---\nYou'll be shocked to find out whether humans chose simplicity or control!",
+			"styleAttributes":{},
+			"x":2445,
+			"y":-6822,
+			"width":360,
+			"height":230,
+			"color":"3"
+		},
+		{
+			"id":"dfc73eefe3104065",
+			"type":"text",
+			"text":"It didn't use to be like this...\n---\nWhen the internet started, Google made a little script that webmasters could put on their webpages so that the visitors could auto-translate the content.\nNow it's in the web browser.",
+			"styleAttributes":{},
+			"x":1845,
+			"y":-7412,
+			"width":620,
+			"height":200,
+			"color":"6"
+		},
+		{
+			"id":"eed47474d8e02fee",
+			"type":"text",
+			"text":"Why is it in the web browser?\n---\nSo that it's on every webpage?\nSo it can be automated?\nSo that webmasters could not control the way it's being used?\nSo that users can't opt out?\n\nIt's a general trend, obfuscating control away from the humans, putting it in the hands of corporations.\nIn return you get a simple, smooth, integrated ecosystem.\nAnd you end up captive consumer.",
+			"styleAttributes":{},
+			"x":2155,
+			"y":-7172,
+			"width":560,
+			"height":300
+		},
+		{"id":"intro_grey","type":"text","text":"Some buttons were grey.","x":-4240,"y":-5360,"width":300,"height":60,"color":"0"},
+		{"id":"intro_draw","type":"text","text":"Pushing some buttons drew more buttons.","x":-4020,"y":-5212,"width":300,"height":72,"color":"4"},
+		{"id":"intro_green","type":"text","text":"Some buttons were green.","x":-3910,"y":-5360,"width":300,"height":60,"color":"4"},
+		{"id":"beginning","type":"text","text":"⭐ The Human Who Pushed Buttons\n---\nThere once was a human, who pushed buttons.","x":-3870,"y":-5640,"width":300,"height":200,"color":"4"},
+		{"id":"intro_draw3","type":"text","text":"It was always a surprise to push buttons and wonder what would happen next.","x":-3860,"y":-5060,"width":300,"height":120,"color":"4"},
+		{"id":"intro_draw4","type":"text","text":"And so the human kept pushing buttons.\n---\nThe human pushed buttons by day,\n  The human pushed buttons by night.\n  So much so that the human's life was mostly pushing buttons.\n  But the human had to keep pushing.\n  How else would the human live?","x":-3860,"y":-4880,"width":300,"height":200,"color":"4"},
+		{"id":"found_flag","type":"text","text":"One day, while pushing buttons, the human came accross an ending flag 🏁.\n---\nThis puzzled the human quite a bit. An ending flag 🏁 ? So soon?","x":-3860,"y":-4620,"width":300,"height":200,"color":"4"},
+		{"id":"end_flag","type":"text","text":"🏁 And so it came to be that the human stopped pushing buttons.\n---","x":-3720,"y":-4360,"width":300,"height":200,"color":"4"},
+		{"id":"intro_draw2","type":"text","text":"Pushing some buttons did not draw more buttons.","x":-3670,"y":-5212,"width":300,"height":72,"color":"0"},
+		{"id":"intro_blue","type":"text","text":"Some buttons were blue.","x":-3570,"y":-5360,"width":300,"height":60,"color":"5"},
+		{"id":"intro_purple","type":"text","text":"Some buttons were purple.","x":-3190,"y":-5360,"width":300,"height":60,"color":"6"},
+		{"id":"intro_orange","type":"text","text":"Some buttons were orange.","x":-2830,"y":-5360,"width":300,"height":60,"color":"2"},
+		{
+			"id":"05b0434eaa9454da",
+			"type":"text",
+			"text":"🗑️ ARCHIVE pushed buttons\n---\nIn an update soon, you'll be able to revert this and browse your archive, but for now this operation is final.",
+			"styleAttributes":{},
+			"x":-5,
+			"y":-7860,
+			"width":370,
+			"height":160
+		},
+		{"id":"tuto_apology","type":"text","text":"❓ I don't want to read!\n---\nDon't worry, you don't have to!\n\nThis is only the tutorial.\nThere are many ways to play this game so that this button is the longest you'll ever have to read!\n\nChoose the GAMBLER or MINER path in your objectives 🏆 and you'll never need to read another word!\n\nUse settings ⚙️ to see gamer accessibility options.\n\nStick to the green 🟢 path, it is guaranteed to have the least text. ","x":850,"y":-8820,"width":470,"height":380,"color":"5"}
 	],
 	"edges":[
 		{"id":"d96d3eef-9236-418c-a0ee-d635f87fc304","fromFloating":false,"fromNode":"more","fromSide":"bottom","toNode":"more2","toSide":"top","color":"4"},
@@ -5117,15 +5125,6 @@
 			"toSide":"top"
 		},
 		{
-			"id":"12b079e0e279ec32",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"2d82065fc320d456",
-			"fromSide":"bottom",
-			"toNode":"44c63a84e447fb56",
-			"toSide":"top"
-		},
-		{
 			"id":"c6d8265a85ac83d8",
 			"styleAttributes":{},
 			"toFloating":false,
@@ -5241,6 +5240,53 @@
 			"toNode":"62cb7fb510c44e0f",
 			"toSide":"top",
 			"color":"4"
+		},
+		{
+			"id":"dcc8945d81cfcb69",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"2d82065fc320d456",
+			"fromSide":"bottom",
+			"toNode":"tuto_dismissing",
+			"toSide":"top"
+		},
+		{
+			"id":"7e78aa0bb896df98",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"78134217e5bc6ffd",
+			"fromSide":"bottom",
+			"toNode":"tuto_dismissing",
+			"toSide":"top"
+		},
+		{
+			"id":"bc15ee700d7b1e55",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"c565c4de39b22791",
+			"fromSide":"bottom",
+			"toNode":"62cb7fb510c44e0f",
+			"toSide":"top",
+			"color":"4"
+		},
+		{
+			"id":"0af49cdc1a10cf61",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"tuto_dismissing",
+			"fromSide":"bottom",
+			"toNode":"05b0434eaa9454da",
+			"toSide":"top"
+		},
+		{
+			"id":"63a1bd06cc170907",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"tuto_apology",
+			"fromSide":"bottom",
+			"toNode":"tuto_dismissing",
+			"toSide":"top"
 		}
 	],
 	"metadata":{
