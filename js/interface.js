@@ -1,8 +1,8 @@
-
 import { handle_interface_button_click } from './listeners.js';
 
 const interfaceButtonMeta = {
   '🏆': { title: 'Objectives', color: 'green' },
+  '❓': { title: 'Help', color: 'grey' },
 
   '⚙️': { title: 'Settings', color: 'grey' },
   '🎵': { title: 'Audio', color: 'grey' },
@@ -20,7 +20,6 @@ const interfaceButtonMeta = {
   // '🏆': { title: 'Quests', color: 'grey' },
   // '💾': { title: 'Disk', color: 'grey' },
   // '🐟': { title: 'Catches', color: 'grey' },
-  // '❓': { title: 'Help', color: 'grey' },
 };
 
 export function mb_create_interface_button(emoji) {

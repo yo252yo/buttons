@@ -1,4 +1,6 @@
 import { getPressedButtons, getSpawnedButtons } from './buttons_zone.js';
+import { handle_fullscreen_toggle, update_fullscreen_buttons } from './listeners.js';
+import { expandablePageButtonHTML, setupExpandablePageButtons } from './page_buttons.js';
 
 export function setupWindowBindings(buttonsCache) {
   window.getEmojiCount = () => {
@@ -32,4 +34,12 @@ export function setupWindowBindings(buttonsCache) {
       return btn && btn.emoji === '🏁' && pressed[id];
     }).length;
   };
+
+  window.getButtonsByEmoji = (emoji) => Object.values(buttonsCache).filter(b => b.emoji === emoji);
+
+  window.handle_fullscreen_toggle = handle_fullscreen_toggle;
+  window.update_fullscreen_buttons = update_fullscreen_buttons;
+
+  window.expandablePageButtonHTML = expandablePageButtonHTML;
+  window.setupExpandablePageButtons = setupExpandablePageButtons;
 }

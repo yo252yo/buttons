@@ -98,6 +98,3 @@ export function handle_fullscreen_toggle() {
   }
 }
 
-// Also expose globally for settings.js
-window.handle_fullscreen_toggle = handle_fullscreen_toggle;
-window.update_fullscreen_buttons = update_fullscreen_buttons;
