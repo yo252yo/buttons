@@ -55,6 +55,7 @@ export function openPageDiv() {
   const pageDiv = document.getElementById('page_div');
   if (pageDiv) {
     pageDiv.style.display = 'block';
+    pageDiv.scrollTop = 0;
     document.documentElement.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
   }
