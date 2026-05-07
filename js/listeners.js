@@ -1,5 +1,6 @@
 import { setupWindowBindings } from './api.js';
-import { button_content, create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
+import { button_content } from './buttons.js';
+import { create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
 import { closePageDiv, mb_display_page_div } from './interface.js';
 
