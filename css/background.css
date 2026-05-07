@@ -9,6 +9,12 @@ body {
   color: black;
 }
 
+html,
+body {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
 .black_stripe {
   position: fixed;
   top: 0;

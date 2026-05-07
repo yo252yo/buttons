@@ -12,12 +12,6 @@ function get_query_param(name) {
 
 const pageDiv = document.getElementById('page_div');
 
-function preventWheel(e) {
-  if (pageDiv.style.display === 'block') {
-    e.preventDefault();
-  }
-}
-
 export async function handle_interface_button_click() {
   const wasPressed = this.classList.contains('pressed');
 
@@ -52,13 +46,9 @@ async function initial_load() {
   const buttonsCache = await loadButtonsFromCanvas();
   setupWindowBindings(buttonsCache);
 
-  document.querySelectorAll('.button').forEach(btn => {
+document.querySelectorAll('.button').forEach(btn => {
     btn.addEventListener('click', handle_buttonzone_button_click);
   });
-
-
-  // Prevent wheel scroll when meta button is visible
-  window.addEventListener('wheel', preventWheel, { passive: false });
 
   const startId = get_query_param('start') || 'start';
 
