@@ -43,8 +43,3 @@ export function getButton(id) {
   if (!buttonsCache) return null;
   return buttonsCache[id];
 }
-
-export function getChildren(id) {
-  const btn = getButton(id);
-  return btn ? btn.children : [];
-}

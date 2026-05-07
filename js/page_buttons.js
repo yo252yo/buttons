@@ -1,5 +1,5 @@
+import { button_content } from './buttons.js';
 import { getButton } from './canvas.js';
-import { button_content } from './buttons_zone.js';
 
 export function expandablePageButtonHTML(btnData) {
   const color = btnData.color || 'grey';
@@ -27,7 +27,7 @@ export function purchaseButtonHTML(title, description, color = "green") {
   return `<div class="button button-${color} purchase_button${isLocked ? ' pressed' : ''}">` +
     `<h2>${title}</h2>` +
     `<div class="purchase_description">${description}</div>` +
-  `</div>`;
+    `</div>`;
 }
 
 export function setupPurchaseButtons(containerSelector = '#page_div') {

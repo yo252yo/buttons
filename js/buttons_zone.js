@@ -1,19 +1,10 @@
-import { getButton, getChildren } from './canvas.js';
+import { getChildren, button_content } from './buttons.js';
+import { getButton } from './canvas.js';
 import { mb_create_interface_button } from './interface.js';
 import { handle_buttonzone_button_click } from './listeners.js';
 
 const spawnedButtons = [];
 const pressedButtons = {};
-
-export function button_content(btnData, expanded) {
-  let html;
-  if (expanded) {
-    html = `<b><span class="btn-emoji">${btnData.emoji || ''}</span> ${btnData.title}</b>${btnData.content || ''}`;
-  } else {
-    html = `<b><span class="btn-emoji">${btnData.emoji || ''}</span> ${btnData.title}</b>`;
-  }
-  return html;
-}
 
 export function create_button(buttonName, parent) {
   const btnData = getButton(buttonName);
