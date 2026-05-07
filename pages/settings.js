@@ -23,6 +23,8 @@ let darkMode = document.documentElement.dataset.theme === 'dark';
 const pageDiv = document.getElementById('page_div');
 pageDiv.innerHTML = `
 <h1>Settings</h1>
+<button id="fullscreen_settings_btn" class="button button-grey"><span class="btn-emoji">📱</span> Fullscreen OFF</button>
+<br /><br />
 <button id="gamer_mode_btn" class="button button-grey${gamerMode ? ' pressed' : ''}">Gamer Mode: ${gamerMode ? 'ON' : 'OFF'}</button>
 <br /><br />
 <button id="dark_mode_btn" class="button button-grey${darkMode ? ' pressed' : ''}">Dark Mode: ${darkMode ? 'ON' : 'OFF'}</button>
@@ -60,3 +62,8 @@ document.getElementById('dark_mode_btn').onclick = () => {
         btn.textContent = 'Dark Mode: OFF';
     }
 };
+
+const fsBtn = document.getElementById('fullscreen_settings_btn');
+if (fsBtn) {
+    fsBtn.onclick = window.handle_fullscreen_toggle;
+}

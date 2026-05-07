@@ -3,6 +3,10 @@
     overflow-x: hidden;
   }
 
+  #fullscreen_toggle {
+    display: block !important;
+  }
+
   #buttons_zone {
     margin-left: -10px;
   }
@@ -22,5 +26,6 @@
 
   .margin_interface {
     width: 30px;
+    margin-right: 20px;
   }
 }

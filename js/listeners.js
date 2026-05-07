@@ -46,9 +46,14 @@ async function initial_load() {
   const buttonsCache = await loadButtonsFromCanvas();
   setupWindowBindings(buttonsCache);
 
-document.querySelectorAll('.button').forEach(btn => {
+  document.querySelectorAll('.button').forEach(btn => {
     btn.addEventListener('click', handle_buttonzone_button_click);
   });
+
+  const fullscreenBtn = document.getElementById('fullscreen_toggle');
+  if (fullscreenBtn) {
+    fullscreenBtn.addEventListener('click', handle_fullscreen_toggle);
+  }
 
   const startId = get_query_param('start') || 'start';
 
@@ -58,3 +63,20 @@ document.querySelectorAll('.button').forEach(btn => {
 }
 
 document.addEventListener('DOMContentLoaded', initial_load);
+
+export function handle_fullscreen_toggle() {
+  const btn = this;
+  const isFullscreen = !!document.fullscreenElement;
+  if (isFullscreen) {
+    document.exitFullscreen();
+    btn.classList.remove('pressed');
+    btn.innerHTML = '<span class="btn-emoji">📱</span> Fullscreen OFF';
+  } else {
+    document.documentElement.requestFullscreen();
+    btn.classList.add('pressed');
+    btn.innerHTML = '<span class="btn-emoji">📱</span> Fullscreen ON';
+  }
+}
+
+// Also expose globally for settings.js
+window.handle_fullscreen_toggle = handle_fullscreen_toggle;
