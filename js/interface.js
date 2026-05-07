@@ -1,19 +1,26 @@
 import { handle_interface_button_click } from './listeners.js';
 
-const interfaceButtonMeta = {
+export const InterfaceType = {
+  PAGE: 'page',
+  ACTION: 'action',
+  TOOLBAR: 'toolbar',
+};
+
+export const interfaceButtonMeta = {
   '🏆': { title: 'Objectives', color: 'green' },
   '❓': { title: 'Help', color: 'grey' },
 
   '⚙️': { title: 'Settings', color: 'grey' },
   '🎵': { title: 'Audio', color: 'grey' },
 
-  '☺️': { title: 'debug', color: 'blue' },
+  '🗑️': { title: 'Archive', color: 'blue', type: 'action' },
+
+  '☺️': { title: 'debug', color: 'orange' },
 
 
   //  '⭐': { title: 'STARters', color: 'grey' },
   // '🧵': { title: 'Threads', color: 'grey' },
   // '🎨': { title: 'Progress', color: 'blue' },
-  // '🗑️': { title: 'Archive', color: 'orange' },
   // '👥': { title: 'Characters', color: 'purple' },
   // '📍': { title: 'Locations', color: 'purple' },
   // '⏰': { title: 'Times', color: 'grey' },
@@ -61,31 +68,27 @@ export function openPageDiv() {
   }
 }
 
+export async function executePageScript(title) {
+  const jsPath = `pages/${title.toLowerCase()}.js`;
+  const response = await fetch(jsPath);
+  if (!response.ok) return null;
+  const jsCode = await response.text();
+  const fn = new Function(jsCode);
+  const result = fn();
+  return result instanceof Promise ? await result : result;
+}
+
 export async function mb_display_page_div(button) {
   const title = button.title;
 
-  const jsPath = `pages/${title.toLowerCase()}.js`;
+  const colorClass = [...button.classList]
+    .find(c => c.startsWith('button-') && c !== 'interface_button')
+    ?.replace('button-', '') || 'grey';
 
   try {
-    const response = await fetch(jsPath);
-    if (!response.ok) return;
-
-    // Prepare DOM first
-    const colorClass = [...button.classList]
-      .find(c => c.startsWith('button-') && c !== 'interface_button')
-      ?.replace('button-', '') || 'grey';
-
-    const jsCode = await response.text();
-
+    await executePageScript(title);
     const pageDiv = document.getElementById('page_div');
     pageDiv.className = `page page-${colorClass}`;
-    pageDiv.innerHTML = '';
-
-    // Execute JS - JS can find metaButton via getElementById
-    const fn = new Function(jsCode);
-    const result = fn();
-    if (result instanceof Promise) await result;
-
     openPageDiv();
   } catch (e) {
     console.log('No valid page file for:', title, e);

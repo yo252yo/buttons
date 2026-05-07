@@ -2,7 +2,7 @@ import { setupWindowBindings } from './api.js';
 import { button_content } from './buttons.js';
 import { create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
-import { closePageDiv, mb_display_page_div } from './interface.js';
+import { InterfaceType, closePageDiv, interfaceButtonMeta as interfacePages, mb_display_page_div, executePageScript } from './interface.js';
 
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
@@ -13,6 +13,7 @@ function get_query_param(name) {
 
 export async function handle_interface_button_click() {
   const wasPressed = this.classList.contains('pressed');
+  const page = interfacePages[this.textContent];
 
   document.querySelectorAll('.interface_button').forEach(btn => btn.classList.remove('pressed'));
 
@@ -23,7 +24,23 @@ export async function handle_interface_button_click() {
 
   this.classList.add('pressed');
 
-  await mb_display_page_div(this);
+  const type = page?.type || InterfaceType.PAGE;
+  if (type === InterfaceType.ACTION) {
+    await executeActionPage(this.title);
+  } else {
+    await mb_display_page_div(this);
+  }
+}
+
+async function executeActionPage(title) {
+  try {
+    await executePageScript(title);
+  } finally {
+    setTimeout(() => {
+      const btn = document.querySelector(`.interface_button[title="${title}"]`);
+      if (btn) btn.classList.remove('pressed');
+    }, 600);
+  }
 }
 
 export function handle_buttonzone_button_click() {

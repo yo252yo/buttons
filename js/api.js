@@ -2,6 +2,7 @@ import { getPressedButtons, getSpawnedButtons } from './buttons_zone.js';
 import { getButtonsByEmoji } from './canvas.js';
 import { handle_fullscreen_toggle, update_fullscreen_buttons } from './listeners.js';
 import { expandablePageButtonHTML, setupExpandablePageButtons, purchaseButtonHTML, setupPurchaseButtons } from './page_buttons.js';
+import { closePageDiv } from './interface.js';
 
 export function setupWindowBindings(buttonsCache) {
   window.getEmojiCount = () => {
@@ -45,4 +46,5 @@ export function setupWindowBindings(buttonsCache) {
   window.setupExpandablePageButtons = setupExpandablePageButtons;
   window.purchaseButtonHTML = purchaseButtonHTML;
   window.setupPurchaseButtons = setupPurchaseButtons;
+  window.closePageDiv = closePageDiv;
 }

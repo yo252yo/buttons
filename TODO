@@ -103,15 +103,6 @@ spawn the new meta icon with last_presed but not pressed so we can have interfce
 
 the button mb shouldnt press if there sis text selected
 
-❓ can go to all ❓ nodes even unexplored
-
-
-YOUR FIRST PATH IS FREE BUT THE NEXT ONES COST BUTTONS
->> path finding logic
-
-FAQ
-
-
 
 
 
@@ -121,8 +112,7 @@ blind mode button (all buttons grey at spawn, comes with lootbox animation)
 gambling mode button (colors are furthermore pure random)
 full gamer mode (no more text)
 
+shold i have a interface menu for thread (rename buttonszone to thread) and have always a interface menu down? idk 
 
 
 path progression system
-
-do the buttons mark as read system first
