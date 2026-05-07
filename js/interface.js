@@ -13,7 +13,7 @@ export const interfaceButtonMeta = {
   '⚙️': { title: 'Settings', color: 'grey' },
   '🎵': { title: 'Audio', color: 'grey' },
 
-  '🗑️': { title: 'Archive', color: 'blue', type: 'action' },
+  '🗑️': { title: 'Archive', color: 'blue', type: InterfaceType.ACTION },
 
   '☺️': { title: 'debug', color: 'orange' },
 

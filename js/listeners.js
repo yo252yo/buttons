@@ -2,7 +2,7 @@ import { setupWindowBindings } from './api.js';
 import { button_content } from './buttons.js';
 import { create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
-import { InterfaceType, closePageDiv, interfaceButtonMeta as interfacePages, mb_display_page_div, executePageScript } from './interface.js';
+import { InterfaceType, closePageDiv, executePageScript, interfaceButtonMeta as interfacePages, mb_display_page_div } from './interface.js';
 
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
@@ -26,6 +26,7 @@ export async function handle_interface_button_click() {
 
   const type = page?.type || InterfaceType.PAGE;
   if (type === InterfaceType.ACTION) {
+    closePageDiv();
     await executeActionPage(this.title);
   } else {
     await mb_display_page_div(this);
