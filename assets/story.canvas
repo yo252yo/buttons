@@ -2557,6 +2557,17 @@
 			"width":235,
 			"height":290,
 			"color":"1"
+		},
+		{
+			"id":"debug",
+			"type":"text",
+			"text":"☺️ debug",
+			"styleAttributes":{},
+			"x":-8760,
+			"y":-9680,
+			"width":480,
+			"height":180,
+			"color":"3"
 		}
 	],
 	"edges":[

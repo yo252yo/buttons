@@ -6,10 +6,10 @@ const interfaceButtonMeta = {
   '🎵': { title: 'Audio', color: 'grey' },
   '⭐': { title: 'STARters', color: 'grey' },
   '🏆': { title: 'Objectives', color: 'green' },
+  '☺️': { title: 'debug', color: 'blue' },
 
 
   // '🧵': { title: 'Threads', color: 'grey' },
-  // '☺️': { title: 'Collections', color: 'blue' },
   // '🎨': { title: 'Progress', color: 'blue' },
   // '🗑️': { title: 'Archive', color: 'orange' },
   // '👥': { title: 'Characters', color: 'purple' },
