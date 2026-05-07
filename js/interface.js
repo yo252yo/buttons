@@ -45,6 +45,22 @@ export function mb_create_interface_button(emoji) {
   }
 }
 
+export function closePageDiv() {
+  const pageDiv = document.getElementById('page_div');
+  if (pageDiv) pageDiv.style.display = 'none';
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
+}
+
+export function openPageDiv() {
+  const pageDiv = document.getElementById('page_div');
+  if (pageDiv) {
+    pageDiv.style.display = 'block';
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+  }
+}
+
 export async function mb_display_page_div(button) {
   const title = button.title;
 
@@ -70,7 +86,7 @@ export async function mb_display_page_div(button) {
     const result = fn();
     if (result instanceof Promise) await result;
 
-    pageDiv.style.display = 'block';
+    openPageDiv();
   } catch (e) {
     console.log('No valid page file for:', title, e);
   }

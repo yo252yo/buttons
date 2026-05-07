@@ -1,7 +1,7 @@
 import { setupWindowBindings } from './api.js';
 import { button_content, create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
-import { mb_display_page_div } from './interface.js';
+import { closePageDiv, mb_display_page_div } from './interface.js';
 
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
@@ -10,15 +10,13 @@ function get_query_param(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
 
-const pageDiv = document.getElementById('page_div');
-
 export async function handle_interface_button_click() {
   const wasPressed = this.classList.contains('pressed');
 
   document.querySelectorAll('.interface_button').forEach(btn => btn.classList.remove('pressed'));
 
   if (wasPressed) {
-    if (pageDiv) pageDiv.style.display = 'none';
+    closePageDiv();
     return;
   }
 
