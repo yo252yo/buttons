@@ -23,7 +23,7 @@ export function setupExpandablePageButtons(containerSelector = '#page_div') {
 }
 
 export function purchaseButtonHTML(title, description, color = "green") {
-  const isLocked = color === "blue" || color === "purple";
+  const isLocked = color === "blue" || color === "purple" || color === "orange";
   return `<div class="button button-${color} purchase_button${isLocked ? ' pressed' : ''}">` +
     `<h2>${title}</h2>` +
     `<div class="purchase_description">${description}</div>` +
