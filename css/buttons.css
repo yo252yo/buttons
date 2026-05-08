@@ -145,6 +145,12 @@
   border-color: var(--grey-border);
 }
 
+.button-white {
+  background: var(--black);
+  border-color: var(--black-shine);
+  color: var(--white);
+}
+
 @keyframes shake {
 
   0%,
