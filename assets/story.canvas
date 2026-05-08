@@ -6,7 +6,7 @@
 		{"id":"cda20f890a136a96","type":"group","x":-2620,"y":-9120,"width":4040,"height":2800,"label":"All about buttons/FAQ"},
 		{"id":"613fbd4f47579417","type":"group","x":-6160,"y":-9120,"width":3095,"height":2800,"color":"4","label":"Onboarding"},
 		{"id":"cec1d48054724399","type":"group","x":-7280,"y":4199,"width":2271,"height":3156,"color":"4","label":"Defoe's political career"},
-		{"id":"bbee386f60e2b60c","type":"group","x":-4240,"y":-5680,"width":1750,"height":1580,"color":"4","label":"The Human Who Pushed Buttons"},
+		{"id":"bbee386f60e2b60c","type":"group","x":-4240,"y":-5680,"width":2460,"height":1580,"color":"4","label":"The Human Who Pushed Buttons"},
 		{"id":"e63a3090b448a0c2","type":"group","x":-4710,"y":3680,"width":1750,"height":1505,"color":"4","label":"Defoe's trades and writings"},
 		{"id":"6d3549e4b28330a7","type":"group","x":-4803,"y":5619,"width":1460,"height":1470,"color":"5","label":"True born englishman"},
 		{"id":"8208ce67bac49771","type":"group","x":3680,"y":7200,"width":2200,"height":2540,"color":"5","label":"minecraft DLC"},
@@ -2363,6 +2363,17 @@
 			"width":260,
 			"height":60,
 			"color":"1"
+		},
+		{
+			"id":"912fc96a3017bd3a",
+			"type":"text",
+			"text":"Not this story, I want a TRUE story.",
+			"styleAttributes":{},
+			"x":-2160,
+			"y":-4360,
+			"width":260,
+			"height":60,
+			"color":"5"
 		}
 	],
 	"edges":[
@@ -5308,6 +5319,28 @@
 			"fromSide":"bottom",
 			"toNode":"a59fc2e12f4d9b94",
 			"toSide":"top"
+		},
+		{
+			"id":"4a6697ce1f2d2613",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"912fc96a3017bd3a",
+			"fromSide":"bottom",
+			"toNode":"title",
+			"toSide":"top",
+			"color":"5"
+		},
+		{
+			"id":"4e05ac485c28366f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"56b3c01bf1c15521",
+			"fromSide":"bottom",
+			"toNode":"912fc96a3017bd3a",
+			"toSide":"top",
+			"color":"5"
 		}
 	],
 	"metadata":{
