@@ -119,3 +119,6 @@ path progression system
 
 
 when cleaning read stuff, scroll back to the last pressed
+
+
+somehow its slow to load i might need dynamic loading (mb with like DLC/nesting canvases feature ???)
