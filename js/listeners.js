@@ -2,7 +2,7 @@ import { setupWindowBindings } from './api.js';
 import { button_content } from './buttons.js';
 import { create_button, handle_press, press_dom_buttons } from './buttons_zone.js';
 import { getButton, loadButtonsFromCanvas } from './canvas.js';
-import { InterfaceType, closePageDiv, executePageScript, interfaceButtonMeta as interfacePages, mb_display_page_div } from './interface.js';
+import { closePageDiv, executeActionPage, interfaceButtonMeta as interfacePages, InterfaceType, mb_display_page_div } from './interface.js';
 
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 document.documentElement.dataset.theme = prefersDark ? 'dark' : 'light';
@@ -33,17 +33,6 @@ export async function handle_interface_button_click() {
   }
 }
 
-async function executeActionPage(title) {
-  try {
-    await executePageScript(title);
-  } finally {
-    setTimeout(() => {
-      const btn = document.querySelector(`.interface_button[title="${title}"]`);
-      if (btn) btn.classList.remove('pressed');
-    }, 600);
-  }
-}
-
 export function handle_buttonzone_button_click() {
   const btnId = this.dataset.id;
   const btnData = getButton(btnId);
@@ -56,13 +45,6 @@ export function handle_buttonzone_button_click() {
   }
 
   handle_press(this, btnId, btnData);
-}
-
-function setupFullscreenButtons() {
-  document.querySelectorAll('.fullscreen-btn').forEach(btn => {
-    btn.addEventListener('click', handle_fullscreen_toggle);
-  });
-  update_fullscreen_buttons();
 }
 
 export function update_fullscreen_buttons() {
@@ -82,6 +64,25 @@ export function update_fullscreen_buttons() {
 }
 
 document.addEventListener('fullscreenchange', update_fullscreen_buttons);
+
+export function handle_fullscreen_toggle() {
+  const isFullscreen = !!document.fullscreenElement;
+  if (isFullscreen) {
+    document.exitFullscreen();
+  } else {
+    document.documentElement.requestFullscreen();
+  }
+
+  update_fullscreen_buttons();
+  document.getElementById('mobile-fullscreen-hint').style.display = 'none';
+}
+
+function setupFullscreenButtons() {
+  document.querySelectorAll('.fullscreen-btn').forEach(btn => {
+    btn.addEventListener('click', handle_fullscreen_toggle);
+  });
+  update_fullscreen_buttons();
+}
 
 async function initial_load() {
   // Load buttons then setup window bindings with the cache
@@ -103,19 +104,4 @@ async function initial_load() {
 
 document.addEventListener('DOMContentLoaded', initial_load);
 
-export function handle_fullscreen_toggle() {
-  const btn = this;
-  const isFullscreen = !!document.fullscreenElement;
-  if (isFullscreen) {
-    document.exitFullscreen();
-    btn.classList.remove('pressed');
-    btn.innerHTML = '<span class="btn-emoji">📱</span> Fullscreen OFF';
-  } else {
-    document.documentElement.requestFullscreen();
-    btn.classList.add('pressed');
-    btn.innerHTML = '<span class="btn-emoji">📱</span> Fullscreen ON';
-  }
-
-  document.getElementById('mobile-fullscreen-hint').style.display = 'none';
-}
 

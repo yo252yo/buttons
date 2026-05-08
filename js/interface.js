@@ -78,6 +78,17 @@ export async function executePageScript(title) {
   return result instanceof Promise ? await result : result;
 }
 
+export async function executeActionPage(title) {
+  try {
+    await executePageScript(title);
+  } finally {
+    setTimeout(() => {
+      const btn = document.querySelector(`.interface_button[title="${title}"]`);
+      if (btn) btn.classList.remove('pressed');
+    }, 600);
+  }
+}
+
 export async function mb_display_page_div(button) {
   const title = button.title;
 
