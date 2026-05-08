@@ -51,7 +51,7 @@ ${window.purchaseButtonHTML("<span style='text-decoration: line-through'>TAMER P
 
 <hr>
 <h1>Finish 1 PURPLE PATH to unlock 1 ORANGE PATH</h1>
-${window.purchaseButtonHTML("<span style='text-decoration: line-through'>HACKER PATH</span>", "If you can find the SECRET way through the CODE, you will find new tools to SHED LIGHT and MAP the world.<br />WAND House DLC", "purple")}
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>HACKER PATH</span>", "If you can find the SECRET way through the CODE, you will find new tools to SHED LIGHT and MAP the world.<br />WAND House DLC", "orange")}
 `;
 
 window.setupPurchaseButtons();
