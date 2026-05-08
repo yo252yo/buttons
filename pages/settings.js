@@ -28,7 +28,7 @@ pageDiv.innerHTML = `
 <button id="gamer_mode_btn" class="button button-grey${gamerMode ? ' pressed' : ''}">0-Text Mode: ${gamerMode ? 'ON' : 'OFF'}</button>
 <hr />
 <h2>Graphics</h2>
-<button class="button button-grey fullscreen-btn"><span class="btn-emoji">📱</span> Fullscreen OFF</button>
+<button class="button button-grey fullscreen-btn"></button>
 <button id="dark_mode_btn" class="button button-grey${darkMode ? ' pressed' : ''}">Dark Mode: ${darkMode ? 'ON' : 'OFF'}</button>
 
 <hr />

@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 801px) {
   body {
     overflow-x: hidden;
     letter-spacing: -5%;

@@ -115,5 +115,7 @@ export function handle_fullscreen_toggle() {
     btn.classList.add('pressed');
     btn.innerHTML = '<span class="btn-emoji">📱</span> Fullscreen ON';
   }
+
+  document.getElementById('mobile-fullscreen-hint').style.display = 'none';
 }
 
