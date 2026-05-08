@@ -46,6 +46,8 @@ ${window.purchaseButtonHTML("<span style='text-decoration: line-through'>COLORed
 
 <hr>
 <h1>Finish 1 BLUE PATH to unlock 1 PURPLE PATH</h1>
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>ALCHEMIST PATH</span>", "Mix ICONs.<br />Unlock SECRETs.<br />ALCHEMIST DLC", "purple")}
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>TAMER PATH</span>", "Find MASCOTs.<br />TAME them.<br />TRAIN them.<br />MASCOT DLC", "purple")}
 
 <hr>
 <h1>Finish 1 PURPLE PATH to unlock 1 ORANGE PATH</h1>
