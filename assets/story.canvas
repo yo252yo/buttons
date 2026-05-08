@@ -18,50 +18,6 @@
 		{"id":"a5966a470f16692a","type":"group","x":-2480,"y":7200,"width":1060,"height":816,"color":"1","label":"Selkirk"},
 		{"id":"ee65f44360a9cfb8","type":"group","x":600,"y":7322,"width":600,"height":572,"color":"1","label":"Defoe later life"},
 		{
-			"id":"732c607729abf65a",
-			"type":"text",
-			"text":"Authenticity",
-			"styleAttributes":{},
-			"x":-15,
-			"y":6358,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
-			"id":"99af32b09b97fb14",
-			"type":"text",
-			"text":"The history of PR is in another DLC",
-			"styleAttributes":{},
-			"x":85,
-			"y":6538,
-			"width":260,
-			"height":105,
-			"color":"1"
-		},
-		{
-			"id":"9cb46f16a0ebdfb7",
-			"type":"text",
-			"text":"In fact, the True-Born Englishman was a response...\n---\nIt was mostly a response to John Tutchin's 1700 poem \"The Foreigners\", attacking the Dutch ties of the king.",
-			"styleAttributes":{},
-			"x":-3803,
-			"y":6574,
-			"width":360,
-			"height":180,
-			"color":"5"
-		},
-		{
-			"id":"9fa40b1636a990f3",
-			"type":"text",
-			"text":"Woodes Rogers",
-			"styleAttributes":{},
-			"x":-2140,
-			"y":6755,
-			"width":260,
-			"height":60,
-			"color":"1"
-		},
-		{
 			"id":"e7fb061c2668af1b",
 			"type":"text",
 			"text":"William Dampier",
@@ -71,16 +27,6 @@
 			"width":260,
 			"height":60,
 			"color":"1"
-		},
-		{
-			"id":"c0925e9d6778c0a2",
-			"type":"text",
-			"text":"🚰 John Tutchin's \"The Foreigners\"\n---\nOn the <a href=\"https://archive.org/details/bim_early-english-books-1641-1700_the-foreigners-a-poem-_tutchin-john_1700/page/4/mode/2up\">Internet Archive</a>\n<iframe src=\"https://archive.org/details/bim_early-english-books-1641-1700_the-foreigners-a-poem-_tutchin-john_1700/page/4/mode/2up\"></iframe>",
-			"styleAttributes":{},
-			"x":-3688,
-			"y":6814,
-			"width":265,
-			"height":240
 		},
 		{
 			"id":"9d59fd903533cb04",
@@ -158,185 +104,6 @@
 			"width":260,
 			"height":140,
 			"color":"1"
-		},
-		{
-			"id":"ebf764b1093a8127",
-			"type":"text",
-			"text":"I do like this quote:\n---\nA true-born Englishman's a contradiction,  \nIn speech an irony, in fact a fiction;",
-			"styleAttributes":{},
-			"x":-4163,
-			"y":6257,
-			"width":260,
-			"height":230,
-			"color":"6"
-		},
-		{
-			"id":"ecbf5cec60c58bf2",
-			"type":"text",
-			"text":"The True-Born Englishman was way more successful than the original poem it was responding to.",
-			"styleAttributes":{},
-			"x":-4128,
-			"y":6574,
-			"width":265,
-			"height":140
-		},
-		{
-			"id":"4ee260ef31d9900b",
-			"type":"text",
-			"text":"\"France?\" What does France have to do with it?\n---\nDefoe was a fervent admirer of Louis XIV's militaristic centralism.\nBy talking about France, he could criticize the English government with a veneer of deniability.",
-			"styleAttributes":{},
-			"x":-5490,
-			"y":6553,
-			"width":464,
-			"height":220
-		},
-		{
-			"id":"10818a63bbc83eb9",
-			"type":"text",
-			"text":"Prison?",
-			"styleAttributes":{},
-			"x":-6185,
-			"y":6713,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"1eee3e89560bf812",
-			"type":"text",
-			"text":"👥 John Tutchin\n\nA radical political journalist. \nhttps://en.wikipedia.org/wiki/John_Tutchin",
-			"styleAttributes":{},
-			"x":-3988,
-			"y":6814,
-			"width":260,
-			"height":240
-		},
-		{
-			"id":"c78c58970d985108",
-			"type":"text",
-			"text":"🚧 I'm sorry, the Act of Union is in another DLC",
-			"styleAttributes":{},
-			"x":-5657,
-			"y":6848,
-			"width":200,
-			"height":133,
-			"color":"3"
-		},
-		{
-			"id":"bbebbd90befb593a",
-			"type":"text",
-			"text":"He really did like allegories...",
-			"styleAttributes":{},
-			"x":-5204,
-			"y":6864,
-			"width":178,
-			"height":77
-		},
-		{
-			"id":"4aa765f37fcebc89",
-			"type":"text",
-			"text":"🚧 I'm sorry, Louis XIV is in another DLC",
-			"styleAttributes":{},
-			"x":-5430,
-			"y":6878,
-			"width":200,
-			"height":133,
-			"color":"3"
-		},
-		{
-			"id":"53e72cec6b7fa897",
-			"type":"text",
-			"text":"Spying?",
-			"styleAttributes":{},
-			"x":-6115,
-			"y":6855,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"f033b3b0f313a483",
-			"type":"text",
-			"text":"After the Union Act, Daniel Defoe spent a lot of time in Edinburgh spying for the government.\n---\nHe monitored political dissent on the ground.\nAs the Union settled, he turned his attention to domestic affairs.",
-			"styleAttributes":{},
-			"x":-5890,
-			"y":7011,
-			"width":390,
-			"height":297,
-			"color":"4"
-		},
-		{
-			"id":"516d8b49569ae19a",
-			"type":"text",
-			"text":"The Shortest-Way with the Dissenters?\n---\nIt was written from the point of view of a bloodthirsty catholic extremist.\nDaniel Defoe essentially impersonated his opponents and exaggerated their positions.\nThey initially loved it, and many believed that the government was actually planning a massacre.\nWhen the truth came out, everyone was understanbly quite upset.",
-			"styleAttributes":{},
-			"x":-7193,
-			"y":6392,
-			"width":360,
-			"height":390,
-			"color":"5"
-		},
-		{
-			"id":"d558c210ac6f1acc",
-			"type":"text",
-			"text":"🚰 Daniel Defoe's \"The Shortest-Way with the Dissenter\"\n---\nOn the <a href=\"https://archive.org/details/shortest-way-dissenters\">Internet Archive</a>\n<iframe src=\"https://archive.org/details/shortest-way-dissenters\"></iframe>",
-			"styleAttributes":{},
-			"x":-6790,
-			"y":6452,
-			"width":490,
-			"height":271
-		},
-		{
-			"id":"8725a0235c1a2659",
-			"type":"text",
-			"text":"Daniel Defoe was quite upset that his poem had been widely copied.\n---\nIt appears that the majority of copies in circulation were cheap unauthorized versions on which he did not make any profit.\nHe claimed that up to 80000 copies were circulated, a staggering amount for the time.",
-			"styleAttributes":{},
-			"x":-4802,
-			"y":6550,
-			"width":460,
-			"height":232,
-			"color":"5"
-		},
-		{
-			"id":"f2c4a78c2f9975be",
-			"type":"text",
-			"text":"Until he became a spy for the government!\n---\nThe Tory minister Robert Harley bailed him out of prison on condition that Daniel Defoe work for him.",
-			"styleAttributes":{},
-			"x":-6590,
-			"y":6800,
-			"width":380,
-			"height":230,
-			"color":"5"
-		},
-		{
-			"id":"9f04098fd76affe4",
-			"type":"text",
-			"text":"👥 Robert Harley",
-			"styleAttributes":{},
-			"x":-6095,
-			"y":7074,
-			"width":180,
-			"height":60
-		},
-		{
-			"id":"a8d38e0524f7896d",
-			"type":"text",
-			"text":"What kind of government?\n---\nThe politics at the time were an intense war between the \"progressive\" Whigs and the \"traditionalist\" Tories.\nThe balance of power was a constant tug-of-war.\nDaniel Defoe's positions were closer to the Whigs, but he was spying for the Tories.\nAs a result, he was widely distrusted and seen as a double agent.",
-			"styleAttributes":{},
-			"x":-6870,
-			"y":7074,
-			"width":470,
-			"height":252,
-			"color":"5"
-		},
-		{
-			"id":"5929c71a78c15ca1",
-			"type":"text",
-			"text":"Daniel Defoe and his \"review\" were instrumental in the redacting of the Act of Union in 1707\n---\nYou know, the creation of a \"United Kingdom\".\nBut this is a story for another DLC.",
-			"styleAttributes":{},
-			"x":-6138,
-			"y":6487,
-			"width":398,
-			"height":180,
-			"color":"4"
 		},
 		{
 			"id":"226ec3fff23eaa94",
@@ -2157,7 +1924,8 @@
 			"x":-5,
 			"y":-7860,
 			"width":370,
-			"height":160
+			"height":160,
+			"color":"5"
 		},
 		{"id":"tuto_apology","type":"text","text":"❓ I don't want to read!\n---\nDon't worry, you don't have to!\n\nThis is only the tutorial.\nThere are many ways to play this game so that this button is the longest you'll ever have to read!\n\nChoose the GAMBLER or MINER path in your objectives 🏆 and you'll never need to read another word!\n\nUse settings ⚙️ to see gamer accessibility options.\n\nStick to the green 🟢 path, it is guaranteed to have the least text. ","x":850,"y":-8820,"width":470,"height":380,"color":"5"},
 		{
@@ -2362,6 +2130,239 @@
 			"width":360,
 			"height":280,
 			"color":"3"
+		},
+		{
+			"id":"ebf764b1093a8127",
+			"type":"text",
+			"text":"I do like this quote:\n---\nA true-born Englishman's a contradiction,  \nIn speech an irony, in fact a fiction;",
+			"styleAttributes":{},
+			"x":-4163,
+			"y":6257,
+			"width":260,
+			"height":230,
+			"color":"6"
+		},
+		{
+			"id":"732c607729abf65a",
+			"type":"text",
+			"text":"Authenticity",
+			"styleAttributes":{},
+			"x":-15,
+			"y":6358,
+			"width":260,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"99af32b09b97fb14",
+			"type":"text",
+			"text":"The history of PR is in another DLC",
+			"styleAttributes":{},
+			"x":85,
+			"y":6538,
+			"width":260,
+			"height":105,
+			"color":"1"
+		},
+		{
+			"id":"9cb46f16a0ebdfb7",
+			"type":"text",
+			"text":"In fact, the True-Born Englishman was a response...\n---\nIt was mostly a response to John Tutchin's 1700 poem \"The Foreigners\", attacking the Dutch ties of the king.",
+			"styleAttributes":{},
+			"x":-3803,
+			"y":6574,
+			"width":360,
+			"height":180,
+			"color":"5"
+		},
+		{
+			"id":"ecbf5cec60c58bf2",
+			"type":"text",
+			"text":"The True-Born Englishman was way more successful than the original poem it was responding to.",
+			"styleAttributes":{},
+			"x":-4128,
+			"y":6574,
+			"width":265,
+			"height":140
+		},
+		{
+			"id":"4ee260ef31d9900b",
+			"type":"text",
+			"text":"\"France?\" What does France have to do with it?\n---\nDefoe was a fervent admirer of Louis XIV's militaristic centralism.\nBy talking about France, he could criticize the English government with a veneer of deniability.",
+			"styleAttributes":{},
+			"x":-5490,
+			"y":6553,
+			"width":464,
+			"height":220
+		},
+		{
+			"id":"516d8b49569ae19a",
+			"type":"text",
+			"text":"The Shortest-Way with the Dissenters?\n---\nIt was written from the point of view of a bloodthirsty catholic extremist.\nDaniel Defoe essentially impersonated his opponents and exaggerated their positions.\nThey initially loved it, and many believed that the government was actually planning a massacre.\nWhen the truth came out, everyone was understanbly quite upset.",
+			"styleAttributes":{},
+			"x":-7193,
+			"y":6392,
+			"width":360,
+			"height":390,
+			"color":"5"
+		},
+		{
+			"id":"d558c210ac6f1acc",
+			"type":"text",
+			"text":"🚰 Daniel Defoe's \"The Shortest-Way with the Dissenter\"\n---\nOn the <a href=\"https://archive.org/details/shortest-way-dissenters\">Internet Archive</a>\n<iframe src=\"https://archive.org/details/shortest-way-dissenters\"></iframe>",
+			"styleAttributes":{},
+			"x":-6790,
+			"y":6452,
+			"width":490,
+			"height":271
+		},
+		{
+			"id":"8725a0235c1a2659",
+			"type":"text",
+			"text":"Daniel Defoe was quite upset that his poem had been widely copied.\n---\nIt appears that the majority of copies in circulation were cheap unauthorized versions on which he did not make any profit.\nHe claimed that up to 80000 copies were circulated, a staggering amount for the time.",
+			"styleAttributes":{},
+			"x":-4802,
+			"y":6550,
+			"width":460,
+			"height":232,
+			"color":"5"
+		},
+		{
+			"id":"5929c71a78c15ca1",
+			"type":"text",
+			"text":"Daniel Defoe and his \"review\" were instrumental in the redacting of the Act of Union in 1707\n---\nYou know, the creation of a \"United Kingdom\".\nBut this is a story for another DLC.",
+			"styleAttributes":{},
+			"x":-6138,
+			"y":6487,
+			"width":398,
+			"height":180,
+			"color":"4"
+		},
+		{
+			"id":"10818a63bbc83eb9",
+			"type":"text",
+			"text":"Prison?",
+			"styleAttributes":{},
+			"x":-6185,
+			"y":6713,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"c78c58970d985108",
+			"type":"text",
+			"text":"🚧 I'm sorry, the Act of Union is in another DLC",
+			"styleAttributes":{},
+			"x":-5657,
+			"y":6848,
+			"width":200,
+			"height":133,
+			"color":"3"
+		},
+		{
+			"id":"bbebbd90befb593a",
+			"type":"text",
+			"text":"He really did like allegories...",
+			"styleAttributes":{},
+			"x":-5204,
+			"y":6864,
+			"width":178,
+			"height":77
+		},
+		{
+			"id":"4aa765f37fcebc89",
+			"type":"text",
+			"text":"🚧 I'm sorry, Louis XIV is in another DLC",
+			"styleAttributes":{},
+			"x":-5430,
+			"y":6878,
+			"width":200,
+			"height":133,
+			"color":"3"
+		},
+		{
+			"id":"53e72cec6b7fa897",
+			"type":"text",
+			"text":"Spying?",
+			"styleAttributes":{},
+			"x":-6115,
+			"y":6855,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"f033b3b0f313a483",
+			"type":"text",
+			"text":"After the Union Act, Daniel Defoe spent a lot of time in Edinburgh spying for the government.\n---\nHe monitored political dissent on the ground.\nAs the Union settled, he turned his attention to domestic affairs.",
+			"styleAttributes":{},
+			"x":-5890,
+			"y":7011,
+			"width":390,
+			"height":297,
+			"color":"4"
+		},
+		{
+			"id":"c0925e9d6778c0a2",
+			"type":"text",
+			"text":"🚰 John Tutchin's \"The Foreigners\"\n---\nOn the <a href=\"https://archive.org/details/bim_early-english-books-1641-1700_the-foreigners-a-poem-_tutchin-john_1700/page/4/mode/2up\">Internet Archive</a>\n<iframe src=\"https://archive.org/details/bim_early-english-books-1641-1700_the-foreigners-a-poem-_tutchin-john_1700/page/4/mode/2up\"></iframe>",
+			"styleAttributes":{},
+			"x":-3688,
+			"y":6814,
+			"width":265,
+			"height":240
+		},
+		{
+			"id":"1eee3e89560bf812",
+			"type":"text",
+			"text":"👥 John Tutchin\n\nA radical political journalist. \nhttps://en.wikipedia.org/wiki/John_Tutchin",
+			"styleAttributes":{},
+			"x":-3988,
+			"y":6814,
+			"width":260,
+			"height":240
+		},
+		{
+			"id":"f2c4a78c2f9975be",
+			"type":"text",
+			"text":"Until he became a spy for the government!\n---\nThe Tory minister Robert Harley bailed him out of prison on condition that Daniel Defoe work for him.",
+			"styleAttributes":{},
+			"x":-6590,
+			"y":6800,
+			"width":380,
+			"height":230,
+			"color":"5"
+		},
+		{
+			"id":"9f04098fd76affe4",
+			"type":"text",
+			"text":"👥 Robert Harley",
+			"styleAttributes":{},
+			"x":-6095,
+			"y":7074,
+			"width":180,
+			"height":60
+		},
+		{
+			"id":"a8d38e0524f7896d",
+			"type":"text",
+			"text":"What kind of government?\n---\nThe politics at the time were an intense war between the \"progressive\" Whigs and the \"traditionalist\" Tories.\nThe balance of power was a constant tug-of-war.\nDaniel Defoe's positions were closer to the Whigs, but he was spying for the Tories.\nAs a result, he was widely distrusted and seen as a double agent.",
+			"styleAttributes":{},
+			"x":-6870,
+			"y":7074,
+			"width":470,
+			"height":252,
+			"color":"5"
+		},
+		{
+			"id":"9fa40b1636a990f3",
+			"type":"text",
+			"text":"Woodes Rogers",
+			"styleAttributes":{},
+			"x":-2140,
+			"y":6755,
+			"width":260,
+			"height":60,
+			"color":"1"
 		}
 	],
 	"edges":[
