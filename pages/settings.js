@@ -45,11 +45,11 @@ document.getElementById('gamer_mode_btn').onclick = () => {
     const btn = document.getElementById('gamer_mode_btn');
     if (gamerMode) {
         btn.classList.add('pressed');
-        btn.textContent = 'Gamer Mode: ON';
+        btn.textContent = '0-Text Mode: ON';
         gamerModeStyle.textContent = gamer_mode_on_css;
     } else {
         btn.classList.remove('pressed');
-        btn.textContent = 'Gamer Mode: OFF';
+        btn.textContent = '0-Text Mode: OFF';
         gamerModeStyle.textContent = gamer_mode_off_css;
     }
 };
