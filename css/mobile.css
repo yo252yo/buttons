@@ -45,4 +45,23 @@
   #page_div {
     margin-left: -20px
   }
+
+  #buttons_zone .button::before {
+    left: -70px;
+    width: 62px;
+  }
+
+  #buttons_zone .second_to_last_pressed::before,
+  #buttons_zone .second_to_last_children::before {
+    background: var(--black-shine);
+    left: -170px;
+    width: 162px;
+  }
+
+  #buttons_zone .last_pressed::before,
+  #buttons_zone .last_children::before {
+    background: var(--black);
+    left: -170px;
+    width: 162px;
+  }
 }
