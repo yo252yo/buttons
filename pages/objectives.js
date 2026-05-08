@@ -38,20 +38,20 @@ ${window.purchaseButtonHTML("HUNTER PATH", "Track and uncover TREASUREs hidden d
 ${window.purchaseButtonHTML("EXPLORER PATH", "Blaze all the TRAILs.<br />See all the SIGHTs.", "green")}
 
 <hr>
-<h1>Finish 1 GREEN PATH to unlock 1 BLUE PATH</h1>
-${window.purchaseButtonHTML("DETECTIVE PATH", "In this PLACE, to the METER,<br />At this TIME, to the HOUR,<br />Seal the LEAK, to the NAME.", "blue")}
-${window.purchaseButtonHTML("<span style='text-decoration: line-through'>PATH of FORTUNE</span>", "Just let your FATE guide you all the way through this maze,<br />And find your unique PATH leading to your TRUE SELF.<br />CUP House DLC", "blue")}
-${window.purchaseButtonHTML("<span style='text-decoration: line-through'>CENSOR PATH</span>", "Hunt for specific words, DEPLATFORM them out of existence with your new DEPLATFORM CURSOR.<br />Comes with a Pixel Hunter path (by letter/syllables), Mathematician path (works on numbers) and all kind of targets to DEPLATFORM.<br />PENTACLE House DLC", "blue")}
-${window.purchaseButtonHTML("<span style='text-decoration: line-through'>COLORed PATH</span>", "Seek the patterns behind the TRUTH.<br />COLOR is ALL that MATTERs.<br />You will be rewarded for specific color patterns in the buttons ordering.<br />SWORD House DLC", "blue")}
+<h1>End 1 GREEN PATH to unlock 1 BLUE PATH</h1>
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>DETECTIVE PATH</span>", "In this PLACE, to the METER,<br />At this TIME, to the HOUR,<br />Seal the LEAK, to the NAME.<br /><br />ARG Ritual DLC", "blue")}
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>PATH of FORTUNE</span>", "Just let your FATE guide you all the way through this maze,<br />And find your unique PATH leading to your TRUE SELF.<br /><br />CUP House DLC", "blue")}
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>CENSOR PATH</span>", "Hunt for specific words, DEPLATFORM them out of existence with your new DEPLATFORM CURSOR.<br />Comes with a Pixel Hunter path (by letter/syllables), Mathematician path (works on numbers) and all kind of targets to DEPLATFORM.<br /><br />PENTACLE House DLC", "blue")}
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>COLORed PATH</span>", "Seek the patterns behind the TRUTH.<br />COLOR is ALL that MATTERs.<br />You will be rewarded for specific color patterns in the buttons ordering.<br /><br />SWORD House DLC", "blue")}
 
 <hr>
-<h1>Finish 1 BLUE PATH to unlock 1 PURPLE PATH</h1>
-${window.purchaseButtonHTML("<span style='text-decoration: line-through'>ALCHEMIST PATH</span>", "Mix ICONs.<br />Unlock SECRETs.<br />ALCHEMIST DLC", "purple")}
-${window.purchaseButtonHTML("<span style='text-decoration: line-through'>TAMER PATH</span>", "Find MASCOTs.<br />TAME them.<br />TRAIN them.<br />MASCOT DLC", "purple")}
+<h1>End 1 BLUE PATH to unlock 1 PURPLE PATH</h1>
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>ALCHEMIST PATH</span>", "Mix ICONs.<br />Unlock SECRETs.<br /><br />ALCHEMIST DLC", "purple")}
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>TAMER PATH</span>", "Find MASCOTs.<br />TAME them.<br />TRAIN them.<br /><br />MASCOT DLC", "purple")}
 
 <hr>
-<h1>Finish 1 PURPLE PATH to unlock 1 ORANGE PATH</h1>
-${window.purchaseButtonHTML("<span style='text-decoration: line-through'>HACKER PATH</span>", "If you can find the SECRET way through the CODE, you will find new tools to SHED LIGHT and MAP the world.<br />WAND House DLC", "orange")}
+<h1>End 1 PURPLE PATH to unlock 1 ORANGE PATH</h1>
+${window.purchaseButtonHTML("<span style='text-decoration: line-through'>HACKER PATH</span>", "If you can find the SECRET way through the CODE, you will find new tools to SHED LIGHT and MAP the world.<br /><br />WAND House DLC", "orange")}
 `;
 
 window.setupPurchaseButtons();
