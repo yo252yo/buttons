@@ -98,7 +98,11 @@ async function initial_load() {
   const startId = get_query_param('start') || 'start';
 
   const button_title = document.getElementById('title');
-  button_title.innerHTML = button_content(getButton('title_button'));
+  try {
+    button_title.innerHTML = button_content(getButton('title_button'));
+  } catch (e) {
+    console.log("Could not populate title button.");
+  }
   create_button(startId, button_title);
 }
 
