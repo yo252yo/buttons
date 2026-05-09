@@ -1,5 +1,5 @@
 
-import { capitalize_substrings } from './objectives.js';
+import { capitalize_substrings } from './capitals.js';
 
 const CANVAS_TO_JS_COLORS = {
   "0": "grey",
