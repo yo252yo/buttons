@@ -1179,7 +1179,6 @@
 		{"id":"title","type":"text","text":"⭐ The true story of the story of Robinson Crusoe\n---","x":-795,"y":465,"width":300,"height":200,"color":"4"},
 		{"id":"6a342d3d556dcaa3","type":"text","text":"What do you mean, the story of the story?\n---\nI mean the story of how the book came to be, and the story of its author.","x":-1295,"y":785,"width":300,"height":200,"color":"0"},
 		{"id":"d0c1f86e10f949da","type":"text","text":"Robinson Crusoe?\n---\nRobinson Crusoe is an English adventure novel by Daniel Defoe, first published on 25 April 1719.\nMost people are familiar with its narrative of a sailor shipwrecked on a wild island.\nBut few people even know the story of the story.","x":-1295,"y":1395,"width":300,"height":200,"color":"4"},
-		{"id":"56bc4eec12ea9fdc","type":"text","text":"Robinson Crusoe?\n---\nRobinson Crusoe is an English adventure novel by Daniel Defoe, first published on 25 April 1719.\nMost people are familiar with its narrative of a sailor shipwrecked on a wild island.\nBut few people even know the story of the story.","x":-1295,"y":1138,"width":300,"height":245,"color":"1"},
 		{
 			"id":"5a13efbbc9929464",
 			"type":"text",
@@ -2374,7 +2373,8 @@
 			"width":260,
 			"height":60,
 			"color":"5"
-		}
+		},
+		{"id":"56bc4eec12ea9fdc","type":"text","text":"Robinson Crusoe?\n---\nRobinson Crusoe is an English adventure novel by Daniel Defoe, first published on 25 April 1719.\nMost people are familiar with its narrative of a sailor shipwrecked on a wild island.\nBut few people even know the story of the story.","x":-1295,"y":1150,"width":300,"height":245,"color":"1"}
 	],
 	"edges":[
 		{"id":"d96d3eef-9236-418c-a0ee-d635f87fc304","fromFloating":false,"fromNode":"more","fromSide":"bottom","toNode":"more2","toSide":"top","color":"4"},

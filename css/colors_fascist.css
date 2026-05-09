@@ -1,0 +1,28 @@
+:root {
+  --grey: #000091;
+  --grey-border: #000061;
+  --green: #FFFFFF;
+  --green-border: #999999;
+  --blue: #E1000F;
+  --blue-border: #E1000F;
+  --purple: #FFFFFF;
+  --purple-border: #999999;
+  --orange: #FFFFFF;
+  --orange-border: #999999;
+}
+
+.button-grey {
+  color: white;
+}
+
+#buttons_zone .button-grey {
+  margin-left: 30px;
+}
+
+#buttons_zone .button-blue {
+  margin-left: 0px;
+}
+
+#buttons_zone .button::before {
+  display: none;
+}
