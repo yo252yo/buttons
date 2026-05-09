@@ -1,14 +1,14 @@
 :root {
-  --orange: #FF9966;
-  --orange-border: #cc6633;
-  --purple: #DF73FF;
-  --purple-border: #9f4dbf;
-  --blue: #00BFFF;
-  --blue-border: #0088aa;
-  --green: #00FF40;
-  --green-border: #00aa2e;
   --grey: #c8c4bf;
   --grey-border: #95918c;
+  --green: #00FF40;
+  --green-border: #00aa2e;
+  --blue: #00BFFF;
+  --blue-border: #0088aa;
+  --purple: #DF73FF;
+  --purple-border: #9f4dbf;
+  --orange: #FF9966;
+  --orange-border: #cc6633;
 }
 
 [data-theme="light"] {
