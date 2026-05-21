@@ -77,6 +77,34 @@ let dragStart = null, dragCam = null;
 let nodes = [], groups = [], edges = [];
 let visited = new Set();
 let revealed = new Set();
+let animFrame = null;
+let focusX = 0, focusY = 0, targetCamScale = 2.5;
+
+function startAnim() {
+  if (animFrame) cancelAnimationFrame(animFrame);
+  function tick() {
+    let moving = false;
+    for (const n of nodes) {
+      const dx = n.tx - n.x, dy = n.ty - n.y;
+      if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) {
+        n.x += dx * 0.08; n.y += dy * 0.08;
+        moving = true;
+      } else { n.x = n.tx; n.y = n.ty; }
+    }
+    if (Math.abs(targetCamScale - camScale) > 0.001) {
+      camScale += (targetCamScale - camScale) * 0.08;
+      camX = W / 2 - focusX * camScale;
+      camY = H / 2 - focusY * camScale;
+      moving = true;
+    } else {
+      camScale = targetCamScale;
+    }
+    draw();
+    if (moving) animFrame = requestAnimationFrame(tick);
+    else animFrame = null;
+  }
+  tick();
+}
 
 let currentId = 'title_button';
 let selectedIdx = 0;
@@ -115,6 +143,55 @@ if (!CanvasRenderingContext2D.prototype.roundRect) {
     this.quadraticCurveTo(x, y, x + r, y);
     return this;
   };
+}
+
+function computeNodeSize(n, maxW) {
+  const parts = n.text.split(/\n---\n/);
+  const titleRaw = parts[0].trim();
+  const bodyRaw = parts.length > 1 ? parts.slice(1).join('---').trim() : '';
+  const h1Match = titleRaw.match(/<h1>(.*?)<\/h1>/);
+  const isHeading = !!h1Match;
+  const titleText = isHeading ? stripHtml(h1Match[1].trim()) : stripHtml(titleRaw);
+  let displayTitle = titleText, titleStart = 0;
+  const fc = titleRaw.codePointAt(0);
+  if (fc && /\p{Emoji}/u.test(String.fromCodePoint(fc))) {
+    titleStart = 24;
+    displayTitle = [...titleText].filter(ch => !/\p{Emoji}/u.test(ch)).join('').trim();
+  }
+  const padX = 10, lineH = isHeading ? 20 : 15, bodyLineH = 14;
+  const titleFont = isHeading ? '700 18px Nunito, sans-serif' : '700 13px Nunito, sans-serif';
+  const bodyFont = '400 11px Nunito, sans-serif';
+  ctx.save();
+  ctx.font = titleFont;
+  const titleLines = wordWrap(ctx, displayTitle, maxW - padX * 2 - titleStart);
+  const titleH = titleLines.length * lineH;
+  ctx.font = bodyFont;
+  const bodyLines = bodyRaw.length ? wordWrap(ctx, stripHtml(bodyRaw), maxW - padX * 2) : [];
+  ctx.restore();
+  const bodyH = bodyLines.length * bodyLineH;
+  const gap = (titleLines.length && bodyH) ? 4 : 0;
+  const boxH = Math.max((isHeading ? 50 : 34), padX + 2 + titleH + gap + bodyH + 8);
+  return { w: maxW, h: boxH, isHeading, titleLines, bodyLines };
+}
+
+function layoutGrid(nodes, left, top, right, bottom) {
+  const aw = right - left, ah = bottom - top;
+  const k = nodes.length;
+  if (!k || aw <= 4 || ah <= 4) return;
+  let cols, rows;
+  if (k <= 3) { cols = k; rows = 1; }
+  else if (k === 4) { cols = 2; rows = 2; }
+  else { cols = Math.ceil(Math.sqrt(k)); rows = Math.ceil(k / cols); }
+  const cellW = aw / cols, cellH = ah / rows;
+  for (let i = 0; i < k; i++) {
+    const col = i % cols, row = Math.floor(i / cols);
+    const n = nodes[i];
+    const nw = Math.min(600, Math.max(200, cellW - 4));
+    const sz = computeNodeSize(n, nw);
+    n.tx = left + col * cellW + (cellW - sz.w) / 2;
+    n.ty = top + row * cellH + (cellH - sz.h) / 2;
+    n.clusterW = nw;
+  }
 }
 
 function draw() {
@@ -193,7 +270,7 @@ function draw() {
     const bodyLineH = 14;
     const titleFont = isHeading ? '700 18px Nunito, sans-serif' : '700 13px Nunito, sans-serif';
     const bodyFont = '400 11px Nunito, sans-serif';
-    const maxBoxW = Math.max(200, (n.width || 300));
+    const maxBoxW = Math.min(600, Math.max(200, n.clusterW || n.width || 300));
     const innerW = maxBoxW - padX * 2 - titleStart;
 
     ctx.font = titleFont;
@@ -374,30 +451,90 @@ function updateHint() {
   el.classList.toggle('hidden', currentId !== 'title_button');
 }
 
-function travelTo(id) {
+function travelTo(id, snap) {
   const node = nodes.find(n => n.id === id);
   if (!node) return;
   visited.add(id);
+
+  // Restore all to original and clear cluster widths
+  for (const n of nodes) { n.tx = n.ox; n.ty = n.oy; delete n.clusterW; }
+
+  // Gather children (outgoing) + parents (incoming, revealed)
+  const clusterSet = new Set(), childIds = new Set();
+  const above = [], below = [];
+  for (const e of edges) {
+    if (e.fromNode === id) {
+      childIds.add(e.toNode);
+      const nb = nodes.find(n => n.id === e.toNode);
+      if (!nb || clusterSet.has(e.toNode)) continue;
+      clusterSet.add(e.toNode);
+      revealed.add(e.toNode);
+      if (nb.oy < node.oy) above.push(nb); else below.push(nb);
+    }
+    if (e.toNode === id) {
+      const nb = nodes.find(n => n.id === e.fromNode);
+      if (!nb || !revealed.has(nb.id) || clusterSet.has(e.fromNode)) continue;
+      clusterSet.add(e.fromNode);
+      if (nb.oy < node.oy) above.push(nb); else below.push(nb);
+    }
+  }
+
+  // Compute current node size at max width 600
+  const curSize = computeNodeSize(node, Math.min(600, Math.max(200, node.clusterW || node.width || 300)));
+  const nw = curSize.w, nh = curSize.h;
+
+  // Compute target zoom (only relative zoom-out from default if >4 children)
+  const ccx = node.ox + nw / 2, ccy = node.oy + nh / 2;
+  targetCamScale = camScale;
+  const childCount = childIds.size;
+  if (childCount > 4 && Math.abs(camScale - 2.5) < 0.01) {
+    const k = childCount;
+    let estCols = Math.ceil(Math.sqrt(k));
+    let estRows = Math.ceil(k / estCols);
+    const estGW = estCols * 320;
+    const estGH = nh + estRows * 90 + 40;
+    const defW = W / 2.5, defH = H / 2.5;
+    const factor = Math.max(1, estGW / defW * 1.15, estGH / defH * 1.15);
+    targetCamScale = Math.max(0.1, Math.min(2.5, 2.5 / factor));
+  }
+
+  // Snap camera to center on current node at current zoom
+  focusX = ccx; focusY = ccy;
+  camX = W / 2 - ccx * camScale;
+  camY = H / 2 - ccy * camScale;
+
+  // Grid layout at TARGET zoom — parents above, children below
+  const viewW = W / targetCamScale, viewH = H / targetCamScale;
+  const margin = 20;
+  const vL = ccx - viewW / 2 + margin;
+  const vR = ccx + viewW / 2 - margin;
+  const vT = ccy - viewH / 2 + margin;
+  if (above.length) layoutGrid(above, vL, vT, vR, node.oy);
+  if (below.length) layoutGrid(below, vL, node.oy + nh, vR, vT + viewH - 2 * margin);
+
+  // Adjust camera to include all clustered nodes
+  let yMin = node.oy, yMax = node.oy + nh;
+  for (const n of above) {
+    if (n.ty < yMin) yMin = n.ty;
+    if (n.ty + 60 > yMax) yMax = n.ty + 60;
+  }
+  for (const n of below) {
+    if (n.ty < yMin) yMin = n.ty;
+    if (n.ty + 60 > yMax) yMax = n.ty + 60;
+  }
+  focusY = (yMin + yMax) / 2;
+  camY = H / 2 - focusY * camScale;
+
   currentId = id;
   selectedIdx = 0;
-  const cx = node.x + 150;
-  const cy = node.y + 60;
-  camX = W / 2 - cx * camScale;
-  camY = H / 2 - cy * camScale;
   updateHint();
-  draw();
-}
-
-function centerOnTitle() {
-  const title = nodes.find(n => n.id === 'title_button');
-  const target = title || (nodes.length ? nodes[0] : null);
-  if (!target) return;
-  const cx = target.x + 150;
-  const cy = target.y + 60;
-  camScale = 2.5;
-  camX = W / 2 - cx * camScale;
-  camY = H / 2 - cy * camScale;
-  draw();
+  if (snap) {
+    for (const n of nodes) { n.x = n.tx; n.y = n.ty; }
+    camScale = targetCamScale;
+    draw();
+  } else {
+    startAnim();
+  }
 }
 
 async function load() {
@@ -408,7 +545,9 @@ async function load() {
       if (n.type === 'group') {
         groups.push(n);
       } else if (n.type === 'text') {
-        nodes.push(Object.assign({}, n));
+        const m = Object.assign({}, n);
+        m.ox = m.x; m.oy = m.y;
+        nodes.push(m);
       }
     }
     if (data.edges) {
@@ -421,8 +560,7 @@ async function load() {
     currentId = 'title_button';
     selectedIdx = 0;
     resize();
-    centerOnTitle();
-    updateHint();
+    travelTo('title_button', true);
     document.getElementById('loading').classList.add('hidden');
   } catch (e) {
     document.getElementById('loading').textContent = '◈ ERROR LOADING CANVAS';
