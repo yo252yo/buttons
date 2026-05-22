@@ -59,6 +59,9 @@ export function handle_press(dom_btn, btnId, btnData) {
     });
 
     pressCount++;
+    if (pressCount > 0) {
+      document.getElementById("disclaimer").style.display = "none";
+    }
     if (pressCount === 2) {
       create_button('tuto_dismissing');
     }

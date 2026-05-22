@@ -68,3 +68,14 @@ h1 {
   padding: 0px;
   margin: 10px
 }
+
+#disclaimer {
+  bottom: 20px;
+  position: fixed;
+  left: 100px;
+  color: var(--black);
+}
+
+#disclaimer a {
+  color: var(--black);
+}
