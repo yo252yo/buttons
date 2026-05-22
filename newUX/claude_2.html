@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --green: #00FF40;
+            --green2: rgba(0, 255, 64, 0.15);
+            --bg: #0d0e0c;
+            --panel: rgba(13, 14, 12, 0.92);
+            --border: rgba(0, 255, 64, 0.2);
+            --dim: rgba(255, 255, 255, 0.12);
+            --text: #d4e8c8;
+            --muted: #5a7050;
+            --mono: 'Share Tech Mono', monospace;
+            --sans: 'Nunito', sans-serif;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: var(--bg);
+            font-family: var(--sans);
+            color: var(--text);
+        }
+
+        /* ── Viewport ── */
+        #vp {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            cursor: default;
+            /* subtle grid */
+            background-image:
+                linear-gradient(rgba(0, 255, 64, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 64, 0.03) 1px, transparent 1px);
+            background-size: 48px 48px;
+        }
+
+        /* The panning + scaling world */
+        #world {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: 0 0;
+            will-change: transform;
+        }
+
+        /* SVG for edges — same transform as world */
+        #esvg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: 0 0;
+            will-change: transform;
+            pointer-events: none;
+            overflow: visible;
+        }
+
+        /* ── Map nodes ── */
+        .mn {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            border: 1.5px solid rgba(255, 255, 255, 0.08);
+            background: rgba(18, 20, 15, 0.95);
+            padding: 10px 14px;
+            font-family: var(--sans);
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(180, 210, 160, 0.7);
+            white-space: nowrap;
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 450ms ease, border-color 250ms ease, box-shadow 250ms ease, color 250ms ease;
+        }
+
+        .mn.show {
+            opacity: 0.55;
+        }
+
+        .mn.child {
+            opacity: 0.85;
+            color: var(--text);
+            border-color: rgba(0, 255, 64, 0.18);
+        }
+
+        .mn.selected {
+            opacity: 1;
+            border-color: var(--green);
+            box-shadow: 0 0 0 1px rgba(0, 255, 64, 0.4), 0 0 16px rgba(0, 255, 64, 0.2);
+            color: #e8ffdc;
+        }
+
+        .mn.current {
+            opacity: 1;
+            border-color: var(--green) !important;
+            box-shadow: 0 0 0 2px var(--green), 0 0 28px rgba(0, 255, 64, 0.25);
+            color: #e8ffdc;
+            font-size: 13px;
+            z-index: 10 !important;
+        }
+
+        /* Node color accents */
+        .nc-1 {
+            border-color: rgba(255, 85, 85, 0.25);
+        }
+
+        .nc-2 {
+            border-color: rgba(255, 153, 102, 0.25);
+        }
+
+        .nc-3 {
+            border-color: rgba(0, 255, 64, 0.2);
+        }
+
+        .nc-4 {
+            border-color: rgba(0, 191, 255, 0.25);
+        }
+
+        .nc-5 {
+            border-color: rgba(223, 115, 255, 0.25);
+        }
+
+        .nc-6 {
+            border-color: rgba(200, 196, 191, 0.2);
+        }
+
+        /* ── Edges ── */
+        .edge {
+            fill: none;
+            stroke: rgba(0, 255, 64, 0.12);
+            stroke-width: 1.5;
+            stroke-dasharray: 5 8;
+            opacity: 0;
+            transition: opacity 400ms ease, stroke 250ms ease, stroke-width 200ms ease;
+        }
+
+        .edge.show {
+            opacity: 1;
+        }
+
+        .edge.trail {
+            stroke: rgba(0, 255, 64, 0.25);
+            stroke-dasharray: none;
+        }
+
+        .edge.sel {
+            stroke: rgba(0, 255, 64, 0.7);
+            stroke-dasharray: none;
+            stroke-width: 2;
+        }
+
+        /* ── Content panel (bottom-left) ── */
+        #panel {
+            position: fixed;
+            bottom: 28px;
+            left: 28px;
+            z-index: 50;
+            width: 340px;
+            background: rgba(11, 13, 9, 0.88);
+            backdrop-filter: blur(14px);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px 22px 18px;
+            box-shadow: 0 0 0 1px rgba(0, 255, 64, 0.06), 0 8px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        #p-tag {
+            font-family: var(--mono);
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #p-tag::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--green);
+            box-shadow: 0 0 6px var(--green);
+            flex-shrink: 0;
+        }
+
+        #p-title {
+            font-size: 16px;
+            font-weight: 900;
+            color: #e8ffdc;
+            line-height: 1.35;
+            margin-bottom: 0;
+        }
+
+        #p-body {
+            font-size: 13px;
+            font-weight: 500;
+            color: #8faa80;
+            line-height: 1.65;
+            border-top: 1px solid rgba(0, 255, 64, 0.1);
+            margin-top: 12px;
+            padding-top: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            opacity: 0;
+            transform: translateY(4px);
+            transition: opacity 500ms ease, transform 500ms ease;
+        }
+
+        #p-body.show {
+            opacity: 1;
+            transform: none;
+        }
+
+        #p-body::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        #p-body::-webkit-scrollbar-thumb {
+            background: rgba(0, 255, 64, 0.2);
+            border-radius: 2px;
+        }
+
+        /* ── Key hint (bottom-right) ── */
+        #keys {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-family: var(--mono);
+            font-size: 9px;
+            letter-spacing: 1px;
+            color: var(--muted);
+        }
+
+        .kr {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .kc {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            min-width: 20px;
+            height: 18px;
+            padding: 0 5px;
+            font-size: 9px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* ── Exit counter ── */
+        #exits {
+            position: fixed;
+            top: 28px;
+            right: 28px;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+        }
+
+        .exit-item {
+            font-family: var(--sans);
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--muted);
+            padding: 4px 10px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            background: rgba(11, 13, 9, 0.7);
+            backdrop-filter: blur(8px);
+            transition: color 150ms, border-color 150ms, background 150ms;
+            white-space: nowrap;
+            max-width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .exit-item.active {
+            color: var(--green);
+            border-color: rgba(0, 255, 64, 0.4);
+            background: rgba(0, 255, 64, 0.07);
+        }
+
+        /* ── Minimap ── */
+        #mm-wrap {
+            position: fixed;
+            top: 28px;
+            left: 28px;
+            z-index: 50;
+            border: 1px solid rgba(0, 255, 64, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            background: rgba(8, 10, 6, 0.85);
+            backdrop-filter: blur(8px);
+        }
+
+        #mm {
+            display: block;
+            width: 120px;
+            height: 90px;
+        }
+
+        /* ── Dead-end toast ── */
+        #toast {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            z-index: 100;
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: var(--muted);
+            background: rgba(11, 13, 9, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 10px 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 250ms ease, transform 250ms ease;
+        }
+
+        #toast.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* ── Boot ── */
+        #boot {
+            position: fixed;
+            inset: 0;
+            z-index: 200;
+            background: var(--bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            transition: opacity 500ms ease;
+        }
+
+        #boot.gone {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .b-title {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: 5px;
+            color: var(--green);
+            text-shadow: 0 0 16px var(--green);
+        }
+
+        .b-bar {
+            width: 160px;
+            height: 1px;
+            background: rgba(0, 255, 64, 0.15);
+        }
+
+        .b-bar-fill {
+            height: 100%;
+            background: var(--green);
+            width: 0;
+            animation: bfill 1s ease forwards;
+        }
+
+        @keyframes bfill {
+            to {
+                width: 100%;
+            }
+        }
+
+        .b-sub {
+            font-family: var(--mono);
+            font-size: 9px;
+            letter-spacing: 2px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="boot">
+        <div class="b-title">CANVAS EXPLORER</div>
+        <div class="b-bar">
+            <div class="b-bar-fill"></div>
+        </div>
+        <div class="b-sub" id="b-sub">LOADING…</div>
+    </div>
+
+    <div id="vp">
+        <svg id="esvg" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div id="world"></div>
+    </div>
+
+    <!-- Content panel -->
+    <div id="panel">
+        <div id="p-tag">CURRENT NODE</div>
+        <div id="p-title">—</div>
+        <div id="p-body"></div>
+    </div>
+
+    <!-- Exit list -->
+    <div id="exits"></div>
+
+    <!-- Minimap -->
+    <div id="mm-wrap"><canvas id="mm"></canvas></div>
+
+    <!-- Keys -->
+    <div id="keys">
+        <div class="kr"><span class="kc">W</span><span class="kc">↑</span> back</div>
+        <div class="kr"><span class="kc">S</span><span class="kc">↵</span> enter</div>
+        <div class="kr"><span class="kc">A</span><span class="kc">D</span> select</div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast">NO EXITS</div>
+
+    <script>
+        /* ─── STATE ─────────────────────────── */
+        let G = null;          // canvas JSON
+        let NM = {};           // id → node
+        let OUT = {};          // id → [childId]
+        let IN = {};          // id → [parentId]
+
+        let cur = 'start';
+        let hist = [];         // stack for W
+        let seen = new Set();  // visited
+        let sel = 0;          // selected child index
+
+        const FIXED_SCALE = 1; // world units == px (canvas coords are already px)
+        // We'll pan so current node is centered. No scaling trickery.
+        // The nodes in the canvas are already sized in pixels (e.g. width:300 height:200)
+        // We just need to figure out a good display scale.
+        let S = 1;             // computed once after load
+
+        /* ─── LOAD ──────────────────────────── */
+        async function load() {
+            try {
+                const r = await fetch('./assets/story.canvas');
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                G = await r.json();
+                bsub(G.nodes.length + ' nodes loaded');
+                buildGraph();
+                initDom();
+                boot();
+            } catch (e) {
+                bsub('ERROR: ' + e.message);
+            }
+        }
+
+        function buildGraph() {
+            for (const n of G.nodes) { NM[n.id] = n; OUT[n.id] = []; IN[n.id] = []; }
+            for (const e of G.edges) {
+                if (NM[e.fromNode] && NM[e.toNode]) {
+                    OUT[e.fromNode].push(e.toNode);
+                    IN[e.toNode].push(e.fromNode);
+                }
+            }
+        }
+
+        /* ─── PARSE ─────────────────────────── */
+        function parse(n) {
+            const t = n.text || '';
+            const i = t.indexOf('\n---\n');
+            return i < 0 ? { title: t.trim(), body: '' } : { title: t.slice(0, i).trim(), body: t.slice(i + 5).trim() };
+        }
+
+        function ncls(n) {
+            return ({ 1: 'nc-1', 2: 'nc-2', 3: 'nc-3', 4: 'nc-4', 5: 'nc-5', 6: 'nc-6' })[n.color] || '';
+        }
+
+        /* ─── DOM SETUP ─────────────────────── */
+        const world = document.getElementById('world');
+        const esvg = document.getElementById('esvg');
+        const els = {};  // id → div
+        const edg = {};  // `${a}-${b}` → SVGPathElement
+
+        function initDom() {
+            // Compute scale: we want current node to appear at a comfortable size (~180px wide on screen)
+            // Use the start node's width as reference
+            const startN = NM['start'];
+            const refW = startN ? (startN.width || 280) : 280;
+            // Target: node takes up roughly 180px on screen
+            S = Math.min(1.0, 180 / refW);
+            // Also clamp so not too small
+            S = Math.max(0.4, S);
+
+            for (const n of G.nodes) {
+                const el = document.createElement('div');
+                el.className = 'mn ' + ncls(n);
+                el.dataset.id = n.id;
+                const { title } = parse(n);
+                el.textContent = title;
+                // Center of node in canvas coords
+                const cx = n.x + (n.width || 280) / 2;
+                const cy = n.y + (n.height || 120) / 2;
+                el.style.left = cx + 'px';
+                el.style.top = cy + 'px';
+                el.style.maxWidth = Math.min(n.width || 280, 220) + 'px';
+                world.appendChild(el);
+                els[n.id] = el;
+            }
+
+            for (const e of G.edges) {
+                if (!NM[e.fromNode] || !NM[e.toNode]) continue;
+                const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                esvg.appendChild(p);
+                edg[`${e.fromNode}-${e.toNode}`] = p;
+            }
+
+            seen.add('start');
+            render();
+        }
+
+        /* ─── PAN ───────────────────────────── */
+        function pan(animate) {
+            const n = NM[cur]; if (!n) return;
+            const cx = n.x + (n.width || 280) / 2;
+            const cy = n.y + (n.height || 120) / 2;
+            const vw = window.innerWidth, vh = window.innerHeight;
+
+            // We want: cx*S + tx = vw/2  →  tx = vw/2 - cx*S
+            const tx = vw / 2 - cx * S;
+            const ty = vh / 2 - cy * S;
+            const tf = `translate(${tx}px,${ty}px) scale(${S})`;
+            const tr = animate ? 'transform 600ms cubic-bezier(0.4,0,0.2,1)' : 'none';
+            world.style.transition = tr;
+            world.style.transform = tf;
+            world.style.transformOrigin = '0 0';
+            esvg.style.transition = tr;
+            esvg.style.transform = tf;
+            esvg.style.transformOrigin = '0 0';
+        }
+
+        /* ─── RENDER ────────────────────────── */
+        function render() {
+            const children = OUT[cur] || [];
+            const n = NM[cur];
+            const { title, body } = parse(n);
+
+            // ── Panel ──
+            document.getElementById('p-tag').textContent = '▶ ' + cur;
+            document.getElementById('p-title').textContent = title;
+            const pb = document.getElementById('p-body');
+            pb.classList.remove('show');
+            if (body) {
+                pb.innerHTML = esc(body).replace(/\n/g, '<br>');
+                requestAnimationFrame(() => requestAnimationFrame(() => pb.classList.add('show')));
+            } else {
+                pb.textContent = '';
+            }
+
+            // ── Exits ──
+            const exDiv = document.getElementById('exits');
+            exDiv.innerHTML = '';
+            children.forEach((cid, i) => {
+                const { title: ct } = parse(NM[cid]);
+                const d = document.createElement('div');
+                d.className = 'exit-item' + (i === sel ? ' active' : '');
+                d.textContent = (i === sel ? '▶ ' : '') + ct;
+                exDiv.appendChild(d);
+            });
+
+            // ── Visible set ──
+            const vis = new Set([cur, ...children, ...hist]);
+
+            // ── Node classes ──
+            for (const [id, el] of Object.entries(els)) {
+                el.className = 'mn ' + ncls(NM[id]);
+                if (!vis.has(id)) { /* keep hidden (opacity:0) */ }
+                else if (id === cur) el.classList.add('current');
+                else if (children.includes(id)) {
+                    el.classList.add('child');
+                    if (children.indexOf(id) === sel) el.classList.add('selected');
+                }
+                else el.classList.add('show'); // trail
+            }
+
+            // ── Edges ──
+            for (const e of G.edges) {
+                const key = `${e.fromNode}-${e.toNode}`;
+                const p = edg[key]; if (!p) continue;
+                p.className = 'edge';
+                const fv = vis.has(e.fromNode), tv = vis.has(e.toNode);
+                if (!fv || !tv) continue;
+                p.classList.add('show');
+                const isSel = e.fromNode === cur && children.indexOf(e.toNode) === sel;
+                const isTrail = hist.includes(e.fromNode) && (hist.includes(e.toNode) || e.toNode === cur);
+                if (isSel) p.classList.add('sel');
+                else if (isTrail) p.classList.add('trail');
+                drawEdge(p, NM[e.fromNode], NM[e.toNode]);
+            }
+
+            pan(true);
+            minimap();
+        }
+
+        function drawEdge(p, fn, tn) {
+            const fx = fn.x + (fn.width || 280) / 2, fy = fn.y + (fn.height || 120) / 2;
+            const tx = tn.x + (tn.width || 280) / 2, ty = tn.y + (tn.height || 120) / 2;
+            const mx = (fx + tx) / 2, my = (fy + ty) / 2;
+            p.setAttribute('d', `M${fx} ${fy} Q${mx} ${my} ${tx} ${ty}`);
+        }
+
+        /* ─── MINIMAP ────────────────────────── */
+        function minimap() {
+            if (!G) return;
+            const c = document.getElementById('mm');
+            const W = 120, H = 90;
+            c.width = W * devicePixelRatio; c.height = H * devicePixelRatio;
+            const ctx = c.getContext('2d');
+            ctx.scale(devicePixelRatio, devicePixelRatio);
+            ctx.fillStyle = '#090b07'; ctx.fillRect(0, 0, W, H);
+
+            let mnX = Infinity, mnY = Infinity, mxX = -Infinity, mxY = -Infinity;
+            for (const n of G.nodes) {
+                mnX = Math.min(mnX, n.x); mnY = Math.min(mnY, n.y);
+                mxX = Math.max(mxX, n.x + (n.width || 280));
+                mxY = Math.max(mxY, n.y + (n.height || 120));
+            }
+            const pad = 20, gw = mxX - mnX + pad * 2, gh = mxY - mnY + pad * 2;
+            const s = Math.min(W / gw, H / gh);
+            const toM = (x, y) => ({ x: (x - mnX + pad) * s, y: (y - mnY + pad) * s });
+
+            const vis = new Set([cur, ...(OUT[cur] || []), ...hist]);
+
+            for (const e of G.edges) {
+                if (!vis.has(e.fromNode) || !vis.has(e.toNode)) continue;
+                const fn = NM[e.fromNode], tn = NM[e.toNode];
+                const f = toM(fn.x + (fn.width || 280) / 2, fn.y + (fn.height || 120) / 2);
+                const t = toM(tn.x + (tn.width || 280) / 2, tn.y + (tn.height || 120) / 2);
+                ctx.beginPath(); ctx.moveTo(f.x, f.y); ctx.lineTo(t.x, t.y);
+                ctx.strokeStyle = 'rgba(0,255,64,0.15)'; ctx.lineWidth = 0.6; ctx.stroke();
+            }
+
+            for (const n of G.nodes) {
+                if (!vis.has(n.id)) continue;
+                const c2 = toM(n.x + (n.width || 280) / 2, n.y + (n.height || 120) / 2);
+                const r = n.id === cur ? 3.5 : 1.8;
+                ctx.beginPath(); ctx.arc(c2.x, c2.y, r, 0, Math.PI * 2);
+                ctx.fillStyle = n.id === cur ? '#00FF40' : seen.has(n.id) ? 'rgba(0,255,64,0.4)' : 'rgba(100,130,90,0.4)';
+                if (n.id === cur) { ctx.shadowColor = '#00FF40'; ctx.shadowBlur = 6; }
+                ctx.fill(); ctx.shadowBlur = 0;
+            }
+        }
+
+        /* ─── NAV ────────────────────────────── */
+        function forward() {
+            const ch = OUT[cur] || [];
+            if (!ch.length) { showToast(); return; }
+            hist.push(cur);
+            cur = ch[sel];
+            seen.add(cur);
+            sel = 0;
+            render();
+        }
+        function back() {
+            if (!hist.length) return;
+            cur = hist.pop(); sel = 0; render();
+        }
+        function next() {
+            const ch = OUT[cur] || []; if (!ch.length) return;
+            sel = (sel + 1) % ch.length; render();
+        }
+        function prev() {
+            const ch = OUT[cur] || []; if (!ch.length) return;
+            sel = (sel - 1 + ch.length) % ch.length; render();
+        }
+
+        document.addEventListener('keydown', e => {
+            if (!G) return;
+            switch (e.key) {
+                case 'w': case 'W': case 'ArrowUp': e.preventDefault(); back(); break;
+                case 's': case 'S': case 'ArrowDown': e.preventDefault(); forward(); break;
+                case 'Enter': case ' ': e.preventDefault(); forward(); break;
+                case 'd': case 'D': case 'ArrowRight': e.preventDefault(); next(); break;
+                case 'a': case 'A': case 'ArrowLeft': e.preventDefault(); prev(); break;
+            }
+        });
+
+        window.addEventListener('resize', () => { if (G) { pan(false); minimap(); } });
+
+        /* ─── HELPERS ────────────────────────── */
+        let toastT;
+        function showToast() {
+            const t = document.getElementById('toast');
+            t.classList.add('show');
+            clearTimeout(toastT);
+            toastT = setTimeout(() => t.classList.remove('show'), 1500);
+        }
+
+        function bsub(t) { document.getElementById('b-sub').textContent = t; }
+
+        function boot() {
+            setTimeout(() => document.getElementById('boot').classList.add('gone'), 900);
+        }
+
+        function esc(s) {
+            return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        load();
+    </script>
+</body>
+
+</html>

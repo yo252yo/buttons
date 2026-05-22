@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons — Viewport Explorer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+  <style>
+    :root {
+      --bg: #1a1a1e;
+      --bg-dark: #121214;
+      --grey: #c8c4bf;
+      --green: #00FF40;
+      --blue: #00BFFF;
+      --purple: #DF73FF;
+      --orange: #FF9966;
+      --text: #e8e6e3;
+      --text-dim: #7a7875;
+      --node-bg: #2a2a2e;
+      --node-border: #3a3a3e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%; height: 100%;
+      background: var(--bg-dark);
+      font-family: 'Nunito', sans-serif;
+      color: var(--text);
+      overflow: hidden;
+    }
+    #app {
+      width: 100%; height: 100%;
+      position: relative;
+    }
+    #canvas-container {
+      width: 100%; height: 100%;
+      position: absolute;
+      overflow: hidden;
+    }
+    canvas {
+      position: absolute;
+      top: 0; left: 0;
+    }
+    #nodes-layer {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      transform-origin: center center;
+    }
+    .node {
+      position: absolute;
+      background: var(--node-bg);
+      border: 2px solid var(--node-border);
+      border-radius: 8px;
+      padding: 12px;
+      min-width: 120px;
+      max-width: 280px;
+      font-size: 14px;
+      line-height: 1.4;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.3s ease, box-shadow 0.2s ease;
+      opacity: 0;
+      transform: scale(0.8);
+      pointer-events: none;
+    }
+    .node.visible {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+    }
+    .node.visited {
+      border-color: var(--green);
+      box-shadow: 0 0 12px rgba(0, 255, 64, 0.3);
+    }
+    .node.current {
+      border-color: var(--blue);
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.5);
+      transform: scale(1.05);
+    }
+    .node.current:hover {
+      transform: scale(1.08);
+    }
+    .node.child-faint {
+      opacity: 0.4;
+      transform: scale(0.9);
+    }
+    .node.child-faint:hover,
+    .node.child-faint.selected {
+      opacity: 0.8;
+      border-color: var(--purple);
+      transform: scale(1);
+    }
+    .node.child-faint.selected {
+      box-shadow: 0 0 16px rgba(223, 115, 255, 0.5);
+      animation: pulse 1s ease infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 16px rgba(223, 115, 255, 0.5); }
+      50% { box-shadow: 0 0 24px rgba(223, 115, 255, 0.8); }
+    }
+    .node-emoji {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .node-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .node-complement {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    #node-connections {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .connection {
+      stroke: var(--node-border);
+      stroke-width: 2;
+      fill: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .connection.visible { opacity: 0.6; }
+    .connection.trail { stroke: var(--green); opacity: 0.8; }
+    /* Minimap */
+    #minimap {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      width: 160px;
+      height: 120px;
+      background: rgba(18, 18, 20, 0.9);
+      border: 2px solid var(--node-border);
+      border-radius: 8px;
+      z-index: 100;
+      overflow: hidden;
+    }
+    #minimap-canvas {
+      width: 100%; height: 100%;
+    }
+    .minimap-dot {
+      position: absolute;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .minimap-dot.current {
+      background: var(--blue);
+      width: 8px; height: 8px;
+      box-shadow: 0 0 8px var(--blue);
+    }
+    .minimap-dot.visited {
+      background: var(--green);
+      width: 5px; height: 5px;
+    }
+    .minimap-dot.child {
+      background: var(--purple);
+      width: 4px; height: 4px;
+      opacity: 0.5;
+    }
+    /* HUD */
+    #hud {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 100;
+    }
+    #hud h1 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--grey);
+      letter-spacing: 1px;
+    }
+    #hud-controls {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      z-index: 100;
+      display: flex;
+      gap: 8px;
+    }
+    .control-hint {
+      background: var(--node-bg);
+      border: 1px solid var(--node-border);
+      border-radius: 4px;
+      padding: 6px 10px;
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+    .control-hint kbd {
+      background: var(--bg-dark);
+      padding: 2px 5px;
+      border-radius: 3px;
+      margin-right: 4px;
+      color: var(--text);
+    }
+    #loading {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      color: var(--text-dim);
+    }
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="loading">Loading canvas...</div>
+    <div id="canvas-container" class="hidden">
+      <svg id="node-connections"></svg>
+      <div id="nodes-layer"></div>
+    </div>
+    <div id="minimap" class="hidden">
+      <svg id="minimap-canvas" viewBox="-20000 -10000 40000 40000" preserveAspectRatio="xMidYMid meet">
+        <!-- Dots added dynamically -->
+      </svg>
+    </div>
+    <div id="hud" class="hidden">
+      <h1>BUTTONS</h1>
+    </div>
+    <div id="hud-controls" class="hidden">
+      <span class="control-hint"><kbd>A</kbd><kbd>D</kbd> select</span>
+      <span class="control-hint"><kbd>W</kbd> back</span>
+      <span class="control-hint"><kbd>S</kbd><kbd>↵</kbd> go</span>
+    </div>
+  </div>
+
+  <script>
+    // === STATE ===
+    const state = {
+      canvas: null,
+      nodes: new Map(),
+      edges: [],
+      currentId: 'start',
+      selectedChildIndex: 0,
+      history: ['start'],
+      visited: new Set(['start']),
+      camera: { x: 0, y: 0, targetX: 0, targetY: 0 },
+      bounds: { minX: 0, maxX: 0, minY: 0, maxY: 0 },
+      animating: false
+    };
+
+    // === DOM ===
+    const $ = id => document.getElementById(id);
+    const nodesLayer = $('nodes-layer');
+    const connectionsSvg = $('node-connections');
+    const minimapSvg = $('minimap-canvas');
+
+    // === CONFIG ===
+    const NODE_WIDTH = 200;
+    const NODE_HEIGHT = 100;
+    const CAMERA_SPEED = 0.08;
+
+    // === INIT ===
+    async function init() {
+      try {
+        const resp = await fetch('./assets/story.canvas');
+        const data = await resp.json();
+        state.canvas = data;
+        
+        // Parse nodes
+        data.nodes.forEach(n => {
+          if (n.type === 'text' || n.type === 'group') {
+            state.nodes.set(n.id, parseNode(n));
+          }
+        });
+        
+        // Parse edges
+        state.edges = (data.edges || []).map(e => ({
+          from: e.fromNode,
+          to: e.toNode
+        }));
+        
+        calcBounds();
+        buildNodeElements();
+        buildConnectionLines();
+        
+        $('loading').classList.add('hidden');
+        $('canvas-container').classList.remove('hidden');
+        $('minimap').classList.remove('hidden');
+        $('hud').classList.remove('hidden');
+        $('hud-controls').classList.remove('hidden');
+        
+        goToNode('start', false);
+        setupInput();
+        tick();
+      } catch (e) {
+        $('loading').textContent = 'Error: ' + e.message;
+      }
+    }
+
+    function parseNode(raw) {
+      const text = raw.text || raw.label || '';
+      const lines = text.split('\n');
+      
+      // Extract emoji from first token
+      let emoji = '';
+      let title = text;
+      let complement = '';
+      
+      if (lines.length > 0) {
+        const firstLine = lines[0].trim();
+        const emojiMatch = firstLine.match(/^(\S+\s+)?(.+)$/);
+        if (emojiMatch) {
+          const maybeEmoji = emojiMatch[1] || '';
+          if (maybeEmoji && /\p{Extended_Pictographic}/u.test(maybeEmoji.trim())) {
+            emoji = maybeEmoji.trim();
+            title = emojiMatch[2] || '';
+          } else {
+            title = firstLine;
+          }
+        }
+      }
+      
+      // Split by ---
+      const parts = text.split(/---/);
+      if (parts.length > 1) {
+        title = parts[0].trim();
+        complement = parts.slice(1).join('---').trim();
+      }
+      
+      return {
+        id: raw.id,
+        text,
+        emoji,
+        title: title.replace(/^\S+\s+/, '').trim() || title,
+        complement,
+        x: raw.x || 0,
+        y: raw.y || 0,
+        color: raw.color || '0'
+      };
+    }
+
+    function calcBounds() {
+      let minX = Infinity, maxX = -Infinity;
+      let minY = Infinity, maxY = -Infinity;
+      
+      state.nodes.forEach(n => {
+        minX = Math.min(minX, n.x);
+        maxX = Math.max(maxX, n.x);
+        minY = Math.min(minY, n.y);
+        maxY = Math.max(maxY, n.y);
+      });
+      
+      state.bounds = {
+        minX: minX - 2000,
+        maxX: maxX + 2000,
+        minY: minY - 2000,
+        maxY: maxY + 2000
+      };
+    }
+
+    function buildNodeElements() {
+      nodesLayer.innerHTML = '';
+      
+      state.nodes.forEach(node => {
+        const el = document.createElement('div');
+        el.className = 'node';
+        el.id = 'node-' + node.id;
+        el.style.left = node.x + 'px';
+        el.style.top = node.y + 'px';
+        
+        const emojiEl = node.emoji ? `<div class="node-emoji">${node.emoji}</div>` : '';
+        const titleEl = `<div class="node-title">${escapeHtml(node.title)}</div>`;
+        const compEl = node.complement ? `<div class="node-complement">${escapeHtml(node.complement)}</div>` : '';
+        
+        el.innerHTML = emojiEl + titleEl + compEl;
+        nodesLayer.appendChild(el);
+      });
+    }
+
+    function buildConnectionLines() {
+      connectionsSvg.innerHTML = '';
+      
+      const nodeMap = new Map();
+      state.nodes.forEach(n => nodeMap.set(n.id, n));
+      
+      state.edges.forEach(edge => {
+        const from = nodeMap.get(edge.from);
+        const to = nodeMap.get(edge.to);
+        if (!from || !to) return;
+        
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', from.x + NODE_WIDTH / 2);
+        line.setAttribute('y1', from.y + NODE_HEIGHT / 2);
+        line.setAttribute('x2', to.x + NODE_WIDTH / 2);
+        line.setAttribute('y2', to.y + NODE_HEIGHT / 2);
+        line.classList.add('connection');
+        line.dataset.from = edge.from;
+        line.dataset.to = edge.to;
+        connectionsSvg.appendChild(line);
+      });
+    }
+
+    // === NAVIGATION ===
+    function getNodeChildren(nodeId) {
+      return state.edges
+        .filter(e => e.from === nodeId)
+        .map(e => e.nodeTo || e.to)
+        .filter(id => state.nodes.has(id));
+    }
+
+    function getNodeParents(nodeId) {
+      return state.edges
+        .filter(e => e.to === nodeId)
+        .map(e => e.from)
+        .filter(id => state.nodes.has(id));
+    }
+
+    function goToNode(nodeId, animate = true) {
+      if (!state.nodes.has(nodeId)) return;
+      
+      const node = state.nodes.get(nodeId);
+      state.currentId = nodeId;
+      state.selectedChildIndex = 0;
+      
+      // Update history
+      const idx = state.history.indexOf(nodeId);
+      if (idx >= 0) {
+        state.history = state.history.slice(0, idx + 1);
+      } else {
+        state.history.push(nodeId);
+      }
+      
+      state.visited.add(nodeId);
+      
+      // Camera target (center on node)
+      const halfW = window.innerWidth / 2;
+      const halfH = window.innerHeight / 2;
+      state.camera.targetX = -(node.x + NODE_WIDTH / 2) + halfW;
+      state.camera.targetY = -(node.y + NODE_HEIGHT / 2) + halfH;
+      
+      if (!animate) {
+        state.camera.x = state.camera.targetX;
+        state.camera.y = state.camera.targetY;
+      }
+      
+      updateVisibility();
+      updateMinimap();
+    }
+
+    function goBack() {
+      if (state.history.length > 1) {
+        state.history.pop();
+        const prevId = state.history[state.history.length - 1];
+        goToNode(prevId, true);
+      }
+    }
+
+    function goForward() {
+      const children = getNodeChildren(state.currentId);
+      if (children.length > 0 && state.selectedChildIndex < children.length) {
+        goToNode(children[state.selectedChildIndex], true);
+      }
+    }
+
+    function selectPrev() {
+      const children = getNodeChildren(state.currentId);
+      if (children.length > 0) {
+        state.selectedChildIndex = (state.selectedChildIndex - 1 + children.length) % children.length;
+        updateVisibility();
+      }
+    }
+
+    function selectNext() {
+      const children = getNodeChildren(state.currentId);
+      if (children.length > 0) {
+        state.selectedChildIndex = (state.selectedChildIndex + 1) % children.length;
+        updateVisibility();
+      }
+    }
+
+    // === VISIBILITY ===
+    function updateVisibility() {
+      const current = state.currentId;
+      const children = getNodeChildren(current);
+      
+      state.nodes.forEach((node, id) => {
+        const el = document.getElementById('node-' + id);
+        if (!el) return;
+        
+        el.className = 'node';
+        
+        if (id === current) {
+          el.classList.add('visible', 'current');
+        } else if (state.visited.has(id)) {
+          el.classList.add('visible', 'visited');
+        } else if (children.includes(id)) {
+          el.classList.add('visible', 'child-faint');
+          if (children.indexOf(id) === state.selectedChildIndex) {
+            el.classList.add('selected');
+          }
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+      
+      // Update connections
+      const allConnections = connectionsSvg.querySelectorAll('.connection');
+      allConnections.forEach(line => {
+        const from = line.dataset.from;
+        const to = line.dataset.to;
+        const isTrail = state.visited.has(from) && state.visited.has(to);
+        
+        line.classList.remove('visible', 'trail');
+        if (state.visited.has(from) && state.visited.has(to)) {
+          line.classList.add('visible');
+          if (isTrail) line.classList.add('trail');
+        }
+      });
+    }
+
+    // === MINIMAP ===
+    function updateMinimap() {
+      // Clear old dots
+      minimapSvg.innerHTML = '';
+      
+      const scale = 0.4;
+      
+      state.nodes.forEach((node, id) => {
+        const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        const px = node.x + NODE_WIDTH / 2;
+        const py = node.y + NODE_HEIGHT / 2;
+        
+        dot.setAttribute('cx', px * scale);
+        dot.setAttribute('cy', py * scale);
+        
+        if (id === state.currentId) {
+          dot.classList.add('minimap-dot', 'current');
+        } else if (state.visited.has(id)) {
+          dot.classList.add('minimap-dot', 'visited');
+        } else if (getNodeChildren(state.currentId).includes(id)) {
+          dot.classList.add('minimap-dot', 'child');
+        }
+        
+        minimapSvg.appendChild(dot);
+      });
+    }
+
+    // === INPUT ===
+    function setupInput() {
+      document.addEventListener('keydown', e => {
+        if (state.animating) return;
+        
+        const key = e.key.toLowerCase();
+        
+        if (key === 'w' || key === 'arrowup') {
+          goBack();
+        } else if (key === 's' || key === 'enter' || key === ' ' || key === 'arrowdown') {
+          e.preventDefault();
+          goForward();
+        } else if (key === 'a' || key === 'arrowleft') {
+          selectPrev();
+        } else if (key === 'd' || key === 'arrowright') {
+          selectNext();
+        }
+      });
+    }
+
+    // === CAMERA LOOP ===
+    function tick() {
+      // Smooth camera
+      const dx = state.camera.targetX - state.camera.x;
+      const dy = state.camera.targetY - state.camera.y;
+      
+      if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) {
+        state.camera.x += dx * CAMERA_SPEED;
+        state.camera.y += dy * CAMERA_SPEED;
+        
+        nodesLayer.style.transform = `translate(${state.camera.x}px, ${state.camera.y}px)`;
+        connectionsSvg.style.transform = `translate(${state.camera.x}px, ${state.camera.y}px)`;
+      } else {
+        state.camera.x = state.camera.targetX;
+        state.camera.y = state.camera.targetY;
+        nodesLayer.style.transform = `translate(${state.camera.x}px, ${state.camera.y}px)`;
+        connectionsSvg.style.transform = `translate(${state.camera.x}px, ${state.camera.y}px)`;
+      }
+      
+      requestAnimationFrame(tick);
+    }
+
+    // === HELPERS ===
+    function escapeHtml(str) {
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Start
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Browser</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --grey: #c8c4bf;
+      --grey-border: #95918c;
+      --green: #00FF40;
+      --green-border: #00aa2e;
+      --blue: #00BFFF;
+      --blue-border: #0088aa;
+      --purple: #DF73FF;
+      --purple-border: #9f4dbf;
+      --orange: #FF9966;
+      --orange-border: #cc6633;
+
+      --bg: #111110;
+      --bg2: #1a1917;
+      --text: #e8e4df;
+      --text-dim: #6b6760;
+      --text-mid: #9a9590;
+      --card-radius: 14px;
+      --transition: 600ms cubic-bezier(0.4, 0, 0.2, 1);
+      --fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+    }
+
+    /* ── Scene ── */
+    #scene {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #graph {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* ── SVG edges ── */
+    #edges-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: visible;
+    }
+
+    .edge-line {
+      stroke: var(--grey-border);
+      stroke-width: 2;
+      fill: none;
+      opacity: 0.3;
+      transition: stroke var(--fast), opacity var(--fast), stroke-width var(--fast);
+    }
+
+    .edge-line.selected {
+      stroke: var(--green);
+      stroke-width: 3;
+      opacity: 1;
+    }
+
+    .edge-line.visited {
+      stroke: var(--text-dim);
+      stroke-width: 1.5;
+      opacity: 0.2;
+    }
+
+    /* ── Nodes ── */
+    .node {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      border-radius: var(--card-radius);
+      padding: 18px 22px;
+      cursor: default;
+      transition: opacity var(--transition), transform var(--transition), box-shadow var(--fast);
+      will-change: transform, opacity;
+    }
+
+    .node.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, -50%) scale(0.85);
+    }
+
+    .node.visible {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .node.dimmed {
+      opacity: 0.3;
+      transform: translate(-50%, -50%) scale(0.95);
+    }
+
+    /* Current node — larger, centered */
+    .node.current {
+      width: 340px;
+      opacity: 1 !important;
+      transform: translate(-50%, -50%) scale(1) !important;
+      z-index: 10;
+    }
+
+    /* Child nodes */
+    .node.child {
+      width: 260px;
+      z-index: 5;
+    }
+
+    .node.child.selected-child {
+      z-index: 6;
+      transform: translate(-50%, -50%) scale(1.04);
+    }
+
+    /* Node color themes */
+    .node-color-1 {
+      background: color-mix(in srgb, var(--red, #ff5555) 12%, var(--bg2));
+      border: 2px solid color-mix(in srgb, #ff5555 40%, transparent);
+    }
+
+    .node-color-2 {
+      background: color-mix(in srgb, var(--orange) 12%, var(--bg2));
+      border: 2px solid color-mix(in srgb, var(--orange-border) 40%, transparent);
+    }
+
+    .node-color-3 {
+      background: color-mix(in srgb, var(--green) 10%, var(--bg2));
+      border: 2px solid color-mix(in srgb, var(--green-border) 40%, transparent);
+    }
+
+    .node-color-4 {
+      background: color-mix(in srgb, var(--blue) 10%, var(--bg2));
+      border: 2px solid color-mix(in srgb, var(--blue-border) 40%, transparent);
+    }
+
+    .node-color-5 {
+      background: color-mix(in srgb, var(--purple) 10%, var(--bg2));
+      border: 2px solid color-mix(in srgb, var(--purple-border) 40%, transparent);
+    }
+
+    .node-color-6 {
+      background: color-mix(in srgb, var(--grey) 12%, var(--bg2));
+      border: 2px solid color-mix(in srgb, var(--grey-border) 40%, transparent);
+    }
+
+    .node-color-default {
+      background: var(--bg2);
+      border: 2px solid #2a2825;
+    }
+
+    .node.current.node-color-1 {
+      border-color: #ff5555;
+      box-shadow: 0 0 0 1px #ff555522, 0 8px 32px #ff555520;
+    }
+
+    .node.current.node-color-2 {
+      border-color: var(--orange-border);
+      box-shadow: 0 0 0 1px #FF996622, 0 8px 32px #FF996620;
+    }
+
+    .node.current.node-color-3 {
+      border-color: var(--green-border);
+      box-shadow: 0 0 0 1px #00FF4022, 0 8px 32px #00FF4020;
+    }
+
+    .node.current.node-color-4 {
+      border-color: var(--blue-border);
+      box-shadow: 0 0 0 1px #00BFFF22, 0 8px 32px #00BFFF20;
+    }
+
+    .node.current.node-color-5 {
+      border-color: var(--purple-border);
+      box-shadow: 0 0 0 1px #DF73FF22, 0 8px 32px #DF73FF20;
+    }
+
+    .node.current.node-color-6 {
+      border-color: var(--grey-border);
+      box-shadow: 0 0 0 1px #c8c4bf22, 0 8px 32px #c8c4bf20;
+    }
+
+    .node.current.node-color-default {
+      border-color: #3a3835;
+      box-shadow: 0 0 0 1px #ffffff08, 0 8px 32px #00000040;
+    }
+
+    .node.child.selected-child {
+      box-shadow: 0 0 0 2px var(--green), 0 4px 20px #00FF4030;
+      border-color: var(--green) !important;
+    }
+
+    .node-title {
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.35;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+
+    .node.current .node-title {
+      font-size: 18px;
+    }
+
+    .node-complement {
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: var(--text-mid);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 10px;
+      animation: fadeIn 400ms ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .node-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .node.current .node-badge {
+      color: var(--green);
+    }
+
+    /* Dead-end marker */
+    .dead-end-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: var(--grey-border);
+      border-radius: 50%;
+      margin-left: 6px;
+      vertical-align: middle;
+      opacity: 0.5;
+    }
+
+    /* ── HUD ── */
+    #hud {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(17, 17, 16, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 40px;
+      padding: 10px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-dim);
+      letter-spacing: 0.5px;
+    }
+
+    .hud-key {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      min-width: 24px;
+      height: 22px;
+      padding: 0 6px;
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--text-mid);
+    }
+
+    .hud-sep {
+      width: 1px;
+      height: 16px;
+      background: rgba(255, 255, 255, 0.07);
+      margin: 0 4px;
+    }
+
+    /* ── Breadcrumb ── */
+    #breadcrumb {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(17, 17, 16, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 30px;
+      padding: 6px 14px;
+      max-width: 600px;
+      overflow: hidden;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      white-space: nowrap;
+    }
+
+    .bc-item {
+      color: var(--text-dim);
+    }
+
+    .bc-item.active {
+      color: var(--text);
+    }
+
+    .bc-arrow {
+      opacity: 0.3;
+      font-size: 9px;
+    }
+
+    /* ── Siblings counter ── */
+    #sibling-counter {
+      position: fixed;
+      right: 28px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      opacity: 0;
+      transition: opacity var(--fast);
+    }
+
+    #sibling-counter.visible {
+      opacity: 1;
+    }
+
+    .sib-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--text-dim);
+      transition: background var(--fast), transform var(--fast);
+    }
+
+    .sib-dot.active {
+      background: var(--green);
+      transform: scale(1.5);
+    }
+
+    /* ── Loading / Error ── */
+    #overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 16px;
+      background: var(--bg);
+      transition: opacity 600ms ease;
+    }
+
+    #overlay.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .overlay-icon {
+      font-size: 40px;
+    }
+
+    .overlay-text {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-mid);
+    }
+
+    .overlay-sub {
+      font-size: 13px;
+      color: var(--text-dim);
+      max-width: 380px;
+      text-align: center;
+    }
+
+    /* Pulse loader */
+    .loader {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.07);
+      border-top-color: var(--green);
+      border-radius: 50%;
+      animation: spin 700ms linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ── No-children hint ── */
+    #dead-end-hint {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      z-index: 100;
+      background: rgba(17, 17, 16, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-dim);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 300ms ease, transform 300ms ease;
+    }
+
+    #dead-end-hint.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Loading overlay -->
+  <div id="overlay">
+    <div class="loader"></div>
+    <div class="overlay-text">Loading canvas…</div>
+  </div>
+
+  <!-- Breadcrumb trail -->
+  <div id="breadcrumb"></div>
+
+  <!-- Main scene -->
+  <div id="scene">
+    <div id="graph">
+      <svg id="edges-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+  </div>
+
+  <!-- Sibling counter -->
+  <div id="sibling-counter"></div>
+
+  <!-- Dead-end hint -->
+  <div id="dead-end-hint">⛔ Dead end — no further paths</div>
+
+  <!-- HUD -->
+  <div id="hud">
+    <span class="hud-key">W</span> Back
+    <div class="hud-sep"></div>
+    <span class="hud-key">A</span><span class="hud-key">D</span> Select
+    <div class="hud-sep"></div>
+    <span class="hud-key">S</span><span class="hud-key">↵</span> Enter
+  </div>
+
+  <script>
+    /* ═══════════════════════════════════════════════
+       STATE
+    ═══════════════════════════════════════════════ */
+    let canvas = null;          // raw canvas data
+    let nodesMap = {};          // id → node
+    let adjOut = {};            // id → [childId, ...]
+    let adjIn = {};             // id → [parentId, ...]
+
+    let currentId = 'start';
+    let history = [];           // stack of visited ids (for W)
+    let visited = new Set();    // set of visited ids
+    let selectedChildIndex = 0; // which child is highlighted
+
+    // Positions in viewport space (px, centered on screen)
+    const CENTER = { x: 0, y: 0 }; // will be set to window center
+    const CHILD_Y_OFFSET = 240;
+    const CHILD_X_GAP = 310;
+    const PAST_Y_OFFSET = -240;
+
+    /* ═══════════════════════════════════════════════
+       LOAD
+    ═══════════════════════════════════════════════ */
+    async function loadCanvas() {
+      try {
+        const resp = await fetch('./assets/story.canvas');
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        canvas = await resp.json();
+        buildGraph();
+        start();
+      } catch (e) {
+        showError(e);
+      }
+    }
+
+    function buildGraph() {
+      nodesMap = {};
+      adjOut = {};
+      adjIn = {};
+      for (const n of canvas.nodes) {
+        nodesMap[n.id] = n;
+        adjOut[n.id] = [];
+        adjIn[n.id] = [];
+      }
+      for (const e of canvas.edges) {
+        if (nodesMap[e.fromNode] && nodesMap[e.toNode]) {
+          adjOut[e.fromNode].push(e.toNode);
+          adjIn[e.toNode].push(e.fromNode);
+        }
+      }
+    }
+
+    function start() {
+      visited.add('start');
+      currentId = 'start';
+      history = [];
+      selectedChildIndex = 0;
+      hideOverlay();
+      render();
+    }
+
+    /* ═══════════════════════════════════════════════
+       PARSE NODE TEXT
+    ═══════════════════════════════════════════════ */
+    function parseNode(node) {
+      const text = node.text || '';
+      const sepIdx = text.indexOf('\n---\n');
+      if (sepIdx === -1) return { title: text.trim(), complement: '' };
+      return {
+        title: text.slice(0, sepIdx).trim(),
+        complement: text.slice(sepIdx + 5).trim()
+      };
+    }
+
+    /* ═══════════════════════════════════════════════
+       COLOR
+    ═══════════════════════════════════════════════ */
+    function colorClass(node) {
+      const c = node.color;
+      if (!c) return 'node-color-default';
+      if (c === '1') return 'node-color-1';
+      if (c === '2') return 'node-color-2';
+      if (c === '3') return 'node-color-3';
+      if (c === '4') return 'node-color-4';
+      if (c === '5') return 'node-color-5';
+      if (c === '6') return 'node-color-6';
+      return 'node-color-default';
+    }
+
+    /* ═══════════════════════════════════════════════
+       DOM MANAGEMENT
+    ═══════════════════════════════════════════════ */
+    const domNodes = {};   // id → el
+    const domEdges = {};   // `${from}-${to}` → SVGPathElement
+
+    function getOrCreateNodeEl(id) {
+      if (domNodes[id]) return domNodes[id];
+      const el = document.createElement('div');
+      el.className = 'node hidden';
+      el.dataset.id = id;
+      document.getElementById('graph').appendChild(el);
+      domNodes[id] = el;
+      return el;
+    }
+
+    function getOrCreateEdgeEl(fromId, toId) {
+      const key = `${fromId}-${toId}`;
+      if (domEdges[key]) return domEdges[key];
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.classList.add('edge-line');
+      document.getElementById('edges-svg').appendChild(path);
+      domEdges[key] = path;
+      return path;
+    }
+
+    /* ═══════════════════════════════════════════════
+       LAYOUT — viewport positions
+    ═══════════════════════════════════════════════ */
+    function getPositions() {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+
+      const children = adjOut[currentId] || [];
+      const parent = history.length > 0 ? history[history.length - 1] : null;
+
+      const positions = {};
+
+      // Current node: dead center
+      positions[currentId] = { x: cx, y: cy };
+
+      // Children: below, spread horizontally
+      const numC = children.length;
+      children.forEach((cid, i) => {
+        const offset = (i - (numC - 1) / 2) * CHILD_X_GAP;
+        positions[cid] = { x: cx + offset, y: cy + CHILD_Y_OFFSET };
+      });
+
+      // Parent: above
+      if (parent) {
+        positions[parent] = { x: cx, y: cy + PAST_Y_OFFSET };
+      }
+
+      return positions;
+    }
+
+    /* ═══════════════════════════════════════════════
+       RENDER
+    ═══════════════════════════════════════════════ */
+    function render() {
+      const children = adjOut[currentId] || [];
+      const parent = history.length > 0 ? history[history.length - 1] : null;
+      const positions = getPositions();
+      const visibleIds = new Set([currentId, ...children, ...(parent ? [parent] : [])]);
+
+      // Hide all non-visible nodes
+      for (const [id, el] of Object.entries(domNodes)) {
+        if (!visibleIds.has(id)) {
+          el.classList.remove('visible', 'dimmed', 'current', 'child', 'selected-child');
+          el.classList.add('hidden');
+        }
+      }
+
+      // Render visible nodes
+      for (const id of visibleIds) {
+        renderNode(id, positions[id], children, parent);
+      }
+
+      // Render edges
+      renderEdges(children, parent, positions);
+
+      // Update breadcrumb
+      renderBreadcrumb();
+
+      // Update sibling counter
+      renderSiblingCounter(children);
+    }
+
+    function renderNode(id, pos, children, parent) {
+      const node = nodesMap[id];
+      if (!node || !pos) return;
+
+      const el = getOrCreateNodeEl(id);
+      const { title, complement } = parseNode(node);
+      const isCurrent = id === currentId;
+      const isParent = id === parent;
+      const childIdx = children.indexOf(id);
+      const isChild = childIdx !== -1;
+      const isSelected = isChild && childIdx === selectedChildIndex;
+      const isVisited = visited.has(id);
+      const isDeadEnd = (adjOut[id] || []).length === 0;
+
+      // Classes
+      el.className = 'node';
+      el.classList.add(colorClass(node));
+      if (isCurrent) el.classList.add('current');
+      if (isChild) el.classList.add('child');
+      if (isSelected) el.classList.add('selected-child');
+      if (isParent) el.classList.add('dimmed');
+      el.classList.add('visible');
+
+      // Position
+      el.style.left = pos.x + 'px';
+      el.style.top = pos.y + 'px';
+
+      // Content
+      let html = '';
+      if (isCurrent) html += `<div class="node-badge">▶ current</div>`;
+      if (isParent) html += `<div class="node-badge">↑ back</div>`;
+
+      html += `<div class="node-title">${escHtml(title)}`;
+      if (isDeadEnd && !isCurrent) html += `<span class="dead-end-dot" title="Dead end"></span>`;
+      html += `</div>`;
+
+      if (isVisited && complement) {
+        html += `<div class="node-complement">${escHtml(complement)}</div>`;
+      }
+
+      el.innerHTML = html;
+    }
+
+    function renderEdges(children, parent, positions) {
+      const svg = document.getElementById('edges-svg');
+
+      // Remove stale edge elements not needed
+      const neededKeys = new Set();
+      children.forEach(cid => neededKeys.add(`${currentId}-${cid}`));
+      if (parent) neededKeys.add(`${parent}-${currentId}`);
+
+      // Hide old edges
+      for (const [key, path] of Object.entries(domEdges)) {
+        if (!neededKeys.has(key)) {
+          path.style.display = 'none';
+        }
+      }
+
+      const cur = positions[currentId];
+
+      // Edges to children
+      children.forEach((cid, i) => {
+        const child = positions[cid];
+        if (!child) return;
+        const path = getOrCreateEdgeEl(currentId, cid);
+        path.style.display = '';
+        path.classList.remove('selected', 'visited');
+        if (i === selectedChildIndex) path.classList.add('selected');
+        drawCurve(path, cur, child);
+      });
+
+      // Edge from parent
+      if (parent) {
+        const par = positions[parent];
+        if (par) {
+          const path = getOrCreateEdgeEl(parent, currentId);
+          path.style.display = '';
+          path.classList.remove('selected', 'visited');
+          path.classList.add('visited');
+          drawCurve(path, par, cur);
+        }
+      }
+    }
+
+    function drawCurve(pathEl, from, to) {
+      const midY = (from.y + to.y) / 2;
+      const d = `M ${from.x} ${from.y} C ${from.x} ${midY}, ${to.x} ${midY}, ${to.x} ${to.y}`;
+      pathEl.setAttribute('d', d);
+    }
+
+    function renderBreadcrumb() {
+      const bc = document.getElementById('breadcrumb');
+      const trail = [...history, currentId].slice(-6); // last 6
+      bc.innerHTML = trail.map((id, i) => {
+        const node = nodesMap[id];
+        if (!node) return '';
+        const { title } = parseNode(node);
+        const short = title.length > 24 ? title.slice(0, 22) + '…' : title;
+        const isLast = i === trail.length - 1;
+        return `${i > 0 ? '<span class="bc-arrow">›</span>' : ''}<span class="bc-item ${isLast ? 'active' : ''}">${escHtml(short)}</span>`;
+      }).join('');
+    }
+
+    function renderSiblingCounter(children) {
+      const sc = document.getElementById('sibling-counter');
+      if (children.length <= 1) {
+        sc.classList.remove('visible');
+        return;
+      }
+      sc.classList.add('visible');
+      sc.innerHTML = children.map((_, i) =>
+        `<div class="sib-dot ${i === selectedChildIndex ? 'active' : ''}"></div>`
+      ).join('');
+    }
+
+    /* ═══════════════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════════════ */
+    function goForward() {
+      const children = adjOut[currentId] || [];
+      if (children.length === 0) {
+        showDeadEnd();
+        return;
+      }
+      const nextId = children[selectedChildIndex];
+      history.push(currentId);
+      currentId = nextId;
+      visited.add(nextId);
+      selectedChildIndex = 0;
+      render();
+    }
+
+    function goBack() {
+      if (history.length === 0) return;
+      currentId = history.pop();
+      selectedChildIndex = 0;
+      render();
+    }
+
+    function selectNext() {
+      const children = adjOut[currentId] || [];
+      if (children.length === 0) return;
+      selectedChildIndex = (selectedChildIndex + 1) % children.length;
+      render();
+    }
+
+    function selectPrev() {
+      const children = adjOut[currentId] || [];
+      if (children.length === 0) return;
+      selectedChildIndex = (selectedChildIndex - 1 + children.length) % children.length;
+      render();
+    }
+
+    /* ═══════════════════════════════════════════════
+       KEYBOARD
+    ═══════════════════════════════════════════════ */
+    document.addEventListener('keydown', e => {
+      if (!canvas) return;
+      switch (e.key) {
+        case 'w': case 'W': case 'ArrowUp': e.preventDefault(); goBack(); break;
+        case 's': case 'S': case 'ArrowDown': e.preventDefault(); goForward(); break;
+        case 'Enter': case ' ': e.preventDefault(); goForward(); break;
+        case 'd': case 'D': case 'ArrowRight': e.preventDefault(); selectNext(); break;
+        case 'a': case 'A': case 'ArrowLeft': e.preventDefault(); selectPrev(); break;
+      }
+    });
+
+    /* ═══════════════════════════════════════════════
+       UI HELPERS
+    ═══════════════════════════════════════════════ */
+    function hideOverlay() {
+      const overlay = document.getElementById('overlay');
+      overlay.classList.add('hide');
+    }
+
+    function showError(e) {
+      const overlay = document.getElementById('overlay');
+      overlay.innerHTML = `
+    <div class="overlay-icon">⚠️</div>
+    <div class="overlay-text">Could not load canvas</div>
+    <div class="overlay-sub">${escHtml(e.message)}<br><br>Make sure <code>./assets/story.canvas</code> is accessible from this page.</div>
+  `;
+    }
+
+    let deadEndTimer = null;
+    function showDeadEnd() {
+      const hint = document.getElementById('dead-end-hint');
+      hint.classList.add('show');
+      clearTimeout(deadEndTimer);
+      deadEndTimer = setTimeout(() => hint.classList.remove('show'), 2000);
+    }
+
+    function escHtml(str) {
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/\n/g, '<br>');
+    }
+
+    /* ═══════════════════════════════════════════════
+       RESIZE
+    ═══════════════════════════════════════════════ */
+    window.addEventListener('resize', () => { if (canvas) render(); });
+
+    /* ═══════════════════════════════════════════════
+       BOOT
+    ═══════════════════════════════════════════════ */
+    loadCanvas();
+  </script>
+</body>
+
+</html>
